@@ -1,0 +1,1397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.ButtonControl?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.IndicationControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="238.0" layoutY="397.0" stroke="GREY" strokeType="INSIDE" width="1504.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="238.0" layoutY="351.0" stroke="GREY" strokeType="INSIDE" width="1504.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="238.0" layoutY="305.0" stroke="GREY" strokeType="INSIDE" width="1504.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="238.0" layoutY="259.0" stroke="GREY" strokeType="INSIDE" width="1504.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="238.0" layoutY="213.0" stroke="GREY" strokeType="INSIDE" width="1504.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="238.0" layoutY="167.0" stroke="GREY" strokeType="INSIDE" width="1504.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="42.0" layoutX="1470.0" layoutY="168.0" stroke="BLACK" strokeType="INSIDE" width="96.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="238.0" layoutY="121.0" stroke="GREY" strokeType="INSIDE" width="1504.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="55.0" layoutX="237.0" layoutY="63.0" stroke="GREY" strokeType="INSIDE" width="1505.0" />
+      <Text layoutX="308.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Технологические защиты ПЭН №3" textAlignment="CENTER" wrappingWidth="349.20343017578125">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="658.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Текущее" textAlignment="CENTER" wrappingWidth="251.21517944335938">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="733.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РВЗ" textAlignment="CENTER" wrappingWidth="251.21517944335938">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="865.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Предупреждение" textAlignment="CENTER" wrappingWidth="251.21517944335938">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="870.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Значение  Выдержка" textAlignment="CENTER" wrappingWidth="251.21517944335938">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="1072.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Авария" textAlignment="CENTER" wrappingWidth="251.21517944335938">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="1079.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Значение  Выдержка" textAlignment="CENTER" wrappingWidth="251.21517944335938">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="1220.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ремонт" textAlignment="CENTER" wrappingWidth="251.21517944335938">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="1388.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;На сигнал&quot;" textAlignment="CENTER" wrappingWidth="77.88180541992188">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="1569.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сигнал" textAlignment="CENTER" wrappingWidth="78.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="1647.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сработал" textAlignment="CENTER" wrappingWidth="92.54855346679688">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="59.5" layoutX="840.0" layoutY="58.0" startX="-100.0" startY="6.666667938232422" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="60.5" layoutX="928.0" layoutY="57.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="60.5" layoutX="989.0" layoutY="57.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="60.5" layoutX="1197.0" layoutY="57.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="60.0" layoutX="1405.0" layoutY="57.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="60.0" layoutX="1486.0" layoutY="57.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="61.0" layoutX="1568.0" layoutY="57.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="60.333335876464844" layoutX="1744.0" layoutY="57.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="305.5" endY="18.7685546875" layoutX="999.0" layoutY="71.0" startX="-109.66668701171875" startY="18.7685546875" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="33.666664123535156" layoutX="1093.0" layoutY="83.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="33.666664123535156" layoutX="1301.0" layoutY="84.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Button layoutX="889.0" layoutY="122.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="993.0" layoutY="122.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1097.0" layoutY="122.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1201.0" layoutY="122.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="889.0" layoutY="168.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="993.0" layoutY="168.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1097.0" layoutY="168.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1201.0" layoutY="168.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Line endX="-100.0" endY="50.0" layoutX="840.0" layoutY="115.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="840.0" layoutY="161.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Text fill="WHITE" layoutX="490.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Технологические защиты и сигнализации питательных насосов №3,4" textAlignment="CENTER" wrappingWidth="1073.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="1305.0" layoutY="214.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="828.0" layoutY="214.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="61.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="889.0" layoutY="214.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="993.0" layoutY="214.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1097.0" layoutY="214.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1201.0" layoutY="214.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Line endX="-100.0" endY="50.0" layoutX="840.0" layoutY="207.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="840.0" layoutY="253.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="840.0" layoutY="299.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="840.0" layoutY="345.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="840.0" layoutY="391.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="61.0" layoutX="1668.0" layoutY="57.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Text layoutX="1479.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Предупр" textAlignment="CENTER" wrappingWidth="83.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="42.0" layoutX="1470.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="96.0" />
+      <Button layoutX="1305.0" layoutY="260.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="828.0" layoutY="260.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="61.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="889.0" layoutY="260.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="993.0" layoutY="260.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1097.0" layoutY="260.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1201.0" layoutY="260.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1305.0" layoutY="306.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="828.0" layoutY="306.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="61.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="889.0" layoutY="306.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="993.0" layoutY="306.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1097.0" layoutY="306.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1201.0" layoutY="306.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1305.0" layoutY="352.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="828.0" layoutY="352.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="61.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="889.0" layoutY="352.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="993.0" layoutY="352.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1097.0" layoutY="352.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1201.0" layoutY="352.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1305.0" layoutY="398.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="828.0" layoutY="398.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="61.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="889.0" layoutY="398.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="993.0" layoutY="398.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1097.0" layoutY="398.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1201.0" layoutY="398.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="238.0" layoutY="787.0" stroke="GREY" strokeType="INSIDE" width="1504.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="238.0" layoutY="741.0" stroke="GREY" strokeType="INSIDE" width="1504.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="238.0" layoutY="695.0" stroke="GREY" strokeType="INSIDE" width="1504.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="238.0" layoutY="649.0" stroke="GREY" strokeType="INSIDE" width="1504.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="238.0" layoutY="603.0" stroke="GREY" strokeType="INSIDE" width="1504.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="238.0" layoutY="557.0" stroke="GREY" strokeType="INSIDE" width="1504.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="42.0" layoutX="1470.0" layoutY="558.0" stroke="BLACK" strokeType="INSIDE" width="96.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="238.0" layoutY="511.0" stroke="GREY" strokeType="INSIDE" width="1504.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="55.0" layoutX="237.0" layoutY="453.0" stroke="GREY" strokeType="INSIDE" width="1505.0" />
+      <Text layoutX="308.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Технологические защиты ПЭН №4" textAlignment="CENTER" wrappingWidth="349.20343017578125">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="658.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Текущее" textAlignment="CENTER" wrappingWidth="251.21517944335938">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="733.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РВЗ" textAlignment="CENTER" wrappingWidth="251.21517944335938">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="865.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Предупреждение" textAlignment="CENTER" wrappingWidth="251.21517944335938">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="870.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Значение  Выдержка" textAlignment="CENTER" wrappingWidth="251.21517944335938">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="1072.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Авария" textAlignment="CENTER" wrappingWidth="251.21517944335938">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="1079.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Значение  Выдержка" textAlignment="CENTER" wrappingWidth="251.21517944335938">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="1220.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ремонт" textAlignment="CENTER" wrappingWidth="251.21517944335938">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="1388.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;На сигнал&quot;" textAlignment="CENTER" wrappingWidth="77.88180541992188">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="1569.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сигнал" textAlignment="CENTER" wrappingWidth="78.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="1647.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сработал" textAlignment="CENTER" wrappingWidth="92.54855346679688">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="59.5" layoutX="840.0" layoutY="448.0" startX="-100.0" startY="6.666667938232422" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="60.5" layoutX="928.0" layoutY="447.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="60.5" layoutX="989.0" layoutY="447.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="60.5" layoutX="1197.0" layoutY="447.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="60.0" layoutX="1405.0" layoutY="447.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="60.0" layoutX="1486.0" layoutY="447.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="61.0" layoutX="1568.0" layoutY="447.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="60.333335876464844" layoutX="1744.0" layoutY="447.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="305.5" endY="18.7685546875" layoutX="999.0" layoutY="461.0" startX="-109.66668701171875" startY="18.7685546875" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="33.666664123535156" layoutX="1093.0" layoutY="473.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="33.666664123535156" layoutX="1301.0" layoutY="474.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Button layoutX="889.0" layoutY="512.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="993.0" layoutY="512.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1097.0" layoutY="512.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1201.0" layoutY="512.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="889.0" layoutY="558.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="993.0" layoutY="558.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1097.0" layoutY="558.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1201.0" layoutY="558.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Line endX="-100.0" endY="50.0" layoutX="840.0" layoutY="505.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="840.0" layoutY="551.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Button layoutX="1305.0" layoutY="604.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="828.0" layoutY="604.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="61.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="889.0" layoutY="604.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="993.0" layoutY="604.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1097.0" layoutY="604.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1201.0" layoutY="604.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Line endX="-100.0" endY="50.0" layoutX="840.0" layoutY="597.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="840.0" layoutY="643.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="840.0" layoutY="689.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="840.0" layoutY="735.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="840.0" layoutY="781.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="61.0" layoutX="1668.0" layoutY="447.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Text layoutX="1479.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Предупр" textAlignment="CENTER" wrappingWidth="83.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="42.0" layoutX="1470.0" layoutY="512.0" stroke="BLACK" strokeType="INSIDE" width="96.0" />
+      <Button layoutX="1305.0" layoutY="650.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="828.0" layoutY="650.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="61.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="889.0" layoutY="650.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="993.0" layoutY="650.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1097.0" layoutY="650.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1201.0" layoutY="650.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1305.0" layoutY="696.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="828.0" layoutY="696.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="61.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="889.0" layoutY="696.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="993.0" layoutY="696.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1097.0" layoutY="696.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1201.0" layoutY="696.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1305.0" layoutY="742.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="828.0" layoutY="742.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="61.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="889.0" layoutY="742.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="993.0" layoutY="742.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1097.0" layoutY="742.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1201.0" layoutY="742.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1305.0" layoutY="788.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="828.0" layoutY="788.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="61.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="889.0" layoutY="788.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="993.0" layoutY="788.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1097.0" layoutY="788.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1201.0" layoutY="788.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="104.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="843.0" layoutY="865.0" strokeType="OUTSIDE" strokeWidth="0.0" text="АВР питательных насосов" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_3rvzlmp_001" layoutX="828.0" layoutY="123.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor></ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_3rvzlmp_002" layoutX="828.0" layoutY="169.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor></ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_4rvzlmp_002" layoutX="828.0" layoutY="559.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor></ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_4rvzlmp_001" layoutX="828.0" layoutY="513.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor></ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_3rp_001" layoutX="1307.0" layoutY="123.0" prefHeight="41.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor></ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_3rp_002" layoutX="1307.0" layoutY="169.0" prefHeight="41.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor></ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_4rp_001" layoutX="1307.0" layoutY="513.0" prefHeight="41.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor></ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_4rp_002" layoutX="1307.0" layoutY="559.0" prefHeight="41.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor></ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_3tslmp_001" layoutX="1388.0" layoutY="123.0" prefHeight="41.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor></ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_3tslmp_002" layoutX="1388.0" layoutY="169.0" prefHeight="41.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor></ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_4tslmp_001" layoutX="1389.0" layoutY="513.0" prefHeight="41.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor></ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_4tslmp_002" layoutX="1389.0" layoutY="559.0" prefHeight="41.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor></ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_3_sg001" layoutX="1568.0" layoutY="122.0" prefHeight="40.0" prefWidth="74.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_3_sg002" layoutX="1568.0" layoutY="168.0" prefHeight="40.0" prefWidth="74.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_4_sg001" layoutX="1568.0" layoutY="512.0" prefHeight="40.0" prefWidth="74.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_4_sg002" layoutX="1568.0" layoutY="558.0" prefHeight="40.0" prefWidth="74.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <Button layoutX="1387.0" layoutY="214.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1387.0" layoutY="260.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1387.0" layoutY="306.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1387.0" layoutY="352.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1387.0" layoutY="398.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1387.0" layoutY="604.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1387.0" layoutY="650.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1387.0" layoutY="696.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1387.0" layoutY="742.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="1387.0" layoutY="788.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" text="--">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Падение давления масла в системе смазки" interactive="false" kks="ss:pen_3_tz001" layoutX="240.0" layoutY="122.0" prefHeight="40.0" prefWidth="496.0" secondStatus="Падение давления масла в системе смазки" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Roboto Regular" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_3_tk001" layoutX="743.0" layoutY="122.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_3_tk002" layoutX="743.0" layoutY="168.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_3_tk003" layoutX="743.0" layoutY="214.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_3_tk004" layoutX="743.0" layoutY="260.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_3_tk005" layoutX="743.0" layoutY="306.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_3_tk006" layoutX="743.0" layoutY="352.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_3_tk007" layoutX="743.0" layoutY="398.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Падение давления в напорном патрубке" interactive="false" kks="ss:pen_3_tz002" layoutX="240.0" layoutY="168.0" prefHeight="40.0" prefWidth="496.0" secondStatus="Падение давления в напорном патрубке" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Roboto Regular" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Понижение уровня в МБ от верхней крышки" interactive="false" layoutX="240.0" layoutY="214.0" prefHeight="40.0" prefWidth="496.0" secondStatus="Понижение уровня в МБ от верхней крышки" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Roboto Regular" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Повышение температуры подшипников" interactive="false" layoutX="240.0" layoutY="260.0" prefHeight="40.0" prefWidth="496.0" secondStatus="Повышение температуры подшипников" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Roboto Regular" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Повышение температуры масла" interactive="false" layoutX="240.0" layoutY="306.0" prefHeight="40.0" prefWidth="496.0" secondStatus="Повышение температуры масла" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Roboto Regular" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Несоответствие положения вентиля рециркуляции" interactive="false" layoutX="240.0" layoutY="352.0" prefHeight="40.0" prefWidth="496.0" secondStatus="Несоответствие положения вентиля рециркуляции" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Roboto Regular" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Несоответствие положения задвижки на напоре" interactive="false" layoutX="240.0" layoutY="398.0" prefHeight="40.0" prefWidth="496.0" secondStatus="Несоответствие положения задвижки на напоре" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Roboto Regular" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_3_pred003" layoutX="1471.0" layoutY="213.0" prefHeight="41.0" prefWidth="93.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_3_pred004" layoutX="1471.0" layoutY="260.0" prefHeight="41.0" prefWidth="93.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_3_pred005" layoutX="1471.0" layoutY="306.0" prefHeight="41.0" prefWidth="93.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_3_pred006" layoutX="1471.0" layoutY="352.0" prefHeight="41.0" prefWidth="93.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_3_pred007" layoutX="1471.0" layoutY="398.0" prefHeight="41.0" prefWidth="93.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Падение давления масла в системе смазки" interactive="false" kks="ss:pen_4_tz001" layoutX="240.0" layoutY="512.0" prefHeight="40.0" prefWidth="496.0" secondStatus="Падение давления масла в системе смазки" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Roboto Regular" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_4_tk001" layoutX="743.0" layoutY="512.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_4_tk002" layoutX="743.0" layoutY="558.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_4_tk003" layoutX="743.0" layoutY="604.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_4_tk004" layoutX="743.0" layoutY="650.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_4_tk005" layoutX="743.0" layoutY="696.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_4_tk006" layoutX="743.0" layoutY="742.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_4_tk007" layoutX="743.0" layoutY="788.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Падение давления в напорном патрубке" interactive="false" kks="ss:pen_4_tz002" layoutX="240.0" layoutY="558.0" prefHeight="40.0" prefWidth="496.0" secondStatus="Падение давления в напорном патрубке" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Roboto Regular" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Понижение уровня в МБ от верхней крышки" interactive="false" layoutX="240.0" layoutY="604.0" prefHeight="40.0" prefWidth="496.0" secondStatus="Понижение уровня в МБ от верхней крышки" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Roboto Regular" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Повышение температуры подшипников" interactive="false" layoutX="240.0" layoutY="650.0" prefHeight="40.0" prefWidth="496.0" secondStatus="Повышение температуры подшипников" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Roboto Regular" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Повышение температуры масла" interactive="false" layoutX="240.0" layoutY="696.0" prefHeight="40.0" prefWidth="496.0" secondStatus="Повышение температуры масла" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Roboto Regular" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Несоответствие положения вентиля рециркуляции" interactive="false" layoutX="240.0" layoutY="742.0" prefHeight="40.0" prefWidth="496.0" secondStatus="Несоответствие положения вентиля рециркуляции" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Roboto Regular" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Несоответствие положения задвижки на напоре" interactive="false" layoutX="240.0" layoutY="788.0" prefHeight="40.0" prefWidth="496.0" secondStatus="Несоответствие положения задвижки на напоре" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Roboto Regular" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_4_pred003" layoutX="1471.0" layoutY="603.0" prefHeight="41.0" prefWidth="93.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_4_pred004" layoutX="1471.0" layoutY="650.0" prefHeight="41.0" prefWidth="93.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_4_pred005" layoutX="1471.0" layoutY="696.0" prefHeight="41.0" prefWidth="93.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_4_pred006" layoutX="1471.0" layoutY="742.0" prefHeight="41.0" prefWidth="93.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_4_pred007" layoutX="1471.0" layoutY="788.0" prefHeight="41.0" prefWidth="93.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_3_sr001" layoutX="1645.0" layoutY="122.0" prefHeight="41.0" prefWidth="93.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_3_sr002" layoutX="1645.0" layoutY="168.0" prefHeight="41.0" prefWidth="93.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_3rvz_001" layoutX="828.0" layoutY="123.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_3rvz_002" layoutX="828.0" layoutY="168.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_3ts_001" layoutX="1388.0" layoutY="123.0" opacity="0.0" prefHeight="40.0" prefWidth="79.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_3ts_002" layoutX="1388.0" layoutY="168.0" opacity="0.0" prefHeight="40.0" prefWidth="81.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_4_sr001" layoutX="1645.0" layoutY="512.0" prefHeight="41.0" prefWidth="93.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:pen_4_sr002" layoutX="1645.0" layoutY="558.0" prefHeight="41.0" prefWidth="93.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_4rvz_001" layoutX="828.0" layoutY="513.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_4rvz_002" layoutX="828.0" layoutY="558.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_4ts_001" layoutX="1388.0" layoutY="513.0" opacity="0.0" prefHeight="40.0" prefWidth="79.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmepen_4ts_002" layoutX="1388.0" layoutY="558.0" opacity="0.0" prefHeight="40.0" prefWidth="81.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="26.0" layoutX="741.0" layoutY="966.0" stroke="GREY" strokeType="INSIDE" width="505.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="38.0" layoutX="741.0" layoutY="993.0" stroke="GREY" strokeType="INSIDE" width="505.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="40.0" layoutX="237.0" layoutY="874.0" stroke="GREY" strokeType="INSIDE" width="1391.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="237.0" layoutY="915.0" stroke="GREY" strokeType="INSIDE" width="1391.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="842.0" layoutY="909.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="46.0" layoutX="842.0" layoutY="868.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="46.0" layoutX="989.0" layoutY="868.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Text layoutX="776.0" layoutY="900.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПЭН №1" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="46.0" layoutX="1136.0" layoutY="868.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Text layoutX="923.0" layoutY="900.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПЭН №2" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="46.0" layoutX="1283.0" layoutY="868.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Text layoutX="1070.0" layoutY="900.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПЭН №3" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="46.0" layoutX="1430.0" layoutY="868.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Text layoutX="1217.0" layoutY="900.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПЭН №4" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="1364.0" layoutY="900.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПЭН №5" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="1511.0" layoutY="900.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПЭН №6" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="46.0" layoutX="1578.0" layoutY="868.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="66.0" layoutX="1245.0" layoutY="965.0" stroke="GREY" strokeType="INSIDE" width="158.0" />
+      <Line endX="-100.0" endY="72.0" layoutX="1346.0" layoutY="959.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="38.0" layoutX="741.0" layoutY="1032.0" stroke="GREY" strokeType="INSIDE" width="662.0" />
+      <Line endX="-100.0" endY="44.0" layoutX="1346.0" layoutY="1026.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Text layoutX="369.0" layoutY="946.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Статус насосного агрегата">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <ButtonControl buttonOffText="АВР" buttonOnText="АВР" equipmentType="TEXT_BUTTON" kks="zdipen_1_avr2" layoutX="819.0" layoutY="917.0" prefHeight="40.0" prefWidth="67.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Работа" buttonOnText="Работа" equipmentType="TEXT_BUTTON" kks="zdipen_1_avr1" layoutX="745.0" layoutY="917.0" prefHeight="40.0" prefWidth="68.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <Line endX="-100.0" endY="75.0" layoutX="916.5" layoutY="883.0" startX="-100.0" startY="33.126953125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="51.0" layoutX="989.0" layoutY="908.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <ButtonControl buttonOffText="АВР" buttonOnText="АВР" equipmentType="TEXT_BUTTON" kks="zdipen_2_avr2" layoutX="967.0" layoutY="917.0" prefHeight="40.0" prefWidth="67.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Работа" buttonOnText="Работа" equipmentType="TEXT_BUTTON" kks="zdipen_2_avr1" layoutX="893.0" layoutY="917.0" prefHeight="40.0" prefWidth="68.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <Line endX="-100.0" endY="75.0" layoutX="1064.5" layoutY="883.0" startX="-100.0" startY="33.126953125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="51.0" layoutX="1136.0" layoutY="908.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <ButtonControl buttonOffText="АВР" buttonOnText="АВР" equipmentType="TEXT_BUTTON" kks="zdipen_3_avr2" layoutX="1114.0" layoutY="917.0" prefHeight="40.0" prefWidth="67.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Работа" buttonOnText="Работа" equipmentType="TEXT_BUTTON" kks="zdipen_3_avr1" layoutX="1040.0" layoutY="917.0" prefHeight="40.0" prefWidth="68.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <Line endX="-100.0" endY="75.0" layoutX="1211.5" layoutY="883.0" startX="-100.0" startY="33.126953125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="51.0" layoutX="1283.0" layoutY="908.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <ButtonControl buttonOffText="АВР" buttonOnText="АВР" equipmentType="TEXT_BUTTON" kks="zdipen_4_avr2" layoutX="1261.0" layoutY="917.0" prefHeight="40.0" prefWidth="67.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Работа" buttonOnText="Работа" equipmentType="TEXT_BUTTON" kks="zdipen_4_avr1" layoutX="1186.0" layoutY="917.0" prefHeight="40.0" prefWidth="68.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <Line endX="-100.0" endY="75.0" layoutX="1358.5" layoutY="883.0" startX="-100.0" startY="33.126953125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="51.0" layoutX="1430.0" layoutY="908.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <ButtonControl buttonOffText="АВР" buttonOnText="АВР" equipmentType="TEXT_BUTTON" kks="zdipen_5_avr2" layoutX="1407.0" layoutY="917.0" prefHeight="40.0" prefWidth="67.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Работа" buttonOnText="Работа" equipmentType="TEXT_BUTTON" kks="zdipen_5_avr1" layoutX="1333.0" layoutY="917.0" prefHeight="40.0" prefWidth="68.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <Line endX="-100.0" endY="75.0" layoutX="1504.5" layoutY="883.0" startX="-100.0" startY="33.126953125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="51.0" layoutX="1578.0" layoutY="908.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <ButtonControl buttonOffText="АВР" buttonOnText="АВР" equipmentType="TEXT_BUTTON" kks="zdipen_6_avr2" layoutX="1557.0" layoutY="917.0" prefHeight="40.0" prefWidth="67.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Работа" buttonOnText="Работа" equipmentType="TEXT_BUTTON" kks="zdipen_6_avr1" layoutX="1481.0" layoutY="917.0" prefHeight="40.0" prefWidth="68.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <Line endX="-100.0" endY="75.0" layoutX="1652.5" layoutY="883.0" startX="-100.0" startY="33.126953125" strokeWidth="2.0" />
+      <Text layoutX="743.0" layoutY="1019.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Падение давления пит. воды в напорной магистрали">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="743.0" layoutY="1059.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Отключение любого работающего ПЭН">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="1240.0" layoutY="985.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Текущее" textAlignment="CENTER" wrappingWidth="85.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="1324.0" layoutY="985.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сработал" textAlignment="CENTER" wrappingWidth="75.71517944335938">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="138.0" layoutX="1420.5" layoutY="932.0" startX="-100.0" startY="33.7685546875" strokeWidth="2.0" />
+      <Line endX="-184.5" endY="64.33331298828125" layoutX="1430.5" layoutY="929.0" startX="-27.5" startY="64.33331298828125" strokeWidth="2.0" />
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="me:pen_avr1" layoutX="1322.0" layoutY="995.0" prefHeight="33.0" prefWidth="77.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="me:pen_avr2" layoutX="1322.0" layoutY="1033.0" prefHeight="33.0" prefWidth="77.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b2373700" decimals="1" foregroundPaint="#a34b4b" kks="PU_204A" layoutX="1246.0" layoutY="983.0" maxValue="250.0" param="" prefHeight="57.0" prefWidth="100.0" system="CP" unit="">
+         <tooltip>
+            <Tooltip text="Температура масла перед маслобаком 22МБ" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+   </children>
+</AnchorPane>

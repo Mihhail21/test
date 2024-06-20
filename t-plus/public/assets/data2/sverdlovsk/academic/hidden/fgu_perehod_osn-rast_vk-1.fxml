@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.ButtonControl?>
+<?import ru.get.common.controls.IndicationControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="WHITE" layoutX="744.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЛП Горелок &quot;Переход Осн - Раст&quot;" textAlignment="CENTER" wrappingWidth="431.0">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Text>
+      <ButtonControl buttonOffText="Переход Осн - Раст" buttonOnText="Переход Осн - Раст" equipmentType="TEXT_BUTTON" kks="yp:mevk1sw_or1" layoutX="78.0" layoutY="426.0" prefHeight="30.0" prefWidth="180.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="16.0" />
+         </customFont>
+      </ButtonControl>
+      <Text fill="WHITE" layoutX="77.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Переход Раст - Осн №1" textAlignment="CENTER" wrappingWidth="195.99996948242188">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor1_1" layoutX="76.0" layoutY="462.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="82.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №1 Контроль закрытия РК на растопочной линии, если РК открыт - автоматическое закрытие" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor1_2" layoutX="76.0" layoutY="516.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="82.0" layoutY="548.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №2 Открытие ПЗК на растопочной линии" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor1_3" layoutX="76.0" layoutY="570.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="82.0" layoutY="603.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №3 Открытие РК на растопочной линии до 50 %" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor1_4" layoutX="76.0" layoutY="624.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="82.0" layoutY="656.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №4 Прикрытие РК на основной линии до 50 %" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor1_5" layoutX="76.0" layoutY="678.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="82.0" layoutY="701.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №5 Контроль открытия РК растопочной линии до 50 % и прикрытия РК основной линии до 50 %" textAlignment="JUSTIFY" wrappingWidth="411.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor1_6" layoutX="76.0" layoutY="732.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="82.0" layoutY="756.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №6 Открытие РК растопочной линии и закрытие РК основной линии" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Розжиг ЗЗУ ВК-1" buttonOnText="Розжиг ЗЗУ ВК-1" diagramTitle="Розжиг ЗЗУ ВК-1.fxml" equipmentType="TRANSITION_BUTTON" kks="1" layoutX="1587.0" layoutY="1008.0" prefHeight="60.0" prefWidth="100.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="14.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Переход Раст-Осн" buttonOnText="Переход Раст-Осн" diagramTitle="Переход Раст-Осн ВК-1.fxml" equipmentType="TRANSITION_BUTTON" kks="1" layoutX="1807.0" layoutY="1008.0" prefHeight="60.0" prefWidth="100.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="14.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Вентиляция ВК-1" buttonOnText="Вентиляция ВК-1" diagramTitle="Вентиляция ВК-1.fxml" equipmentType="TRANSITION_BUTTON" kks="1" layoutX="1367.0" layoutY="1008.0" prefHeight="60.0" prefWidth="100.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="14.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Опрессовка" buttonOnText="Опрессовка" diagramTitle="ФГУ Опрессовка ВК-1.fxml" equipmentType="TRANSITION_BUTTON" kks="1" layoutX="1477.0" layoutY="1008.0" prefHeight="60.0" prefWidth="100.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="14.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Горелка №1" buttonOnText="Горелка №1" diagramTitle="Горелка №1 ВК-1.fxml" equipmentType="TRANSITION_BUTTON" kks="1" layoutX="356.0" layoutY="426.0" prefHeight="30.0" prefWidth="140.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="16.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <Text fill="WHITE" layoutX="880.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Условия пуска ЛП" textAlignment="CENTER" wrappingWidth="170.99996948242188">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ss:21hhg12aa031_weaf" layoutX="529.0" layoutY="265.0" maxValue="2.0" prefHeight="80.0" prefWidth="205.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="530.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПЗК на основной линии подачи газа к горелке №1 открыт" textAlignment="CENTER" wrappingWidth="205.0">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </Text>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Розжиг горелок" buttonOnText="Розжиг горелок" diagramTitle="Розжиг горелок ВК-1.fxml" equipmentType="TRANSITION_BUTTON" kks="1" layoutX="1697.0" layoutY="1008.0" prefHeight="60.0" prefWidth="100.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="14.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="СБРОС" buttonOnText="СБРОС" equipmentType="RETURN_BUTTON" kks="yp:mevk1swrs_or1" layoutX="272.0" layoutY="426.0" prefHeight="30.0" prefWidth="70.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="16.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Переход Осн - Раст" buttonOnText="Переход Осн - Раст" equipmentType="TEXT_BUTTON" kks="yp:mevk1sw_or2" layoutX="528.0" layoutY="426.0" prefHeight="30.0" prefWidth="180.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="16.0" />
+         </customFont>
+      </ButtonControl>
+      <Text fill="WHITE" layoutX="527.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Переход Раст - Осн №2" textAlignment="CENTER" wrappingWidth="195.99996948242188">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor2_1" layoutX="526.0" layoutY="462.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="532.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №1 Контроль закрытия РК на растопочной линии, если РК открыт - автоматическое закрытие" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor2_2" layoutX="526.0" layoutY="516.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="532.0" layoutY="548.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №2 Открытие ПЗК на растопочной линии" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor2_3" layoutX="526.0" layoutY="570.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="532.0" layoutY="603.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №3 Открытие РК на растопочной линии до 50 %" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor2_4" layoutX="526.0" layoutY="624.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="532.0" layoutY="656.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №4 Прикрытие РК на основной линии до 50 %" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor2_5" layoutX="526.0" layoutY="678.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="532.0" layoutY="701.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №5 Контроль открытия РК растопочной линии до 50 % и прикрытия РК основной линии до 50 %" textAlignment="JUSTIFY" wrappingWidth="411.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor2_6" layoutX="526.0" layoutY="732.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="532.0" layoutY="756.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №6 Открытие РК растопочной линии и закрытие РК основной линии" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Горелка №2" buttonOnText="Горелка №2" diagramTitle="Горелка №2 ВК-1.fxml" equipmentType="TRANSITION_BUTTON" kks="1" layoutX="806.0" layoutY="426.0" prefHeight="30.0" prefWidth="140.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="16.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ss:21hhg22aa031_weaf" layoutX="749.0" layoutY="265.0" maxValue="2.0" prefHeight="80.0" prefWidth="205.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="750.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПЗК на основной линии подачи газа к горелке №2 открыт" textAlignment="CENTER" wrappingWidth="205.0">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </Text>
+      <ButtonControl buttonOffText="СБРОС" buttonOnText="СБРОС" equipmentType="RETURN_BUTTON" kks="yp:mevk1swrs_or2" layoutX="722.0" layoutY="426.0" prefHeight="30.0" prefWidth="70.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="16.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ss:21hhg32aa031_weaf" layoutX="969.0" layoutY="265.0" maxValue="2.0" prefHeight="80.0" prefWidth="205.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="970.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПЗК на основной линии подачи газа к горелке №3 открыт" textAlignment="CENTER" wrappingWidth="205.0">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ss:21hhg42aa031_weaf" layoutX="1189.0" layoutY="265.0" maxValue="2.0" prefHeight="80.0" prefWidth="205.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="1190.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПЗК на основной линии подачи газа к горелке №4 открыт" textAlignment="CENTER" wrappingWidth="205.0">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </Text>
+      <ButtonControl buttonOffText="Переход Осн - Раст" buttonOnText="Переход Осн - Раст" equipmentType="TEXT_BUTTON" kks="yp:mevk1sw_or3" layoutX="978.0" layoutY="426.0" prefHeight="30.0" prefWidth="180.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="16.0" />
+         </customFont>
+      </ButtonControl>
+      <Text fill="WHITE" layoutX="977.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Переход Раст - Осн №3" textAlignment="CENTER" wrappingWidth="195.99996948242188">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor3_1" layoutX="976.0" layoutY="462.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="982.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №1 Контроль закрытия РК на растопочной линии, если РК открыт - автоматическое закрытие" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor3_2" layoutX="976.0" layoutY="516.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="982.0" layoutY="548.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №2 Открытие ПЗК на растопочной линии" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor3_3" layoutX="976.0" layoutY="570.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="982.0" layoutY="603.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №3 Открытие РК на растопочной линии до 50 %" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor3_4" layoutX="976.0" layoutY="624.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="982.0" layoutY="656.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №4 Прикрытие РК на основной линии до 50 %" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor3_5" layoutX="976.0" layoutY="678.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="982.0" layoutY="701.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №5 Контроль открытия РК растопочной линии до 50 % и прикрытия РК основной линии до 50 %" textAlignment="JUSTIFY" wrappingWidth="411.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor3_6" layoutX="976.0" layoutY="732.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="982.0" layoutY="756.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №6 Открытие РК растопочной линии и закрытие РК основной линии" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Горелка №3" buttonOnText="Горелка №3" diagramTitle="Горелка №3 ВК-1.fxml" equipmentType="TRANSITION_BUTTON" kks="1" layoutX="1256.0" layoutY="426.0" prefHeight="30.0" prefWidth="140.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="16.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="СБРОС" buttonOnText="СБРОС" equipmentType="RETURN_BUTTON" kks="yp:mevk1swrs_or3" layoutX="1172.0" layoutY="426.0" prefHeight="30.0" prefWidth="70.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="16.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Переход Осн - Раст" buttonOnText="Переход Осн - Раст" equipmentType="TEXT_BUTTON" kks="yp:mevk1sw_or4" layoutX="1428.0" layoutY="426.0" prefHeight="30.0" prefWidth="180.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="16.0" />
+         </customFont>
+      </ButtonControl>
+      <Text fill="WHITE" layoutX="1427.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Переход Раст - Осн №4" textAlignment="CENTER" wrappingWidth="195.99996948242188">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor4_1" layoutX="1426.0" layoutY="462.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="1432.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №1 Контроль закрытия РК на растопочной линии, если РК открыт - автоматическое закрытие" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor4_2" layoutX="1426.0" layoutY="516.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="1432.0" layoutY="548.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №2 Открытие ПЗК на растопочной линии" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor4_3" layoutX="1426.0" layoutY="570.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="1432.0" layoutY="603.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №3 Открытие РК на растопочной линии до 50 %" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor4_4" layoutX="1426.0" layoutY="624.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="1432.0" layoutY="656.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №4 Прикрытие РК на основной линии до 50 %" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor4_5" layoutX="1426.0" layoutY="678.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="1432.0" layoutY="701.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №5 Контроль открытия РК растопочной линии до 50 % и прикрытия РК основной линии до 50 %" textAlignment="JUSTIFY" wrappingWidth="411.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor4_6" layoutX="1426.0" layoutY="732.0" maxValue="2.0" prefHeight="50.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="1432.0" layoutY="756.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №6 Открытие РК растопочной линии и закрытие РК основной линии" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Горелка №4" buttonOnText="Горелка №4" diagramTitle="Горелка №4 ВК-1.fxml" equipmentType="TRANSITION_BUTTON" kks="1" layoutX="1706.0" layoutY="426.0" prefHeight="30.0" prefWidth="140.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="16.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="СБРОС" buttonOnText="СБРОС" equipmentType="RETURN_BUTTON" kks="yp:mevk1swrs_or4" layoutX="1622.0" layoutY="426.0" prefHeight="30.0" prefWidth="70.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="16.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="XMD" kks="21hha11cb001" layoutX="530.0" layoutY="165.0" prefHeight="80.0" prefWidth="205.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Text layoutX="571.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Факел №1 есть" textAlignment="JUSTIFY" wrappingWidth="128.5">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </Text>
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="XMD" kks="21hha21cb001" layoutX="750.0" layoutY="165.0" prefHeight="80.0" prefWidth="205.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Text layoutX="791.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Факел №2 есть" textAlignment="JUSTIFY" wrappingWidth="128.5">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </Text>
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="XMD" kks="21hha31cb001" layoutX="970.0" layoutY="165.0" prefHeight="80.0" prefWidth="205.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Text layoutX="1011.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Факел №3 есть" textAlignment="JUSTIFY" wrappingWidth="128.5">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </Text>
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="XMD" kks="21hha41cb001" layoutX="1190.0" layoutY="165.0" prefHeight="80.0" prefWidth="205.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Text layoutX="1231.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Факел №4 есть" textAlignment="JUSTIFY" wrappingWidth="128.5">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor1_7" layoutX="76.0" layoutY="786.0" maxValue="2.0" prefHeight="65.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="82.0" layoutY="806.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №7 Контроль открытия РК растопочной линии и закрытия РК основной линии. Закрытие ПЗК основной линии. ФГУ перехода завершено" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor2_7" layoutX="526.0" layoutY="786.0" maxValue="2.0" prefHeight="65.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="532.0" layoutY="806.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №7 Контроль открытия РК растопочной линии и закрытия РК основной линии. Закрытие ПЗК основной линии. ФГУ перехода завершено" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor3_7" layoutX="976.0" layoutY="786.0" maxValue="2.0" prefHeight="65.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="982.0" layoutY="806.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №7 Контроль открытия РК растопочной линии и закрытия РК основной линии. Закрытие ПЗК основной линии. ФГУ перехода завершено" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvk1swor4_7" layoutX="1426.0" layoutY="786.0" maxValue="2.0" prefHeight="65.0" prefWidth="420.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <Text layoutX="1432.0" layoutY="806.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шаг №7 Контроль открытия РК растопочной линии и закрытия РК основной линии. Закрытие ПЗК основной линии. ФГУ перехода завершено" textAlignment="JUSTIFY" wrappingWidth="417.4999237060547">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.ButtonControl?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.FunctionControl?>
+<?import ru.get.common.controls.InputControl?>
+<?import ru.get.common.controls.ValveControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Polygon fill="#1f93ff00" layoutX="1230.5" layoutY="181.0" points="391.8333740234375, 79.8333740234375, 529.8333740234375, 79.8333740234375, 529.8333740234375, 39.8333740234375, 391.8333740234375, 39.8333740234375" stroke="GREY" strokeType="INSIDE" styleClass="polygon-dashed_new_1" />
+      <Text fill="GREY" layoutX="72.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="АТМОСФЕРН." textAlignment="JUSTIFY" wrappingWidth="112.9765625">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="28.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОСНОВНЫЕ ДАННЫЕ" textAlignment="JUSTIFY" wrappingWidth="177.3828125">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="17.0" layoutY="603.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВЫХОДНАЯ МОЩНОСТЬ" textAlignment="JUSTIFY" wrappingWidth="206.0976562500001">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1666.0" layoutY="885.0" strokeType="OUTSIDE" strokeWidth="0.0" text="АВАР. ОТКЛ." textAlignment="JUSTIFY" wrappingWidth="105.33331298828136">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1667.0" layoutY="947.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLS/T" textAlignment="JUSTIFY" wrappingWidth="49.999999999999886">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1668.0" layoutY="1013.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПОДТВ. ПРИВ." textAlignment="JUSTIFY" wrappingWidth="119.99999999999989">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1703.0" layoutY="840.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПОДТВЕРДИТЬ" textAlignment="JUSTIFY" wrappingWidth="158.99999999999977">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Line endX="-18.0" endY="877.0" layoutX="271.0" layoutY="-62.0" startX="-18.0" startY="64.66665649414062" stroke="GREY" strokeWidth="3.0" />
+      <Line endX="-18.0" endY="1142.6666259765625" layoutX="20.0" layoutY="-63.0" startX="-18.0" startY="67.16670989990234" stroke="GREY" strokeWidth="3.0" />
+      <Line endX="-13.5" endY="44.0" layoutX="265.0" layoutY="-41.0" startX="-262.0" startY="44.0" stroke="GREY" strokeWidth="3.0" />
+      <Line endX="-13.5" endY="44.0" layoutX="265.0" layoutY="128.0" startX="-262.0" startY="44.0" stroke="GREY" strokeWidth="3.0" />
+      <Line endX="-14.5" endY="44.0" layoutX="266.0" layoutY="532.0" startX="-262.0" startY="44.0" stroke="GREY" strokeWidth="3.0" />
+      <Line endX="1651.0" endY="44.0" layoutX="266.0" layoutY="773.0" startX="-262.0" startY="44.0" stroke="GREY" strokeWidth="3.0" />
+      <Polygon fill="#cecece" layoutX="1243.0" layoutY="422.0" points="110.0, -19.0, 135.33331298828125, -19.0, 135.33331298828125, -55.0, 110.0, -55.0" stroke="GREY" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#cecece" layoutX="434.0" layoutY="422.0" points="110.0, -19.0, 135.33331298828125, -19.0, 135.33331298828125, -55.0, 110.0, -55.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#cecece" layoutX="799.0" layoutY="379.0" points="-39.5, 46.0, -39.5, -31.5, 44.0, -31.5, 44.0, 46.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#cecece" layoutX="696.0" layoutY="372.0" points="-94.5, 63.0, -94.5, -37.0, 50.0, -37.0, 67.0, -24.5, 67.0, 52.0, 50.0, 63.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#cecece" layoutX="663.0" layoutY="309.0" points="-61.0, 28.5, -40.5, 28.5, -40.5, -60.5, -61.0, -60.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#cecece" layoutX="663.0" layoutY="494.0" points="-61.0, 28.5, -40.5, 28.5, -40.5, -60.5, -61.0, -60.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#cecece" layoutX="693.0" layoutY="481.0" points="-59.5, 28.5, -40.5, 28.5, -40.5, -47.5, -59.5, -47.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#cecece" layoutX="693.0" layoutY="309.0" points="-59.5, 28.5, -40.5, 28.5, -40.5, -47.5, -59.5, -47.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#cecece" layoutX="724.0" layoutY="309.0" points="-59.5, 28.5, -40.5, 28.5, -40.5, -39.5, -59.5, -39.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#cecece" layoutX="755.0" layoutY="309.0" points="-59.5, 28.5, -40.5, 28.5, -40.5, -20.5, -59.5, -20.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#cecece" layoutX="787.0" layoutY="309.0" points="-59.5, 28.5, -40.5, 28.5, -40.5, -7.5, -59.5, -7.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#cecece" layoutX="724.0" layoutY="473.0" points="-59.5, 28.5, -40.5, 28.5, -40.5, -39.5, -59.5, -39.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#cecece" layoutX="755.0" layoutY="454.0" points="-59.5, 28.5, -40.5, 28.5, -40.5, -20.5, -59.5, -20.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#cecece" layoutX="787.0" layoutY="441.0" points="-59.5, 28.5, -40.5, 28.5, -40.5, -7.5, -59.5, -7.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#cecece" layoutX="485.0" layoutY="383.0" points="93.0, 34.0, 93.0, -27.0, 119.0, -27.0, 119.0, 34.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1246.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -98.0, 40.5, -98.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1246.0" layoutY="563.0" points="40.5, -55.5, 49.5, -55.5, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1232.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -97.5, 40.5, -97.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1232.0" layoutY="563.0" points="40.5, -56.0, 49.5, -56.0, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1218.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1218.0" layoutY="563.0" points="40.5, -58.0, 49.5, -58.0, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1203.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1203.0" layoutY="563.0" points="40.5, -57.5, 49.5, -57.5, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1189.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -95.0, 40.5, -95.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1189.0" layoutY="563.0" points="40.5, -59.0, 49.5, -59.0, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1175.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -93.5, 40.5, -93.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1175.0" layoutY="563.0" points="40.5, -59.0, 49.5, -59.0, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1161.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -92.5, 40.5, -92.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1161.0" layoutY="563.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1144.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -91.5, 40.5, -91.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1144.0" layoutY="563.0" points="40.5, -63.5, 49.5, -63.5, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1130.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -90.5, 40.5, -90.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1130.0" layoutY="563.0" points="40.5, -64.0, 49.5, -64.0, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1114.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -88.5, 40.5, -88.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1114.0" layoutY="563.0" points="40.5, -67.5, 49.5, -67.5, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1101.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -89.5, 40.5, -89.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1101.0" layoutY="563.0" points="40.5, -65.5, 49.5, -65.5, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1087.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -86.5, 40.5, -86.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1087.0" layoutY="563.0" points="40.5, -66.5, 49.5, -66.5, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1073.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -86.5, 40.5, -86.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1073.0" layoutY="563.0" points="40.5, -67.5, 49.5, -67.5, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1059.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -84.0, 40.5, -84.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1059.0" layoutY="563.0" points="40.5, -70.5, 49.5, -70.5, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1045.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -83.0, 40.5, -83.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1045.0" layoutY="563.0" points="40.5, -71.0, 49.5, -71.0, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1031.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -81.5, 40.5, -81.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1031.0" layoutY="563.0" points="40.5, -73.5, 49.5, -73.5, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1017.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -80.0, 40.5, -80.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1017.0" layoutY="563.0" points="40.5, -75.0, 49.5, -75.0, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1003.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -79.0, 40.5, -79.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="1003.0" layoutY="563.0" points="40.5, -75.0, 49.5, -75.0, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="989.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -77.0, 40.5, -77.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="989.0" layoutY="563.0" points="40.5, -77.5, 49.5, -77.5, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="972.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -74.0, 40.5, -74.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="958.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -75.0, 40.5, -75.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="958.0" layoutY="563.0" points="40.5, -78.5, 49.5, -78.5, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="944.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -75.0, 40.5, -75.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="944.0" layoutY="563.0" points="40.5, -80.5, 49.5, -80.5, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="930.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -72.5, 40.5, -72.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="930.0" layoutY="563.0" points="40.5, -81.0, 49.5, -81.0, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="916.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -72.0, 40.5, -72.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="916.0" layoutY="563.0" points="40.5, -81.5, 49.5, -81.5, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="902.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -72.5, 40.5, -72.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="902.0" layoutY="563.0" points="40.5, -83.0, 49.5, -83.0, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="888.0" layoutY="364.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -70.5, 40.5, -70.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="888.0" layoutY="563.0" points="40.5, -83.0, 49.5, -83.0, 49.5, -96.0, 40.5, -96.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#808080" layoutX="1147.0" layoutY="292.0" points="-72.0, -11.666656494140625, -60.3333740234375, -11.666656494140625, -48.0, -55.66667175292969, -59.0, -55.66667175292969" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="1138.0" layoutY="281.0" points="-117.66668701171875, 2.333343505859375, -117.66668701171875, 9.666656494140625, 15.0, -3.0, 15.0, -13.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="1213.0" layoutY="197.0" points="-256.66668701171875, 82.0, -247.33331298828125, 82.0, -221.33331298828125, 42.0, 80.0, 42.0, 107.3333740234375, 61.333343505859375, 116.6666259765625, 57.333343505859375, 80.0, 32.66667175292969, -225.33331298828125, 32.66667175292969" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="1015.0" layoutY="268.0" points="-55.33331298828125, 22.416656494140625, -48.75, 22.416656494140625, -48.75, 9.0, -132.33331298828125, 9.0, -132.33331298828125, 16.333343505859375, -55.33331298828125, 16.333343505859375" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="1370.0" layoutY="321.0" points="-67.0, -19.0, -48.0, -19.0, -48.0, -55.66667175292969, -67.0, -55.666656494140625" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="1406.0" layoutY="386.0" points="-82.6666259765625, -30.333343505859375, -62.6666259765625, -30.333343505859375, -62.6666259765625, -71.66667175292969, 62.0, -88.33332824707031, 62.0, -102.33332824707031, -82.6666259765625, -81.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="967.0" layoutY="295.0" points="-78.0, -21.0, -70.5, -21.0, -70.5, -47.5, -78.0, -47.5, -78.0, -38.0, -101.0, -38.0, -115.5, -42.0, -115.5, -25.0, -101.0, -29.5, -78.0, -29.5" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="852.0" layoutY="417.0" points="-81.66668701171875, -71.5, -4.0, -71.5, 6.0, -80.0, -81.66668701171875, -80.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="583.0" layoutY="416.0" points="-69.0, -71.33334350585938, 7.0, -71.33334350585938, 7.0, -59.5, 19.0, -59.5, 19.0, -82.66665649414062, -69.0, -82.66665649414062" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#cecece" layoutX="425.0" layoutY="406.0" points="104.0, -7.0, 177.33331298828125, -7.0, 177.33331298828125, -35.666656494140625, 104.0, -35.666656494140625" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#cecece" layoutX="393.0" layoutY="429.0" points="110.0, -19.0, 137.33334350585938, -19.0, 137.33334350585938, -70.66665649414062, 110.0, -70.66665649414062" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#cecece" layoutX="1225.0" layoutY="382.0" points="93.0, 34.0, 93.0, -27.0, 119.0, -27.0, 119.0, 34.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#cecece" layoutX="1215.0" layoutY="406.0" points="104.0, -7.0, 242.6666259765625, -7.0, 242.6666259765625, -35.666656494140625, 104.0, -35.666656494140625" stroke="GREY" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#cecece" layoutX="1350.0" layoutY="432.0" points="106.6666259765625, -19.0, 134.3333740234375, -19.0, 134.3333740234375, -72.5, 106.6666259765625, -72.5" stroke="GREY" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#cecece" layoutX="1287.0" layoutY="388.0" points="110.0, 46.833343505859375, 130.0, 46.833343505859375, 130.0, -55.0, 110.0, -55.0" stroke="GREY" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#cecece" layoutX="1298.0" layoutY="401.0" points="122.6666259765625, -34.166656494140625, 130.0, -34.166656494140625, 130.0, -55.0, 122.6666259765625, -55.0" stroke="GREY" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#cecece" layoutX="1263.0" layoutY="401.0" points="122.6666259765625, -34.166656494140625, 130.0, -34.166656494140625, 130.0, -55.0, 122.6666259765625, -55.0" stroke="GREY" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#cecece" layoutX="1299.0" layoutY="456.0" points="122.6666259765625, -34.166656494140625, 130.0, -34.166656494140625, 130.0, -55.0, 122.6666259765625, -55.0" stroke="GREY" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#cecece" layoutX="1264.0" layoutY="456.0" points="122.6666259765625, -34.166656494140625, 130.0, -34.166656494140625, 130.0, -55.0, 122.6666259765625, -55.0" stroke="GREY" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="968.0" layoutY="545.0" points="-78.0, -21.0, -70.5, -21.0, -70.5, -47.5, -78.0, -47.5, -78.0, -38.0, -101.0, -38.0, -115.5, -42.0, -115.5, -25.0, -101.0, -29.5, -78.0, -29.5" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="1405.0" layoutY="496.0" points="-82.6666259765625, -31.333343505859375, 62.0, -14.0, 62.0, -27.0, -62.6666259765625, -43.0, -62.6666259765625, -81.0, -82.6666259765625, -81.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="1133.0" layoutY="548.0" points="-43.6666259765625, -11.66668701171875, -34.3333740234375, -11.66668701171875, -48.0, -55.66667175292969, -58.33331298828125, -55.666656494140625" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="1144.0" layoutY="524.0" points="-123.5, -45.0, -123.5, -35.5, 9.5, -21.66668701171875, 9.5, -32.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="852.0" layoutY="506.0" points="-80.33331298828125, -71.5, 1.66668701171875, -71.5, -7.5, -80.0, -80.33331298828125, -80.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="876.0" layoutY="559.0" points="-105.0, -133.0, -123.0, -120.0, -62.33331298828125, -61.0, -17.66668701171875, -61.0, -17.66668701171875, -69.66665649414062, -54.33331298828125, -69.66665649414062, -105.0, -120.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="860.0" layoutY="591.0" points="-267.0, -42.66668701171875, -241.0, -42.66668701171875, -102.33331298828125, -108.66665649414062, -47.66668701171875, -56.0, -1.0, -56.0, -1.0, -67.0, -43.0, -67.0, -97.66668701171875, -123.33334350585938" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="583.0" layoutY="512.0" points="-69.0, -71.33334350585938, 19.33331298828125, -71.33334350585938, 19.33331298828125, -96.66665649414062, 8.0, -96.66665649414062, 8.0, -82.66665649414062, -69.0, -82.66665649414062" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="1323.0" layoutY="286.0" points="-157.6666259765625, -18.666656494140625, -157.6666259765625, -9.666656494140625, 2.0, -18.666656494140625, 146.6666259765625, -79.66667175292969, 146.6666259765625, -91.33332824707031, -2.0, -28.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="1149.0" layoutY="292.0" points="-226.33331298828125, -0.333343505859375, -226.33331298828125, 5.666656494140625, -136.16668701171875, -0.333343505859375, -136.16668701171875, -7.833343505859375" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="1014.0" layoutY="479.0" points="-47.0, 3.333343505859375, -54.33331298828125, 3.333343505859375, -54.33331298828125, 9.0, -130.33331298828125, 9.0, -130.33331298828125, 16.333343505859375, -47.0, 16.333343505859375" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="1149.0" layoutY="488.0" points="-226.33331298828125, -13.666656494140625, -226.33331298828125, -7.833343505859375, -136.16668701171875, -0.333343505859375, -136.16668701171875, -7.833343505859375" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#cecece" layoutX="978.0" layoutY="385.0" points="-137.5, 39.5, -137.5, -37.0, -84.5, -85.0, -84.5, 84.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#c7e6c7" layoutX="972.0" layoutY="541.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -74.0, 40.5, -74.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#cecece" layoutX="1177.0" layoutY="381.0" points="-284.5, 87.5, 142.5, 87.5, 142.5, -80.0, -284.5, -80.0" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#808080" layoutX="1369.0" layoutY="524.0" points="-67.0, -19.0, -48.0, -19.0, -48.0, -55.66667175292969, -67.0, -55.666656494140625" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="1316.0" layoutY="647.0" points="-148.3333740234375, -154.0, -148.3333740234375, -143.33331298828125, 3.0, -135.33331298828125, 146.6666259765625, -78.66668701171875, 146.6666259765625, -91.33332824707031, 8.3333740234375, -143.33331298828125" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon layoutX="1427.0" layoutY="474.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -114.0, 40.5, -114.0" stroke="WHITE" strokeType="INSIDE" />
+      <Polygon layoutX="472.0" layoutY="472.0" points="40.5, -62.0, 49.5, -62.0, 49.5, -114.0, 40.5, -114.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="#cecece" layoutX="1522.0" layoutY="384.0" radius="38.0" stroke="GREY" strokeType="INSIDE" />
+      <Circle fill="GREY" layoutX="1522.0" layoutY="384.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text fill="WHITE" layoutX="1515.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G" wrappingWidth="13.499999999999943">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="-135.0" endY="88.0" layoutX="1152.0" layoutY="522.0" startX="-230.66668701171875" startY="-26.0" stroke="GREY" styleClass="line-dashed_new_6" />
+      <Text fill="GREY" layoutX="336.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПУЛЬСАЦИЯ" wrappingWidth="105.46875">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="398.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Т ТОРЦ." wrappingWidth="64.57031249999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="364.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПОВЕРХ РОТОРА" textAlignment="JUSTIFY" wrappingWidth="138.66668701171875">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="359.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ДАВЛ. ВЫХЛ." textAlignment="JUSTIFY" wrappingWidth="115.9765625">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1500.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПРЕДУПРЕЖД." textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1502.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОБ ОБЛЕД." textAlignment="JUSTIFY" wrappingWidth="98.1666259765625">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1644.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПЕРЕПАД Р" textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1644.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВОЗДУХОЗАБ." textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1853.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВОЗДУХ" wrappingWidth="70.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1830.0" layoutY="731.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТОПЛ. ГАЗ" wrappingWidth="82.66668701171886">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Line endX="-18.0" endY="45.5" layoutX="939.5" layoutY="230.0" startX="-18.0" startY="-26.166671752929688" stroke="GREY" strokeWidth="5.0" />
+      <Line endX="-18.0" endY="58.5" layoutX="939.5" layoutY="118.0" startX="-18.0" startY="16.0" stroke="GREY" strokeWidth="5.0" />
+      <Line endX="-18.0" endY="45.5" layoutX="1009.0" layoutY="185.0" startX="-18.0" startY="20.833328247070312" stroke="GREY" strokeWidth="5.0" />
+      <Line endX="-18.0" endY="55.5" layoutX="1008.0" layoutY="118.0" startX="-18.0" startY="28.5" stroke="GREY" strokeWidth="5.0" />
+      <Line endX="306.0" endY="17.5" layoutX="1019.0" layoutY="126.0" startX="-29.0" startY="18.0" stroke="GREY" strokeWidth="5.0" />
+      <Line endX="-18.0" endY="45.5" layoutX="1195.5" layoutY="188.0" startX="-18.0" startY="15.166671752929688" stroke="GREY" strokeWidth="5.0" />
+      <Line endX="-18.0" endY="57.5" layoutX="1195.5" layoutY="118.0" startX="-18.0" startY="28.5" stroke="GREY" strokeWidth="5.0" />
+      <Line endX="-18.0" endY="45.5" layoutX="1297.5" layoutY="186.0" startX="-18.0" startY="14.5" stroke="GREY" strokeWidth="5.0" />
+      <Line endX="-18.0" endY="58.5" layoutX="1297.5" layoutY="118.0" startX="-18.0" startY="28.5" stroke="GREY" strokeWidth="5.0" />
+      <Line endX="-18.0" endY="313.5" layoutX="1614.5" layoutY="198.0" startX="-18.0" startY="64.66665649414062" stroke="GREY" strokeWidth="3.0" />
+      <Line endX="-41.8333740234375" endY="44.0" layoutX="1638.5" layoutY="468.0" startX="-180.5" startY="44.0" stroke="GREY" strokeWidth="3.0" />
+      <Line endX="349.3333740234375" endY="17.5" layoutX="1460.0" layoutY="708.0" startX="-556.0" startY="17.5" stroke="GREY" strokeWidth="5.0" />
+      <Line endX="-18.0" endY="45.5" layoutX="921.0" layoutY="680.0" startX="-18.0" startY="-182.0" stroke="GREY" strokeWidth="5.0" />
+      <Line endX="208.3333740234375" endY="197.33331298828125" layoutX="1153.0" layoutY="418.0" startX="166.0" startY="95.5" stroke="GREY" styleClass="line-dashed_new_6" />
+      <Line endX="406.0" endY="181.0" layoutX="1167.0" layoutY="428.0" startX="155.6666259765625" startY="55.333343505859375" stroke="GREY" styleClass="line-dashed_new_6" />
+      <Line endX="-247.66668701171875" endY="75.33331298828125" layoutX="981.0" layoutY="532.0" startX="-225.66668701171875" startY="-49.333343505859375" stroke="GREY" styleClass="line-dashed_new_6" />
+      <Line endX="-276.33331298828125" endY="78.33331298828125" layoutX="819.0" layoutY="529.0" startX="-225.66668701171875" startY="-49.333343505859375" stroke="GREY" styleClass="line-dashed_new_6" />
+      <Line endX="-389.0" endY="-87.0" layoutX="829.0" layoutY="539.0" startX="-271.0" startY="-41.666656494140625" stroke="GREY" styleClass="line-dashed_new_6" />
+      <Line endX="-384.0" endY="-86.0" layoutX="844.0" layoutY="373.0" startX="-271.0" startY="-41.666656494140625" stroke="GREY" styleClass="line-dashed_new_6" />
+      <Line endX="-394.0" endY="-108.0" layoutX="870.0" layoutY="240.0" startX="-61.33331298828125" startY="58.666656494140625" stroke="GREY" styleClass="line-dashed_new_6" />
+      <Polygon fill="#808080" layoutX="896.0" layoutY="680.0" points="15.0, -211.0, -57.0, -211.0, -57.0, -203.66665649414062, -18.33331298828125, -203.66665649414062, -18.33331298828125, -150.33331298828125, -51.0, -135.0, -381.5, -135.0, -381.5, -125.0, -47.0, -125.0, -9.0, -145.0, -9.0, -203.66665649414062, 15.0, -203.66665649414062" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="1219.0" layoutY="499.0" points="-252.66668701171875, -7.0, -261.33331298828125, -7.0, -230.0, 42.0, 70.6666259765625, 42.0, 110.6666259765625, 17.66668701171875, 100.6666259765625, 13.66668701171875, 70.6666259765625, 32.66668701171875, -225.33331298828125, 32.66667175292969" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="876.0" layoutY="344.0" points="-107.0, 1.0, -107.0, -11.666656494140625, -58.33331298828125, -61.0, -17.66668701171875, -61.0, -17.66668701171875, -69.66665649414062, -65.0, -69.66665649414062, -123.0, -11.666656494140625" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="860.0" layoutY="304.0" points="-244.5, -80.5, -267.5, -80.5, -99.0, -1.5, -44.0, -56.0, -1.0, -56.0, -1.0, -67.0, -49.0, -67.0, -102.0, -14.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Polygon fill="#808080" layoutX="896.0" layoutY="350.0" points="-57.0, -50.0, 14.0, -50.0, 14.0, -57.5, -10.5, -57.5, -10.5, -117.5, -48.0, -135.0, -381.5, -135.0, -381.5, -126.5, -48.0, -126.5, -19.5, -113.0, -19.5, -57.5, -57.0, -57.5" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5" />
+      <Line endX="276.6666259765625" endY="44.0" layoutX="1554.0" layoutY="217.0" startX="-96.5" startY="44.0" stroke="GREY" strokeWidth="3.0" />
+      <Line endX="-18.0" endY="327.0" layoutX="1662.0" layoutY="753.0" startX="-18.0" startY="64.66665649414062" stroke="GREY" strokeWidth="3.0" />
+      <Line endX="-18.0" endY="326.0" layoutX="1430.0" layoutY="754.0" startX="-18.0" startY="64.66665649414062" stroke="GREY" strokeWidth="3.0" />
+      <Line endX="-18.0" endY="327.0" layoutX="1038.0" layoutY="753.0" startX="-18.0" startY="64.66665649414062" stroke="GREY" strokeWidth="3.0" />
+      <Line endX="-18.0" endY="227.8333740234375" layoutX="770.0" layoutY="753.0" startX="-18.0" startY="64.66665649414062" stroke="GREY" strokeWidth="3.0" />
+      <Line endX="-18.0" endY="327.0" layoutX="502.0" layoutY="753.0" startX="-18.0" startY="64.66665649414062" stroke="GREY" strokeWidth="3.0" />
+      <Line endX="-18.0" endY="194.0" layoutX="262.0" layoutY="753.0" startX="-18.0" startY="64.66665649414062" stroke="GREY" strokeWidth="3.0" />
+      <Line endX="-267.6666564941406" endY="134.50006103515625" layoutX="270.0" layoutY="813.0" startX="213.66665649414062" startY="134.50006103515625" stroke="GREY" strokeWidth="3.0" />
+      <Line endX="-267.6666564941406" endY="134.50006103515625" layoutX="752.0" layoutY="762.0" startX="267.0" startY="134.50006103515625" stroke="GREY" strokeWidth="4.0" />
+      <Line endX="-267.6666564941406" endY="134.50006103515625" layoutX="753.0" layoutY="847.0" startX="267.0" startY="134.50006103515625" stroke="GREY" strokeWidth="4.0" />
+      <Line endX="-18.0" endY="327.0" layoutX="1935.0" layoutY="753.0" startX="-18.0" startY="64.66665649414062" stroke="GREY" strokeWidth="3.0" />
+      <Text fill="GREY" layoutX="1176.0" layoutY="841.0" strokeType="OUTSIDE" strokeWidth="0.0" text="СТАТУС ГТ" wrappingWidth="110.9765625">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="783.0" layoutY="840.0" strokeType="OUTSIDE" strokeWidth="0.0" text="УСТАВКА НАПР. ГЕН." textAlignment="JUSTIFY" wrappingWidth="218.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="521.0" layoutY="840.0" strokeType="OUTSIDE" strokeWidth="0.0" text="УСТАВКА НАГРУЗКИ" textAlignment="JUSTIFY" wrappingWidth="211.46875">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="187.0" layoutY="971.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РЕЖИМ ГТ" wrappingWidth="110.9765625">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="8.0" layoutY="841.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ГЛАВ. ПОСЛ. ГТ" textAlignment="JUSTIFY" wrappingWidth="166.68750000000023">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="259.0" layoutY="862.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ГТ ГОТОВА" textAlignment="JUSTIFY" wrappingWidth="105.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="508.0" layoutY="922.0" strokeType="OUTSIDE" strokeWidth="0.0" text="УСТАВКА ЧАСТ. ВРАЩ." textAlignment="JUSTIFY" wrappingWidth="235.95703125000023">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="775.0" layoutY="922.0" strokeType="OUTSIDE" strokeWidth="0.0" text="УСТАВКА РЕАКТ. НАПР." textAlignment="JUSTIFY" wrappingWidth="241.95703125">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1047.0" layoutY="897.0" strokeType="OUTSIDE" strokeWidth="0.0" text="УПРАВЛ. ПУСКОМ" wrappingWidth="150.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1047.0" layoutY="927.0" strokeType="OUTSIDE" strokeWidth="0.0" text="УПРАВЛ. ОБОРОТ./НАГРУЗКОЙ" textAlignment="JUSTIFY" wrappingWidth="259.7475738525393">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1047.0" layoutY="957.0" strokeType="OUTSIDE" strokeWidth="0.0" text="УПРАВЛ. ТЕМП." wrappingWidth="129.99999999999977">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1048.0" layoutY="991.0" strokeType="OUTSIDE" strokeWidth="0.0" text="БАЗОВАЯ НАГРУЗКА" wrappingWidth="171.3828125">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1049.0" layoutY="1020.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОТЛОЖ. ОСТАНОВ. ЗАПРОС" textAlignment="JUSTIFY" wrappingWidth="236.50000000000003">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="3.0" layoutY="997.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ХОЛОСТОЙ ХОД" wrappingWidth="119.4141845703125">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="3.0" layoutY="1020.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПРИНУД." wrappingWidth="70.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="4.0" layoutY="1037.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОХЛАЖД." wrappingWidth="73.33331298828125">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="85.0" layoutY="1062.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РУ" wrappingWidth="23.41421508789051">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="150.0" layoutY="1028.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РАЗРЕШ." textAlignment="JUSTIFY" wrappingWidth="66.5703125">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="248.0" layoutY="1002.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЧХ" wrappingWidth="24.351562500000114">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="248.0" layoutY="1029.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЧУВСТВ. ДБ" wrappingWidth="86.15624999999977">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="248.0" layoutY="1058.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МАКС. НАГР." wrappingWidth="95.9765625">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="367.0" layoutY="999.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РАЗРЕШ." wrappingWidth="70.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="367.0" layoutY="1028.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЧУВСТВ. БН" textAlignment="JUSTIFY" wrappingWidth="94.16662597656273">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="369.0" layoutY="1058.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ДОСТИГН." textAlignment="JUSTIFY" wrappingWidth="86.15624999999977">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Circle fx:id="yx11cjp00ea122_xl81" fill="#c7e6c7" layoutX="229.0" layoutY="1020.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="yx11cjp00ea000_xu01" fill="#c7e6c7" layoutX="372.0" layoutY="856.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="yx11mby15ds001_xl81" fill="#c7e6c7" layoutX="471.0" layoutY="991.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="yx11mby15ds002_xl91" fill="#c7e6c7" layoutX="471.0" layoutY="1021.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="yx11mby99dt001_xu01" fill="#c7e6c7" layoutX="471.0" layoutY="1050.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="yxmby10du003_xu01" fill="#c7e6c7" layoutX="1383.0" layoutY="886.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="yx11mby10du001_xu01" fill="#c7e6c7" layoutX="1383.0" layoutY="916.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="yxmby10du002_xu01" fill="#c7e6c7" layoutX="1384.0" layoutY="949.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="yxmby10dt000_xu03" fill="#c7e6c7" layoutX="1384.0" layoutY="980.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="yx11mbx00ew901_xs01" fill="#c7e6c7" layoutX="1385.0" layoutY="1010.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="yxmya41ea000" layoutX="1866.0" layoutY="862.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="32.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="REM ACKNOWLEDGE TRIP" />
+         </tooltip>
+      </Button>
+      <Button fx:id="yxmya31ea000" layoutX="1867.0" layoutY="921.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="32.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="REW ACKN PLS/PLST" />
+         </tooltip>
+      </Button>
+      <Button fx:id="yxmya51ea000" layoutX="1868.0" layoutY="989.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="32.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="REM ACKNOWLEDGE DRIVE" />
+         </tooltip>
+      </Button>
+      <Button layoutX="396.0" layoutY="843.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="68.0" text="РАЗРЕШ." />
+      <Polygon fx:id="yxcjp00ea001" fill="#1f93ff00" layoutX="56.0" layoutY="916.0" points="-44.0, -32.5, -25.5, -32.5, -31.0, -46.0, -25.5, -59.0, -44.0, -59.0, -37.5, -46.0" stroke="GREY" strokeType="INSIDE" />
+      <Button fx:id="yxmby15ds001_xu01" layoutX="334.0" layoutY="978.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="32.0" scaleX="0.8" scaleY="0.8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="FREQ RESP SEL" />
+         </tooltip>
+      </Button>
+      <Button fx:id="yxmby15ds002_xu01" layoutX="334.0" layoutY="1005.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="32.0" scaleX="0.8" scaleY="0.8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="SENS DB" />
+         </tooltip>
+      </Button>
+      <Button fx:id="yxmby99dt001" layoutX="334.0" layoutY="1034.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="32.0" scaleX="0.8" scaleY="0.8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="REN MCL" />
+         </tooltip>
+      </Button>
+      <Button fx:id="yxcjp00ea120" layoutX="117.0" layoutY="975.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="32.0" scaleX="0.8" scaleY="0.8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="REM PB IDLE OP SEL" />
+         </tooltip>
+      </Button>
+      <Button fx:id="yxcjp00ea122" layoutX="117.0" layoutY="1005.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="32.0" scaleX="0.8" scaleY="0.8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="REM PB FAST CLING SEL" />
+         </tooltip>
+      </Button>
+      <Button fx:id="yx11cjp10ea000_xa01" layoutX="117.0" layoutY="1037.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="32.0" scaleX="0.8" scaleY="0.8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="AGC GT RELEASE" />
+         </tooltip>
+      </Button>
+      <Polygon fill="LIME" layoutX="342.0" layoutY="783.0" points="-136.5, 102.0, -106.0, 102.0, -106.0, 71.5, -136.5, 71.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon layoutX="313.0" layoutY="783.0" points="-136.5, 102.0, -106.0, 102.0, -106.0, 71.5, -136.5, 71.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="LIME" layoutX="217.0" layoutY="783.0" points="-136.5, 102.0, -106.0, 102.0, -106.0, 71.5, -136.5, 71.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon layoutX="188.0" layoutY="783.0" points="-136.5, 102.0, -106.0, 102.0, -106.0, 71.5, -136.5, 71.5" stroke="GREY" strokeType="INSIDE" strokeWidth="2.0" />
+      <ValveControl equipmentType="MOV" kks="11MBA81AA021" layoutX="965.0" layoutY="178.0" orientation="VERTICAL" prefHeight="25.0" prefWidth="50.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="11MBA81AA012" layoutX="1152.0" layoutY="178.0" orientation="VERTICAL" prefHeight="25.0" prefWidth="50.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="11MBA81AA011" layoutX="1254.0" layoutY="178.0" orientation="VERTICAL" prefHeight="25.0" prefWidth="50.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="11MBA81AA031" layoutX="896.0" layoutY="178.0" orientation="VERTICAL" prefHeight="25.0" prefWidth="50.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <DetectorControl kks="11MBL01CT001" layoutX="5.0" layoutY="36.0" maxValue="200.0" param="ТЕМП.                   " prefHeight="30.0" prefWidth="215.0" system="WP" unit="°C ">
+         <tooltip>
+            <Tooltip text="Температура окружающего воздуха" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBL01CM001" layoutX="4.0" layoutY="86.0" maxValue="100.0" param="ВЛАЖНОСТЬ       " prefHeight="30.0" prefWidth="214.0" system="GT" unit="\%">
+         <tooltip>
+            <Tooltip text="Влажность окружающего воздуха" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBL01CP001" layoutX="5.0" layoutY="136.0" maxValue="1100.0" minValue="600.0" param="ДАВЛЕНИЕ        " prefHeight="30.0" prefWidth="212.0" system="GT" unit="мбар">
+         <tooltip>
+            <Tooltip text="Давление окружающего воздуха" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MKA10CE606" layoutX="5.0" layoutY="698.0" maxValue="210.0" minValue="-95.5" param="РЕАКТ. МОЩН.   " prefHeight="30.0" prefWidth="215.0" system="ED" unit="МВАр">
+         <tooltip>
+            <Tooltip text="Реактивная мощность генератора" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBA30CS901" layoutX="4.0" layoutY="215.0" maxValue="3333.0" param="ЧАСТ. ВРАЩ.    " prefHeight="30.0" prefWidth="215.0" system="TU" unit="об/мин">
+         <tooltip>
+            <Tooltip text="Скорость ГТ" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBA82CG901_XJ60" layoutX="4.0" layoutY="260.0" maxValue="10.0" minValue="-80.0" param="ПЛВНА                " prefHeight="30.0" prefWidth="215.0" system="GT" unit="град">
+         <tooltip>
+            <Tooltip text="Полож. ПЛВНА, сред." />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBA80CT901_XJ60" layoutX="5.0" layoutY="305.0" maxValue="600.0" minValue="-20.0" param="ТК2                       " prefHeight="30.0" prefWidth="212.0" system="GT" unit="°C ">
+         <tooltip>
+            <Tooltip text="Температура на выходе компрессора" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBA80CP911_XJ60" layoutX="5.0" layoutY="350.0" maxValue="20.0" param="РК2                         " prefHeight="30.0" prefWidth="215.0" system="GT" unit="бар">
+         <tooltip>
+            <Tooltip text="Давление на выходе компрессора" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBM30AX010A_XJ60" layoutX="5.0" layoutY="395.0" maxValue="200.0" param="ПУЛЬС. НИЗК.    " prefHeight="30.0" prefWidth="215.0" system="GT" unit="мбар">
+         <tooltip>
+            <Tooltip text="Pulsation mon low" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBM30AX010B_XJ60" layoutX="5.0" layoutY="440.0" maxValue="1100.0" minValue="600.0" param="ПУЛЬС. ВЫС.    " prefHeight="30.0" prefWidth="213.0" system="GT" unit="мбар">
+         <tooltip>
+            <Tooltip text="Pulsation mon high" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBY99CT911_XJ60" layoutX="5.0" layoutY="485.0" maxValue="1200.0" param="TIT                      " prefHeight="30.0" prefWidth="209.0" system="GT" unit="°C ">
+         <tooltip>
+            <Tooltip text="TIT ACT VAL" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBA30CT911_XJ60" layoutX="5.0" layoutY="530.0" maxValue="700.0" param="ТАТ                       " prefHeight="30.0" prefWidth="213.0" system="GT" unit="°C ">
+         <tooltip>
+            <Tooltip text="Т выхлопных газов" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MKA10CE901" layoutX="4.0" layoutY="658.0" maxValue="200.0" param="АКТ. МОЩН.       " prefHeight="30.0" prefWidth="215.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Активная мощность генератора" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBY99EA006" layoutX="4.0" layoutY="618.0" maxValue="100.0" param="ОТН. МОЩН.      " prefHeight="30.0" prefWidth="215.0" system="GT" unit="\%">
+         <tooltip>
+            <Tooltip text="Относительная мощность" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MKA10CE907" layoutX="5.0" layoutY="738.0" minValue="-1.0" param="COS PHI                    " prefHeight="30.0" prefWidth="215.0" system="ED" unit="- ">
+         <tooltip>
+            <Tooltip text="GEN COS PHI" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MKA10CE103" layoutX="5.0" layoutY="778.0" maxValue="55.0" minValue="45.0" param="ЧАСТОТА               " prefHeight="30.0" prefWidth="215.0" system="ED" unit="Гц">
+         <tooltip>
+            <Tooltip text="Частота генератора" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBM30AX010B" layoutX="337.0" layoutY="117.0" maxValue="1100.0" minValue="600.0" param="ВЫСОКАЯ" prefHeight="28.0" prefWidth="150.0" system="GT" unit="мбар">
+         <tooltip>
+            <Tooltip text="PULSATION MON HIGH" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBM30AX010A" layoutX="337.0" layoutY="86.0" maxValue="200.0" param="НИЗКАЯ     " prefHeight="28.0" prefWidth="150.0" system="GT" unit="мбар">
+         <tooltip>
+            <Tooltip text="PULSATION MON LOW" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="11MBA30CT009" layoutX="418.0" layoutY="269.0" maxValue="250.0" param="T" prefHeight="28.0" prefWidth="80.0" system="GT">
+         <tooltip>
+            <Tooltip text="ТЕМПЕРАТУРА, ПОВЕРХНОСТЬ РОТОРА, С-А" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="11MBL30CP004_XQ60" layoutX="1644.0" layoutY="225.0" maxValue="3000.0" param="P" prefHeight="28.0" prefWidth="80.0" system="GT" unit="Па">
+         <tooltip>
+            <Tooltip text="P AIR INTK CALC" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="11MBA30CP911" layoutX="403.0" layoutY="433.0" maxValue="1.3" param="P" prefHeight="28.0" prefWidth="80.0" system="GT" unit="бар">
+         <tooltip>
+            <Tooltip text="P EXH DIFFUSOR AV" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="11MBA30CT911" layoutX="496.0" layoutY="606.0" maxValue="700.0" param="ТАТ" prefHeight="28.0" prefWidth="95.0" system="GT" unit="°C ">
+         <tooltip>
+            <Tooltip text="Т выхлопных газов" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBY99CT911" layoutX="675.0" layoutY="607.0" maxValue="1200.0" param="TIT" prefHeight="28.0" prefWidth="95.0" system="GT" unit="°C ">
+         <tooltip>
+            <Tooltip text="TIT ACT VAL" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBA80CT901" layoutX="966.0" layoutY="608.0" maxValue="600.0" minValue="-20.0" param="TK2" prefHeight="28.0" prefWidth="90.0" system="GT" unit="°C ">
+         <tooltip>
+            <Tooltip text="Температура на выходе компрессора" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBA80CP911" layoutX="965.0" layoutY="634.0" maxValue="20.0" param="PK2" prefHeight="28.0" prefWidth="100.0" system="GT" unit="бар">
+         <tooltip>
+            <Tooltip text="Давление на выходе компрессора" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBP05CT010" layoutX="967.0" layoutY="695.0" maxValue="100.0" minValue="15.0" param="T" prefHeight="28.0" prefWidth="80.0" system="GT">
+         <tooltip>
+            <Tooltip text="ТЕМПЕРАТУРА, ИЗМЕРЕНИЕ РАСХОДА ТОПЛИВНОГО ГАЗА" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBP05CP011" layoutX="1243.0" layoutY="695.0" maxValue="40.0" param="P" prefHeight="28.0" prefWidth="80.0" system="GT" unit="бар">
+         <tooltip>
+            <Tooltip text="P FLOW MEAS FGAS" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBP05FF004" layoutX="1529.0" layoutY="695.0" maxValue="15.0" param="F" prefHeight="28.0" prefWidth="80.0" system="GT" unit="кг/с">
+         <tooltip>
+            <Tooltip text="FUEL GAS FLOW CALC" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBL30CT911" layoutX="1530.0" layoutY="606.0" maxValue="80.0" minValue="-50.0" param="TK1" prefHeight="28.0" prefWidth="95.0" system="GT" unit="°C ">
+         <tooltip>
+            <Tooltip text="T AIR INTAKE AVG" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBL30CP001_XJ60" layoutX="1529.0" layoutY="632.0" maxValue="0.6" param="PK1" prefHeight="28.0" prefWidth="100.0" system="GT" unit="МПа">
+         <tooltip>
+            <Tooltip text="P AIR INTAKE CALC" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBA82CG901" layoutX="1266.0" layoutY="615.0" maxValue="10.0" minValue="-80.0" param="ПЛВНА" prefHeight="28.0" prefWidth="140.0" system="GT" unit="град">
+         <tooltip>
+            <Tooltip text="Полож. ПЛВНА, сред." />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBA30CS906" layoutX="1600.0" layoutY="370.0" maxValue="3333.0" param="ЧАСТ. ВРАЩ." prefHeight="28.0" prefWidth="210.0" system="GT" unit="об/мин">
+         <tooltip>
+            <Tooltip text="GT SPEED R" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MKY20CE010" layoutX="1600.0" layoutY="401.0" maxValue="200.0" param="ТЕМП. ГЕН. " prefHeight="28.0" prefWidth="150.0" system="TU" unit="°C ">
+         <tooltip>
+            <Tooltip text="ROTOR TEMPERATURE" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="11MBL30CP001_XQ60" layoutX="1644.0" layoutY="196.0" maxValue="3000.0" param="P" prefHeight="28.0" prefWidth="80.0" system="GT" unit="Па">
+         <tooltip>
+            <Tooltip text="Р водного раствора гликоля за т/обм-ом 11MBL20AC001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="11MBY10DE000_XE60" layoutX="626.0" layoutY="848.0" maxValue="700.0" param="N" prefHeight="25.0" prefWidth="80.0" unit="МВт">
+         <tooltip>
+            <Tooltip text="TARGET LOAD EFF SP EFF SP" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="11MBY10DS000_XE04" layoutX="622.0" layoutY="928.0" maxValue="3333.0" param="n" prefHeight="25.0" prefWidth="90.0" unit="об/мин">
+         <tooltip>
+            <Tooltip text="SPEED SETPOINT EFF SP EFF" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="11MBY10DS000_XE60" layoutX="622.0" layoutY="950.0" maxValue="3333.0" param="n" prefHeight="25.0" prefWidth="90.0" unit="об/мин">
+         <tooltip>
+            <Tooltip text="SPEED SETPOINT MEAS MEAS" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="11MKY20DE002_XE60" layoutX="906.0" layoutY="847.0" maxValue="700.0" param="U" prefHeight="25.0" prefWidth="70.0" unit="кВ">
+         <tooltip>
+            <Tooltip text="GEN VOLTAGE SP EFF SP EFF S" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="11MKY20DE002_XE04" layoutX="906.0" layoutY="870.0" maxValue="700.0" param="U" prefHeight="25.0" prefWidth="70.0" unit="кВ">
+         <tooltip>
+            <Tooltip text="GEN VOLTAGE SP MEAS MEAS" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="11MKY20DE001_XE60" layoutX="900.0" layoutY="929.0" maxValue="700.0" param="N" prefHeight="25.0" prefWidth="80.0" unit="МВАр">
+         <tooltip>
+            <Tooltip text="REACT PWR SP EFF SP EFF SP" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="11MKY20DE001_XE04" layoutX="900.0" layoutY="951.0" maxValue="700.0" param="N" prefHeight="25.0" prefWidth="80.0" unit="МВАр">
+         <tooltip>
+            <Tooltip text="REACT PWR SP MEAS MEAS" />
+         </tooltip></DetectorControl>
+      <Rectangle fill="SILVER" height="27.0" layoutX="1768.0" layoutY="12.0" stroke="BLACK" strokeType="INSIDE" width="142.0" />
+      <Text layoutX="1779.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОБЩИЙ ВИД" wrappingWidth="124.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <DetectorControl kks="11CJP00EA000_XD82" layoutX="115.0" layoutY="859.0" maxValue="100.0" param="" prefHeight="22.0" prefWidth="53.0" unit="">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <ButtonControl buttonOffText="ОТКЛ" buttonOnText="ОТКЛ" equipmentType="TEXT_BUTTON" kks="yccfg_gt_001" layoutX="18.0" layoutY="902.0" prefHeight="20.0" prefWidth="48.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="ВКЛ" buttonOnText="ВКЛ" equipmentType="TEXT_BUTTON" kks="yccfg_gt_002" layoutX="98.0" layoutY="902.0" prefHeight="20.0" prefWidth="48.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="СБРОС" buttonOnText="СБРОС" equipmentType="TEXT_BUTTON" kks="yccfg_gt_003" layoutX="178.0" layoutY="902.0" prefHeight="20.0" prefWidth="48.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="ЗАЩИТА" buttonOnText="ЗАЩИТА" diagramTitle="TRIP RUS.fxml" equipmentType="TRANSITION_BUTTON" kks="1" layoutX="1716.0" layoutY="1034.0" prefHeight="32.0" prefWidth="130.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <FunctionControl layoutX="912.0" layoutY="113.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.501960813999176" green="0.501960813999176" blue="0.501960813999176" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl layoutX="1327.0" layoutY="134.0" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.501960813999176" green="0.501960813999176" blue="0.501960813999176" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl layoutX="1826.0" layoutY="251.0" orientation="HORIZONTAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.501960813999176" green="0.501960813999176" blue="0.501960813999176" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl layoutX="1439.0" layoutY="251.0" orientation="HORIZONTAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.501960813999176" green="0.501960813999176" blue="0.501960813999176" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl layoutX="1527.0" layoutY="502.0" orientation="HORIZONTAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.501960813999176" green="0.501960813999176" blue="0.501960813999176" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl layoutX="1803.0" layoutY="715.0" orientation="HORIZONTAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.501960813999176" green="0.501960813999176" blue="0.501960813999176" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <InputControl equipmentType="TXT" kks="set_n_vd" layoutX="632.0" layoutY="874.0" maxValue="700.0" prefHeight="15.0" prefWidth="50.0" skinType="TXT" />
+      <FunctionControl equipmentType="LEVEL" kks="ssx11mby10de000_xe60_l" layoutX="495.0" layoutY="855.0" maxValue="700.0" prefWidth="120.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" kks="ssx11mby10ds000_xe04_l" layoutX="494.0" layoutY="935.0" maxValue="3333.0" prefWidth="120.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" kks="ssx11mby10ds000_xe60_l" layoutX="495.0" layoutY="956.0" maxValue="3333.0" prefWidth="120.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" kks="ssx11mky20de002_xe60_l" layoutX="770.0" layoutY="857.0" maxValue="700.0" prefWidth="120.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" kks="ssx11mky20de002_xe04_l" layoutX="771.0" layoutY="878.0" maxValue="700.0" prefWidth="120.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" kks="ssx11mky20de001_xe60_l" layoutX="771.0" layoutY="936.0" maxValue="700.0" prefWidth="120.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" kks="ssx11mky20de001_xe04_l" layoutX="772.0" layoutY="957.0" maxValue="700.0" prefWidth="120.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" kks="set_n_vd_l" layoutX="496.0" layoutY="879.0" maxValue="700.0" prefWidth="120.0" skinType="LEVEL" />
+      <Text fill="WHITE" layoutX="684.0" layoutY="884.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВт" wrappingWidth="30.499999999999943">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font>
+      </Text>
+   </children>
+   <stylesheets>
+      <URL value="@../../../НС%20кадры/StyleSheet.css" />
+      <URL value="@../../../НС%20кадры/lineStyle.css" />
+      <URL value="@StyleSheet.css" />
+   </stylesheets>
+</AnchorPane>

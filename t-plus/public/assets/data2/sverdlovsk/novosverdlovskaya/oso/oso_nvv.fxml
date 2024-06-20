@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.ButtonControl?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.FunctionControl?>
+<?import ru.get.common.controls.PumpControl?>
+<?import ru.get.common.controls.ValveControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="275.0" endY="-9.5" layoutX="790.0" layoutY="918.0" startX="266.5" startY="-9.5" stroke="#8a7f7f" styleClass="line-dashed" />
+      <Line endX="100.0" endY="-12.66668701171875" layoutX="695.0" layoutY="452.0" startX="100.0" startY="29.083343505859375" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="100.0" endY="65.75" layoutX="695.0" layoutY="272.0" startX="100.0" startY="128.0" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="815.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НВВ-3" textAlignment="CENTER" wrappingWidth="45.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="98.33331298828125" endY="61.416656494140625" layoutX="697.0" layoutY="209.0" startX="98.33331298828125" startY="97.41665649414062" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="805.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВН-3А" textAlignment="CENTER" wrappingWidth="52.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="98.33333587646484" endY="9.666671752929688" layoutX="697.0" layoutY="193.0" startX="98.33331298828125" startY="46.75" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="77.41668701171875" endY="-12.66668701171875" layoutX="795.0" layoutY="212.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="685.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВ-10" textAlignment="CENTER" wrappingWidth="37.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="807.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВН-3" textAlignment="CENTER" wrappingWidth="40.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" endY="-19.583343505859375" layoutX="695.0" layoutY="530.0" startX="100.0" startY="18.0" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="688.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВ-3" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" endY="-11.0" layoutX="877.0" layoutY="452.0" startX="100.0" startY="27.083343505859375" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="100.0" endY="65.08334350585938" layoutX="877.0" layoutY="272.0" startX="100.0" startY="128.0" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="997.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НВВ-2" textAlignment="CENTER" wrappingWidth="45.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="98.33331298828125" endY="61.416656494140625" layoutX="879.0" layoutY="209.0" startX="98.33331298828125" startY="98.75" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="987.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВН-2А" textAlignment="CENTER" wrappingWidth="52.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="98.33333587646484" endY="9.666671752929688" layoutX="879.0" layoutY="193.0" startX="98.33331298828125" startY="46.75" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="871.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВ-8" textAlignment="CENTER" wrappingWidth="33.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="989.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВН-2" textAlignment="CENTER" wrappingWidth="40.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" endY="-21.583343505859375" layoutX="876.0" layoutY="530.0" startX="100.0" startY="18.0" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="871.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВ-5" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" endY="-12.66668701171875" layoutX="1059.0" layoutY="452.0" startX="100.0" startY="28.416656494140625" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="100.0" endY="63.75" layoutX="1059.0" layoutY="272.0" startX="100.0" startY="128.0" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="1179.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НВВ-1" textAlignment="CENTER" wrappingWidth="45.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="98.3333740234375" endY="66.0" layoutX="1061.0" layoutY="209.0" startX="98.3333740234375" startY="100.75" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="1169.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВН-1А" textAlignment="CENTER" wrappingWidth="52.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="98.33333587646484" endY="9.666671752929688" layoutX="1061.0" layoutY="193.0" startX="98.3333740234375" startY="47.41667175292969" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="1053.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВ-7" textAlignment="CENTER" wrappingWidth="33.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1171.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВН-1" textAlignment="CENTER" wrappingWidth="40.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" endY="-20.25" layoutX="1059.0" layoutY="530.0" startX="100.0" startY="18.0" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="1053.0" layoutY="574.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВ-6" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1235.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВ-9" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1236.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВ-4" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="98.33333587646484" endY="9.666671752929688" layoutX="1227.0" layoutY="193.0" startX="98.33332824707031" startY="89.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="70.0" endY="-12.66668701171875" layoutX="1255.0" layoutY="212.0" startX="15.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="98.33331298828125" endY="8.33331298828125" layoutX="531.0" layoutY="193.0" startX="98.33332824707031" startY="89.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="77.41668701171875" endY="-13.0" layoutX="611.0" layoutY="212.0" startX="-75.0" startY="-13.0" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="68.0" endY="-12.66668701171875" layoutX="909.0" layoutY="212.0" startX="-6.58331298828125" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="76.0833740234375" endY="-12.66668701171875" layoutX="977.0" layoutY="212.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="68.0" endY="-12.66668701171875" layoutX="1091.0" layoutY="212.0" startX="-7.25" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="68.5" endY="-12.66668701171875" layoutX="726.0" layoutY="212.0" startX="-8.25" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="75.75" endY="-12.66668701171875" layoutX="1160.0" layoutY="212.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="75.41668701171875" endY="-12.66668701171875" layoutX="795.0" layoutY="562.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="70.0" endY="-12.66668701171875" layoutX="1255.0" layoutY="562.0" startX="16.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="82.41668701171875" endY="-12.66668701171875" layoutX="608.0" layoutY="562.0" startX="21.1617431640625" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="68.0" endY="-12.66668701171875" layoutX="909.0" layoutY="562.0" startX="-8.58331298828125" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="77.4166259765625" endY="-12.66668701171875" layoutX="977.0" layoutY="562.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="68.0" endY="-12.66668701171875" layoutX="1091.0" layoutY="562.0" startX="-3.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="68.5" endY="-12.66668701171875" layoutX="726.0" layoutY="562.0" startX="-9.58331298828125" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="77.75" endY="-12.66668701171875" layoutX="1160.0" layoutY="562.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="98.3333740234375" endY="131.33331298828125" layoutX="1227.0" layoutY="420.0" startX="98.33332824707031" startY="269.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="98.33331298828125" endY="131.33331298828125" layoutX="531.0" layoutY="420.0" startX="98.33332824707031" startY="269.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="252.0" layoutX="456.0" layoutY="693.0" stroke="BLACK" strokeWidth="3.0" width="245.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.5741626794258373" endY="0.430622009569378">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4699999988079071" green="0.4699999988079071" blue="0.4699999988079071" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="252.0" layoutX="1212.0" layoutY="693.0" stroke="BLACK" strokeWidth="3.0" width="245.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.5741626794258373" endY="0.430622009569378">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4699999988079071" green="0.4699999988079071" blue="0.4699999988079071" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Line endX="98.0" endY="45.41668701171875" layoutX="437.0" layoutY="593.0" startX="98.0" startY="95.0" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="551.0" layoutY="634.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ДБВ-2" textAlignment="CENTER" wrappingWidth="43.33333206176758">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" endY="-19.25" layoutX="435.0" layoutY="586.0" startX="100.0" startY="29.75" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="98.3333740234375" endY="45.41668701171875" layoutX="1304.0" layoutY="593.0" startX="98.3333740234375" startY="95.0" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="1418.0" layoutY="634.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ДБВ-1" textAlignment="CENTER" wrappingWidth="43.33333206176758">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" endY="-18.0" layoutX="1302.0" layoutY="586.0" startX="100.0" startY="29.08331298828125" stroke="#006f00" strokeWidth="4.0" />
+      <Text layoutX="519.0" layoutY="765.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Резервуар №6" textAlignment="CENTER" wrappingWidth="132.49999999999977">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1268.0" layoutY="765.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Резервуар №5" textAlignment="CENTER" wrappingWidth="140.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="98.33331298828125" endY="60.75" layoutX="756.0" layoutY="739.0" startX="98.0" startY="232.0" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="864.0" layoutY="790.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВ-2" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="98.33333587646484" endY="9.666671752929688" layoutX="756.0" layoutY="673.0" startX="98.33331298828125" startY="101.892578125" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="98.33331298828125" endY="62.75" layoutX="676.0" layoutY="739.0" startX="98.33332824707031" startY="109.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="784.0" layoutY="790.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВ-2А" textAlignment="CENTER" wrappingWidth="38.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="98.33331298828125" endY="42.33331298828125" layoutX="676.0" layoutY="673.0" startX="98.33331298828125" startY="97.41668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="68.5" endY="-12.66668701171875" layoutX="785.0" layoutY="725.0" startX="-10.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="58.0" endY="-12.66668701171875" layoutX="785.0" layoutY="864.0" startX="-10.75" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Arc fill="#1f93ff00" layoutX="854.0" layoutY="853.0" length="180.0" radiusX="13.0" radiusY="13.0" stroke="#006f00" strokeType="INSIDE" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="879.0" layoutY="924.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВП-2" textAlignment="CENTER" wrappingWidth="41.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="78.75" endY="-12.66668701171875" layoutX="807.0" layoutY="912.0" startX="48.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="75.75" endY="-12.66668701171875" layoutX="922.0" layoutY="912.0" startX="-3.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="992.0" layoutY="924.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВП-1" textAlignment="CENTER" wrappingWidth="39.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="70.0" endY="-12.66668701171875" layoutX="987.0" layoutY="912.0" startX="48.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="98.3333740234375" endY="62.08331298828125" layoutX="959.0" layoutY="739.0" startX="98.0" startY="232.0" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="1068.0" layoutY="790.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВ-1" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="98.33333587646484" endY="9.666671752929688" layoutX="959.0" layoutY="673.0" startX="98.3333740234375" startY="101.892578125" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="98.3333740234375" endY="62.08331298828125" layoutX="1039.0" layoutY="739.0" startX="98.33332824707031" startY="109.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="1146.0" layoutY="790.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВВ-1А" textAlignment="CENTER" wrappingWidth="38.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="98.33331298828125" endY="42.33331298828125" layoutX="1039.0" layoutY="673.0" startX="98.3333740234375" startY="101.892578125" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="68.5" endY="-12.66668701171875" layoutX="1068.0" layoutY="725.0" startX="-10.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="58.25" endY="-12.66668701171875" layoutX="1079.0" layoutY="864.0" startX="-10.75" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Arc fill="#1f93ff00" layoutX="1057.0" layoutY="853.0" length="180.0" radiusX="13.0" radiusY="13.0" stroke="#006f00" strokeType="INSIDE" strokeWidth="4.0" />
+      <Line endX="58.25" endY="-12.66668701171875" layoutX="875.0" layoutY="864.0" startX="-10.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="58.0" endY="-12.66668701171875" layoutX="988.0" layoutY="864.0" startX="-12.75" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="98.33332824707031" endY="77.0" layoutX="835.0" layoutY="775.0" startX="98.33332824707031" startY="122.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="98.33332824707031" endY="77.0" layoutX="877.0" layoutY="775.0" startX="98.33332824707031" startY="122.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="68.5" endY="-12.66668701171875" layoutX="785.0" layoutY="695.0" startX="-60.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="68.5" endY="-12.66668701171875" layoutX="1119.0" layoutY="695.0" startX="-60.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="98.33333587646484" endY="9.666671752929688" layoutX="627.0" layoutY="674.0" startX="98.33332824707031" startY="309.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="98.33333587646484" endY="9.666671752929688" layoutX="1091.0" layoutY="674.0" startX="98.33332824707031" startY="309.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="68.5" endY="-12.66668701171875" layoutX="655.0" layoutY="997.0" startX="-60.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="68.5" endY="-12.66668701171875" layoutX="1250.0" layoutY="997.0" startX="-60.0" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="100.0" endY="8.0" layoutX="495.0" layoutY="962.0" startX="100.0" startY="20.0" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="100.0" endY="8.0" layoutX="1219.0" layoutY="962.0" startX="100.0" startY="20.0" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="806.0" layoutY="998.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 нитка" textAlignment="CENTER" wrappingWidth="55.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1009.0" layoutY="998.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 нитка" textAlignment="CENTER" wrappingWidth="55.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="810.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Насосная водопроводной воды" textAlignment="CENTER" wrappingWidth="295.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Circle fill="YELLOW" layoutX="456.0" layoutY="839.0" radius="3.5" stroke="BLACK" />
+      <Circle fill="YELLOW" layoutX="1457.0" layoutY="839.0" radius="3.5" stroke="BLACK" />
+      <Circle fill="YELLOW" layoutX="854.0" layoutY="909.0" radius="3.5" stroke="BLACK" />
+      <Circle fill="YELLOW" layoutX="1057.0" layoutY="909.0" radius="3.5" stroke="BLACK" />
+      <ValveControl equipmentType="MOV" kks="VV_2A" layoutX="747.0" layoutY="768.0" orientation="VERTICAL_REVERSE" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <ValveControl equipmentType="VLV" kks="dbv_2" layoutX="515.0" layoutY="619.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" />
+      <ValveControl equipmentType="VLV" kks="dbv_1" layoutX="1382.0" layoutY="619.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" />
+      <ValveControl equipmentType="MOV" kks="VV_2" layoutX="826.0" layoutY="768.0" orientation="VERTICAL_REVERSE" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <ValveControl equipmentType="MOV" kks="VV_1" layoutX="1030.0" layoutY="768.0" orientation="VERTICAL_REVERSE" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <ValveControl equipmentType="MOV" kks="VV_1A" layoutX="1109.0" layoutY="768.0" orientation="VERTICAL_REVERSE" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <ValveControl equipmentType="MOV" kks="VV_4" layoutX="1231.0" layoutY="524.0" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <ValveControl equipmentType="MOV" kks="VV_6" layoutX="1048.0" layoutY="524.0" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <ValveControl equipmentType="MOV" kks="VV_5" layoutX="866.0" layoutY="523.0" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <ValveControl equipmentType="MOV" kks="VV_3" layoutX="683.0" layoutY="524.0" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <ValveControl equipmentType="MOV" kks="VVN_3" layoutX="767.0" layoutY="477.0" orientation="VERTICAL_REVERSE" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <ValveControl equipmentType="MOV" kks="VVN_2" layoutX="948.0" layoutY="477.0" orientation="VERTICAL_REVERSE" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <ValveControl equipmentType="MOV" kks="VVN_1" layoutX="1131.0" layoutY="477.0" orientation="VERTICAL_REVERSE" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <ValveControl equipmentType="CHV" kks="VVN_3Aob" layoutX="775.0" layoutY="312.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="CHECK_VLV" system="CW" />
+      <ValveControl equipmentType="CHV" kks="VVN_2Aob" layoutX="957.0" layoutY="312.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="CHECK_VLV" system="CW" />
+      <ValveControl equipmentType="CHV" kks="VVN_1Aob" layoutX="1139.0" layoutY="312.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="CHECK_VLV" system="CW" />
+      <ValveControl equipmentType="MOV" kks="VVN_3A" layoutX="767.0" layoutY="237.0" orientation="VERTICAL_REVERSE" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <ValveControl equipmentType="MOV" kks="VVN_2A" layoutX="949.0" layoutY="237.0" orientation="VERTICAL_REVERSE" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <ValveControl equipmentType="MOV" kks="VVN_1A" layoutX="1131.0" layoutY="237.0" orientation="VERTICAL_REVERSE" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <ValveControl equipmentType="MOV" kks="VV_10" layoutX="683.0" layoutY="173.0" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <ValveControl equipmentType="MOV" kks="VV_8" layoutX="867.0" layoutY="173.0" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <ValveControl equipmentType="MOV" kks="VV_7" layoutX="1049.0" layoutY="173.0" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <ValveControl equipmentType="MOV" kks="VV_9" layoutX="1230.0" layoutY="173.0" prefHeight="36.0" prefWidth="40.0" skinType="ELECTRIC_VLV" />
+      <PumpControl kks="NVV_3" layoutX="774.0" layoutY="401.0" orientation="VERTICAL_REVERSE" prefHeight="40.0" prefWidth="40.0" />
+      <PumpControl kks="NVV_2" layoutX="956.0" layoutY="401.0" orientation="VERTICAL_REVERSE" prefHeight="40.0" prefWidth="40.0" />
+      <PumpControl kks="NVV_1" layoutX="1138.0" layoutY="401.0" orientation="VERTICAL_REVERSE" prefHeight="40.0" prefWidth="40.0" />
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="0" kks="VV_420" layoutX="883.0" layoutY="936.0" maxValue="2000.0" param="F" prefHeight="25.0" prefWidth="71.0" system="CW" unit="т/ч">
+         <tooltip>
+            <Tooltip text="Расход водопроводной воды (нитка 1)" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="VV_221" layoutX="883.0" layoutY="963.0" maxValue="10.0" param="P" prefHeight="25.0" prefWidth="100.0" system="CW" unit="кгс/см2">
+         <tooltip>
+            <Tooltip text="Давление водопроводной воды из города нитка 2" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="NVV_1_1" layoutX="883.0" layoutY="990.0" maxValue="100.0" param="T" prefHeight="25.0" prefWidth="71.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура водопроводной воды (нитка 1) НВВ-1/1" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="VV_501a" layoutX="367.0" layoutY="827.0" maxValue="400.0" param="L" prefHeight="25.0" prefWidth="71.0" system="CW" unit="см">
+         <tooltip>
+            <Tooltip text="Уровень в баке водопроводной воды №2" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="VV_500a" layoutX="1464.0" layoutY="827.0" maxValue="400.0" param="L" prefHeight="25.0" prefWidth="71.0" system="CW" unit="см">
+         <tooltip>
+            <Tooltip text="Уровень в баке водопроводной воды №1" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="0" kks="VV_421" layoutX="1081.0" layoutY="936.0" maxValue="2000.0" param="F" prefHeight="25.0" prefWidth="71.0" system="CW" unit="т/ч">
+         <tooltip>
+            <Tooltip text="Расход водопроводной воды (нитка 2)" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="VV_220" layoutX="1082.0" layoutY="963.0" maxValue="10.0" param="P" prefHeight="25.0" prefWidth="100.0" system="CW" unit="кгс/см2">
+         <tooltip>
+            <Tooltip text="Давление водопроводной воды из города Нитка 1" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="NVV_1_2" layoutX="1083.0" layoutY="990.0" maxValue="100.0" param="T" prefHeight="25.0" prefWidth="71.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура водопроводной воды (нитка 2) НВВ-1/2" />
+         </tooltip>
+      </DetectorControl>
+      <ValveControl equipmentType="VLV" kks="vvp_2" layoutX="879.0" layoutY="890.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" />
+      <ValveControl equipmentType="VLV" kks="vvp_1" layoutX="992.0" layoutY="890.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" />
+      <Text fill="SILVER" layoutX="480.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В промливневую канализацию" textAlignment="CENTER" wrappingWidth="108.82843017578125">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1347.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В промливневую канализацию" textAlignment="CENTER" wrappingWidth="108.82843017578125">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="70.0" endY="-12.66668701171875" layoutX="1255.0" layoutY="212.0" startX="70.0" startY="-94.0" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="-719.0" endY="-94.0" layoutX="1255.0" layoutY="212.0" startX="70.0" startY="-94.0" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="-847.0" endY="-94.0" layoutX="1255.0" layoutY="212.0" startX="-847.0" startY="501.0" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="-812.0" endY="573.0" layoutX="1255.0" layoutY="142.0" startX="-847.0" startY="573.0" stroke="#006f00" strokeWidth="4.0" />
+      <Line endX="-200.33334350585938" endY="-12.66668701171875" layoutX="611.0" layoutY="212.0" startX="-109.25" startY="-12.66668701171875" stroke="#006f00" strokeWidth="4.0" />
+      <ValveControl equipmentType="VLV" kks="rv_1" layoutX="496.0" layoutY="189.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" />
+      <Line endX="-615.0" endY="-94.0" layoutX="1025.0" layoutY="212.0" startX="-523.9166259765625" startY="-94.0" stroke="#006f00" strokeWidth="4.0" />
+      <Text fill="SILVER" layoutX="504.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РВ-1" textAlignment="CENTER" wrappingWidth="29.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="501.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РВ-2" textAlignment="CENTER" wrappingWidth="29.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <ButtonControl buttonOffText="Работа" buttonOnText="Работа" equipmentType="TEXT_BUTTON" kks="zdinvv_3_avr1" layoutX="726.0" layoutY="400.0" prefHeight="20.0" prefWidth="43.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="АВР" buttonOnText="АВР" equipmentType="TEXT_BUTTON" kks="zdinvv_3_avr2" layoutX="726.0" layoutY="423.0" prefHeight="20.0" prefWidth="43.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Работа" buttonOnText="Работа" equipmentType="TEXT_BUTTON" kks="zdinvv_2_avr1" layoutX="909.0" layoutY="400.0" prefHeight="20.0" prefWidth="43.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="АВР" buttonOnText="АВР" equipmentType="TEXT_BUTTON" kks="zdinvv_2_avr2" layoutX="909.0" layoutY="423.0" prefHeight="20.0" prefWidth="43.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Работа" buttonOnText="Работа" equipmentType="TEXT_BUTTON" kks="zdinvv_1_avr1" layoutX="1091.0" layoutY="400.0" prefHeight="20.0" prefWidth="43.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="АВР" buttonOnText="АВР" equipmentType="TEXT_BUTTON" kks="zdinvv_1_avr2" layoutX="1091.0" layoutY="423.0" prefHeight="20.0" prefWidth="43.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <FunctionControl equipmentType="RF" kks="cwbak_vv_2_l" layoutX="382.0" layoutY="754.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="RF" />
+      <FunctionControl equipmentType="RF" kks="cwbak_vv_1_l" layoutX="1478.0" layoutY="754.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="RF" />
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="К встроенным пучкам ТГ 1-5" buttonOnText="К встроенным пучкам ТГ 1-5" diagramTitle="ОСО Водопроводная вода.fxml" equipmentType="TRANSITION_BUTTON" kks="1" layoutX="567.0" layoutY="305.0" prefHeight="38.0" prefWidth="124.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="К встроенным пучкам ТГ 1-5" buttonOnText="К встроенным пучкам ТГ 1-5" diagramTitle="ОСО Водопроводная вода.fxml" equipmentType="TRANSITION_BUTTON" kks="2" layoutX="1263.0" layoutY="305.0" prefHeight="38.0" prefWidth="124.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <FunctionControl interactive="false" layoutX="619.0" layoutY="278.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.43529412150382996" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="525.0" layoutY="559.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.43529412150382996" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1315.0" layoutY="278.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.43529412150382996" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="432.0" layoutY="705.0" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.43529412150382996" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1392.0" layoutY="558.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.43529412150382996" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="585.0" layoutY="951.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.43529412150382996" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="844.0" layoutY="961.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.43529412150382996" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1047.0" layoutY="961.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.43529412150382996" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1309.0" layoutY="951.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.43529412150382996" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <ValveControl equipmentType="VLV" kks="rv_2" layoutX="496.0" layoutY="108.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" />
+      <FunctionControl equipmentType="LEVEL" kks="bak_vv_1" layoutX="1185.0" layoutY="839.0" maxValue="400.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="140.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" kks="bak_vv_2" layoutX="425.0" layoutY="839.0" maxValue="400.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="140.0" skinType="LEVEL" />
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="nvv_206" layoutX="817.0" layoutY="363.0" maxValue="10.0" param="P" prefHeight="25.0" prefWidth="100.0" system="CW" unit="кгс/см2">
+         <tooltip>
+            <Tooltip text="Давление на напоре НВВ-3" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="nvv_205" layoutX="997.0" layoutY="363.0" maxValue="10.0" param="P" prefHeight="25.0" prefWidth="100.0" system="CW" unit="кгс/см2">
+         <tooltip>
+            <Tooltip text="Давление на напоре НВВ-2" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="nvv_204" layoutX="1177.0" layoutY="363.0" maxValue="10.0" param="P" prefHeight="25.0" prefWidth="100.0" system="CW" unit="кгс/см2">
+         <tooltip>
+            <Tooltip text="Давление на напоре НВВ-1" />
+         </tooltip>
+      </DetectorControl>
+      <Circle fill="YELLOW" layoutX="795.0" layoutY="376.0" radius="3.5" stroke="BLACK" />
+      <Circle fill="YELLOW" layoutX="977.0" layoutY="376.0" radius="3.5" stroke="BLACK" />
+      <Circle fill="YELLOW" layoutX="1159.0" layoutY="376.0" radius="3.5" stroke="BLACK" />
+      <Line endX="266.0" endY="57.75" layoutX="803.0" layoutY="941.0" startX="266.0" startY="-31.25" stroke="#8a7f7f" styleClass="line-dashed" />
+      <Line endX="275.0" endY="-9.5" layoutX="805.0" layoutY="958.0" startX="266.5" startY="-9.5" stroke="#8a7f7f" styleClass="line-dashed" />
+      <Line endX="275.0" endY="-9.5" layoutX="805.0" layoutY="984.0" startX="266.5" startY="-9.5" stroke="#8a7f7f" styleClass="line-dashed" />
+      <Line endX="275.0" endY="-9.5" layoutX="805.0" layoutY="1012.0" startX="266.5" startY="-9.5" stroke="#8a7f7f" styleClass="line-dashed" />
+      <Line endX="275.0" endY="-9.5" layoutX="592.0" layoutY="918.0" startX="266.5" startY="-9.5" stroke="#8a7f7f" styleClass="line-dashed" />
+      <Line endX="266.0" endY="57.75" layoutX="603.0" layoutY="941.0" startX="266.0" startY="-31.25" stroke="#8a7f7f" styleClass="line-dashed" />
+      <Line endX="275.0" endY="-9.5" layoutX="605.0" layoutY="958.0" startX="266.5" startY="-9.5" stroke="#8a7f7f" styleClass="line-dashed" />
+      <Line endX="275.0" endY="-9.5" layoutX="605.0" layoutY="984.0" startX="266.5" startY="-9.5" stroke="#8a7f7f" styleClass="line-dashed" />
+      <Line endX="275.0" endY="-9.5" layoutX="605.0" layoutY="1012.0" startX="266.5" startY="-9.5" stroke="#8a7f7f" styleClass="line-dashed" />
+      <Line endX="278.75" endY="-9.5" layoutX="534.0" layoutY="385.0" startX="266.5" startY="-9.5" stroke="#8a7f7f" styleClass="line-dashed" />
+      <Line endX="278.75" endY="-9.5" layoutX="715.0" layoutY="385.0" startX="266.5" startY="-9.5" stroke="#8a7f7f" styleClass="line-dashed" />
+      <Line endX="278.75" endY="-9.5" layoutX="897.0" layoutY="385.0" startX="266.5" startY="-9.5" stroke="#8a7f7f" styleClass="line-dashed" />
+      <ButtonControl buttonOffText="Вак. деаэраторы" buttonOnText="Вак. деаэраторы" diagramTitle="ОСО Вак. деаэраторы.fxml" equipmentType="TRANSITION_BUTTON" kks="906" layoutX="717.0" layoutY="1036.0" prefHeight="38.0" prefWidth="70.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Водопроводная вода" buttonOnText="Водопроводная вода" diagramTitle="ОСО Водопроводная вода.fxml" equipmentType="TRANSITION_BUTTON" kks="917" layoutX="1677.0" layoutY="1036.0" prefHeight="38.0" prefWidth="97.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="ГРП" buttonOnText="ГРП" diagramTitle="ОСО ГРП.fxml" equipmentType="TRANSITION_BUTTON" kks="919" layoutX="1847.0" layoutY="1036.0" prefHeight="38.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Защиты ПБ" buttonOnText="Защиты ПБ" diagramTitle="ОСО Защиты ПБ.fxml" equipmentType="TRANSITION_BUTTON" kks="918" layoutX="1778.0" layoutY="1036.0" prefHeight="38.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Коллектор ОК ГК" buttonOnText="Коллектор ОК ГК" diagramTitle="ОСО Коллектор ОК ГК.fxml" equipmentType="TRANSITION_BUTTON" kks="910" layoutX="1134.0" layoutY="1036.0" prefHeight="38.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="НВВ" buttonOnText="НВВ" diagramTitle="ОСО НВВ.fxml" equipmentType="TRANSITION_BUTTON" kks="909" layoutX="1065.0" layoutY="1036.0" prefHeight="38.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Общая схема" buttonOnText="Общая схема" diagramTitle="ОСО Общая схема.fxml" equipmentType="TRANSITION_BUTTON" kks="901" layoutX="377.0" layoutY="1036.0" prefHeight="38.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="ОВ генераторов с НГО" buttonOnText="ОВ генераторов с НГО" diagramTitle="ОСО ОВ генераторов с НГО.fxml" equipmentType="TRANSITION_BUTTON" kks="915" layoutX="1479.0" layoutY="1036.0" prefHeight="38.0" prefWidth="90.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="10.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Пар КСН" buttonOnText="Пар КСН" diagramTitle="ОСО Пар КСН.fxml" equipmentType="TRANSITION_BUTTON" kks="905" layoutX="648.0" layoutY="1036.0" prefHeight="38.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Пар ПВК" buttonOnText="Пар ПВК" diagramTitle="ОСО Пар ПВК.fxml" equipmentType="TRANSITION_BUTTON" kks="907" layoutX="791.0" layoutY="1036.0" prefHeight="38.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Подпитка С.В." buttonOnText="Подпитка С.В." diagramTitle="ОСО Подпитка С.В..fxml" equipmentType="TRANSITION_BUTTON" kks="903" layoutX="515.0" layoutY="1036.0" prefHeight="38.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="РРОУ ОРОУ" buttonOnText="РРОУ ОРОУ" diagramTitle="ОСО РРОУ, ОРОУ.fxml" equipmentType="TRANSITION_BUTTON" kks="904" layoutX="584.0" layoutY="1036.0" prefHeight="38.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="СВСНЦ" buttonOnText="СВСНЦ" diagramTitle="ОСО СВСНЦ.fxml" equipmentType="TRANSITION_BUTTON" kks="908" layoutX="860.0" layoutY="1036.0" prefHeight="38.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Сетевая вода" buttonOnText="Сетевая вода" diagramTitle="ОСО Сетевая вода.fxml" equipmentType="TRANSITION_BUTTON" kks="902" layoutX="446.0" layoutY="1036.0" prefHeight="38.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Тех. вода ГК - 1" buttonOnText="Тех. вода ГК - 1" diagramTitle="ОСО Тех. вода ГК - 1.fxml" equipmentType="TRANSITION_BUTTON" kks="911" layoutX="1203.0" layoutY="1036.0" prefHeight="38.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Тех. вода ГК - 2" buttonOnText="Тех. вода ГК - 2" diagramTitle="ОСО Тех. вода ГК - 2.fxml" equipmentType="TRANSITION_BUTTON" kks="912" layoutX="1272.0" layoutY="1036.0" prefHeight="38.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Тех. вода ГК - 3" buttonOnText="Тех. вода ГК - 3" diagramTitle="ОСО Тех. вода ГК - 3.fxml" equipmentType="TRANSITION_BUTTON" kks="913" layoutX="1341.0" layoutY="1036.0" prefHeight="38.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Цирк. вода" buttonOnText="Цирк. вода" diagramTitle="ОСО Цирк. Вода.fxml" equipmentType="TRANSITION_BUTTON" kks="914" layoutX="1410.0" layoutY="1036.0" prefHeight="38.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Аккумуляторный бак" buttonOnText="Аккумуляторный бак" diagramTitle="ОСО Аккумуляторный бак.fxml" equipmentType="TRANSITION_BUTTON" kks="916" layoutX="1573.0" layoutY="1036.0" prefHeight="38.0" prefWidth="100.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="НВР" buttonOnText="НВР" diagramTitle="ОСО НВР.fxml" equipmentType="TRANSITION_BUTTON" kks="909" layoutX="997.0" layoutY="1036.0" prefHeight="38.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="НГС" buttonOnText="НГС" diagramTitle="ОСО НГС.fxml" equipmentType="TRANSITION_BUTTON" kks="909" layoutX="929.0" layoutY="1036.0" prefHeight="38.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+   </children>
+</AnchorPane>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.PumpControl?>
+<?import ru.get.common.controls.ValveControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="516.0" endY="113.33332824707031" layoutX="222.0" layoutY="96.0" startX="-98.25" startY="113.33332824707031" stroke="#ec918f" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+      <Polygon fill="#ec918f" layoutX="716.0" layoutY="260.0" points="19.333328247070312, -42.33332824707031, 37.33331298828125, -50.08088684082031, 19.333328247070312, -58.33332824707031" stroke="#ec918f" strokeType="INSIDE" />
+      <Line endX="202.33334350585938" endY="113.33334350585938" layoutX="223.0" layoutY="228.0" startX="-98.0" startY="113.33334350585938" stroke="#ec918f" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+      <Line endX="192.33334350585938" endY="-28.0" layoutX="234.0" layoutY="238.0" startX="192.33334350585938" startY="102.66665649414062" stroke="#ec918f" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+      <Line endX="192.33334350585938" endY="-56.33332824707031" layoutX="-69.0" layoutY="201.0" startX="192.33334350585938" startY="140.33334350585938" stroke="#ec918f" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+      <Polygon fill="#ec918f" layoutX="95.0" layoutY="190.0" points="19.333328247070312, -42.33332824707031, 37.33331298828125, -50.08088684082031, 19.333328247070312, -58.33332824707031" rotate="90.0" stroke="#ec918f" strokeType="INSIDE" />
+      <Circle fill="#f3ac00" layoutX="343.0" layoutY="209.0" radius="4.0" stroke="BLACK" strokeWidth="0.75" />
+      <Circle fill="#f3ac00" layoutX="210.0" layoutY="209.0" radius="4.0" stroke="BLACK" strokeWidth="0.75" />
+      <Circle fill="#f3ac00" layoutX="343.0" layoutY="342.0" radius="4.0" stroke="BLACK" strokeWidth="0.75" />
+      <Circle fill="#f3ac00" layoutX="210.0" layoutY="341.0" radius="4.0" stroke="BLACK" strokeWidth="0.75" />
+      <Text fill="WHITE" layoutX="250.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НР-1" textAlignment="CENTER" wrappingWidth="55.0">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="54.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Из трубопровода прямой сетевой воды ВК-1" textAlignment="CENTER" wrappingWidth="140.0">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="753.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В трубоповод обратной сетевой воды перед котлом" textAlignment="CENTER" wrappingWidth="146.00000000000006">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#f00012" layoutX="297.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НАСОСЫ РЕЦИРКУЛЯЦИИ ВК-1" textAlignment="CENTER" wrappingWidth="270.0">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="429.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21NDА40AA001" textAlignment="CENTER" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="515.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21NDА40AA801" textAlignment="CENTER" wrappingWidth="106.666748046875">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="613.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21NDА40AA002" textAlignment="CENTER" wrappingWidth="106.666748046875">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <ValveControl equipmentType="MOV" kks="21NDA40AA001" layoutX="461.0" layoutY="187.0" prefHeight="31.5" prefWidth="35.0" skinType="ELECTRIC_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="21NDA40AA002" layoutX="649.0" layoutY="187.0" prefHeight="31.5" prefWidth="35.0" skinType="ELECTRIC_VLV" valueVisible="false" />
+      <ValveControl equipmentType="CNT" kks="21NDA40AA801" layoutX="551.0" layoutY="190.0" prefHeight="31.5" prefWidth="35.0" skinType="CTRL_VLV" valueVisible="false" />
+      <PumpControl kks="21NDA31AP001" layoutX="260.0" layoutY="193.0" prefHeight="35.0" prefWidth="35.0" />
+      <PumpControl kks="21NDA32AP001" layoutX="258.0" layoutY="323.0" prefHeight="35.0" prefWidth="35.0" />
+      <DetectorControl kks="21NDA31CP001" layoutX="160.0" layoutY="167.0" maxValue="16.0" param="P" prefHeight="25.0" prefWidth="100.0" system="SW" unit="кгс/см2">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl kks="21NDA31CP002" layoutX="293.0" layoutY="167.0" maxValue="16.0" param="P" prefHeight="25.0" prefWidth="100.0" system="SW" unit="кгс/см2">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl kks="21NDA32CP001" layoutX="160.0" layoutY="296.0" maxValue="16.0" param="P" prefHeight="25.0" prefWidth="100.0" system="SW" unit="кгс/см2">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl kks="21NDA32CP002" layoutX="293.0" layoutY="296.0" maxValue="16.0" param="P" prefHeight="25.0" prefWidth="100.0" system="SW" unit="кгс/см2">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl kks="21NDA31CE001" layoutX="242.0" layoutY="231.0" maxValue="300.0" param="I" prefHeight="25.0" prefWidth="70.0" system="SW" unit="A">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl kks="21NDA32CE001" layoutX="242.0" layoutY="365.0" maxValue="300.0" param="I" prefHeight="25.0" prefWidth="70.0" system="SW" unit="A">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <ValveControl kks="21NDA31AA102" layoutX="379.0" layoutY="201.0" prefHeight="17.5" prefWidth="35.0" skinType="HANDLE_VLV" />
+      <ValveControl kks="21NDA31AA101" layoutX="132.0" layoutY="201.0" prefHeight="17.5" prefWidth="35.0" skinType="HANDLE_VLV" />
+      <ValveControl kks="21NDA32AA102" layoutX="378.0" layoutY="333.0" prefHeight="17.5" prefWidth="35.0" skinType="HANDLE_VLV" />
+      <ValveControl kks="21NDA32AA101" layoutX="130.0" layoutY="333.0" prefHeight="17.5" prefWidth="35.0" skinType="HANDLE_VLV" />
+   </children>
+   <stylesheets>
+      <URL value="@../tempDiags/StyleSheet.css" />
+      <URL value="@../../JIS42/tempDiags/StyleSheet.css" />
+   </stylesheets>
+</AnchorPane>

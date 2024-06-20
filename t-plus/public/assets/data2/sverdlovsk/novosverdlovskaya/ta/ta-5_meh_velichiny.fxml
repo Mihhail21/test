@@ -1,0 +1,1605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.ButtonControl?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.FunctionControl?>
+<?import ru.get.common.controls.IndicationControl?>
+<?import ru.get.common.controls.ValveControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="22.0" layoutX="1399.0" layoutY="441.0" stroke="BLACK" strokeWidth="2.0" width="81.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.5645933014354068" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4745098054409027" green="0.4745098054409027" blue="0.4745098054409027" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="22.0" layoutX="1680.0" layoutY="441.0" stroke="BLACK" strokeWidth="2.0" width="89.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.5645933014354068" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4745098054409027" green="0.4745098054409027" blue="0.4745098054409027" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="160.0" layoutX="1480.0" layoutY="373.0" stroke="BLACK" strokeWidth="2.0" width="200.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.5119617224880383" endY="0.507177033492823">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4745098054409027" green="0.4745098054409027" blue="0.4745098054409027" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="151.0" layoutX="1459.0" layoutY="81.0" stroke="BLACK" strokeWidth="2.0" width="280.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="16.0" layoutX="167.0" layoutY="644.0" stroke="BLACK" strokeWidth="2.0" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="16.0" layoutX="577.0" layoutY="644.0" stroke="BLACK" strokeWidth="2.0" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="16.0" layoutX="1319.0" layoutY="332.0" stroke="BLACK" strokeWidth="2.0" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="16.0" layoutX="942.0" layoutY="332.0" stroke="BLACK" strokeWidth="2.0" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="14.0" layoutX="513.0" layoutY="288.0" stroke="BLACK" strokeWidth="2.0" width="176.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="14.0" layoutX="513.0" layoutY="312.0" stroke="BLACK" strokeWidth="2.0" width="176.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="14.0" layoutX="513.0" layoutY="336.0" stroke="BLACK" strokeWidth="2.0" width="176.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="16.0" layoutX="168.0" layoutY="332.0" stroke="BLACK" strokeWidth="2.0" width="114.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="618.5" layoutY="677.0" startX="-13.0" startY="-18.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="673.5" layoutY="677.0" startX="-13.0" startY="-18.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="208.5" layoutY="677.0" startX="-13.0" startY="-18.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="263.5" layoutY="677.0" startX="-13.0" startY="-18.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="22.0" endY="3.0" layoutX="175.0" layoutY="654.0" startX="22.0" startY="-7.0" stroke="YELLOW" strokeWidth="2.0" />
+      <Line endX="22.0" endY="3.0" layoutX="234.0" layoutY="654.0" startX="22.0" startY="-7.0" stroke="YELLOW" strokeWidth="2.0" />
+      <Line endX="22.0" endY="3.0" layoutX="585.0" layoutY="654.0" startX="22.0" startY="-7.0" stroke="YELLOW" strokeWidth="2.0" />
+      <Line endX="22.0" endY="3.0" layoutX="644.0" layoutY="654.0" startX="22.0" startY="-7.0" stroke="YELLOW" strokeWidth="2.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="1362.5" layoutY="365.0" startX="-13.0" startY="-18.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="1416.5" layoutY="365.0" startX="-13.0" startY="-18.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="1343.0" layoutY="366.0" startX="-1.25" startY="-31.25" stroke="#c80000" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="1412.0" layoutY="366.0" startX="-1.25" startY="-31.25" stroke="#c80000" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="1350.0" layoutY="366.0" startX="-1.25" startY="-31.25" stroke="YELLOW" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="1404.0" layoutY="366.0" startX="-1.25" startY="-31.25" stroke="YELLOW" strokeWidth="2.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="983.5" layoutY="365.0" startX="-13.0" startY="-18.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="1038.5" layoutY="365.0" startX="-13.0" startY="-18.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="966.0" layoutY="366.0" startX="-1.25" startY="-31.25" stroke="#c80000" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="1035.0" layoutY="366.0" startX="-1.25" startY="-31.25" stroke="#c80000" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="973.0" layoutY="366.0" startX="-1.25" startY="-31.25" stroke="YELLOW" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="1027.0" layoutY="366.0" startX="-1.25" startY="-31.25" stroke="YELLOW" strokeWidth="2.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="210.5" layoutY="365.0" startX="-13.0" startY="-18.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="265.5" layoutY="365.0" startX="-13.0" startY="-18.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="192.0" layoutY="366.0" startX="-1.25" startY="-31.25" stroke="#c80000" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="261.0" layoutY="366.0" startX="-1.25" startY="-31.25" stroke="#c80000" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="199.0" layoutY="366.0" startX="-1.25" startY="-31.25" stroke="YELLOW" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="253.0" layoutY="366.0" startX="-1.25" startY="-31.25" stroke="YELLOW" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="549.0" layoutY="321.0" startX="-1.25" startY="-31.25" stroke="#c80000" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="654.0" layoutY="321.0" startX="-1.25" startY="-31.25" stroke="#c80000" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="568.0" layoutY="321.0" startX="-1.25" startY="-31.25" stroke="YELLOW" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="637.0" layoutY="321.0" startX="-1.25" startY="-31.25" stroke="YELLOW" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="549.0" layoutY="345.0" startX="-1.25" startY="-31.25" stroke="#c80000" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="654.0" layoutY="345.0" startX="-1.25" startY="-31.25" stroke="#c80000" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="568.0" layoutY="345.0" startX="-1.25" startY="-31.25" stroke="YELLOW" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="637.0" layoutY="345.0" startX="-1.25" startY="-31.25" stroke="YELLOW" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="549.0" layoutY="369.0" startX="-1.25" startY="-31.25" stroke="#c80000" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="654.0" layoutY="369.0" startX="-1.25" startY="-31.25" stroke="#c80000" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="568.0" layoutY="369.0" startX="-1.25" startY="-31.25" stroke="YELLOW" strokeWidth="2.0" />
+      <Line endX="-1.25" endY="-21.0" layoutX="637.0" layoutY="369.0" startX="-1.25" startY="-31.25" stroke="YELLOW" strokeWidth="2.0" />
+      <Line endX="-69.0" endY="164.0" layoutX="189.0" layoutY="859.0" startX="-69.0" startY="-42.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-69.0" endY="164.0" layoutX="190.0" layoutY="859.0" startX="1602.5" startY="164.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-69.0" endY="164.0" layoutX="188.0" layoutY="859.0" startX="-78.0" startY="164.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-69.0" endY="164.0" layoutX="188.0" layoutY="825.0" startX="-78.0" startY="164.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-69.0" endY="164.0" layoutX="188.0" layoutY="789.0" startX="-78.0" startY="164.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-69.0" endY="164.0" layoutX="188.0" layoutY="756.0" startX="-78.0" startY="164.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-69.0" endY="164.0" layoutX="188.0" layoutY="722.0" startX="-78.0" startY="164.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-69.0" endY="164.0" layoutX="188.0" layoutY="685.0" startX="-78.0" startY="164.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-69.0" endY="164.0" layoutX="188.0" layoutY="653.0" startX="-78.0" startY="164.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-69.0" endY="164.0" layoutX="188.0" layoutY="807.0" startX="-73.0" startY="164.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-69.0" endY="164.0" layoutX="188.0" layoutY="842.0" startX="-73.0" startY="164.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-69.0" endY="164.0" layoutX="188.0" layoutY="772.0" startX="-73.0" startY="164.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-69.0" endY="164.0" layoutX="188.0" layoutY="739.0" startX="-73.0" startY="164.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-69.0" endY="164.0" layoutX="189.0" layoutY="704.0" startX="-73.0" startY="164.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-69.0" endY="164.0" layoutX="189.0" layoutY="669.0" startX="-73.0" startY="164.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="1567.5" layoutX="221.0" layoutY="829.0" startX="-100.0" stroke="#c80000" strokeWidth="2.0" styleClass="line-dashed_new_4" />
+      <Line endX="1567.5" layoutX="221.0" layoutY="900.0" startX="-100.0" stroke="#ec9447" strokeWidth="2.0" styleClass="line-dashed_new_4" />
+      <Line endX="1567.5" layoutX="221.0" layoutY="946.0" startX="-100.0" stroke="YELLOW" strokeWidth="2.0" styleClass="line-dashed_new_4" />
+      <Line endX="-12.75" endY="-9.0" layoutX="184.0" layoutY="368.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="293.0" layoutY="368.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="238.5" layoutY="368.0" startX="-12.75" startY="-19.25" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="957.0" layoutY="368.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="1066.0" layoutY="368.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="1011.5" layoutY="368.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="1335.0" layoutY="368.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="1444.0" layoutY="368.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="1389.5" layoutY="368.0" startX="-12.75" startY="-19.25" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="182.0" layoutY="680.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="291.0" layoutY="680.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="236.5" layoutY="680.0" startX="-12.75" startY="-19.25" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="592.0" layoutY="680.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="701.0" layoutY="680.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="646.5" layoutY="680.0" startX="-12.75" startY="-19.25" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="986.5" layoutY="273.0" startX="-13.0" startY="-16.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="1041.5" layoutY="273.0" startX="-13.0" startY="-17.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="960.0" layoutY="276.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="1069.0" layoutY="276.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="1014.5" layoutY="276.0" startX="-12.75" startY="-19.25" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="210.5" layoutY="273.0" startX="-13.0" startY="-16.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="265.5" layoutY="273.0" startX="-13.0" startY="-17.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="184.0" layoutY="276.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="293.0" layoutY="276.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="238.5" layoutY="276.0" startX="-12.75" startY="-19.25" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="208.5" layoutY="589.0" startX="-13.0" startY="-16.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="263.5" layoutY="589.0" startX="-13.0" startY="-17.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="182.0" layoutY="592.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="291.0" layoutY="592.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="236.5" layoutY="592.0" startX="-12.75" startY="-19.25" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="618.5" layoutY="589.0" startX="-13.0" startY="-16.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-13.0" endY="-12.0" layoutX="673.5" layoutY="589.0" startX="-13.0" startY="-17.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="592.0" layoutY="592.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="701.0" layoutY="592.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="646.5" layoutY="592.0" startX="-12.75" startY="-19.25" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-23.75" endY="-19.75" layoutX="410.0" layoutY="223.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-23.75" endY="-19.75" layoutX="410.0" layoutY="168.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-23.75" endY="-19.75" layoutX="410.0" layoutY="113.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-17.5" endY="-19.75" layoutX="410.0" layoutY="140.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-17.5" endY="-19.75" layoutX="410.0" layoutY="194.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-23.75" endY="-19.75" layoutX="1207.0" layoutY="718.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-23.75" endY="-19.75" layoutX="1207.0" layoutY="663.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-23.75" endY="-19.75" layoutX="1207.0" layoutY="608.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-17.5" endY="-19.75" layoutX="1207.0" layoutY="635.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-17.5" endY="-19.75" layoutX="1207.0" layoutY="689.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-23.75" endY="-19.75" layoutX="1369.0" layoutY="246.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-23.75" endY="-19.75" layoutX="1370.0" layoutY="180.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-23.75" endY="-19.75" layoutX="1369.0" layoutY="113.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-17.5" endY="-19.75" layoutX="1369.0" layoutY="146.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-17.5" endY="-19.75" layoutX="1369.0" layoutY="213.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="526.0" layoutY="371.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="569.0" layoutY="371.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="613.0" layoutY="371.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="656.0" layoutY="371.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-9.0" layoutX="700.0" layoutY="371.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-14.25" layoutX="548.0" layoutY="371.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-14.25" layoutX="591.0" layoutY="371.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-14.25" layoutX="635.0" layoutY="371.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="-14.25" layoutX="679.0" layoutY="371.0" startX="-12.75" startY="-19.75" stroke="SILVER" strokeWidth="2.0" />
+      <Group layoutX="1579.0" layoutY="493.0" />
+      <ValveControl equipmentType="CNT" interactive="false" kks="5SK_1" layoutX="519.0" layoutY="147.0" prefHeight="36.0" prefWidth="40.0" skinType="CTRL_VLV" system="MS" />
+      <ValveControl equipmentType="CNT" interactive="false" kks="5RK_1" layoutX="599.0" layoutY="147.0" prefHeight="36.0" prefWidth="40.0" skinType="CTRL_VLV" system="MS" />
+      <ValveControl equipmentType="CNT" interactive="false" kks="5RK_2" layoutX="680.0" layoutY="147.0" prefHeight="36.0" prefWidth="40.0" skinType="CTRL_VLV" system="MS" />
+      <ValveControl equipmentType="CNT" interactive="false" kks="5RK_3" layoutX="760.0" layoutY="147.0" prefHeight="36.0" prefWidth="40.0" skinType="CTRL_VLV" system="MS" />
+      <ValveControl equipmentType="CNT" interactive="false" kks="5RK_4" layoutX="839.0" layoutY="147.0" prefHeight="36.0" prefWidth="40.0" skinType="CTRL_VLV" system="MS" />
+      <ValveControl equipmentType="CNT" interactive="false" kks="5D_1" layoutX="927.0" layoutY="614.0" prefHeight="36.0" prefWidth="40.0" skinType="CTRL_VLV" system="MS" />
+      <ValveControl equipmentType="CNT" interactive="false" kks="5D_2" layoutX="1011.0" layoutY="614.0" prefHeight="36.0" prefWidth="40.0" skinType="CTRL_VLV" system="MS" />
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_740" layoutX="1330.0" layoutY="234.0" maxValue="500.0" param="" prefHeight="25.0" prefWidth="70.0" system="TU" unit="мкм">
+         <tooltip>
+            <Tooltip text="Бой вала ТА" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_741" layoutX="367.0" layoutY="212.0" maxValue="260.0" param="" prefHeight="25.0" prefWidth="70.0" system="TU" unit="мм">
+         <tooltip>
+            <Tooltip text="Ход сервомотора ЦВД" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_742" layoutX="1168.0" layoutY="706.0" maxValue="260.0" param="" prefHeight="25.0" prefWidth="70.0" system="TU" unit="мм">
+         <tooltip>
+            <Tooltip text="Ход сервомотора ЦНД" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_743" layoutX="286.0" layoutY="236.0" maxValue="60.0" param="" prefHeight="25.0" prefWidth="60.0" system="TU" unit="мм">
+         <tooltip>
+            <Tooltip text="абсолютное расширение первого стула слева" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_744" layoutX="286.0" layoutY="550.0" maxValue="60.0" param="" prefHeight="25.0" prefWidth="60.0" system="TU" unit="мм">
+         <tooltip>
+            <Tooltip text="абсолютное расширение первого стула справа" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_745" layoutX="1061.0" layoutY="234.0" maxValue="60.0" param="" prefHeight="25.0" prefWidth="60.0" system="TU" unit="мм">
+         <tooltip>
+            <Tooltip text="абсолютное расширение второго стула слева" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_746" layoutX="694.0" layoutY="550.0" maxValue="60.0" param="" prefHeight="25.0" prefWidth="60.0" system="TU" unit="мм">
+         <tooltip>
+            <Tooltip text="абсолютное расширение второго стула справа" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" kks="5M_747" layoutX="286.0" layoutY="640.0" maxValue="5.0" minValue="-5.0" param="" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/м">
+         <tooltip>
+            <Tooltip text="наклон первого стула" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" kks="5M_748" layoutX="694.0" layoutY="640.0" maxValue="5.0" minValue="-5.0" param="" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/м">
+         <tooltip>
+            <Tooltip text="наклон второго стула" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" kks="5M_703" layoutX="285.0" layoutY="328.0" maxValue="5.0" minValue="-5.0" param="" prefHeight="25.0" prefWidth="70.0" system="TU" unit="мм">
+         <tooltip>
+            <Tooltip text="Относительное расширение ротора ЦВД" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" kks="5M_704" layoutX="1058.0" layoutY="328.0" maxValue="5.0" minValue="-5.0" param="" prefHeight="25.0" prefWidth="70.0" system="TU" unit="мм">
+         <tooltip>
+            <Tooltip text="Относительное расширение ротора ЦСД" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" kks="5M_705" layoutX="1434.0" layoutY="328.0" maxValue="5.0" minValue="-5.0" param="" prefHeight="25.0" prefWidth="70.0" system="TU" unit="мм">
+         <tooltip>
+            <Tooltip text="Относительное расширение ротора ЦНД" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" kks="5M_751" layoutX="691.0" layoutY="280.0" maxValue="2.0" minValue="-2.0" param="" prefHeight="25.0" prefWidth="70.0" system="TU" unit="мм">
+         <tooltip>
+            <Tooltip text="осевой сдвиг ТА" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" kks="5M_752" layoutX="691.0" layoutY="308.0" maxValue="2.0" minValue="-2.0" param="" prefHeight="25.0" prefWidth="70.0" system="TU" unit="мм">
+         <tooltip>
+            <Tooltip text="осевой сдвиг ТА" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" kks="5M_753" layoutX="691.0" layoutY="336.0" maxValue="2.0" minValue="-2.0" param="" prefHeight="25.0" prefWidth="70.0" system="TU" unit="мм">
+         <tooltip>
+            <Tooltip text="осевой сдвиг ТА" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_754" layoutX="1489.0" layoutY="180.0" maxValue="12.0" param="" prefHeight="25.0" prefWidth="70.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="максимальное значение СКЗ виброскорости на канале 4В" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_755" layoutX="1622.0" layoutY="180.0" maxValue="12.0" param="" prefHeight="25.0" prefWidth="70.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="максимальное значение НЧ вибрации на канале 1В" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="0" kks="5M_701" layoutX="16.0" layoutY="422.0" maxValue="40000.0" param="n" prefHeight="25.0" prefWidth="100.0" system="MS" unit="об/мин">
+         <tooltip>
+            <Tooltip text="Обороты турбины" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_5a" layoutX="36.0" layoutY="478.0" maxValue="60.0" param="f" prefHeight="25.0" prefWidth="60.0" system="MS" unit="Гц">
+         <tooltip>
+            <Tooltip text="Частоста вращения" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="0" kks="5M_749" layoutX="1801.0" layoutY="423.0" maxValue="40000.0" param="n" prefHeight="25.0" prefWidth="100.0" system="TU" unit="об/мин">
+         <tooltip>
+            <Tooltip text="Обороты турбины" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_750" layoutX="1822.0" layoutY="478.0" maxValue="60.0" param="f" prefHeight="25.0" prefWidth="60.0" system="TU" unit="Гц">
+         <tooltip>
+            <Tooltip text="Частоста вращения" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_711" layoutX="205.0" layoutY="725.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вертикальная вибрация первого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_721" layoutX="205.0" layoutY="755.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Поперечная вибрация первого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_731" layoutX="205.0" layoutY="785.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Осевая вибрация первого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_712" layoutX="518.0" layoutY="725.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вертикальная вибрация второго подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_722" layoutX="518.0" layoutY="755.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Поперечная вибрация второго подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_732" layoutX="518.0" layoutY="785.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Осевая вибрация второго подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_713" layoutX="637.0" layoutY="725.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вертикальная вибрация третьего подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_723" layoutX="637.0" layoutY="755.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Поперечная вибрация третьего подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_733" layoutX="637.0" layoutY="785.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Осевая вибрация третьего подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_714" layoutX="927.0" layoutY="725.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вертикальная вибрация четвертого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_724" layoutX="927.0" layoutY="755.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Поперечная вибрация четвертого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_734" layoutX="927.0" layoutY="785.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Осевая вибрация четвертого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_715" layoutX="1023.0" layoutY="725.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вертикальная вибрация пятого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_725" layoutX="1023.0" layoutY="755.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Поперечная вибрация пятого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_735" layoutX="1023.0" layoutY="785.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Осевая вибрация пятого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_716" layoutX="1302.0" layoutY="725.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вертикальная вибрация шестого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_726" layoutX="1302.0" layoutY="755.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Поперечная вибрация шестого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_736" layoutX="1302.0" layoutY="785.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Осевая вибрация шестого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_717" layoutX="1400.0" layoutY="725.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вертикальная вибрация седьмого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_727" layoutX="1400.0" layoutY="755.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Поперечная вибрация седьмого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_737" layoutX="1400.0" layoutY="785.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Осевая вибрация седьмого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_718" layoutX="1677.0" layoutY="726.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вертикальная вибрация восьмого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_728" layoutX="1677.0" layoutY="756.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Поперечная вибрация восьмого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="5M_738" layoutX="1677.0" layoutY="786.0" maxValue="12.0" param="V" prefHeight="25.0" prefWidth="85.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Осевая вибрация восьмого подшипника" />
+         </tooltip>
+      </DetectorControl>
+      <FunctionControl kks="tu14e" layoutX="366.0" layoutY="312.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="MF" />
+      <FunctionControl kks="tu15e" layoutX="1142.0" layoutY="312.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="MF" />
+      <FunctionControl kks="tu16e" layoutX="1516.0" layoutY="312.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="MF" />
+      <FunctionControl kks="tu06e" layoutX="776.0" layoutY="312.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="MF" />
+      <FunctionControl kks="tu17e" layoutX="111.0" layoutY="312.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="MF" />
+      <FunctionControl kks="tu18e" layoutX="887.0" layoutY="312.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="MF" />
+      <FunctionControl kks="tu19e" layoutX="1266.0" layoutY="312.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="MF" />
+      <FunctionControl kks="tu05a" layoutX="307.0" layoutY="743.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="MF" />
+      <FunctionControl kks="tu05b" layoutX="457.0" layoutY="743.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="MF" />
+      <FunctionControl kks="tu05c" layoutX="733.0" layoutY="743.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="MF" />
+      <FunctionControl kks="tu05d" layoutX="863.0" layoutY="743.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="MF" />
+      <FunctionControl kks="tu05e" layoutX="1117.0" layoutY="743.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="MF" />
+      <FunctionControl kks="tu05f" layoutX="1242.0" layoutY="743.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="MF" />
+      <FunctionControl kks="tu05g" layoutX="1495.0" layoutY="743.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="MF" />
+      <FunctionControl kks="tu05h" layoutX="1615.0" layoutY="743.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="MF" />
+      <IndicationControl kks="ed:v090_brk" layoutX="1567.0" layoutY="490.0" prefHeight="25.0" prefWidth="25.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Мех. величины" buttonOnText="Мех. величины" diagramTitle="ТА-5 Мех. величины.fxml" equipmentType="TRANSITION_BUTTON" kks="38" layoutX="1181.0" layoutY="1038.0" prefHeight="38.0" prefWidth="96.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="ПСГ" buttonOnText="ПСГ" diagramTitle="ТА-5 ПСГ.fxml" equipmentType="TRANSITION_BUTTON" kks="39" layoutX="1281.0" layoutY="1038.0" prefHeight="38.0" prefWidth="36.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Конденсатор" buttonOnText="Конденсатор" diagramTitle="ТА-5 Конденсатор.fxml" equipmentType="TRANSITION_BUTTON" kks="40" layoutX="1321.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Уплотнения ТА" buttonOnText="Уплотнения ТА" diagramTitle="ТА-5 Уплотнения ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="41" layoutX="1403.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Рабочее масло" buttonOnText="Рабочее масло" diagramTitle="ТА-5 Рабочее масло.fxml" equipmentType="TRANSITION_BUTTON" kks="42" layoutX="1485.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Грязное масло ТА" buttonOnText="Грязное масло ТА" diagramTitle="ТА-5 Грязное масло ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="43" layoutX="1567.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Защиты ТА(ПВД, ПСГ)" buttonOnText="Защиты ТА(ПВД, ПСГ)" diagramTitle="ТА-5 Защиты ТА(ПВД, ПСГ, Произв отбор).fxml" equipmentType="TRANSITION_BUTTON" kks="45" layoutX="1731.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Защиты ТА" buttonOnText="Защиты ТА" diagramTitle="ТА-5 Защиты ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="44" layoutX="1649.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Генератор (УВГ)" buttonOnText="Генератор (УВГ)" diagramTitle="ТА-5 Генератор (УВГ).fxml" equipmentType="TRANSITION_BUTTON" kks="37" layoutX="1104.0" layoutY="1038.0" prefHeight="38.0" prefWidth="73.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Сигнализации ТА" buttonOnText="Сигнализации ТА" diagramTitle="ТА-5 Сигнализации ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="46" layoutX="1813.0" layoutY="1038.0" prefHeight="38.0" prefWidth="103.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Общий" buttonOnText="Общий" diagramTitle="ТА-5 Общий.fxml" equipmentType="TRANSITION_BUTTON" kks="31" layoutX="633.0" layoutY="1038.0" prefHeight="38.0" prefWidth="46.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Маслоснабжение" buttonOnText="Маслоснабжение" diagramTitle="ТА-5 Маслоснабжение.fxml" equipmentType="TRANSITION_BUTTON" kks="32" layoutX="683.0" layoutY="1038.0" prefHeight="38.0" prefWidth="100.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="ОК" buttonOnText="ОК" diagramTitle="ТА-5 ОК.fxml" equipmentType="TRANSITION_BUTTON" kks="33" layoutX="787.0" layoutY="1038.0" prefHeight="38.0" prefWidth="41.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Регенерация ТА" buttonOnText="Регенерация ТА" diagramTitle="ТА-5 Система регенерации ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="34" layoutX="832.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Техничническая вода" buttonOnText="Техничническая вода" diagramTitle="ТА-5 Техническая вода.fxml" equipmentType="TRANSITION_BUTTON" kks="35" layoutX="914.0" layoutY="1038.0" prefHeight="38.0" prefWidth="96.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Генератор (охлаждение)" buttonOnText="Генератор (охлаждение)" diagramTitle="ТА-5 Генератор (охлаждение).fxml" equipmentType="TRANSITION_BUTTON" kks="36" layoutX="1014.0" layoutY="1038.0" prefHeight="38.0" prefWidth="86.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="136.0" layoutX="1450.0" layoutY="553.0" stroke="BLACK" strokeWidth="2.0" width="261.0" />
+      <Line endX="-28.0" endY="-128.5" layoutX="246.0" layoutY="562.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-128.5" layoutX="300.0" layoutY="562.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-33.0" endY="-134.375" layoutX="251.0" layoutY="606.0" startX="20.5" startY="-134.375" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-127.25" layoutX="246.0" layoutY="613.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-127.25" layoutX="300.0" layoutY="613.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-33.0" endY="-134.375" layoutX="563.0" layoutY="568.0" startX="20.5" startY="-134.375" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-128.5" layoutX="558.0" layoutY="562.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-128.5" layoutX="612.0" layoutY="562.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-33.0" endY="-134.375" layoutX="563.0" layoutY="606.0" startX="20.5" startY="-134.375" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-127.25" layoutX="558.0" layoutY="613.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-127.25" layoutX="612.0" layoutY="613.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-33.0" endY="-134.375" layoutX="691.0" layoutY="568.0" startX="20.5" startY="-134.375" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-128.5" layoutX="686.0" layoutY="562.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-128.5" layoutX="740.0" layoutY="562.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-33.0" endY="-134.375" layoutX="691.0" layoutY="606.0" startX="20.5" startY="-134.375" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-127.25" layoutX="686.0" layoutY="613.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-127.25" layoutX="740.0" layoutY="613.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-33.0" endY="-134.375" layoutX="979.0" layoutY="568.0" startX="20.5" startY="-134.375" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-128.5" layoutX="974.0" layoutY="562.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-128.5" layoutX="1028.0" layoutY="562.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-33.0" endY="-134.375" layoutX="979.0" layoutY="606.0" startX="20.5" startY="-134.375" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-127.25" layoutX="974.0" layoutY="613.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-127.25" layoutX="1028.0" layoutY="613.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-33.0" endY="-134.375" layoutX="1067.0" layoutY="568.0" startX="20.5" startY="-134.375" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-128.5" layoutX="1062.0" layoutY="562.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-128.5" layoutX="1116.0" layoutY="562.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-33.0" endY="-134.375" layoutX="1067.0" layoutY="606.0" startX="20.5" startY="-134.375" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-127.25" layoutX="1062.0" layoutY="613.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-127.25" layoutX="1116.0" layoutY="613.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-33.0" endY="-134.375" layoutX="1356.0" layoutY="568.0" startX="20.5" startY="-134.375" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-128.5" layoutX="1351.0" layoutY="562.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-128.5" layoutX="1405.0" layoutY="562.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-33.0" endY="-134.375" layoutX="1356.0" layoutY="606.0" startX="20.5" startY="-134.375" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-127.25" layoutX="1351.0" layoutY="613.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-127.25" layoutX="1405.0" layoutY="613.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-33.0" endY="-134.375" layoutX="1443.0" layoutY="568.0" startX="20.5" startY="-134.375" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-128.5" layoutX="1438.0" layoutY="562.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-128.5" layoutX="1492.0" layoutY="562.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-33.0" endY="-134.375" layoutX="1443.0" layoutY="606.0" startX="20.5" startY="-134.375" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-127.25" layoutX="1438.0" layoutY="613.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-127.25" layoutX="1492.0" layoutY="613.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-33.0" endY="-134.375" layoutX="1732.0" layoutY="569.0" startX="20.5" startY="-134.375" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-128.5" layoutX="1727.0" layoutY="563.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-128.5" layoutX="1781.0" layoutY="563.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-33.0" endY="-134.375" layoutX="1732.0" layoutY="607.0" startX="20.5" startY="-134.375" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-127.25" layoutX="1727.0" layoutY="614.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-28.0" endY="-127.25" layoutX="1781.0" layoutY="614.0" startX="-28.0" startY="-141.5" stroke="SILVER" strokeWidth="2.25" />
+      <Line endX="-33.0" endY="-134.375" layoutX="251.0" layoutY="568.0" startX="20.5" startY="-134.375" stroke="SILVER" strokeWidth="2.25" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="25.0" layoutX="168.0" layoutY="306.0" stroke="BLACK" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="25.0" layoutX="18.0" layoutY="395.0" stroke="BLACK" width="100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="25.0" layoutX="18.0" layoutY="451.0" stroke="BLACK" width="100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="25.0" layoutX="1319.0" layoutY="306.0" stroke="BLACK" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="25.0" layoutX="942.0" layoutY="306.0" stroke="BLACK" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="25.0" layoutX="350.0" layoutY="60.0" stroke="BLACK" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="25.0" layoutX="1308.0" layoutY="60.0" stroke="BLACK" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="25.0" layoutX="169.0" layoutY="213.0" stroke="BLACK" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="25.0" layoutX="167.0" layoutY="616.0" stroke="BLACK" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="25.0" layoutX="167.0" layoutY="528.0" stroke="BLACK" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="25.0" layoutX="576.0" layoutY="616.0" stroke="BLACK" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="25.0" layoutX="577.0" layoutY="528.0" stroke="BLACK" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="25.0" layoutX="1146.0" layoutY="555.0" stroke="BLACK" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="25.0" layoutX="1802.0" layoutY="451.0" stroke="BLACK" width="100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="25.0" layoutX="1802.0" layoutY="395.0" stroke="BLACK" width="100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="23.0" layoutX="472.0" layoutY="333.0" stroke="BLACK" width="39.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="23.0" layoutX="472.0" layoutY="308.0" stroke="BLACK" width="39.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="23.0" layoutX="472.0" layoutY="283.0" stroke="BLACK" width="39.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="25.0" layoutX="945.0" layoutY="213.0" stroke="BLACK" width="114.0" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="xcmcnd5" layoutX="1145.0" layoutY="635.0" maxValue="200.0" orientation="VERTICAL_REVERSE" prefHeight="16.0" prefWidth="117.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="ar2p5" layoutX="575.0" layoutY="555.0" maxValue="60.0" prefHeight="16.0" prefWidth="117.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vv41" layoutX="113.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="ar1p5" layoutX="164.0" layoutY="555.0" maxValue="60.0" prefHeight="16.0" prefWidth="117.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="ar2l5" layoutX="943.0" layoutY="239.0" maxValue="60.0" prefHeight="16.0" prefWidth="117.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="ar1l5" layoutX="167.0" layoutY="240.0" maxValue="60.0" prefHeight="16.0" prefWidth="117.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vp41" layoutX="143.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vo41" layoutX="173.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vv42" layoutX="427.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vp42" layoutX="457.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vo42" layoutX="487.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vv43" layoutX="546.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vp43" layoutX="576.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vo43" layoutX="606.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vv44" layoutX="836.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vp44" layoutX="866.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vo44" layoutX="896.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vv45" layoutX="931.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vp45" layoutX="961.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vo45" layoutX="991.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vv46" layoutX="1209.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vp46" layoutX="1239.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vo46" layoutX="1269.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vv47" layoutX="1308.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vp47" layoutX="1338.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vo47" layoutX="1368.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vv48" layoutX="1585.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vp48" layoutX="1615.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="vo48" layoutX="1645.0" layoutY="908.0" maxValue="12.0" orientation="VERTICAL_REVERSE" prefHeight="21.0" prefWidth="208.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="xcmcvd5" layoutX="348.0" layoutY="141.0" maxValue="220.0" orientation="VERTICAL_REVERSE" prefHeight="16.0" prefWidth="117.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="boi5" layoutX="1296.0" layoutY="151.0" maxValue="500.0" orientation="VERTICAL_REVERSE" prefHeight="16.0" prefWidth="140.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="m5orrcvdl" layoutX="169.0" layoutY="331.0" maxValue="5.0" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="57.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="m5orrcvdp" layoutX="226.0" layoutY="331.0" maxValue="5.0" prefHeight="16.0" prefWidth="57.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="m5n1l" layoutX="167.0" layoutY="645.0" maxValue="5.0" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="57.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="m5n1p" layoutX="224.0" layoutY="645.0" maxValue="5.0" prefHeight="16.0" prefWidth="57.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="m5n2l" layoutX="577.0" layoutY="645.0" maxValue="5.0" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="57.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="m5n2p" layoutX="634.0" layoutY="645.0" maxValue="5.0" prefHeight="16.0" prefWidth="57.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="m5orrcmdl" layoutX="942.0" layoutY="329.0" maxValue="5.0" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="57.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="m5orrcmdp" layoutX="999.0" layoutY="329.0" maxValue="5.0" prefHeight="16.0" prefWidth="57.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="m5orrcndl" layoutX="1320.0" layoutY="329.0" maxValue="5.0" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="57.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="m5orrcndp" layoutX="1377.0" layoutY="329.0" maxValue="5.0" prefHeight="16.0" prefWidth="57.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="m5oc3l" layoutX="512.0" layoutY="336.0" maxValue="2.0" orientation="HORIZONTAL_REVERSE" prefHeight="14.0" prefWidth="88.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="m5oc3p" layoutX="600.0" layoutY="336.0" maxValue="2.0" prefHeight="14.0" prefWidth="88.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="m5oc2l" layoutX="512.0" layoutY="312.0" maxValue="2.0" orientation="HORIZONTAL_REVERSE" prefHeight="14.0" prefWidth="88.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="m5oc2p" layoutX="600.0" layoutY="312.0" maxValue="2.0" prefHeight="14.0" prefWidth="88.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="m5oc1l" layoutX="512.0" layoutY="289.0" maxValue="2.0" orientation="HORIZONTAL_REVERSE" prefHeight="14.0" prefWidth="88.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="m5oc1p" layoutX="600.0" layoutY="289.0" maxValue="2.0" prefHeight="14.0" prefWidth="88.0" skinType="LEVEL" />
+      <Text layoutX="479.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОС3" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="476.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОС2" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="479.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОС1" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="32.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Обороты 1" textAlignment="CENTER" wrappingWidth="67.49999999999989">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="34.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Частота 1" textAlignment="CENTER" wrappingWidth="61.5">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1345.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОРР ЦНД" textAlignment="CENTER" wrappingWidth="61.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="968.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОРР ЦСД" textAlignment="CENTER" wrappingWidth="60.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="952.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="АР 2 стула слева" textAlignment="CENTER" wrappingWidth="104.99999999999955">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="376.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ХСМ ЦВД" textAlignment="CENTER" wrappingWidth="61.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1336.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Бой вала" textAlignment="CENTER" wrappingWidth="57.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="171.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="АР 1 стула слева" textAlignment="CENTER" wrappingWidth="106.40356445312477">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="193.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОРР ЦВД" textAlignment="CENTER" wrappingWidth="59.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="239.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="551.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" wrappingWidth="10.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="679.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" wrappingWidth="10.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="967.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" textAlignment="CENTER" wrappingWidth="10.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1055.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="CENTER" wrappingWidth="10.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1344.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" textAlignment="CENTER" wrappingWidth="10.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1431.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" textAlignment="CENTER" wrappingWidth="10.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1720.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" textAlignment="CENTER" wrappingWidth="10.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="161.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-5" wrappingWidth="15.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="220.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="274.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="936.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-5" textAlignment="CENTER" wrappingWidth="15.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="995.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1049.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1315.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-5" textAlignment="CENTER" wrappingWidth="15.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1372.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1427.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="945.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="995.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30" textAlignment="CENTER" wrappingWidth="18.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1049.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="60" textAlignment="CENTER" wrappingWidth="18.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="165.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="215.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30" textAlignment="CENTER" wrappingWidth="18.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="269.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="60" textAlignment="CENTER" wrappingWidth="18.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="371.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="359.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="110" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="359.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="220" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1329.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1318.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="250" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1317.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="500" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1470.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Максимальное значение СКЗ виброскорости на канале 4В" textAlignment="CENTER" wrappingWidth="106.403564453125">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1604.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Максимальное значение НЧ вибрации на канале 1В" textAlignment="CENTER" wrappingWidth="106.403564453125">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="596.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="549.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-1" textAlignment="CENTER" wrappingWidth="15.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="507.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-2" textAlignment="CENTER" wrappingWidth="15.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="639.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="683.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="683.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5РК-2" textAlignment="CENTER" wrappingWidth="31.499999999999545">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="764.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5РК-3" textAlignment="CENTER" wrappingWidth="31.499999999999545">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="603.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5РК-1" textAlignment="CENTER" wrappingWidth="31.499999999999545">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="843.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5РК-4" textAlignment="CENTER" wrappingWidth="31.499999999999545">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="520.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5СК-1" textAlignment="CENTER" wrappingWidth="37.49999999999977">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="538.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Положение стопорного и регулирующих клапанов" textAlignment="CENTER" wrappingWidth="322.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="776.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тепломеханические величины ТА5" textAlignment="CENTER" wrappingWidth="330.6666259765625">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="171.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НАКЛОН 1 стула" textAlignment="CENTER" wrappingWidth="104.99999999999955">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="165.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="АР 1 стула справа" textAlignment="CENTER" wrappingWidth="116.99999999999955">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="583.0" layoutY="634.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НАКЛОН 2 стула" textAlignment="CENTER" wrappingWidth="104.99999999999955">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="575.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="АР 2 стула справа" textAlignment="CENTER" wrappingWidth="116.99999999999955">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1170.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ХСМ ЦНД" textAlignment="CENTER" wrappingWidth="65.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="247.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="CENTER" wrappingWidth="12.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="559.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" wrappingWidth="12.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="678.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" wrappingWidth="12.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="967.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" textAlignment="CENTER" wrappingWidth="12.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1063.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="CENTER" wrappingWidth="12.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1342.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" textAlignment="CENTER" wrappingWidth="12.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1440.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" textAlignment="CENTER" wrappingWidth="12.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1717.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" textAlignment="CENTER" wrappingWidth="12.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="94.0" layoutY="1028.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="94.0" layoutY="994.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" wrappingWidth="10.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="94.0" layoutY="958.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" textAlignment="CENTER" wrappingWidth="10.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="94.0" layoutY="925.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" textAlignment="CENTER" wrappingWidth="10.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="94.0" layoutY="891.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" textAlignment="CENTER" wrappingWidth="10.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="89.0" layoutY="854.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" textAlignment="CENTER" wrappingWidth="18.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="89.0" layoutY="822.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12" textAlignment="CENTER" wrappingWidth="18.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="96.0" layoutY="772.0" strokeType="OUTSIDE" strokeWidth="0.0" text="V, мм/с" textAlignment="CENTER" wrappingWidth="31.499999999999545">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#c80000" layoutX="782.0" layoutY="823.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11,2 мм/с" textAlignment="CENTER" wrappingWidth="67.49999999999989">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#ec9447" layoutX="790.0" layoutY="894.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7,1 мм/с" textAlignment="CENTER" wrappingWidth="54.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="YELLOW" layoutX="790.0" layoutY="940.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4,5 мм/с" textAlignment="CENTER" wrappingWidth="54.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="162.0" layoutY="685.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-5" textAlignment="CENTER" wrappingWidth="15.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="220.0" layoutY="685.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="274.0" layoutY="685.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="571.0" layoutY="686.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-5" textAlignment="CENTER" wrappingWidth="15.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="630.0" layoutY="686.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="684.0" layoutY="686.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="165.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="215.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30" textAlignment="CENTER" wrappingWidth="18.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="269.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" text="60" textAlignment="CENTER" wrappingWidth="18.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="574.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="624.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30" textAlignment="CENTER" wrappingWidth="18.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="678.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" text="60" textAlignment="CENTER" wrappingWidth="18.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1168.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1156.0" layoutY="647.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1156.0" layoutY="593.0" strokeType="OUTSIDE" strokeWidth="0.0" text="200" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="933.0" layoutY="666.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5Д-1" textAlignment="CENTER" wrappingWidth="26.999999999999773">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1017.0" layoutY="666.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5Д-2" textAlignment="CENTER" wrappingWidth="26.999999999999773">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="861.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Положение регулирующих диафрагм" textAlignment="CENTER" wrappingWidth="237.6666259765625">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1459.0" layoutY="620.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Генератор" wrappingWidth="60.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1460.0" layoutY="638.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЦСД" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1460.0" layoutY="657.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЦНД" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1460.0" layoutY="675.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЦВД" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1584.0" layoutY="621.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1410" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1584.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1830" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1584.0" layoutY="657.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1980" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1585.0" layoutY="676.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2000" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1660.0" layoutY="621.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3980" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1476.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Критическая частота вращения об/мин" textAlignment="CENTER" wrappingWidth="212.80712890625">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1821.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Частота 2" textAlignment="CENTER" wrappingWidth="61.5">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1817.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Обороты 2" textAlignment="CENTER" wrappingWidth="67.49999999999989">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Polygon layoutX="348.0" layoutY="369.0" points="-35.33331298828125, 176.5, 149.0, 129.0, 149.0, 39.5, -35.33331298828125, -9.666671752929688" stroke="BLACK" strokeWidth="2.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.5550239234449761" endY="0.5215311004784688">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4745098054409027" green="0.4745098054409027" blue="0.4745098054409027" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Polygon>
+      <Polygon layoutX="803.0" layoutY="457.0" points="-60.0, 40.0, 126.0, 86.5, 126.0, -96.5, -60.0, -52.0" stroke="BLACK" strokeWidth="2.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.5550239234449761" endY="0.5215311004784688">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4745098054409027" green="0.4745098054409027" blue="0.4745098054409027" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Polygon>
+      <Polygon layoutX="1239.0" layoutY="451.0" points="-35.0, 44.5, 66.0, 87.0, 66.0, -83.0, -35.0, -42.0, -133.5, -83.0, -133.5, 87.0" stroke="BLACK" strokeWidth="2.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.5550239234449761" endY="0.5215311004784688">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4745098054409027" green="0.4745098054409027" blue="0.4745098054409027" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Polygon>
+      <Text layoutX="378.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЦВД" textAlignment="CENTER" wrappingWidth="45.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="817.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЦСД" textAlignment="CENTER" wrappingWidth="45.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1180.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЦНД" textAlignment="CENTER" wrappingWidth="48.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1523.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ГЕНЕРАТОР" textAlignment="CENTER" wrappingWidth="118.4921875">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="22.0" layoutX="174.0" layoutY="441.0" stroke="BLACK" strokeWidth="2.0" width="138.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.4688995215311005" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4745098054409027" green="0.4745098054409027" blue="0.4745098054409027" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="22.0" layoutX="497.0" layoutY="441.0" stroke="BLACK" strokeWidth="2.0" width="122.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.4976076555023924" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4745098054409027" green="0.4745098054409027" blue="0.4745098054409027" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="22.0" layoutX="629.0" layoutY="441.0" stroke="BLACK" strokeWidth="2.0" width="114.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.49282296650717705" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4745098054409027" green="0.4745098054409027" blue="0.4745098054409027" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="22.0" layoutX="929.0" layoutY="441.0" stroke="BLACK" strokeWidth="2.0" width="83.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.4976076555023924" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4745098054409027" green="0.4745098054409027" blue="0.4745098054409027" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="22.0" layoutX="1023.0" layoutY="441.0" stroke="BLACK" strokeWidth="2.0" width="83.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.5167464114832536" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4745098054409027" green="0.4745098054409027" blue="0.4745098054409027" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="22.0" layoutX="1305.0" layoutY="441.0" stroke="BLACK" strokeWidth="2.0" width="84.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.5645933014354068" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4745098054409027" green="0.4745098054409027" blue="0.4745098054409027" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" layoutX="615.0" layoutY="436.0" stroke="BLACK" width="10.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.5167464114832536" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.01315789483487606" green="0.01315789483487606" blue="0.01315789483487606" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" layoutX="623.0" layoutY="436.0" stroke="BLACK" width="10.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.5167464114832536" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.01315789483487606" green="0.01315789483487606" blue="0.01315789483487606" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" layoutX="1008.0" layoutY="436.0" stroke="BLACK" width="10.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.5167464114832536" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.01315789483487606" green="0.01315789483487606" blue="0.01315789483487606" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" layoutX="1016.0" layoutY="436.0" stroke="BLACK" width="10.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.5167464114832536" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.01315789483487606" green="0.01315789483487606" blue="0.01315789483487606" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" layoutX="1385.0" layoutY="436.0" stroke="BLACK" width="10.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.5167464114832536" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.01315789483487606" green="0.01315789483487606" blue="0.01315789483487606" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" layoutX="1393.0" layoutY="436.0" stroke="BLACK" width="10.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.5167464114832536" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.01315789483487606" green="0.01315789483487606" blue="0.01315789483487606" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" fill="#1f93ff00" height="57.0" layoutX="1575.0" layoutY="293.0" stroke="#b7b7b7" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
+      <ButtonControl buttonOffText="ПОВРЕЖДЕНИЕ" buttonOnText="ПОВРЕЖДЕНИЕ" equipmentType="TEXT_BUTTON" kks="ed:vneshpov_5" layoutX="1587.0" layoutY="301.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="10.0" />
+         </customFont>
+      </ButtonControl>
+      <Text fill="SILVER" layoutX="1691.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Внешние повреждения генератора" textAlignment="CENTER" wrappingWidth="165.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+   </children>
+   <stylesheets>
+      <URL value="@StyleRMR.css" />
+      <URL value="@StyleSheet.css" />
+   </stylesheets>
+</AnchorPane>

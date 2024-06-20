@@ -1,0 +1,1316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.ButtonControl?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.IndicationControl?>
+<?import ru.get.common.controls.InputControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" stylesheets="@tempDiags/StyleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="49.0" layoutX="295.0" layoutY="129.0" stroke="GREY" width="1350.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="49.0" layoutX="295.0" layoutY="180.0" stroke="GREY" width="1350.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="49.0" layoutX="295.0" layoutY="231.0" stroke="GREY" width="1350.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="49.0" layoutX="295.0" layoutY="282.0" stroke="GREY" width="1350.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="49.0" layoutX="295.0" layoutY="333.0" stroke="GREY" width="1350.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="49.0" layoutX="295.0" layoutY="384.0" stroke="GREY" width="1350.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="49.0" layoutX="295.0" layoutY="435.0" stroke="GREY" width="1350.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="49.0" layoutX="295.0" layoutY="613.0" stroke="GREY" width="1350.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="49.0" layoutX="295.0" layoutY="664.0" stroke="GREY" width="1350.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="49.0" layoutX="295.0" layoutY="715.0" stroke="GREY" width="1350.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="49.0" layoutX="295.0" layoutY="766.0" stroke="GREY" width="1350.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="49.0" layoutX="295.0" layoutY="817.0" stroke="GREY" width="1350.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="49.0" layoutX="295.0" layoutY="868.0" stroke="GREY" width="1350.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="49.0" layoutX="295.0" layoutY="919.0" stroke="GREY" width="1350.0" />
+      <Text fill="WHITE" layoutX="669.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗАЩИТА НА ОСТАНОВ ВЕНТИЛЯТОРА СЕКЦИИ №1" textAlignment="CENTER" wrappingWidth="600.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="669.0" layoutY="595.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗАЩИТА НА ОСТАНОВ ВЕНТИЛЯТОРА СЕКЦИИ №2" textAlignment="CENTER" wrappingWidth="600.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <DetectorControl kks="52PAD11CT101" layoutX="943.0" layoutY="139.0" maxValue="200.0" minValue="-50.0" param="" prefHeight="30.0" prefWidth="62.0" system="CW" unit="" />
+      <ButtonControl borderWidth="1.0" buttonOffText="На команду" buttonOnText="На сигнал" equipmentType="TEXT_BUTTON" kks="yp:rmevent1lz001" layoutX="1262.0" layoutY="133.0" prefHeight="40.0" prefWidth="200.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color green="1.0" blue="1.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Защита выведена" kks="yp:mevent1vv001" layoutX="1032.0" layoutY="132.0" prefHeight="40.0" prefWidth="200.0" secondStatus="Защита введена" skinType="TABLO">
+         <firstStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvent1_sg001" layoutX="261.0" layoutY="128.0" maxValue="2.0" prefHeight="49.0" prefWidth="530.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="0.8745098114013672" green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <Line endX="187.0" endY="-0.5" layoutX="605.0" layoutY="154.0" startX="-288.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <Text layoutX="317.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Защита по превышению температуры обмотки (секция №1)" wrappingWidth="425.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="52PAD11AN001ZQ01" wrappingWidth="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Line endX="-12.70709228515625" endY="23.0" layoutX="328.0" layoutY="153.0" startX="-12.70709228515625" startY="-23.0" stroke="GREY" strokeWidth="2.0" />
+      <DetectorControl kks="52PAD11CT102" layoutX="943.0" layoutY="189.0" maxValue="200.0" minValue="-50.0" param="" prefHeight="30.0" prefWidth="62.0" system="CW" unit="" />
+      <DetectorControl kks="52PAD11CT103" layoutX="943.0" layoutY="240.0" maxValue="200.0" minValue="-50.0" param="" prefHeight="30.0" prefWidth="62.0" system="CW" unit="" />
+      <DetectorControl kks="52PAD11CT104" layoutX="943.0" layoutY="291.0" maxValue="150.0" minValue="-50.0" param="" prefHeight="30.0" prefWidth="62.0" system="CW" unit="" />
+      <DetectorControl kks="52PAD11CT105" layoutX="943.0" layoutY="342.0" maxValue="150.0" minValue="-50.0" param="" prefHeight="30.0" prefWidth="62.0" system="CW" unit="" />
+      <DetectorControl kks="52PAD11CY001" layoutX="943.0" layoutY="393.0" maxValue="15.0" param="" prefHeight="30.0" prefWidth="53.0" system="CW" unit="" />
+      <DetectorControl kks="52PAD11CY002" layoutX="943.0" layoutY="444.0" maxValue="15.0" param="" prefHeight="30.0" prefWidth="53.0" system="CW" unit="" />
+      <DetectorControl kks="52PAD12CT101" layoutX="944.0" layoutY="622.0" maxValue="200.0" minValue="-50.0" param="" prefHeight="30.0" prefWidth="62.0" system="CW" unit="" />
+      <DetectorControl kks="52PAD12CT102" layoutX="944.0" layoutY="674.0" maxValue="200.0" minValue="-50.0" param="" prefHeight="30.0" prefWidth="62.0" system="CW" unit="" />
+      <DetectorControl kks="52PAD12CT103" layoutX="944.0" layoutY="725.0" maxValue="200.0" minValue="-50.0" param="" prefHeight="30.0" prefWidth="62.0" system="CW" unit="" />
+      <DetectorControl kks="52PAD12CT104" layoutX="944.0" layoutY="776.0" maxValue="150.0" minValue="-50.0" param="" prefHeight="30.0" prefWidth="62.0" system="CW" unit="" />
+      <DetectorControl kks="52PAD12CT105" layoutX="944.0" layoutY="827.0" maxValue="150.0" minValue="-50.0" param="" prefHeight="30.0" prefWidth="62.0" system="CW" unit="" />
+      <DetectorControl kks="52PAD12CY001" layoutX="946.0" layoutY="878.0" maxValue="15.0" param="" prefHeight="30.0" prefWidth="53.0" system="CW" unit="" />
+      <DetectorControl kks="52PAD12CY002" layoutX="946.0" layoutY="929.0" maxValue="15.0" param="" prefHeight="30.0" prefWidth="53.0" system="CW" unit="" />
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="RETURN_BUTTON" kks="yp:rmevent1kv001" layoutX="1594.0" layoutY="133.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7400000095367432" green="0.7400000095367432" blue="0.7400000095367432" opacity="0.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Polygon disable="true" fill="#434242" layoutX="1615.0" layoutY="187.0" points="-14.5, -19.0, 15.0, -19.0, 0.0, -50.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:rmevent1tb001" layoutX="1527.0" layoutY="133.0" maxValue="2.0" prefHeight="40.0" prefWidth="40.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="" value="2.0">
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" green="0.11764705926179886" blue="0.11764705926179886" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl borderWidth="1.0" buttonOffText="На команду" buttonOnText="На сигнал" equipmentType="TEXT_BUTTON" kks="yp:rmevent1lz002" layoutX="1262.0" layoutY="184.0" prefHeight="40.0" prefWidth="200.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color green="1.0" blue="1.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Защита выведена" kks="yp:mevent1vv002" layoutX="1032.0" layoutY="183.0" prefHeight="40.0" prefWidth="200.0" secondStatus="Защита введена" skinType="TABLO">
+         <firstStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="RETURN_BUTTON" kks="yp:rmevent1kv002" layoutX="1594.0" layoutY="184.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7400000095367432" green="0.7400000095367432" blue="0.7400000095367432" opacity="0.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Polygon disable="true" fill="#434242" layoutX="1615.0" layoutY="238.0" points="-14.5, -19.0, 15.0, -19.0, 0.0, -50.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:rmevent1tb002" layoutX="1527.0" layoutY="183.0" maxValue="2.0" prefHeight="40.0" prefWidth="40.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="" value="2.0">
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" green="0.11764705926179886" blue="0.11764705926179886" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl borderWidth="1.0" buttonOffText="На команду" buttonOnText="На сигнал" equipmentType="TEXT_BUTTON" kks="yp:rmevent1lz003" layoutX="1262.0" layoutY="235.0" prefHeight="40.0" prefWidth="200.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color green="1.0" blue="1.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Защита выведена" kks="yp:mevent1vv003" layoutX="1032.0" layoutY="234.0" prefHeight="40.0" prefWidth="200.0" secondStatus="Защита введена" skinType="TABLO">
+         <firstStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="RETURN_BUTTON" kks="yp:rmevent1kv003" layoutX="1594.0" layoutY="235.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7400000095367432" green="0.7400000095367432" blue="0.7400000095367432" opacity="0.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Polygon disable="true" fill="#434242" layoutX="1615.0" layoutY="289.0" points="-14.5, -19.0, 15.0, -19.0, 0.0, -50.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:rmevent1tb003" layoutX="1527.0" layoutY="234.0" maxValue="2.0" prefHeight="40.0" prefWidth="40.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="" value="2.0">
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" green="0.11764705926179886" blue="0.11764705926179886" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl borderWidth="1.0" buttonOffText="На команду" buttonOnText="На сигнал" equipmentType="TEXT_BUTTON" kks="yp:rmevent1lz004" layoutX="1262.0" layoutY="286.0" prefHeight="40.0" prefWidth="200.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color green="1.0" blue="1.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Защита выведена" kks="yp:mevent1vv004" layoutX="1032.0" layoutY="285.0" prefHeight="40.0" prefWidth="200.0" secondStatus="Защита введена" skinType="TABLO">
+         <firstStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="RETURN_BUTTON" kks="yp:rmevent1kv004" layoutX="1594.0" layoutY="286.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7400000095367432" green="0.7400000095367432" blue="0.7400000095367432" opacity="0.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Polygon disable="true" fill="#434242" layoutX="1615.0" layoutY="340.0" points="-14.5, -19.0, 15.0, -19.0, 0.0, -50.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:rmevent1tb004" layoutX="1527.0" layoutY="285.0" maxValue="2.0" prefHeight="40.0" prefWidth="40.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="" value="2.0">
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" green="0.11764705926179886" blue="0.11764705926179886" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl borderWidth="1.0" buttonOffText="На команду" buttonOnText="На сигнал" equipmentType="TEXT_BUTTON" kks="yp:rmevent1lz005" layoutX="1262.0" layoutY="337.0" prefHeight="40.0" prefWidth="200.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color green="1.0" blue="1.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Защита выведена" kks="yp:mevent1vv005" layoutX="1032.0" layoutY="336.0" prefHeight="40.0" prefWidth="200.0" secondStatus="Защита введена" skinType="TABLO">
+         <firstStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="RETURN_BUTTON" kks="yp:rmevent1kv005" layoutX="1594.0" layoutY="337.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7400000095367432" green="0.7400000095367432" blue="0.7400000095367432" opacity="0.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Polygon disable="true" fill="#434242" layoutX="1615.0" layoutY="391.0" points="-14.5, -19.0, 15.0, -19.0, 0.0, -50.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:rmevent1tb005" layoutX="1527.0" layoutY="336.0" maxValue="2.0" prefHeight="40.0" prefWidth="40.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="" value="2.0">
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" green="0.11764705926179886" blue="0.11764705926179886" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl borderWidth="1.0" buttonOffText="На команду" buttonOnText="На сигнал" equipmentType="TEXT_BUTTON" kks="yp:rmevent1lz006" layoutX="1262.0" layoutY="388.0" prefHeight="40.0" prefWidth="200.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color green="1.0" blue="1.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Защита выведена" kks="yp:mevent1vv006" layoutX="1032.0" layoutY="387.0" prefHeight="40.0" prefWidth="200.0" secondStatus="Защита введена" skinType="TABLO">
+         <firstStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="RETURN_BUTTON" kks="yp:rmevent1kv006" layoutX="1594.0" layoutY="388.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7400000095367432" green="0.7400000095367432" blue="0.7400000095367432" opacity="0.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Polygon disable="true" fill="#434242" layoutX="1615.0" layoutY="442.0" points="-14.5, -19.0, 15.0, -19.0, 0.0, -50.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:rmevent1tb006" layoutX="1527.0" layoutY="387.0" maxValue="2.0" prefHeight="40.0" prefWidth="40.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="" value="2.0">
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" green="0.11764705926179886" blue="0.11764705926179886" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl borderWidth="1.0" buttonOffText="На команду" buttonOnText="На сигнал" equipmentType="TEXT_BUTTON" kks="yp:rmevent1lz007" layoutX="1262.0" layoutY="439.0" prefHeight="40.0" prefWidth="200.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color green="1.0" blue="1.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Защита выведена" kks="yp:mevent1vv007" layoutX="1032.0" layoutY="438.0" prefHeight="40.0" prefWidth="200.0" secondStatus="Защита введена" skinType="TABLO">
+         <firstStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="RETURN_BUTTON" kks="yp:rmevent1kv007" layoutX="1594.0" layoutY="439.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7400000095367432" green="0.7400000095367432" blue="0.7400000095367432" opacity="0.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Polygon disable="true" fill="#434242" layoutX="1615.0" layoutY="493.0" points="-14.5, -19.0, 15.0, -19.0, 0.0, -50.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:rmevent1tb007" layoutX="1527.0" layoutY="438.0" maxValue="2.0" prefHeight="40.0" prefWidth="40.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="" value="2.0">
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" green="0.11764705926179886" blue="0.11764705926179886" />
+         </secondStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvent1_sg002" layoutX="261.0" layoutY="179.0" maxValue="2.0" prefHeight="49.0" prefWidth="530.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="0.8745098114013672" green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvent1_sg003" layoutX="261.0" layoutY="230.0" maxValue="2.0" prefHeight="49.0" prefWidth="530.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="0.8745098114013672" green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvent1_sg004" layoutX="261.0" layoutY="281.0" maxValue="2.0" prefHeight="49.0" prefWidth="530.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="0.8745098114013672" green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvent1_sg005" layoutX="261.0" layoutY="332.0" maxValue="2.0" prefHeight="49.0" prefWidth="530.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="0.8745098114013672" green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvent1_sg006" layoutX="261.0" layoutY="383.0" maxValue="2.0" prefHeight="49.0" prefWidth="530.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="0.8745098114013672" green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvent1_sg007" layoutX="261.0" layoutY="434.0" maxValue="2.0" prefHeight="49.0" prefWidth="530.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="0.8745098114013672" green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <Text layoutX="317.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Защита по превышению температуры обмотки (секция №1)" wrappingWidth="425.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="52PAD11AN001ZQ02" wrappingWidth="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Защита по превышению температуры обмотки (секция №1)" wrappingWidth="425.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="52PAD11AN001ZQ03" wrappingWidth="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Защита по превышению температуры подшипника (секция №1)" wrappingWidth="452.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="52PAD11AN001ZQ04" wrappingWidth="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Защита по превышению температуры подшипника (секция №1)" wrappingWidth="452.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="52PAD11AN001ZQ05" wrappingWidth="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Защита по превышению вибрации подшипника (секция №1)" wrappingWidth="430.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="52PAD11AN001ZQ06" wrappingWidth="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Защита по превышению вибрации подшипника (секция №1)" wrappingWidth="430.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" text="52PAD11AN001ZQ07" wrappingWidth="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Line endX="187.0" endY="-0.5" layoutX="605.0" layoutY="205.0" startX="-288.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="-12.70709228515625" endY="23.0" layoutX="328.0" layoutY="205.0" startX="-12.70709228515625" startY="-23.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="187.0" endY="-0.5" layoutX="605.0" layoutY="258.0" startX="-288.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="-12.70709228515625" endY="23.0" layoutX="328.0" layoutY="256.0" startX="-12.70709228515625" startY="-23.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="187.0" endY="-0.5" layoutX="605.0" layoutY="310.0" startX="-288.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="-12.70709228515625" endY="23.0" layoutX="328.0" layoutY="307.0" startX="-12.70709228515625" startY="-23.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="187.0" endY="-0.5" layoutX="605.0" layoutY="361.0" startX="-288.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="-12.70709228515625" endY="23.0" layoutX="328.0" layoutY="358.0" startX="-12.70709228515625" startY="-23.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="187.0" endY="-0.5" layoutX="605.0" layoutY="411.0" startX="-288.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="-12.70709228515625" endY="23.0" layoutX="328.0" layoutY="409.0" startX="-12.70709228515625" startY="-23.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="187.0" endY="-0.5" layoutX="605.0" layoutY="461.0" startX="-288.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="-12.70709228515625" endY="23.0" layoutX="328.0" layoutY="460.0" startX="-12.70709228515625" startY="-23.0" stroke="GREY" strokeWidth="2.0" />
+      <ButtonControl borderWidth="1.0" buttonOffText="На команду" buttonOnText="На сигнал" equipmentType="TEXT_BUTTON" kks="yp:rmevent2lz001" layoutX="1262.0" layoutY="616.0" prefHeight="40.0" prefWidth="200.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color green="1.0" blue="1.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Защита выведена" kks="yp:mevent2vv001" layoutX="1032.0" layoutY="615.0" prefHeight="40.0" prefWidth="200.0" secondStatus="Защита введена" skinType="TABLO">
+         <firstStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="RETURN_BUTTON" kks="yp:rmevent2kv001" layoutX="1594.0" layoutY="616.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7400000095367432" green="0.7400000095367432" blue="0.7400000095367432" opacity="0.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Polygon disable="true" fill="#434242" layoutX="1615.0" layoutY="670.0" points="-14.5, -19.0, 15.0, -19.0, 0.0, -50.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:rmevent2tb001" layoutX="1527.0" layoutY="615.0" maxValue="2.0" prefHeight="40.0" prefWidth="40.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="" value="2.0">
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" green="0.11764705926179886" blue="0.11764705926179886" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl borderWidth="1.0" buttonOffText="На команду" buttonOnText="На сигнал" equipmentType="TEXT_BUTTON" kks="yp:rmevent2lz002" layoutX="1262.0" layoutY="668.0" prefHeight="40.0" prefWidth="200.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color green="1.0" blue="1.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Защита выведена" kks="yp:mevent2vv002" layoutX="1032.0" layoutY="667.0" prefHeight="40.0" prefWidth="200.0" secondStatus="Защита введена" skinType="TABLO">
+         <firstStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="RETURN_BUTTON" kks="yp:rmevent2kv002" layoutX="1594.0" layoutY="668.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7400000095367432" green="0.7400000095367432" blue="0.7400000095367432" opacity="0.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Polygon disable="true" fill="#434242" layoutX="1615.0" layoutY="722.0" points="-14.5, -19.0, 15.0, -19.0, 0.0, -50.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:rmevent2tb002" layoutX="1527.0" layoutY="667.0" maxValue="2.0" prefHeight="40.0" prefWidth="40.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="" value="2.0">
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" green="0.11764705926179886" blue="0.11764705926179886" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl borderWidth="1.0" buttonOffText="На команду" buttonOnText="На сигнал" equipmentType="TEXT_BUTTON" kks="yp:rmevent2lz003" layoutX="1262.0" layoutY="719.0" prefHeight="40.0" prefWidth="200.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color green="1.0" blue="1.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Защита выведена" kks="yp:mevent2vv003" layoutX="1032.0" layoutY="718.0" prefHeight="40.0" prefWidth="200.0" secondStatus="Защита введена" skinType="TABLO">
+         <firstStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="RETURN_BUTTON" kks="yp:rmevent2kv003" layoutX="1594.0" layoutY="719.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7400000095367432" green="0.7400000095367432" blue="0.7400000095367432" opacity="0.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Polygon disable="true" fill="#434242" layoutX="1615.0" layoutY="773.0" points="-14.5, -19.0, 15.0, -19.0, 0.0, -50.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:rmevent2tb003" layoutX="1527.0" layoutY="718.0" maxValue="2.0" prefHeight="40.0" prefWidth="40.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="" value="2.0">
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" green="0.11764705926179886" blue="0.11764705926179886" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl borderWidth="1.0" buttonOffText="На команду" buttonOnText="На сигнал" equipmentType="TEXT_BUTTON" kks="yp:rmevent2lz004" layoutX="1262.0" layoutY="770.0" prefHeight="40.0" prefWidth="200.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color green="1.0" blue="1.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Защита выведена" kks="yp:mevent2vv004" layoutX="1032.0" layoutY="769.0" prefHeight="40.0" prefWidth="200.0" secondStatus="Защита введена" skinType="TABLO">
+         <firstStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="RETURN_BUTTON" kks="yp:rmevent2kv004" layoutX="1594.0" layoutY="770.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7400000095367432" green="0.7400000095367432" blue="0.7400000095367432" opacity="0.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Polygon disable="true" fill="#434242" layoutX="1615.0" layoutY="824.0" points="-14.5, -19.0, 15.0, -19.0, 0.0, -50.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:rmevent2tb004" layoutX="1527.0" layoutY="769.0" maxValue="2.0" prefHeight="40.0" prefWidth="40.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="" value="2.0">
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" green="0.11764705926179886" blue="0.11764705926179886" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl borderWidth="1.0" buttonOffText="На команду" buttonOnText="На сигнал" equipmentType="TEXT_BUTTON" kks="yp:rmevent2lz005" layoutX="1262.0" layoutY="821.0" prefHeight="40.0" prefWidth="200.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color green="1.0" blue="1.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Защита выведена" kks="yp:mevent2vv005" layoutX="1032.0" layoutY="820.0" prefHeight="40.0" prefWidth="200.0" secondStatus="Защита введена" skinType="TABLO">
+         <firstStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="RETURN_BUTTON" kks="yp:rmevent2kv005" layoutX="1594.0" layoutY="821.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7400000095367432" green="0.7400000095367432" blue="0.7400000095367432" opacity="0.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Polygon disable="true" fill="#434242" layoutX="1615.0" layoutY="875.0" points="-14.5, -19.0, 15.0, -19.0, 0.0, -50.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:rmevent2tb005" layoutX="1527.0" layoutY="820.0" maxValue="2.0" prefHeight="40.0" prefWidth="40.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="" value="2.0">
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" green="0.11764705926179886" blue="0.11764705926179886" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl borderWidth="1.0" buttonOffText="На команду" buttonOnText="На сигнал" equipmentType="TEXT_BUTTON" kks="yp:rmevent2lz006" layoutX="1262.0" layoutY="872.0" prefHeight="40.0" prefWidth="200.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color green="1.0" blue="1.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Защита выведена" kks="yp:mevent2vv006" layoutX="1032.0" layoutY="871.0" prefHeight="40.0" prefWidth="200.0" secondStatus="Защита введена" skinType="TABLO">
+         <firstStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="RETURN_BUTTON" kks="yp:rmevent2kv006" layoutX="1594.0" layoutY="872.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7400000095367432" green="0.7400000095367432" blue="0.7400000095367432" opacity="0.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Polygon disable="true" fill="#434242" layoutX="1615.0" layoutY="926.0" points="-14.5, -19.0, 15.0, -19.0, 0.0, -50.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:rmevent2tb006" layoutX="1527.0" layoutY="871.0" maxValue="2.0" prefHeight="40.0" prefWidth="40.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="" value="2.0">
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" green="0.11764705926179886" blue="0.11764705926179886" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl borderWidth="1.0" buttonOffText="На команду" buttonOnText="На сигнал" equipmentType="TEXT_BUTTON" kks="yp:rmevent2lz007" layoutX="1262.0" layoutY="923.0" prefHeight="40.0" prefWidth="200.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color green="1.0" blue="1.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Защита выведена" kks="yp:mevent2vv007" layoutX="1032.0" layoutY="922.0" prefHeight="40.0" prefWidth="200.0" secondStatus="Защита введена" skinType="TABLO">
+         <firstStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="" buttonOnText="" equipmentType="RETURN_BUTTON" kks="yp:rmevent2kv007" layoutX="1594.0" layoutY="923.0" prefHeight="40.0" prefWidth="40.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.7400000095367432" green="0.7400000095367432" blue="0.7400000095367432" opacity="0.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <Polygon disable="true" fill="#434242" layoutX="1615.0" layoutY="977.0" points="-14.5, -19.0, 15.0, -19.0, 0.0, -50.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:rmevent2tb007" layoutX="1527.0" layoutY="922.0" maxValue="2.0" prefHeight="40.0" prefWidth="40.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="" value="2.0">
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="1.0" green="0.11764705926179886" blue="0.11764705926179886" />
+         </secondStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvent2_sg001" layoutX="261.0" layoutY="612.0" maxValue="2.0" prefHeight="49.0" prefWidth="530.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="0.8745098114013672" green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvent2_sg002" layoutX="261.0" layoutY="663.0" maxValue="2.0" prefHeight="49.0" prefWidth="530.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="0.8745098114013672" green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvent2_sg003" layoutX="261.0" layoutY="714.0" maxValue="2.0" prefHeight="49.0" prefWidth="530.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="0.8745098114013672" green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvent2_sg004" layoutX="261.0" layoutY="765.0" maxValue="2.0" prefHeight="49.0" prefWidth="530.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="0.8745098114013672" green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvent2_sg005" layoutX="261.0" layoutY="816.0" maxValue="2.0" prefHeight="49.0" prefWidth="530.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="0.8745098114013672" green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvent2_sg006" layoutX="261.0" layoutY="867.0" maxValue="2.0" prefHeight="49.0" prefWidth="530.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="0.8745098114013672" green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="ssxvent2_sg007" layoutX="261.0" layoutY="918.0" maxValue="2.0" prefHeight="49.0" prefWidth="530.0" secondStatus="" skinType="TABLO" status="TABLO_STATUS_SECOND" thirdStatus="">
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color red="0.8745098114013672" green="1.0" />
+         </secondStatusColor>
+      </IndicationControl>
+      <Line endX="-12.70709228515625" endY="23.0" layoutX="328.0" layoutY="637.0" startX="-12.70709228515625" startY="-23.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="187.0" endY="-0.5" layoutX="605.0" layoutY="637.0" startX="-288.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <Text layoutX="317.0" layoutY="630.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Защита по превышению температуры обмотки (секция №2)" wrappingWidth="425.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="654.0" strokeType="OUTSIDE" strokeWidth="0.0" text="52PAD12AN001ZQ01" wrappingWidth="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Line endX="-12.70709228515625" endY="23.0" layoutX="328.0" layoutY="688.0" startX="-12.70709228515625" startY="-23.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="187.0" endY="-0.5" layoutX="605.0" layoutY="688.0" startX="-288.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <Text layoutX="317.0" layoutY="681.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Защита по превышению температуры обмотки (секция №2)" wrappingWidth="425.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="705.0" strokeType="OUTSIDE" strokeWidth="0.0" text="52PAD12AN001ZQ02" wrappingWidth="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Line endX="-12.70709228515625" endY="23.0" layoutX="328.0" layoutY="740.0" startX="-12.70709228515625" startY="-23.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="187.0" endY="-0.5" layoutX="605.0" layoutY="740.0" startX="-288.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <Text layoutX="317.0" layoutY="733.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Защита по превышению температуры обмотки (секция №2)" wrappingWidth="425.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="757.0" strokeType="OUTSIDE" strokeWidth="0.0" text="52PAD12AN001ZQ03" wrappingWidth="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Line endX="-12.70709228515625" endY="23.0" layoutX="328.0" layoutY="791.0" startX="-12.70709228515625" startY="-23.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="187.0" endY="-0.5" layoutX="605.0" layoutY="791.0" startX="-288.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <Text layoutX="317.0" layoutY="784.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Защита по превышению температуры подшипника (секция №2)" wrappingWidth="452.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="808.0" strokeType="OUTSIDE" strokeWidth="0.0" text="52PAD12AN001ZQ04" wrappingWidth="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Line endX="-12.70709228515625" endY="23.0" layoutX="328.0" layoutY="842.0" startX="-12.70709228515625" startY="-23.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="187.0" endY="-0.5" layoutX="605.0" layoutY="842.0" startX="-288.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <Text layoutX="317.0" layoutY="835.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Защита по превышению температуры подшипника (секция №2)" wrappingWidth="452.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="859.0" strokeType="OUTSIDE" strokeWidth="0.0" text="52PAD12AN001ZQ05" wrappingWidth="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Line endX="-12.70709228515625" endY="23.0" layoutX="328.0" layoutY="893.0" startX="-12.70709228515625" startY="-23.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="187.0" endY="-0.5" layoutX="605.0" layoutY="893.0" startX="-288.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <Text layoutX="317.0" layoutY="886.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Защита по превышению вибрации подшипника (секция №2)" wrappingWidth="430.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="910.0" strokeType="OUTSIDE" strokeWidth="0.0" text="52PAD12AN001ZQ06" wrappingWidth="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Line endX="-12.70709228515625" endY="23.0" layoutX="328.0" layoutY="944.0" startX="-12.70709228515625" startY="-23.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="187.0" endY="-0.5" layoutX="605.0" layoutY="944.0" startX="-288.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <Text layoutX="317.0" layoutY="937.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Защита по превышению вибрации подшипника (секция №2)" wrappingWidth="430.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="317.0" layoutY="961.0" strokeType="OUTSIDE" strokeWidth="0.0" text="52PAD12AN001ZQ07" wrappingWidth="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent1vuv001" layoutX="809.0" layoutY="130.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent1vdv001" layoutX="809.0" layoutY="155.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent1vuv002" layoutX="809.0" layoutY="181.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent1vdv002" layoutX="809.0" layoutY="206.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent1vuv003" layoutX="809.0" layoutY="232.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent1vdv003" layoutX="809.0" layoutY="257.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent1vuv004" layoutX="809.0" layoutY="283.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent1vdv004" layoutX="809.0" layoutY="308.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent1vuv005" layoutX="809.0" layoutY="334.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent1vdv005" layoutX="809.0" layoutY="359.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent1vuv006" layoutX="809.0" layoutY="385.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent1vdv006" layoutX="809.0" layoutY="410.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent1vuv007" layoutX="809.0" layoutY="436.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent1vdv007" layoutX="809.0" layoutY="461.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent2vuv001" layoutX="809.0" layoutY="613.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent2vdv001" layoutX="809.0" layoutY="638.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent2vuv002" layoutX="809.0" layoutY="665.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent2vdv002" layoutX="809.0" layoutY="690.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent2vuv003" layoutX="809.0" layoutY="716.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent2vdv003" layoutX="809.0" layoutY="741.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent2vuv004" layoutX="809.0" layoutY="767.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent2vdv004" layoutX="809.0" layoutY="792.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent2vuv005" layoutX="809.0" layoutY="818.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent2vdv005" layoutX="809.0" layoutY="843.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent2vuv006" layoutX="809.0" layoutY="869.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent2vdv006" layoutX="809.0" layoutY="894.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent2vuv007" layoutX="809.0" layoutY="920.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" kks="yp:mevent2vdv007" layoutX="809.0" layoutY="945.0" prefHeight="20.0" prefWidth="20.0" secondStatus="" skinType="TABLO" thirdStatus="">
+         <secondStatusColor>
+            <Color green="1.0" blue="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <InputControl decimals="0" equipmentType="TXT" interactive="false" kks="meblokirovki_vk1_v97b2f1" layoutX="1467.0" layoutY="941.0" prefHeight="22.0" prefWidth="32.0" skinType="TXT">
+         <customFont>
+            <Font name="Roboto Regular" size="14.0" />
+         </customFont>
+      </InputControl>
+      <InputControl decimals="0" equipmentType="TXT" interactive="false" kks="meblokirovki_vk1_v97b2f1" layoutX="1467.0" layoutY="890.0" prefHeight="22.0" prefWidth="32.0" skinType="TXT">
+         <customFont>
+            <Font name="Roboto Regular" size="14.0" />
+         </customFont>
+      </InputControl>
+      <InputControl decimals="0" equipmentType="TXT" interactive="false" kks="meblokirovki_vk1_v97b2f1" layoutX="1467.0" layoutY="839.0" prefHeight="22.0" prefWidth="32.0" skinType="TXT">
+         <customFont>
+            <Font name="Roboto Regular" size="14.0" />
+         </customFont>
+      </InputControl>
+      <InputControl decimals="0" equipmentType="TXT" interactive="false" kks="meblokirovki_vk1_v97b2f1" layoutX="1467.0" layoutY="788.0" prefHeight="22.0" prefWidth="32.0" skinType="TXT">
+         <customFont>
+            <Font name="Roboto Regular" size="14.0" />
+         </customFont>
+      </InputControl>
+      <InputControl decimals="0" equipmentType="TXT" interactive="false" kks="meblokirovki_vk1_v97b2f1" layoutX="1467.0" layoutY="737.0" prefHeight="22.0" prefWidth="32.0" skinType="TXT">
+         <customFont>
+            <Font name="Roboto Regular" size="14.0" />
+         </customFont>
+      </InputControl>
+      <InputControl decimals="0" equipmentType="TXT" interactive="false" kks="meblokirovki_vk1_v97b2f1" layoutX="1467.0" layoutY="686.0" prefHeight="22.0" prefWidth="32.0" skinType="TXT">
+         <customFont>
+            <Font name="Roboto Regular" size="14.0" />
+         </customFont>
+      </InputControl>
+      <InputControl decimals="0" equipmentType="TXT" interactive="false" kks="meblokirovki_vk1_v97b2f1" layoutX="1467.0" layoutY="634.0" prefHeight="22.0" prefWidth="32.0" skinType="TXT">
+         <customFont>
+            <Font name="Roboto Regular" size="14.0" />
+         </customFont>
+      </InputControl>
+      <InputControl decimals="0" equipmentType="TXT" interactive="false" kks="meblokirovki_vk1_v97b2f1" layoutX="1467.0" layoutY="457.0" prefHeight="22.0" prefWidth="32.0" skinType="TXT">
+         <customFont>
+            <Font name="Roboto Regular" size="14.0" />
+         </customFont>
+      </InputControl>
+      <InputControl decimals="0" equipmentType="TXT" interactive="false" kks="meblokirovki_vk1_v97b2f1" layoutX="1467.0" layoutY="406.0" prefHeight="22.0" prefWidth="32.0" skinType="TXT">
+         <customFont>
+            <Font name="Roboto Regular" size="14.0" />
+         </customFont>
+      </InputControl>
+      <InputControl decimals="0" equipmentType="TXT" interactive="false" kks="meblokirovki_vk1_v97b2f1" layoutX="1467.0" layoutY="355.0" prefHeight="22.0" prefWidth="32.0" skinType="TXT">
+         <customFont>
+            <Font name="Roboto Regular" size="14.0" />
+         </customFont>
+      </InputControl>
+      <InputControl decimals="0" equipmentType="TXT" interactive="false" kks="meblokirovki_vk1_v97b2f1" layoutX="1467.0" layoutY="304.0" prefHeight="22.0" prefWidth="32.0" skinType="TXT">
+         <customFont>
+            <Font name="Roboto Regular" size="14.0" />
+         </customFont>
+      </InputControl>
+      <InputControl decimals="0" equipmentType="TXT" interactive="false" kks="meblokirovki_vk1_v97b2f1" layoutX="1467.0" layoutY="253.0" prefHeight="22.0" prefWidth="32.0" skinType="TXT">
+         <customFont>
+            <Font name="Roboto Regular" size="14.0" />
+         </customFont>
+      </InputControl>
+      <InputControl decimals="0" equipmentType="TXT" interactive="false" kks="meblokirovki_vk1_v97b2f1" layoutX="1467.0" layoutY="202.0" prefHeight="22.0" prefWidth="32.0" skinType="TXT">
+         <customFont>
+            <Font name="Roboto Regular" size="14.0" />
+         </customFont>
+      </InputControl>
+      <InputControl decimals="0" equipmentType="TXT" interactive="false" kks="meblokirovki_vk1_v97b2f1" layoutX="1467.0" layoutY="151.0" prefHeight="22.0" prefWidth="32.0" skinType="TXT">
+         <customFont>
+            <Font name="Roboto Regular" size="14.0" />
+         </customFont>
+      </InputControl>
+      <Text layoutX="1500.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="сек" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1467.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТаймАут" textAlignment="CENTER" wrappingWidth="57.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1500.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="сек" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1467.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТаймАут" textAlignment="CENTER" wrappingWidth="57.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1500.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="сек" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1467.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТаймАут" textAlignment="CENTER" wrappingWidth="57.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1500.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="сек" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1467.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТаймАут" textAlignment="CENTER" wrappingWidth="57.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1500.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="сек" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1467.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТаймАут" textAlignment="CENTER" wrappingWidth="57.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1500.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="сек" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1467.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТаймАут" textAlignment="CENTER" wrappingWidth="57.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1500.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="сек" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1467.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТаймАут" textAlignment="CENTER" wrappingWidth="57.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1500.0" layoutY="651.0" strokeType="OUTSIDE" strokeWidth="0.0" text="сек" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1467.0" layoutY="629.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТаймАут" textAlignment="CENTER" wrappingWidth="57.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1500.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="сек" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1467.0" layoutY="680.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТаймАут" textAlignment="CENTER" wrappingWidth="57.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1500.0" layoutY="753.0" strokeType="OUTSIDE" strokeWidth="0.0" text="сек" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1467.0" layoutY="731.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТаймАут" textAlignment="CENTER" wrappingWidth="57.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1500.0" layoutY="804.0" strokeType="OUTSIDE" strokeWidth="0.0" text="сек" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1467.0" layoutY="782.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТаймАут" textAlignment="CENTER" wrappingWidth="57.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1500.0" layoutY="855.0" strokeType="OUTSIDE" strokeWidth="0.0" text="сек" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1467.0" layoutY="833.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТаймАут" textAlignment="CENTER" wrappingWidth="57.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1500.0" layoutY="906.0" strokeType="OUTSIDE" strokeWidth="0.0" text="сек" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1467.0" layoutY="884.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТаймАут" textAlignment="CENTER" wrappingWidth="57.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1500.0" layoutY="957.0" strokeType="OUTSIDE" strokeWidth="0.0" text="сек" textAlignment="CENTER" wrappingWidth="25.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1467.0" layoutY="935.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТаймАут" textAlignment="CENTER" wrappingWidth="57.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="28.0" layoutX="849.0" layoutY="141.0" stroke="BLACK" strokeWidth="0.5" width="60.0" />
+      <Text layoutX="867.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="155" textAlignment="CENTER" wrappingWidth="22.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="28.0" layoutX="849.0" layoutY="190.0" stroke="BLACK" strokeWidth="0.5" width="60.0" />
+      <Text layoutX="867.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="155" textAlignment="CENTER" wrappingWidth="22.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="28.0" layoutX="849.0" layoutY="242.0" stroke="BLACK" strokeWidth="0.5" width="60.0" />
+      <Text layoutX="867.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="155" textAlignment="CENTER" wrappingWidth="22.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="28.0" layoutX="849.0" layoutY="292.0" stroke="BLACK" strokeWidth="0.5" width="60.0" />
+      <Text layoutX="867.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100" textAlignment="CENTER" wrappingWidth="22.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="28.0" layoutX="849.0" layoutY="343.0" stroke="BLACK" strokeWidth="0.5" width="60.0" />
+      <Text layoutX="867.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100" textAlignment="CENTER" wrappingWidth="22.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="28.0" layoutX="849.0" layoutY="394.0" stroke="BLACK" strokeWidth="0.5" width="60.0" />
+      <Text layoutX="867.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5,6" textAlignment="CENTER" wrappingWidth="22.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="28.0" layoutX="849.0" layoutY="445.0" stroke="BLACK" strokeWidth="0.5" width="60.0" />
+      <Text layoutX="867.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5,6" textAlignment="CENTER" wrappingWidth="22.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="28.0" layoutX="849.0" layoutY="624.0" stroke="BLACK" strokeWidth="0.5" width="60.0" />
+      <Text layoutX="867.0" layoutY="644.0" strokeType="OUTSIDE" strokeWidth="0.0" text="155" textAlignment="CENTER" wrappingWidth="22.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="28.0" layoutX="849.0" layoutY="674.0" stroke="BLACK" strokeWidth="0.5" width="60.0" />
+      <Text layoutX="867.0" layoutY="694.0" strokeType="OUTSIDE" strokeWidth="0.0" text="155" textAlignment="CENTER" wrappingWidth="22.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="28.0" layoutX="849.0" layoutY="725.0" stroke="BLACK" strokeWidth="0.5" width="60.0" />
+      <Text layoutX="867.0" layoutY="745.0" strokeType="OUTSIDE" strokeWidth="0.0" text="155" textAlignment="CENTER" wrappingWidth="22.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="28.0" layoutX="849.0" layoutY="776.0" stroke="BLACK" strokeWidth="0.5" width="60.0" />
+      <Text layoutX="867.0" layoutY="796.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100" textAlignment="CENTER" wrappingWidth="22.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="28.0" layoutX="849.0" layoutY="827.0" stroke="BLACK" strokeWidth="0.5" width="60.0" />
+      <Text layoutX="867.0" layoutY="847.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100" textAlignment="CENTER" wrappingWidth="22.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="28.0" layoutX="849.0" layoutY="878.0" stroke="BLACK" strokeWidth="0.5" width="60.0" />
+      <Text layoutX="867.0" layoutY="898.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5,6" textAlignment="CENTER" wrappingWidth="22.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="28.0" layoutX="849.0" layoutY="929.0" stroke="BLACK" strokeWidth="0.5" width="60.0" />
+      <Text layoutX="867.0" layoutY="949.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5,6" textAlignment="CENTER" wrappingWidth="22.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

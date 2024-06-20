@@ -1,0 +1,2683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.ButtonControl?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.ElectricControl?>
+<?import ru.get.common.controls.FunctionControl?>
+<?import ru.get.common.controls.IndicationControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#21cfbd00" height="63.0" layoutX="10.0" layoutY="128.0" stroke="#f1d45c" width="209.0" />
+      <Line endX="1375.0" layoutX="291.0" layoutY="456.0" startX="-100.0" stroke="#20cfc0" strokeWidth="5.0" />
+      <Line endX="1375.0" layoutX="291.0" layoutY="474.0" startX="-100.0" stroke="#20cfc0" strokeWidth="4.0" />
+      <Line endX="-100.0" endY="42.0" layoutX="431.0" layoutY="206.0" startX="-100.0" startY="-41.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="120.0" layoutX="431.0" layoutY="248.0" startX="-100.0" startY="98.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="328.25" layoutX="537.0" layoutY="156.0" startX="-100.0" startY="92.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="325.0" layoutX="537.0" layoutY="-89.0" startX="-100.0" startY="292.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="415.0" layoutX="603.0" layoutY="-47.0" startX="-100.0" startY="393.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="437.0" layoutX="567.0" layoutY="-25.0" startX="-100.0" startY="393.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="417.0" layoutX="567.0" layoutY="37.0" startX="-100.0" startY="395.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="436.0" layoutX="394.0" layoutY="-25.0" startX="-100.0" startY="393.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="497.0" layoutX="466.0" layoutY="-25.0" startX="-100.0" startY="455.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="417.0" layoutX="394.0" layoutY="37.0" startX="-100.0" startY="394.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="437.0" layoutX="706.0" layoutY="-25.0" startX="-100.0" startY="393.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="417.0" layoutX="706.0" layoutY="37.0" startX="-100.0" startY="395.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="120.0" layoutX="742.0" layoutY="248.0" startX="-100.0" startY="98.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="120.0" layoutX="845.0" layoutY="206.0" startX="-100.0" startY="56.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="121.0" layoutX="845.0" layoutY="290.0" startX="-100.0" startY="56.0" stroke="#20cfc0" />
+      <Line endX="-28.0" layoutX="394.0" layoutY="368.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-28.0" layoutX="567.0" layoutY="368.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-28.0" layoutX="706.0" layoutY="368.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-29.0" layoutX="845.0" layoutY="262.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-34.0" layoutX="537.0" layoutY="203.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="430.0" layoutX="335.0" layoutY="65.0" startX="-100.0" startY="393.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="430.0" layoutX="299.0" layoutY="65.0" startX="-100.0" startY="410.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="430.0" layoutX="537.0" layoutY="89.0" startX="-100.0" startY="405.25" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="431.0" layoutX="438.0" layoutY="112.0" startX="-100.0" startY="407.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="490.0" layoutX="396.0" layoutY="123.0" startX="-100.0" startY="397.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="435.0" layoutX="983.0" layoutY="-25.0" startX="-100.0" startY="402.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="446.0" layoutX="1227.0" layoutY="-37.0" startX="-100.0" startY="405.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="447.0" layoutX="1227.0" layoutY="25.0" startX="-100.0" startY="404.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="495.25" layoutX="1129.0" layoutY="-12.0" startX="-100.0" startY="260.75" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="290.0" layoutX="1129.0" layoutY="-54.0" startX="-100.0" startY="265.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="287.0" layoutX="1192.0" layoutY="81.0" startX="-100.0" startY="265.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="275.0" layoutX="1129.0" layoutY="231.0" startX="-100.0" startY="265.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="276.0" layoutX="1245.0" layoutY="241.0" startX="-100.0" startY="265.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="324.0" layoutX="1299.0" layoutY="241.0" startX="-100.0" startY="265.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="446.0" layoutX="1370.0" layoutY="-37.0" startX="-100.0" startY="405.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="447.0" layoutX="1370.0" layoutY="25.0" startX="-100.0" startY="404.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="427.0" layoutX="1334.0" layoutY="-59.0" startX="-100.0" startY="405.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="296.0" layoutX="1431.0" layoutY="-61.0" startX="-100.0" startY="265.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="503.75" layoutX="1431.0" layoutY="-13.0" startX="-100.0" startY="262.25" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="287.0" layoutX="1502.0" layoutY="81.0" startX="-100.0" startY="265.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="446.0" layoutX="1538.0" layoutY="-37.0" startX="-100.0" startY="405.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="447.0" layoutX="1538.0" layoutY="25.0" startX="-100.0" startY="404.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="287.0" layoutX="1644.0" layoutY="81.0" startX="-100.0" startY="265.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="445.0" layoutX="1680.0" layoutY="-37.0" startX="-100.0" startY="405.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="447.0" layoutX="1680.0" layoutY="25.0" startX="-100.0" startY="403.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="430.0" layoutX="1750.0" layoutY="65.0" startX="-100.0" startY="393.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="430.0" layoutX="1714.0" layoutY="65.0" startX="-100.0" startY="410.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="275.0" layoutX="1431.0" layoutY="240.0" startX="-100.0" startY="264.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="273.0" layoutX="1564.0" layoutY="251.0" startX="-100.0" startY="265.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="332.0" layoutX="1635.0" layoutY="251.0" startX="-100.0" startY="265.0" stroke="#20cfc0" />
+      <Line endX="-37.0" layoutX="1129.0" layoutY="211.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-29.0" layoutX="1156.0" layoutY="368.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-28.0" layoutX="1298.0" layoutY="368.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-29.0" layoutX="1431.0" layoutY="204.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-28.0" layoutX="1466.0" layoutY="368.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-28.0" layoutX="1608.0" layoutY="368.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-28.0" layoutX="1563.0" layoutY="516.0" startX="-232.0" stroke="#20cfc0" />
+      <Line endX="-62.0" layoutX="1261.0" layoutY="506.0" startX="-232.0" stroke="#20cfc0" />
+      <Line endX="-91.0" layoutX="528.0" layoutY="519.0" startX="-232.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="431.0" layoutY="293.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="431.0" layoutY="222.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="603.0" layoutY="293.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="603.0" layoutY="222.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="742.0" layoutY="293.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="742.0" layoutY="222.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="1192.0" layoutY="293.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="1192.0" layoutY="222.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="1334.0" layoutY="293.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="1334.0" layoutY="222.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="1502.0" layoutY="293.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="1502.0" layoutY="222.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="1644.0" layoutY="293.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="1644.0" layoutY="222.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-88.0" layoutX="395.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Line endX="-90.0" layoutX="467.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Line endX="-88.0" layoutX="568.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Line endX="-90.0" layoutX="640.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Line endX="-88.0" layoutX="707.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Line endX="-90.0" layoutX="779.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="846.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Line endX="-90.0" layoutX="918.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="984.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Line endX="-90.0" layoutX="1056.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Line endX="-88.0" layoutX="1157.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="1228.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="1299.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Line endX="-90.0" layoutX="1371.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="1467.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Line endX="-90.0" layoutX="1539.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Line endX="-89.0" layoutX="1609.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Line endX="-90.0" layoutX="1681.0" layoutY="386.0" startX="-101.0" stroke="#20cfc0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="29.0" layoutX="332.0" layoutY="543.0" stroke="#20cfc0" width="12.0" />
+      <Line endX="-100.0" endY="7.25" layoutX="428.0" layoutY="546.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-87.25" endY="12.75" layoutX="438.0" layoutY="556.0" startX="-109.5" startY="-2.25" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="6.0" layoutX="438.0" layoutY="572.0" startX="-100.0" stroke="#dee6d9" />
+      <Line endX="-86.0" endY="-42.0" layoutX="431.0" layoutY="620.0" startX="-100.0" startY="-42.0" stroke="#dee6d9" />
+      <Line endX="-88.0" endY="-40.0" layoutX="432.0" layoutY="622.0" startX="-100.0" startY="-40.0" stroke="#dee6d9" />
+      <Line endX="-96.0" endY="-36.0" layoutX="436.0" layoutY="623.0" startX="-100.0" startY="-36.0" stroke="#dee6d9" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="29.0" layoutX="1139.0" layoutY="517.0" stroke="#20cfc0" width="12.0" />
+      <Line endX="-100.0" endY="7.25" layoutX="1235.0" layoutY="521.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-87.25" endY="12.75" layoutX="1245.0" layoutY="531.0" startX="-109.5" startY="-2.25" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="6.0" layoutX="1245.0" layoutY="546.0" startX="-100.0" stroke="#dee6d9" />
+      <Line endX="-86.0" endY="-42.0" layoutX="1238.0" layoutY="594.0" startX="-100.0" startY="-42.0" stroke="#dee6d9" />
+      <Line endX="-88.0" endY="-40.0" layoutX="1239.0" layoutY="597.0" startX="-100.0" startY="-40.0" stroke="#dee6d9" />
+      <Line endX="-96.0" endY="-36.0" layoutX="1243.0" layoutY="597.0" startX="-100.0" startY="-36.0" stroke="#dee6d9" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="29.0" layoutX="1458.0" layoutY="524.0" stroke="#20cfc0" width="12.0" />
+      <Line endX="-100.0" endY="7.25" layoutX="1553.0" layoutY="528.0" startX="-100.0" stroke="#20cfc0" />
+      <Line endX="-87.25" endY="12.75" layoutX="1563.0" layoutY="538.0" startX="-109.5" startY="-2.25" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="6.0" layoutX="1564.0" layoutY="553.0" startX="-100.0" stroke="#dee6d9" />
+      <Line endX="-86.0" endY="-42.0" layoutX="1557.0" layoutY="601.0" startX="-100.0" startY="-42.0" stroke="#dee6d9" />
+      <Line endX="-88.0" endY="-40.0" layoutX="1558.0" layoutY="604.0" startX="-100.0" startY="-40.0" stroke="#dee6d9" />
+      <Line endX="-96.0" endY="-36.0" layoutX="1562.0" layoutY="604.0" startX="-100.0" startY="-36.0" stroke="#dee6d9" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="29.0" layoutX="1490.0" layoutY="609.0" stroke="#dee6d9" width="12.0" />
+      <Line endX="-100.0" endY="7.25" layoutX="1585.0" layoutY="612.0" startX="-100.0" stroke="#dee6d9" />
+      <Line endX="-87.25" endY="12.75" layoutX="1595.0" layoutY="622.0" startX="-109.5" startY="-2.25" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="6.0" layoutX="1596.0" layoutY="638.0" startX="-100.0" stroke="#dee6d9" />
+      <Line endX="-86.0" endY="-42.0" layoutX="1589.0" layoutY="686.0" startX="-100.0" startY="-42.0" stroke="#dee6d9" />
+      <Line endX="-88.0" endY="-40.0" layoutX="1590.0" layoutY="688.0" startX="-100.0" startY="-40.0" stroke="#dee6d9" />
+      <Line endX="-96.0" endY="-36.0" layoutX="1594.0" layoutY="688.0" startX="-100.0" startY="-36.0" stroke="#dee6d9" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="29.0" layoutX="1111.0" layoutY="610.0" stroke="#dee6d9" width="12.0" />
+      <Line endX="-100.0" endY="7.25" layoutX="1206.0" layoutY="613.0" startX="-100.0" stroke="#dee6d9" />
+      <Line endX="-87.25" endY="12.75" layoutX="1216.0" layoutY="623.0" startX="-109.5" startY="-2.25" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="6.0" layoutX="1217.0" layoutY="639.0" startX="-100.0" stroke="#dee6d9" />
+      <Line endX="-86.0" endY="-42.0" layoutX="1210.0" layoutY="687.0" startX="-100.0" startY="-42.0" stroke="#dee6d9" />
+      <Line endX="-88.0" endY="-40.0" layoutX="1211.0" layoutY="690.0" startX="-100.0" startY="-40.0" stroke="#dee6d9" />
+      <Line endX="-96.0" endY="-36.0" layoutX="1215.0" layoutY="690.0" startX="-100.0" startY="-36.0" stroke="#dee6d9" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="29.0" layoutX="251.0" layoutY="637.0" stroke="#dee6d9" width="12.0" />
+      <Line endX="-100.0" endY="7.25" layoutX="346.0" layoutY="640.0" startX="-100.0" stroke="#dee6d9" />
+      <Line endX="-87.25" endY="12.75" layoutX="356.0" layoutY="650.0" startX="-109.5" startY="-2.25" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="6.0" layoutX="357.0" layoutY="666.0" startX="-100.0" stroke="#dee6d9" />
+      <Line endX="-86.0" endY="-42.0" layoutX="350.0" layoutY="714.0" startX="-100.0" startY="-42.0" stroke="#dee6d9" />
+      <Line endX="-88.0" endY="-40.0" layoutX="351.0" layoutY="716.0" startX="-100.0" startY="-40.0" stroke="#dee6d9" />
+      <Line endX="-96.0" endY="-36.0" layoutX="355.0" layoutY="716.0" startX="-100.0" startY="-36.0" stroke="#dee6d9" />
+      <Line endX="-26.0" endY="-40.0" layoutX="322.0" layoutY="666.0" startX="-100.0" startY="-40.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="11.0" layoutX="357.0" layoutY="626.0" startX="-100.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="6.0" layoutX="1217.0" layoutY="604.0" startX="-100.0" startY="-24.0" stroke="#dee6d9" />
+      <Line endX="12.0" endY="-40.0" layoutX="1185.0" layoutY="619.0" startX="-100.0" startY="-40.0" stroke="#dee6d9" />
+      <Circle fill="#1f93ff00" layoutX="871.0" layoutY="361.0" radius="8.5" stroke="#20cfc0" />
+      <Circle fill="#1f93ff00" layoutX="895.0" layoutY="361.0" radius="8.5" stroke="#20cfc0" />
+      <Circle fill="#1f93ff00" layoutX="883.0" layoutY="368.0" radius="8.5" stroke="#20cfc0" />
+      <Circle fill="#1f93ff00" layoutX="883.0" layoutY="354.0" radius="8.5" stroke="#20cfc0" />
+      <Circle fill="#1f93ff00" layoutX="942.0" layoutY="361.0" radius="8.5" stroke="#20cfc0" />
+      <Circle fill="#1f93ff00" layoutX="966.0" layoutY="361.0" radius="8.5" stroke="#20cfc0" />
+      <Circle fill="#1f93ff00" layoutX="954.0" layoutY="368.0" radius="8.5" stroke="#20cfc0" />
+      <Circle fill="#1f93ff00" layoutX="954.0" layoutY="354.0" radius="8.5" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="6.0" layoutX="1596.0" layoutY="603.0" startX="-100.0" startY="-5.0" stroke="#dee6d9" />
+      <Line endX="-26.0" endY="-40.0" layoutX="1561.0" layoutY="637.0" startX="-100.0" startY="-40.0" stroke="#dee6d9" />
+      <Line endX="-93.0" layoutX="592.0" layoutY="866.0" startX="-100.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-27.0" layoutX="599.0" layoutY="900.0" startX="-100.0" startY="-41.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-26.0" layoutX="592.0" layoutY="900.0" startX="-100.0" startY="-42.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-28.0" layoutX="587.0" layoutY="900.0" startX="-100.0" startY="-40.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-32.0" layoutX="583.0" layoutY="900.0" startX="-100.0" startY="-36.0" stroke="#dee6d9" />
+      <Line endX="-93.0" layoutX="760.0" layoutY="866.0" startX="-100.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-27.0" layoutX="767.0" layoutY="900.0" startX="-100.0" startY="-41.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-26.0" layoutX="760.0" layoutY="900.0" startX="-100.0" startY="-42.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-28.0" layoutX="755.0" layoutY="900.0" startX="-100.0" startY="-40.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-32.0" layoutX="751.0" layoutY="900.0" startX="-100.0" startY="-36.0" stroke="#dee6d9" />
+      <Line endX="-93.0" layoutX="1066.0" layoutY="836.0" startX="-100.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-27.0" layoutX="1073.0" layoutY="870.0" startX="-100.0" startY="-41.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-26.0" layoutX="1066.0" layoutY="870.0" startX="-100.0" startY="-42.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-28.0" layoutX="1061.0" layoutY="870.0" startX="-100.0" startY="-40.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-32.0" layoutX="1057.0" layoutY="870.0" startX="-100.0" startY="-36.0" stroke="#dee6d9" />
+      <Line endX="-93.0" layoutX="1325.0" layoutY="836.0" startX="-100.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-27.0" layoutX="1332.0" layoutY="870.0" startX="-100.0" startY="-41.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-26.0" layoutX="1325.0" layoutY="870.0" startX="-100.0" startY="-42.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-28.0" layoutX="1320.0" layoutY="870.0" startX="-100.0" startY="-40.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-32.0" layoutX="1316.0" layoutY="870.0" startX="-100.0" startY="-36.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="344.0" layoutX="396.0" layoutY="395.0" startX="-100.0" startY="265.0" stroke="#e844e1" />
+      <Line endX="115.0" layoutX="365.0" layoutY="739.0" startX="-103.0" stroke="#e844e1" />
+      <Line endX="-100.0" endY="344.0" layoutX="580.0" layoutY="395.0" startX="-100.0" startY="113.0" stroke="#e844e1" />
+      <Line endX="49.0" layoutX="583.0" layoutY="508.0" startX="-103.0" stroke="#e844e1" />
+      <Line endX="-100.0" endY="196.0" layoutX="732.0" layoutY="395.0" startX="-100.0" startY="113.0" stroke="#e844e1" />
+      <Line endX="-100.0" endY="316.0" layoutX="362.0" layoutY="474.0" startX="-100.0" startY="265.0" stroke="#e844e1" />
+      <Line endX="-100.0" endY="375.0" layoutX="362.0" layoutY="591.0" startX="-100.0" startY="265.0" stroke="#e844e1" />
+      <Line endX="-100.0" endY="373.0" layoutX="459.0" layoutY="591.0" startX="-100.0" startY="280.0" stroke="#e844e1" />
+      <Line endX="-6.0" layoutX="365.0" layoutY="871.0" startX="-103.0" stroke="#e844e1" />
+      <Line endX="-49.0" layoutX="365.0" layoutY="896.0" startX="-103.0" stroke="#e844e1" />
+      <Line endX="-100.0" endY="281.0" layoutX="416.0" layoutY="631.0" startX="-100.0" startY="265.0" stroke="#e844e1" />
+      <Circle fill="#1f93ff00" layoutX="632.0" layoutY="605.0" radius="13.5" stroke="#e844e1" />
+      <Circle fill="#1f93ff00" layoutX="621.0" layoutY="625.0" radius="13.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="643.0" layoutY="625.0" radius="13.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="296.0" layoutY="627.0" radius="13.5" stroke="#20cfc0" />
+      <Circle fill="#1f93ff00" layoutX="296.0" layoutY="646.0" radius="13.5" stroke="#e844e1" />
+      <Circle fill="#1f93ff00" layoutX="1199.0" layoutY="580.0" radius="13.5" stroke="#20cfc0" />
+      <Circle fill="#1f93ff00" layoutX="1535.0" layoutY="597.0" radius="13.5" stroke="#20cfc0" />
+      <Line endX="-92.0" layoutX="363.0" layoutY="758.0" startX="-101.0" stroke="#e844e1" />
+      <Line endX="-92.0" layoutX="354.0" layoutY="886.0" startX="-101.0" stroke="#e844e1" />
+      <Circle fill="#1f93ff00" layoutX="316.0" layoutY="926.0" radius="13.5" stroke="#e844e1" />
+      <Circle fill="#1f93ff00" layoutX="262.0" layoutY="989.0" radius="22.5" stroke="#e844e1" />
+      <Arc fill="#1f93ff00" layoutX="256.0" layoutY="988.0" length="180.0" radiusX="7.0" radiusY="7.0" stroke="#e844e1" strokeType="INSIDE" />
+      <Arc fill="#1f93ff00" layoutX="269.0" layoutY="988.0" length="180.0" radiusX="7.0" radiusY="7.0" startAngle="180.0" stroke="#e844e1" strokeType="INSIDE" />
+      <Circle fill="#2197ff00" layoutX="316.0" layoutY="946.0" radius="13.5" stroke="#5e0363" />
+      <Circle fill="#1f93ff00" layoutX="428.0" layoutY="950.0" radius="13.5" stroke="#fffdff" />
+      <Circle fill="#1f93ff00" layoutX="428.0" layoutY="970.0" radius="13.5" stroke="#fffdff" />
+      <Circle fill="#1f93ff00" layoutX="525.0" layoutY="949.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="518.0" layoutY="962.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="532.0" layoutY="962.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="503.0" layoutY="807.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="496.0" layoutY="820.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="510.0" layoutY="820.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="672.0" layoutY="807.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="665.0" layoutY="820.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="679.0" layoutY="820.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="694.0" layoutY="949.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="687.0" layoutY="962.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="701.0" layoutY="962.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="982.0" layoutY="764.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="975.0" layoutY="777.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="989.0" layoutY="777.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="1230.0" layoutY="764.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="1223.0" layoutY="777.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="1237.0" layoutY="777.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="1000.0" layoutY="919.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="993.0" layoutY="932.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="1007.0" layoutY="932.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="1258.0" layoutY="920.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="1251.0" layoutY="933.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="1265.0" layoutY="933.0" radius="8.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="1188.0" layoutY="599.0" radius="13.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="1210.0" layoutY="599.0" radius="13.5" stroke="#1eac24" />
+      <Circle fill="#1f93ff00" layoutX="1535.0" layoutY="972.0" radius="22.5" stroke="#5e0363" />
+      <Arc fill="#1f93ff00" layoutX="1529.0" layoutY="972.0" length="180.0" radiusX="7.0" radiusY="7.0" stroke="#5e0363" strokeType="INSIDE" />
+      <Arc fill="#1f93ff00" layoutX="1542.0" layoutY="970.0" length="180.0" radiusX="7.0" radiusY="7.0" startAngle="180.0" stroke="#5e0363" strokeType="INSIDE" />
+      <Circle fill="#1f93ff00" layoutX="1535.0" layoutY="617.0" radius="13.5" stroke="#5e0363" />
+      <Circle fill="#1f93ff00" layoutX="1680.0" layoutY="759.0" radius="13.5" stroke="#5e0363" />
+      <Circle fill="#1f93ff00" layoutX="1680.0" layoutY="779.0" radius="13.5" stroke="#5e0363" />
+      <Line endX="-100.0" endY="348.0" layoutX="721.0" layoutY="359.0" startX="-100.0" startY="280.0" stroke="#1eac24" />
+      <Line endX="-6.0" layoutX="627.0" layoutY="707.0" startX="-90.5" startY="-0.5" stroke="#1eac24" />
+      <Line endX="-100.0" endY="348.0" layoutX="743.0" layoutY="359.0" startX="-100.0" startY="280.0" stroke="#1eac24" />
+      <Line endX="-14.0" layoutX="717.0" layoutY="707.0" startX="-74.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="355.0" layoutX="803.0" layoutY="427.0" startX="-100.0" startY="280.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="373.0" layoutX="637.0" layoutY="427.0" startX="-100.0" startY="280.0" stroke="#1eac24" />
+      <Line endX="-23.0" layoutX="734.0" layoutY="725.0" startX="-62.0" startY="-0.5" stroke="#1eac24" />
+      <Line endX="-23.0" layoutX="585.0" layoutY="725.0" startX="-82.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="353.0" layoutX="603.0" layoutY="445.0" startX="-100.0" startY="294.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="310.0" layoutX="803.0" layoutY="539.0" startX="-100.0" startY="297.5" stroke="#1eac24" />
+      <Line endX="-100.0" endY="310.0" layoutX="637.0" layoutY="539.0" startX="-100.0" startY="297.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="293.0" layoutX="674.0" layoutY="565.0" startX="-100.0" startY="284.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="397.0" layoutX="674.0" layoutY="610.0" startX="-100.0" startY="302.0" stroke="#1eac24" />
+      <Line endX="433.0" layoutX="656.0" layoutY="1007.0" startX="-82.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="310.0" layoutX="625.0" layoutY="565.0" startX="-100.0" startY="284.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="293.0" layoutX="528.0" layoutY="565.0" startX="-100.0" startY="284.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="287.75" layoutX="856.0" layoutY="569.0" startX="-100.0" startY="280.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="381.0" layoutX="856.0" layoutY="614.0" startX="-100.0" startY="297.5" stroke="#1eac24" />
+      <Line endX="255.0" layoutX="830.0" layoutY="995.0" startX="-74.0" stroke="#1eac24" />
+      <Arc fill="#1f93ff00" layoutX="1089.0" layoutY="995.5" length="180.0" radiusX="4.0" radiusY="4.0" stroke="#1eac24" strokeType="INSIDE" />
+      <Line endX="180.0" layoutX="1167.0" layoutY="995.0" startX="-74.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="393.0" layoutX="1189.0" layoutY="614.0" startX="-100.0" startY="277.0" stroke="#1eac24" />
+      <Line endX="-91.0" layoutX="856.0" layoutY="966.0" startX="-100.0" stroke="#1eac24" />
+      <Line endX="-91.0" layoutX="674.0" layoutY="966.0" startX="-100.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-26.0" layoutX="608.0" layoutY="900.0" startX="-100.0" startY="-42.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-27.0" layoutX="617.0" layoutY="900.0" startX="-100.0" startY="-41.0" stroke="#1eac24" />
+      <Line endX="-91.0" layoutX="616.0" layoutY="866.0" startX="-99.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-26.0" layoutX="777.0" layoutY="900.0" startX="-100.0" startY="-42.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-27.0" layoutX="786.0" layoutY="900.0" startX="-100.0" startY="-41.0" stroke="#1eac24" />
+      <Line endX="-91.0" layoutX="785.0" layoutY="866.0" startX="-99.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="326.0" layoutX="528.0" layoutY="610.0" startX="-100.0" startY="301.0" stroke="#fffdff" />
+      <Line endX="-90.0" layoutX="527.0" layoutY="923.0" startX="-99.0" stroke="#fffdff" />
+      <Line endX="-100.0" endY="292.0" layoutX="528.0" layoutY="700.0" startX="-100.0" startY="284.0" stroke="#fffdff" />
+      <Line endX="-90.0" layoutX="518.0" layoutY="992.0" startX="-159.0" stroke="#fffdff" />
+      <Line endX="-100.0" endY="292.0" layoutX="459.0" layoutY="700.0" startX="-100.0" startY="284.0" stroke="#fffdff" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e545e000" height="33.0" layoutX="519.0" layoutY="892.0" stroke="#1eac24" width="12.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e545e000" height="33.0" layoutX="688.0" layoutY="892.0" stroke="#1eac24" width="12.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e545e000" height="33.0" layoutX="497.0" layoutY="750.0" stroke="#1eac24" width="12.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e545e000" height="33.0" layoutX="666.0" layoutY="750.0" stroke="#1eac24" width="12.0" />
+      <Line endX="-12.0" layoutX="1056.0" layoutY="688.0" startX="-74.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="347.0" layoutX="1082.0" layoutY="408.0" startX="-100.0" startY="289.0" stroke="#1eac24" />
+      <Line endX="79.0" layoutX="509.0" layoutY="849.0" startX="-99.0" stroke="#1eac24" strokeWidth="4.0" />
+      <Line endX="64.0" layoutX="715.0" layoutY="849.0" startX="-99.0" stroke="#1eac24" strokeWidth="4.0" />
+      <Line endX="-100.0" endY="331.0" layoutX="1135.0" layoutY="418.0" startX="-100.0" startY="251.0" stroke="#1eac24" />
+      <Line endX="79.0" layoutX="1109.0" layoutY="669.0" startX="-74.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="347.0" layoutX="1288.0" layoutY="322.0" startX="-100.0" startY="291.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="347.0" layoutX="1310.0" layoutY="322.0" startX="-100.0" startY="291.0" stroke="#1eac24" />
+      <Line endX="10.0" layoutX="1284.0" layoutY="669.0" startX="-74.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="331.0" layoutX="1394.0" layoutY="418.0" startX="-100.0" startY="251.0" stroke="#1eac24" />
+      <Line endX="-1.0" layoutX="1304.0" layoutY="688.0" startX="-74.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="347.0" layoutX="1330.0" layoutY="408.0" startX="-100.0" startY="289.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="285.0" layoutX="1135.0" layoutY="534.0" startX="-100.0" startY="269.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="285.0" layoutX="1394.0" layoutY="534.0" startX="-100.0" startY="269.0" stroke="#1eac24" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e545e000" height="33.0" layoutX="976.0" layoutY="706.0" stroke="#1eac24" width="12.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e545e000" height="33.0" layoutX="1224.0" layoutY="706.0" stroke="#1eac24" width="12.0" />
+      <Line endX="66.0" layoutX="1048.0" layoutY="819.0" startX="-99.0" stroke="#1eac24" strokeWidth="4.0" />
+      <Line endX="-100.0" endY="276.0" layoutX="1100.0" layoutY="568.0" startX="-100.0" startY="251.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="269.0" layoutX="1189.0" layoutY="568.0" startX="-100.0" startY="251.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-26.0" layoutX="1083.0" layoutY="870.0" startX="-100.0" startY="-42.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-27.0" layoutX="1091.0" layoutY="870.0" startX="-100.0" startY="-41.0" stroke="#1eac24" />
+      <Line endX="-91.0" layoutX="1091.0" layoutY="836.0" startX="-100.0" stroke="#1eac24" />
+      <Line endX="-91.0" layoutX="1189.0" layoutY="922.0" startX="-100.0" stroke="#1eac24" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e545e000" height="33.0" layoutX="994.0" layoutY="862.0" stroke="#1eac24" width="12.0" />
+      <Line endX="66.0" layoutX="1307.0" layoutY="819.0" startX="-99.0" stroke="#1eac24" strokeWidth="4.0" />
+      <Line endX="-100.0" endY="-26.0" layoutX="1342.0" layoutY="870.0" startX="-100.0" startY="-42.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-27.0" layoutX="1350.0" layoutY="870.0" startX="-100.0" startY="-41.0" stroke="#1eac24" />
+      <Line endX="-92.0" layoutX="1350.0" layoutY="836.0" startX="-100.0" stroke="#1eac24" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e545e000" height="33.0" layoutX="1252.0" layoutY="861.0" stroke="#1eac24" width="12.0" />
+      <Line endX="-100.0" endY="373.0" layoutX="1447.0" layoutY="622.0" startX="-100.0" startY="269.0" stroke="#1eac24" />
+      <Line endX="-92.0" layoutX="1447.0" layoutY="922.0" startX="-100.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="319.0" layoutX="416.0" layoutY="695.0" startX="-100.0" startY="265.0" stroke="#5e0363" />
+      <Line endX="-89.0" layoutX="410.0" layoutY="990.0" startX="-99.0" stroke="#5e0363" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e545e000" height="20.0" layoutX="306.0" layoutY="974.0" stroke="#5e0363" width="20.0" />
+      <Line endX="-100.0" endY="319.0" layoutX="1635.0" layoutY="630.0" startX="-100.0" startY="203.0" stroke="#5e0363" />
+      <Line endX="-100.0" endY="272.0" layoutX="1635.0" layoutY="498.0" startX="-100.0" startY="133.0" stroke="#5e0363" />
+      <Line endX="-100.0" endY="272.0" layoutX="1780.0" layoutY="587.0" startX="-100.0" startY="206.0" stroke="#5e0363" />
+      <Line endX="-100.0" endY="219.0" layoutX="1780.0" layoutY="526.0" startX="-100.0" startY="206.0" stroke="#5e0363" />
+      <Line endX="45.0" endY="-36.0" layoutX="1635.0" layoutY="768.0" startX="-100.0" startY="-36.0" stroke="#5e0363" />
+      <Line endX="45.0" endY="-36.0" layoutX="1490.0" layoutY="784.0" startX="36.0" startY="-36.0" stroke="#5e0363" />
+      <Line endX="45.0" endY="-36.0" layoutX="1490.0" layoutY="903.0" startX="36.0" startY="-36.0" stroke="#5e0363" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e545e000" height="20.0" layoutX="1670.0" layoutY="809.0" stroke="#5e0363" width="20.0" />
+      <Line endX="45.0" endY="-36.0" layoutX="1640.0" layoutY="861.0" startX="35.0" startY="-36.0" stroke="#5e0363" />
+      <Line endX="-126.25" endY="307.3388671875" layoutX="731.0" layoutY="324.0" startX="-84.5" startY="265.75" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#359764" height="16.0" layoutX="827.0" layoutY="244.0" stroke="WHITE" width="82.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#359764" height="16.0" layoutX="922.0" layoutY="244.0" stroke="WHITE" width="82.0" />
+      <Text fill="#f1d45c" layoutX="233.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КВЛ 110 кВ Академическая" wrappingWidth="188.0">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="256.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТЭЦ - Петрищевская" wrappingWidth="143.0">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="482.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КВЛ 110 кВ Академическая ТЭЦ - Южная I цепь" wrappingWidth="333.0">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="552.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="с отпайкой на ПС Овощная" wrappingWidth="188.0">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="757.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ШСВГ 110 кВ" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="859.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КРУЭ 110 кВ" wrappingWidth="126.0">
+         <font>
+            <Font name="Tahoma" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1135.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КВЛ 110 кВ Академическая ТЭЦ - " wrappingWidth="236.0">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1197.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Академическая" wrappingWidth="105.0">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1417.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КВЛ 110 кВ Академическая ТЭЦ - Южная II цепь" wrappingWidth="338.0">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1490.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="с отпайкой на ПС Овощная" wrappingWidth="189.0">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1022.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РТСН 110 кВ" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="423.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Т1 110 кВ" textAlignment="JUSTIFY" wrappingWidth="80.0">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1357.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Т2 110 кВ" textAlignment="JUSTIFY" wrappingWidth="80.0">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="827.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТН 110 кВ 2СШ" wrappingWidth="91.99999999999997">
+         <font>
+            <Font name="Tahoma" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="928.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТН 110 кВ 1СШ" wrappingWidth="94.99999999999989">
+         <font>
+            <Font name="Tahoma" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="829.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ДЗШ 1к введена" wrappingWidth="80.0">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Text>
+      <Text layoutX="924.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ДЗШ 2к введена" wrappingWidth="80.0">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="326.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" wrappingWidth="7.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="499.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" wrappingWidth="7.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="638.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="7.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="779.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" wrappingWidth="7.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="917.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" wrappingWidth="7.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="1088.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" wrappingWidth="7.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="1229.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" wrappingWidth="7.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="1397.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9" wrappingWidth="8.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="1537.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" wrappingWidth="14.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="1678.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2СШ 110 кВ" wrappingWidth="60.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1678.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1СШ 110 кВ" wrappingWidth="60.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="118.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2СШ 110 кВ" wrappingWidth="60.0">
+         <font>
+            <Font name="Tahoma" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="118.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1СШ 110 кВ" wrappingWidth="60.0">
+         <font>
+            <Font name="Tahoma" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="33.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Контроль частоты сети" wrappingWidth="150.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="34.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f &lt;= 49,95 Гц f &gt;= 50,05 Гц" wrappingWidth="155.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="34.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f &lt;= 49,925 Гц f &gt;= 50,075 Гц" wrappingWidth="168.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="34.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f &lt;= 49,8 Гц" wrappingWidth="70.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Line endX="107.0" layoutX="111.0" layoutY="145.0" startX="-100.0" stroke="#f1d45c" />
+      <Text fill="#f1d45c" layoutX="818.0" layoutY="681.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РУСН 6 кВ" wrappingWidth="108.0">
+         <font>
+            <Font name="Tahoma" size="23.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="213.0" layoutY="992.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТГ 1" wrappingWidth="21.0">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1602.0" layoutY="863.0" strokeType="OUTSIDE" strokeWidth="0.0" text="К системе" wrappingWidth="46.0">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1586.0" layoutY="877.0" strokeType="OUTSIDE" strokeWidth="0.0" text="возбуждения ТГ2" wrappingWidth="80.0">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1700.0" layoutY="775.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТВ2" wrappingWidth="18.0">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1467.0" layoutY="957.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТГ2" wrappingWidth="20.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="372.0" layoutY="972.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТПУ ТГ1" wrappingWidth="38.0">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="375.0" layoutY="958.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P 15 кВ" textAlignment="JUSTIFY" wrappingWidth="40.0">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="377.0" layoutY="840.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1С 6 кВ" textAlignment="JUSTIFY" wrappingWidth="40.0">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="600.0" layoutY="840.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2С 6 кВ" wrappingWidth="40.0">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="936.0" layoutY="810.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3С 6 кВ" textAlignment="JUSTIFY" wrappingWidth="40.0">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1195.0" layoutY="810.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4С 6 кВ" textAlignment="JUSTIFY" wrappingWidth="40.0">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="343.0" layoutY="629.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Т1" wrappingWidth="14.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="325.0" layoutY="645.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11BAT10" wrappingWidth="48.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="325.0" layoutY="663.0" strokeType="OUTSIDE" strokeWidth="0.0" text="225 MBA" wrappingWidth="48.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="685.0" layoutY="629.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТСН" wrappingWidth="24.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="673.0" layoutY="645.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11BBT10" wrappingWidth="48.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="675.0" layoutY="662.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25 MBA" wrappingWidth="42.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="317.0" layoutY="761.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3Н 15 кВ Т1" textAlignment="JUSTIFY" wrappingWidth="65.0">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="333.0" layoutY="941.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТВ1" wrappingWidth="21.0" />
+      <Text fill="#f1d45c" layoutX="447.0" layoutY="968.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПТ" wrappingWidth="16.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="298.0" layoutY="1044.0" strokeType="OUTSIDE" strokeWidth="0.0" text="К системе" wrappingWidth="46.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="281.0" layoutY="1057.0" strokeType="OUTSIDE" strokeWidth="0.0" text="возбуждения ТГ1" wrappingWidth="80.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="238.0" layoutY="1027.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11МКА10" wrappingWidth="50.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="236.0" layoutY="1044.0" strokeType="OUTSIDE" strokeWidth="0.0" text="191,2 МВт" wrappingWidth="55.999999999999545">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="1244.0" layoutY="629.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РТСН" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="1239.0" layoutY="661.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25 МВА" wrappingWidth="42.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="1582.0" layoutY="629.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Т2" wrappingWidth="14.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="1565.0" layoutY="645.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10BAT10" wrappingWidth="48.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="1567.0" layoutY="661.0" strokeType="OUTSIDE" strokeWidth="0.0" text="80 MBA" wrappingWidth="42.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="1452.0" layoutY="976.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MKA10" wrappingWidth="50.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="1458.0" layoutY="993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="67 МВт" wrappingWidth="40.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Text fill="#f1d45c" layoutX="428.0" layoutY="843.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" wrappingWidth="6.0">
+         <font>
+            <Font name="Tahoma" size="8.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="522.0" layoutY="843.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9" wrappingWidth="5.0">
+         <font>
+            <Font name="Tahoma" size="8.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="569.0" layoutY="843.0" strokeType="OUTSIDE" strokeWidth="0.0" text="47" wrappingWidth="9.0">
+         <font>
+            <Font name="Tahoma" size="8.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="532.0" layoutY="863.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21" wrappingWidth="9.0">
+         <font>
+            <Font name="Tahoma" size="8.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="689.0" layoutY="843.0" strokeType="OUTSIDE" strokeWidth="0.0" text="40" wrappingWidth="9.0">
+         <font>
+            <Font name="Tahoma" size="8.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="698.0" layoutY="863.0" strokeType="OUTSIDE" strokeWidth="0.0" text="28" wrappingWidth="9.0">
+         <font>
+            <Font name="Tahoma" size="8.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="751.0" layoutY="843.0" strokeType="OUTSIDE" strokeWidth="0.0" text="34" wrappingWidth="9.0">
+         <font>
+            <Font name="Tahoma" size="8.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="997.0" layoutY="816.0" strokeType="OUTSIDE" strokeWidth="0.0" text="61" wrappingWidth="9.0">
+         <font>
+            <Font name="Tahoma" size="8.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1086.0" layoutY="816.0" strokeType="OUTSIDE" strokeWidth="0.0" text="55" wrappingWidth="9.0">
+         <font>
+            <Font name="Tahoma" size="8.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1032.0" layoutY="831.0" strokeType="OUTSIDE" strokeWidth="0.0" text="65" wrappingWidth="9.0">
+         <font>
+            <Font name="Tahoma" size="8.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1254.0" layoutY="816.0" strokeType="OUTSIDE" strokeWidth="0.0" text="56" wrappingWidth="9.0">
+         <font>
+            <Font name="Tahoma" size="8.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1290.0" layoutY="831.0" strokeType="OUTSIDE" strokeWidth="0.0" text="66" wrappingWidth="9.0">
+         <font>
+            <Font name="Tahoma" size="8.0" />
+         </font>
+      </Text>
+      <Line endX="-132.75" endY="313.3388671875" layoutX="1298.0" layoutY="297.0" startX="-84.5" startY="265.75" />
+      <Circle layoutX="199.0" layoutY="474.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="235.0" layoutY="456.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="294.0" layoutY="456.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="366.0" layoutY="474.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="539.0" layoutY="474.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="467.0" layoutY="456.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="678.0" layoutY="474.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="606.0" layoutY="456.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="816.0" layoutY="474.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="745.0" layoutY="456.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="954.0" layoutY="474.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="883.0" layoutY="456.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="1127.0" layoutY="474.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="1056.0" layoutY="456.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="1270.0" layoutY="474.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="1198.0" layoutY="456.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="1438.0" layoutY="474.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="1366.0" layoutY="456.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="1580.0" layoutY="474.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="1508.0" layoutY="456.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="1614.0" layoutY="474.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="1650.0" layoutY="456.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="428.0" layoutY="849.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="525.0" layoutY="849.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="537.0" layoutY="849.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="574.0" layoutY="849.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="694.0" layoutY="849.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="703.0" layoutY="849.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="756.0" layoutY="849.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="1000.0" layoutY="819.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="1035.0" layoutY="819.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="1089.0" layoutY="819.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="1258.0" layoutY="819.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="1294.0" layoutY="819.0" radius="1.5" stroke="BLACK" />
+      <Circle layoutX="1347.0" layoutY="819.0" radius="1.5" stroke="BLACK" />
+      <Line endX="-100.0" endY="20.0" layoutX="431.0" layoutY="306.0" startX="-100.0" startY="-38.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="41.0" layoutX="603.0" layoutY="206.0" startX="-100.0" startY="-3.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="20.0" layoutX="603.0" layoutY="306.0" startX="-100.0" startY="-39.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="42.0" layoutX="742.0" layoutY="206.0" startX="-100.0" startY="-41.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="20.0" layoutX="742.0" layoutY="306.0" startX="-100.0" startY="-38.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="32.0" layoutX="1192.0" layoutY="214.0" startX="-100.0" startY="-3.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="20.0" layoutX="1192.0" layoutY="306.0" startX="-100.0" startY="-40.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="32.0" layoutX="1334.0" layoutY="214.0" startX="-100.0" startY="-50.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="20.0" layoutX="1334.0" layoutY="306.0" startX="-100.0" startY="-40.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="32.0" layoutX="1502.0" layoutY="214.0" startX="-100.0" startY="-10.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="20.0" layoutX="1502.0" layoutY="306.0" startX="-100.0" startY="-40.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="33.0" layoutX="1644.0" layoutY="214.0" startX="-100.0" startY="-50.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="20.0" layoutX="1644.0" layoutY="306.0" startX="-100.0" startY="-39.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="495.0" layoutX="466.0" layoutY="-85.0" startX="-100.0" startY="453.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="497.0" layoutX="639.0" layoutY="-25.0" startX="-100.0" startY="457.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="497.0" layoutX="639.0" layoutY="-85.0" startX="-100.0" startY="453.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="497.0" layoutX="778.0" layoutY="-25.0" startX="-100.0" startY="456.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="496.0" layoutX="778.0" layoutY="-85.0" startX="-100.0" startY="453.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="82.0" layoutX="845.0" layoutY="374.0" startX="-100.0" startY="57.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="497.0" layoutX="916.0" layoutY="-25.0" startX="-100.0" startY="455.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="495.0" layoutX="916.0" layoutY="-85.0" startX="-100.0" startY="347.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="428.0" layoutX="983.0" layoutY="28.0" startX="-100.0" startY="402.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="435.0" layoutX="1054.0" layoutY="-25.0" startX="-100.0" startY="402.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="445.0" layoutX="1054.0" layoutY="28.0" startX="-100.0" startY="402.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="435.0" layoutX="1156.0" layoutY="-25.0" startX="-100.0" startY="393.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="428.0" layoutX="1156.0" layoutY="28.0" startX="-100.0" startY="402.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="434.0" layoutX="1298.0" layoutY="-25.0" startX="-100.0" startY="393.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="428.0" layoutX="1298.0" layoutY="28.0" startX="-100.0" startY="401.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="434.0" layoutX="1466.0" layoutY="-25.0" startX="-100.0" startY="393.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="428.0" layoutX="1466.0" layoutY="28.0" startX="-100.0" startY="401.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="434.0" layoutX="1608.0" layoutY="-25.0" startX="-100.0" startY="393.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="428.0" layoutX="1608.0" layoutY="28.0" startX="-100.0" startY="401.0" stroke="#20cfc0" />
+      <Line endX="-100.0" endY="5.0" layoutX="322.0" layoutY="637.0" startX="-100.0" startY="-11.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="5.0" layoutX="1561.0" layoutY="609.0" startX="-100.0" startY="-12.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="291.0" layoutX="362.0" layoutY="545.0" startX="-100.0" startY="265.0" stroke="#e844e1" />
+      <Line endX="-100.0" endY="353.0" layoutX="603.0" layoutY="378.0" startX="-100.0" startY="347.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="353.0" layoutX="772.0" layoutY="445.0" startX="-100.0" startY="294.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="353.0" layoutX="772.0" layoutY="378.0" startX="-100.0" startY="347.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="341.0" layoutX="625.0" layoutY="599.0" startX="-100.0" startY="283.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="310.0" layoutX="794.0" layoutY="565.0" startX="-100.0" startY="284.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="341.0" layoutX="794.0" layoutY="599.0" startX="-100.0" startY="283.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="347.0" layoutX="1082.0" layoutY="343.0" startX="-100.0" startY="345.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="347.0" layoutX="1330.0" layoutY="343.0" startX="-100.0" startY="345.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="309.0" layoutX="1100.0" layoutY="601.0" startX="-100.0" startY="250.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="350.0" layoutX="1358.0" layoutY="494.0" startX="-100.0" startY="325.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="285.0" layoutX="1447.0" layoutY="552.0" startX="-100.0" startY="267.0" stroke="#1eac24" />
+      <Text fill="#f1d45c" layoutX="1342.0" layoutY="816.0" strokeType="OUTSIDE" strokeWidth="0.0" text="60" wrappingWidth="9.0">
+         <font>
+            <Font name="Tahoma" size="8.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="12.0" layoutX="1185.0" layoutY="604.0" startX="-100.0" startY="-24.0" stroke="#dee6d9" />
+      <DetectorControl decimals="1" kks="psum_bl" layoutX="56.0" layoutY="29.0" maxValue="100.0" param="Pсум" prefHeight="25.0" prefWidth="117.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="qsum_bl" layoutX="56.0" layoutY="56.0" maxValue="100.0" param="Qсум" prefHeight="25.0" prefWidth="130.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11mbl01ct001" layoutX="56.0" layoutY="83.0" maxValue="100.0" param="Tнар" prefHeight="25.0" prefWidth="102.0" system="ED" unit="°C ">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="0" kks="11bat10ek001" layoutX="319.0" layoutY="590.0" maxValue="10.0" param="ПБВ" prefHeight="25.0" prefWidth="56.0" system="ED" unit="">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="0" kks="11bbt10ek001" layoutX="665.0" layoutY="590.0" maxValue="10.0" param="РПН" prefHeight="25.0" prefWidth="58.0" system="ED" unit="">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="0" kks="00bct10ek001" layoutX="1231.0" layoutY="590.0" maxValue="10.0" param="РПН" prefHeight="25.0" prefWidth="58.0" system="ED" unit="">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="0" kks="10bat10ek001" layoutX="1561.0" layoutY="590.0" maxValue="10.0" param="ПБВ" prefHeight="25.0" prefWidth="56.0" system="ED" unit="">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bba10ce003" layoutX="554.0" layoutY="773.0" maxValue="100.0" param="P" prefHeight="25.0" prefWidth="86.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bba10ce004" layoutX="554.0" layoutY="747.0" maxValue="100.0" param="Q" prefHeight="25.0" prefWidth="100.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bba10ce022" layoutX="554.0" layoutY="799.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="70.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bbb10ce003" layoutX="716.0" layoutY="773.0" maxValue="100.0" param="P" prefHeight="25.0" prefWidth="86.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bbb10ce004" layoutX="716.0" layoutY="747.0" maxValue="100.0" param="Q" prefHeight="25.0" prefWidth="100.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bbb10ce022" layoutX="716.0" layoutY="799.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="70.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bbb10ce013" layoutX="770.0" layoutY="897.0" maxValue="100.0" param="P" prefHeight="25.0" prefWidth="86.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bbb10ce014" layoutX="770.0" layoutY="871.0" maxValue="100.0" param="Q" prefHeight="25.0" prefWidth="100.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bbb10ce012" layoutX="770.0" layoutY="923.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="70.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bba10ce013" layoutX="585.0" layoutY="902.0" maxValue="100.0" param="P" prefHeight="25.0" prefWidth="86.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bba10ce014" layoutX="585.0" layoutY="876.0" maxValue="100.0" param="Q" prefHeight="25.0" prefWidth="100.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bba10ce012" layoutX="585.0" layoutY="928.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="70.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bba10ce005" layoutX="474.0" layoutY="998.0" maxValue="100.0" param="F" prefHeight="25.0" prefWidth="70.0" system="ED" unit="Гц">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bbb10ce005" layoutX="639.0" layoutY="1010.0" maxValue="100.0" param="F" prefHeight="25.0" prefWidth="70.0" system="ED" unit="Гц">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="tg_1ce003" layoutX="34.0" layoutY="915.0" maxHeight="1.7976931348623157E308" maxValue="100.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" param="Pсумм" prefHeight="25.0" prefWidth="129.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="tg_1ce004" layoutX="34.0" layoutY="941.0" maxValue="100.0" param="Qсумм" prefHeight="25.0" prefWidth="142.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="tg_1ce022" layoutX="34.0" layoutY="889.0" maxValue="1000.0" param="lb" prefHeight="25.0" prefWidth="78.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="tg_1ce005" layoutX="34.0" layoutY="967.0" maxValue="100.0" param="f" prefHeight="25.0" prefWidth="69.0" system="ED" unit="Гц">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="tg_2ce051" layoutX="1564.0" layoutY="887.0" maxValue="100.0" param="Ubc" prefHeight="25.0" prefWidth="101.0" system="ED" unit="кВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="tg_2ce003" layoutX="1564.0" layoutY="939.0" maxValue="100.0" param="Pсумм" prefHeight="25.0" prefWidth="129.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="tg_2ce004" layoutX="1564.0" layoutY="965.0" maxValue="100.0" param="Qсумм" prefHeight="25.0" prefWidth="142.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="tg_2ce022" layoutX="1564.0" layoutY="913.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="70.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="tg_2ce005" layoutX="1564.0" layoutY="991.0" maxValue="100.0" param="f" prefHeight="25.0" prefWidth="70.0" system="ED" unit="Гц">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00bca10ce051" layoutX="945.0" layoutY="942.0" maxValue="100.0" param="Ubc" prefHeight="25.0" prefWidth="95.0" system="ED" unit="кВ">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00bca10ce005" layoutX="945.0" layoutY="968.0" maxValue="100.0" param="F" prefHeight="25.0" prefWidth="70.0" system="ED" unit="Гц">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00bcb10ce051" layoutX="1205.0" layoutY="943.0" maxValue="100.0" param="Ubc" prefHeight="25.0" prefWidth="90.0" system="ED" unit="кВ">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00bcb10ce005" layoutX="1205.0" layoutY="968.0" maxValue="100.0" param="F" prefHeight="25.0" prefWidth="70.0" system="ED" unit="Гц">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bba10ce023" layoutX="1103.0" layoutY="858.0" maxValue="100.0" param="P" prefHeight="25.0" prefWidth="86.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bba10ce024" layoutX="1103.0" layoutY="884.0" maxValue="100.0" param="Q" prefHeight="25.0" prefWidth="100.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bba10ce032" layoutX="1103.0" layoutY="832.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="70.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bbb10ce023" layoutX="1364.0" layoutY="858.0" maxValue="100.0" param="P" prefHeight="25.0" prefWidth="86.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bbb10ce024" layoutX="1364.0" layoutY="884.0" maxValue="100.0" param="Q" prefHeight="25.0" prefWidth="100.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bbb10ce032" layoutX="1364.0" layoutY="832.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="70.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00bca10ce003" layoutX="1049.0" layoutY="756.0" maxValue="100.0" param="P" prefHeight="25.0" prefWidth="86.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00bca10ce004" layoutX="1049.0" layoutY="730.0" maxValue="100.0" param="Q" prefHeight="25.0" prefWidth="100.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00bca10ce022" layoutX="1049.0" layoutY="782.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="70.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00bcb10ce003" layoutX="1310.0" layoutY="756.0" maxValue="100.0" param="P" prefHeight="25.0" prefWidth="86.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00bcb10ce004" layoutX="1310.0" layoutY="730.0" maxValue="100.0" param="Q" prefHeight="25.0" prefWidth="100.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00bcb10ce022" layoutX="1310.0" layoutY="782.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="71.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <Text fill="#f1d45c" layoutX="1236.0" layoutY="645.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00BCT10" wrappingWidth="48.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <ElectricControl equipmentType="BRKD" kks="00aea02gs013" layoutX="321.0" layoutY="246.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea02gs024" layoutX="342.0" layoutY="212.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea02gs023" layoutX="342.0" layoutY="283.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl kks="00aea02gs001" layoutX="321.0" layoutY="326.0" prefHeight="20.0" prefWidth="20.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea02gs022" layoutX="307.0" layoutY="376.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea02gs021" layoutX="377.0" layoutY="376.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea02gs011" layoutX="356.0" layoutY="408.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea02gs012" layoutX="284.0" layoutY="409.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea20gs021" layoutX="224.0" layoutY="499.0" orientation="VERTICAL" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea10gs021" layoutX="188.0" layoutY="499.0" orientation="VERTICAL" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl kks="00aea03gs001" layoutX="493.0" layoutY="326.0" prefHeight="20.0" prefWidth="20.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea03gs024" layoutX="514.0" layoutY="212.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea03gs013" layoutX="493.0" layoutY="245.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea03gs023" layoutX="514.0" layoutY="283.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea03gs022" layoutX="480.0" layoutY="376.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea03gs021" layoutX="550.0" layoutY="376.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea03gs012" layoutX="457.0" layoutY="410.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea03gs011" layoutX="529.0" layoutY="410.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea04gs024" layoutX="653.0" layoutY="212.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea04gs013" layoutX="632.0" layoutY="246.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea04gs023" layoutX="653.0" layoutY="283.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl kks="00aea04gs001" layoutX="632.0" layoutY="326.0" prefHeight="20.0" prefWidth="20.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea04gs022" layoutX="619.0" layoutY="376.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea04gs021" layoutX="689.0" layoutY="376.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea04gs012" layoutX="596.0" layoutY="410.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea04gs011" layoutX="668.0" layoutY="409.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl kks="00aea05gs001" layoutX="735.0" layoutY="326.0" prefHeight="20.0" prefWidth="20.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea05gs022" layoutX="757.0" layoutY="376.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea05gs012" layoutX="735.0" layoutY="409.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea05gs011" layoutX="806.0" layoutY="408.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea05gs021" layoutX="828.0" layoutY="376.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="r115" layoutX="895.0" layoutY="376.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="r114" layoutX="873.0" layoutY="408.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="r116" layoutX="966.0" layoutY="376.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="r117" layoutX="944.0" layoutY="408.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea06gs013" layoutX="1082.0" layoutY="244.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea06gs024" layoutX="1103.0" layoutY="212.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea06gs023" layoutX="1103.0" layoutY="283.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl kks="00aea06gs001" layoutX="1082.0" layoutY="326.0" prefHeight="20.0" prefWidth="20.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea06gs022" layoutX="1069.0" layoutY="376.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea06gs021" layoutX="1139.0" layoutY="376.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea06gs012" layoutX="1046.0" layoutY="408.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea06gs011" layoutX="1117.0" layoutY="407.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea07gs022" layoutX="1210.0" layoutY="376.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea07gs012" layoutX="1188.0" layoutY="407.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea07gs011" layoutX="1260.0" layoutY="407.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea07gs021" layoutX="1281.0" layoutY="376.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl kks="00aea07gs001" layoutX="1224.0" layoutY="326.0" prefHeight="20.0" prefWidth="20.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea07gs023" layoutX="1245.0" layoutY="283.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea07gs013" layoutX="1224.0" layoutY="244.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea07gs024" layoutX="1245.0" layoutY="212.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea08gs024" layoutX="1413.0" layoutY="212.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea08gs013" layoutX="1392.0" layoutY="244.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea08gs023" layoutX="1413.0" layoutY="283.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl kks="00aea08gs001" layoutX="1392.0" layoutY="326.0" prefHeight="20.0" prefWidth="20.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea08gs022" layoutX="1378.0" layoutY="376.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea08gs021" layoutX="1449.0" layoutY="376.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea08gs012" layoutX="1356.0" layoutY="407.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea08gs011" layoutX="1428.0" layoutY="407.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea09gs024" layoutX="1555.0" layoutY="213.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea09gs013" layoutX="1534.0" layoutY="245.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea09gs023" layoutX="1555.0" layoutY="284.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl kks="00aea09gs001" layoutX="1534.0" layoutY="326.0" prefHeight="20.0" prefWidth="20.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea09gs022" layoutX="1520.0" layoutY="376.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea09gs021" layoutX="1591.0" layoutY="377.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea09gs012" layoutX="1498.0" layoutY="407.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="00aea09gs011" layoutX="1570.0" layoutY="406.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea10gs022" layoutX="1603.0" layoutY="499.0" orientation="VERTICAL" prefHeight="18.0" prefWidth="35.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00aea20gs022" layoutX="1639.0" layoutY="499.0" orientation="VERTICAL" prefHeight="18.0" prefWidth="35.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="10bac10gs002" layoutX="1525.0" layoutY="771.0" orientation="VERTICAL" prefHeight="18.0" prefWidth="20.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.3686274588108063" green="0.0117647061124444" blue="0.38823530077934265" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl kks="10bac10gs001" layoutX="1525.0" layoutY="813.0" prefHeight="20.0" prefWidth="20.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.3686274588108063" green="0.0117647061124444" blue="0.38823530077934265" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.3686274588108063" green="0.0117647061124444" blue="0.38823530077934265" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <Line endX="-100.0" endY="433.0" layoutX="1635.0" layoutY="380.0" startX="-100.0" startY="410.0" stroke="#5e0363" />
+      <ElectricControl equipmentType="BRKG" kks="11bac10gs102" layoutX="271.0" layoutY="749.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.9098039269447327" green="0.2666666805744171" blue="0.8823529481887817" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKD" kks="11bac10gs002" layoutX="252.0" layoutY="788.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="19.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.9098039269447327" green="0.2666666805744171" blue="0.8823529481887817" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl kks="11bac10gs001" layoutX="252.0" layoutY="836.0" prefHeight="20.0" prefWidth="20.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.9098039269447327" green="0.2666666805744171" blue="0.8823529481887817" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.9098039269447327" green="0.2666666805744171" blue="0.8823529481887817" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl kks="11bba10gs103" layoutX="437.0" layoutY="914.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.9921568632125854" blue="1.0" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRK6" kks="11bba10gs003" layoutX="422.0" layoutY="866.0" prefHeight="36.0" prefWidth="12.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRK6" kks="11bba10gs021" layoutX="531.0" layoutY="800.0" prefHeight="36.0" prefWidth="12.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="11bba10gs103" layoutX="562.0" layoutY="716.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRK6" kks="11bbb10gs028" layoutX="697.0" layoutY="791.0" prefHeight="36.0" prefWidth="12.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="11bbb10gs128" layoutX="711.0" layoutY="716.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRK6" kks="11bba10gs047" layoutX="568.0" layoutY="866.0" prefHeight="36.0" prefWidth="12.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl kks="11bba10gs147" layoutX="583.0" layoutY="957.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="11bbb10gs134" layoutX="765.0" layoutY="957.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRK6" kks="11bbb10gs034" layoutX="750.0" layoutY="866.0" prefHeight="36.0" prefWidth="12.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRK6" kks="00bbb10gs065" layoutX="1029.0" layoutY="757.0" prefHeight="36.0" prefWidth="12.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00bbb10gs165" layoutX="1044.0" layoutY="679.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRK6" kks="00bbb10gs055" layoutX="1083.0" layoutY="845.0" prefHeight="36.0" prefWidth="12.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00bbb10gs155" layoutX="1098.0" layoutY="913.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRK6" kks="00bcb10gs060" layoutX="1341.0" layoutY="845.0" prefHeight="36.0" prefWidth="12.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00bcb10gs160" layoutX="1355.0" layoutY="913.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRK6" kks="00bcb10gs066" layoutX="1288.0" layoutY="757.0" prefHeight="36.0" prefWidth="12.0" skinType="BREAKER" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" opacity="0.0" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="00bcb10gs166" layoutX="1303.0" layoutY="679.0" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.11764705926179886" green="0.6745098233222961" blue="0.1411764770746231" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="11bac10gs101" layoutX="229.0" layoutY="882.0" orientation="HORIZONTAL_REVERSE" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.9098039269447327" green="0.2666666805744171" blue="0.8823529481887817" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="10bac10gs102" layoutX="1492.0" layoutY="739.0" orientation="HORIZONTAL_REVERSE" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.3686274588108063" green="0.0117647061124444" blue="0.38823530077934265" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="10bac10gs101" layoutX="1492.0" layoutY="858.0" orientation="HORIZONTAL_REVERSE" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.3686274588108063" green="0.0117647061124444" blue="0.38823530077934265" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="r118" layoutX="211.0" layoutY="647.0" orientation="VERTICAL" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.6823529601097107" green="0.6784313917160034" blue="0.6784313917160034" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.6823529601097107" green="0.6784313917160034" blue="0.6784313917160034" />
+         </strokeColor></ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="r120" layoutX="1074.0" layoutY="621.0" orientation="VERTICAL" prefHeight="18.0" prefWidth="34.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <fillColor>
+            <Color red="0.6823529601097107" green="0.6784313917160034" blue="0.6784313917160034" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.6823529601097107" green="0.6784313917160034" blue="0.6784313917160034" />
+         </strokeColor></ElectricControl>
+      <ElectricControl equipmentType="BRKG" kks="r121" layoutX="1450.0" layoutY="620.0" orientation="VERTICAL" prefHeight="19.0" prefWidth="35.0" skinType="DISCONNECTOR_GND" status="BTN_NON_PRESSED">
+         <valueColor>
+            <Color red="0.800000011920929" green="0.800000011920929" blue="0.800000011920929" />
+         </valueColor>
+         <fillColor>
+            <Color red="0.6823529601097107" green="0.6784313917160034" blue="0.6784313917160034" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.6823529601097107" green="0.6784313917160034" blue="0.6784313917160034" />
+         </strokeColor></ElectricControl>
+      <FunctionControl kks="ed19" layoutX="139.0" layoutY="408.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed20" layoutX="139.0" layoutY="487.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed04_1" layoutX="341.0" layoutY="135.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed04_2" layoutX="664.0" layoutY="234.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed04_3" layoutX="1173.0" layoutY="251.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed04_4" layoutX="1500.0" layoutY="186.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed21" layoutX="247.0" layoutY="547.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed41" layoutX="580.0" layoutY="587.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed23" layoutX="1220.0" layoutY="530.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed22" layoutX="1620.0" layoutY="553.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed01" layoutX="182.0" layoutY="869.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed08" layoutX="181.0" layoutY="904.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed02" layoutX="1467.0" layoutY="800.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed09" layoutX="1467.0" layoutY="833.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed39" layoutX="447.0" layoutY="809.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed50" layoutX="798.0" layoutY="826.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed40" layoutX="898.0" layoutY="795.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed51" layoutX="1395.0" layoutY="795.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed03_1" layoutX="247.0" layoutY="580.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl kks="ed03_2" layoutX="1620.0" layoutY="586.0" prefHeight="29.0" prefWidth="29.0" skinType="MF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <FunctionControl equipmentType="RF" kks="edfreg_gr1" layoutX="31.0" layoutY="209.0" prefHeight="29.0" prefWidth="29.0" skinType="RF">
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont></FunctionControl>
+      <IndicationControl borderWidth="0.0" kks="ssxchda_1_hl" layoutX="18.0" layoutY="149.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="8.0" prefWidth="8.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssxchda_3_hl" layoutX="18.0" layoutY="163.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="8.0" prefWidth="8.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssxchda_5_hl" layoutX="18.0" layoutY="178.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="8.0" prefWidth="8.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <ElectricControl kks="01bbb04gd006" layoutX="349.0" layoutY="964.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="20.0" skinType="DISCONNECTOR">
+         <fillColor>
+            <Color red="0.9342105388641357" green="0.03892543911933899" blue="0.03892543911933899" />
+         </fillColor>
+         <strokeColor>
+            <Color red="0.9098039269447327" green="0.2666666805744171" blue="0.8823529481887817" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea02gs024_blk" layoutX="360.0" layoutY="229.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea02gs013_blk" layoutX="340.0" layoutY="260.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea02gs023_blk" layoutX="358.0" layoutY="300.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea02gs022_blk" layoutX="324.0" layoutY="392.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea02gs021_blk" layoutX="397.0" layoutY="392.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea02gs011_blk" layoutX="377.0" layoutY="427.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea02gs012_blk" layoutX="305.0" layoutY="428.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea03gs024_blk" layoutX="532.0" layoutY="229.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea03gs013_blk" layoutX="516.0" layoutY="259.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea03gs023_blk" layoutX="529.0" layoutY="304.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea03gs022_blk" layoutX="497.0" layoutY="395.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea03gs021_blk" layoutX="567.0" layoutY="396.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea03gs011_blk" layoutX="556.0" layoutY="427.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea03gs012_blk" layoutX="479.0" layoutY="427.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea04gs024_blk" layoutX="670.0" layoutY="228.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea04gs013_blk" layoutX="656.0" layoutY="259.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea04gs023_blk" layoutX="671.0" layoutY="300.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea04gs022_blk" layoutX="635.0" layoutY="394.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea04gs021_blk" layoutX="707.0" layoutY="394.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea04gs012_blk" layoutX="621.0" layoutY="427.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea04gs011_blk" layoutX="694.0" layoutY="427.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea05gs012_blk" layoutX="753.0" layoutY="427.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea05gs022_blk" layoutX="769.0" layoutY="394.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea05gs021_blk" layoutX="849.0" layoutY="393.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea05gs011_blk" layoutX="828.0" layoutY="425.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:r115_blk" layoutX="917.0" layoutY="394.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:r116_blk" layoutX="989.0" layoutY="393.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:r114_blk" layoutX="897.0" layoutY="426.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:r117_blk" layoutX="967.0" layoutY="426.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea06gs024_blk" layoutX="1121.0" layoutY="231.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea06gs013_blk" layoutX="1101.0" layoutY="260.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea06gs023_blk" layoutX="1121.0" layoutY="300.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea06gs022_blk" layoutX="1087.0" layoutY="394.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea06gs012_blk" layoutX="1068.0" layoutY="427.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea06gs011_blk" layoutX="1140.0" layoutY="427.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea06gs021_blk" layoutX="1157.0" layoutY="394.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea07gs024_blk" layoutX="1264.0" layoutY="230.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea07gs013_blk" layoutX="1250.0" layoutY="257.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea07gs023_blk" layoutX="1261.0" layoutY="299.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea07gs022_blk" layoutX="1228.0" layoutY="393.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea07gs021_blk" layoutX="1302.0" layoutY="395.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea07gs012_blk" layoutX="1209.0" layoutY="427.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea07gs011_blk" layoutX="1278.0" layoutY="428.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea08gs024_blk" layoutX="1436.0" layoutY="230.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea08gs013_blk" layoutX="1413.0" layoutY="257.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea08gs023_blk" layoutX="1433.0" layoutY="300.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea08gs022_blk" layoutX="1396.0" layoutY="394.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea08gs021_blk" layoutX="1473.0" layoutY="394.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea08gs012_blk" layoutX="1376.0" layoutY="422.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea08gs011_blk" layoutX="1447.0" layoutY="423.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea09gs024_blk" layoutX="1579.0" layoutY="230.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea09gs013_blk" layoutX="1555.0" layoutY="261.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea09gs023_blk" layoutX="1574.0" layoutY="302.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea09gs022_blk" layoutX="1537.0" layoutY="395.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea09gs021_blk" layoutX="1605.0" layoutY="394.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea09gs011_blk" layoutX="1589.0" layoutY="423.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea09gs012_blk" layoutX="1519.0" layoutY="424.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea20gs022_blk" layoutX="1661.0" layoutY="511.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea10gs022_blk" layoutX="1624.0" layoutY="511.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea10gs021_blk" layoutX="209.0" layoutY="512.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="4.0" equipmentType="LOCK" kks="ed:00aea20gs021_blk" layoutX="244.0" layoutY="512.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LOCK">
+         <strokeColor>
+            <Color red="0.8509804010391235" green="0.9098039269447327" blue="0.49803921580314636" />
+         </strokeColor>
+      </ElectricControl>
+      <FunctionControl interactive="false" layoutX="323.5" layoutY="150.0" orientation="VERTICAL_REVERSE" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="634.5" layoutY="150.0" orientation="VERTICAL_REVERSE" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1226.5" layoutY="150.0" orientation="VERTICAL_REVERSE" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1536.5" layoutY="150.0" orientation="VERTICAL_REVERSE" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="429.5" layoutY="236.0" orientation="VERTICAL" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1021.5" layoutY="236.0" orientation="VERTICAL" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1323.5" layoutY="235.0" orientation="VERTICAL" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1323.5" layoutY="489.0" orientation="VERTICAL_REVERSE" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1021.5" layoutY="481.0" orientation="VERTICAL_REVERSE" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="429.5" layoutY="481.0" orientation="VERTICAL_REVERSE" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.125490203499794" green="0.8117647171020508" blue="0.7529411911964417" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="308.5" layoutY="1014.0" orientation="VERTICAL" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.3686274588108063" green="0.0117647061124444" blue="0.38823530077934265" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1672.5" layoutY="859.0" orientation="VERTICAL" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.3686274588108063" green="0.0117647061124444" blue="0.38823530077934265" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <Line endX="-100.0" endY="-30.0" layoutX="416.0" layoutY="960.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="416.0" layoutY="955.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="416.0" layoutY="955.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Polygon fill="#1f93ff00" layoutX="316.0" layoutY="992.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" fill="#fffdff" layoutX="528.0" layoutY="984.5" startX="-100.0" startY="-35.5" stroke="#fffdff" />
+      <Line endX="-100.0" endY="-30.0" fill="#fffdff" layoutX="528.0" layoutY="979.0" startX="-95.5" startY="-34.0" stroke="#fffdff" />
+      <Line endX="-100.0" endY="-30.0" fill="#fffdff" layoutX="528.0" layoutY="979.0" startX="-104.5" startY="-34.0" stroke="#fffdff" />
+      <Polygon fill="#fffdff00" layoutX="428.0" layoutY="1016.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="#fffdff" />
+      <Line endX="-100.0" endY="-30.0" layoutX="625.0" layoutY="984.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="625.0" layoutY="979.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="625.0" layoutY="979.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="618.0" layoutY="997.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="618.0" layoutY="992.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="618.0" layoutY="992.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Polygon fill="#1f93ff00" layoutX="532.5" layoutY="1008.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="794.0" layoutY="984.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="794.0" layoutY="979.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="794.0" layoutY="979.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="787.0" layoutY="997.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="787.0" layoutY="992.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="787.0" layoutY="992.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Polygon fill="#1f93ff00" layoutX="701.5" layoutY="1008.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="603.0" layoutY="842.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="603.0" layoutY="837.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="603.0" layoutY="837.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="596.0" layoutY="855.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="596.0" layoutY="850.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="596.0" layoutY="850.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Polygon fill="#1f93ff00" layoutX="510.5" layoutY="866.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="772.0" layoutY="842.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="772.0" layoutY="837.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="772.0" layoutY="837.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="765.0" layoutY="855.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="765.0" layoutY="850.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="765.0" layoutY="850.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Polygon fill="#1f93ff00" layoutX="679.5" layoutY="866.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1082.0" layoutY="799.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1082.0" layoutY="794.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1082.0" layoutY="794.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1075.0" layoutY="812.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1075.0" layoutY="807.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1075.0" layoutY="807.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Polygon fill="#1f93ff00" layoutX="989.5" layoutY="823.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1330.0" layoutY="799.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1330.0" layoutY="794.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1330.0" layoutY="794.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1323.0" layoutY="812.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1323.0" layoutY="807.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1323.0" layoutY="807.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Polygon fill="#1f93ff00" layoutX="1237.5" layoutY="823.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1358.0" layoutY="955.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1358.0" layoutY="950.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1358.0" layoutY="950.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1351.0" layoutY="968.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1351.0" layoutY="963.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1351.0" layoutY="963.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Polygon fill="#1f93ff00" layoutX="1265.5" layoutY="979.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1100.0" layoutY="954.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1100.0" layoutY="949.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1100.0" layoutY="949.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1093.0" layoutY="967.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1093.0" layoutY="962.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1093.0" layoutY="962.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Polygon fill="#1f93ff00" layoutX="1007.5" layoutY="978.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1780.0" layoutY="794.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1780.0" layoutY="789.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1780.0" layoutY="789.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Polygon fill="#1f93ff00" layoutX="1680.0" layoutY="826.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1635.0" layoutY="632.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1635.0" layoutY="627.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1635.0" layoutY="627.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Polygon fill="#1f93ff00" layoutX="1535.0" layoutY="664.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="#dee6d9" />
+      <Polygon fill="#1f93ff00" layoutX="1210.0" layoutY="645.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="BLACK" />
+      <Polygon fill="#1f93ff00" layoutX="1187.5" layoutY="645.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="BLACK" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1298.0" layoutY="614.5" startX="-100.0" startY="-35.5" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1298.0" layoutY="609.0" startX="-95.5" startY="-34.0" />
+      <Line endX="-100.0" endY="-30.0" layoutX="1298.0" layoutY="609.0" startX="-104.5" startY="-34.0" />
+      <Line endX="-105.25" endY="-45.25" layoutX="1308.0" layoutY="624.5" startX="-110.25" startY="-45.25" />
+      <Line endX="-113.0" endY="-83.25" layoutX="1328.0" layoutY="644.5" startX="-119.25" startY="-80.25" />
+      <Line endX="-122.2928466796875" endY="-93.95709228515625" layoutX="1337.25" layoutY="655.5" startX="-125.0" startY="-88.25" />
+      <Polygon fill="#1f93ff00" layoutX="643.0" layoutY="671.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="BLACK" />
+      <Polygon fill="#1f93ff00" layoutX="621.0" layoutY="671.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="BLACK" />
+      <Line endX="-113.0" endY="-83.25" layoutX="760.0" layoutY="672.5" startX="-119.25" startY="-80.25" />
+      <Line endX="-122.2928466796875" endY="-93.95709228515625" layoutX="769.25" layoutY="683.5" startX="-125.0" startY="-88.25" />
+      <Polygon fill="#1f93ff00" layoutX="632.0" layoutY="651.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="BLACK" />
+      <Line endX="-100.0" endY="-30.0" layoutX="396.0" layoutY="661.5" startX="-100.0" startY="-35.5" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="396.0" layoutY="656.0" startX="-95.5" startY="-34.0" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-30.0" layoutX="396.0" layoutY="656.0" startX="-104.5" startY="-34.0" stroke="#dee6d9" />
+      <Polygon fill="#1f93ff00" layoutX="296.0" layoutY="693.0" points="-5.5, -42.5, 5.5, -42.5, 0.0, -51.25" stroke="#dee6d9" />
+      <Line endX="-100.0" endY="-29.0" layoutX="620.5" layoutY="915.0" startX="-95.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="620.5" layoutY="909.0" startX="-95.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="629.5" layoutY="915.0" startX="-104.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="629.5" layoutY="909.0" startX="-104.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="789.5" layoutY="915.0" startX="-95.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="789.5" layoutY="909.0" startX="-95.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="798.5" layoutY="915.0" startX="-104.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="798.5" layoutY="909.0" startX="-104.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="1095.5" layoutY="884.0" startX="-95.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="1095.5" layoutY="878.0" startX="-95.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="1104.5" layoutY="884.0" startX="-104.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="1104.5" layoutY="878.0" startX="-104.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="1353.5" layoutY="884.0" startX="-95.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="1353.5" layoutY="878.0" startX="-95.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="1362.5" layoutY="884.0" startX="-104.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="1362.5" layoutY="878.0" startX="-104.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="1325.5" layoutY="730.0" startX="-95.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="1325.5" layoutY="724.0" startX="-95.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="1334.5" layoutY="730.0" startX="-104.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="1334.5" layoutY="724.0" startX="-104.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="1077.5" layoutY="730.0" startX="-95.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="1077.5" layoutY="724.0" startX="-95.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="1086.5" layoutY="730.0" startX="-104.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="1086.5" layoutY="724.0" startX="-104.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="598.5" layoutY="772.0" startX="-95.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="598.5" layoutY="766.0" startX="-95.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="607.5" layoutY="772.0" startX="-104.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="607.5" layoutY="766.0" startX="-104.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="767.5" layoutY="772.0" startX="-95.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="767.5" layoutY="766.0" startX="-95.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="776.5" layoutY="772.0" startX="-104.5" startY="-34.0" stroke="#1eac24" />
+      <Line endX="-100.0" endY="-29.0" layoutX="776.5" layoutY="766.0" startX="-104.5" startY="-34.0" stroke="#1eac24" />
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Главная схема" buttonOnText="Главная схема" diagramTitle="Главная схема.fxml" equipmentType="TRANSITION_BUTTON" kks="1" layoutX="266.0" layoutY="21.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="КРУЭ 110 кВ" buttonOnText="КРУЭ 110 кВ" diagramTitle="КРУЭ 110 кВ.fxml" equipmentType="TRANSITION_BUTTON" kks="2" layoutX="419.0" layoutY="21.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Противоаварийная автоматика" buttonOnText="Противоаварийная автоматика" diagramTitle="Противоаварийная автоматика.fxml" equipmentType="TRANSITION_BUTTON" kks="3" layoutX="572.0" layoutY="21.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Генератор" buttonOnText="Генератор" diagramTitle="Генератор.fxml" equipmentType="TRANSITION_BUTTON" kks="4" layoutX="725.0" layoutY="21.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="РУСН 6кВ" buttonOnText="РУСН 6кВ" diagramTitle="РУСН 6 кВ.fxml" equipmentType="TRANSITION_BUTTON" kks="5" layoutX="878.0" layoutY="21.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="РУСН 0,4 кВ" buttonOnText="РУСН 0,4 кВ" diagramTitle="РУСН 0.4 кВ.fxml" equipmentType="TRANSITION_BUTTON" kks="6" layoutX="1032.0" layoutY="21.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Водогрейная котельная" buttonOnText="Водогрейная котельная" diagramTitle="РУ 10-6 кВ.fxml" equipmentType="TRANSITION_BUTTON" kks="7" layoutX="1185.0" layoutY="21.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Сетевая насосная станция" buttonOnText="Сетевая насосная станция" diagramTitle="Сетевая насосная станция.fxml" equipmentType="TRANSITION_BUTTON" kks="8" layoutX="1338.0" layoutY="21.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Диагностика" buttonOnText="Диагностика" diagramTitle="Приборы и защиты.fxml" equipmentType="TRANSITION_BUTTON" kks="9" layoutX="1491.0" layoutY="21.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <Line endX="-100.0" endY="309.0" layoutX="1358.0" layoutY="602.0" startX="-100.0" startY="250.0" stroke="#1eac24" />
+      <DetectorControl decimals="1" kks="11bbb10ce051" layoutX="639.0" layoutY="976.0" maxValue="100.0" param="Ubc" prefHeight="25.0" prefWidth="93.0" system="ED" unit="кВ">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11bba10ce051" layoutX="474.0" layoutY="972.0" maxValue="100.0" param="Ubc" prefHeight="25.0" prefWidth="93.0" system="ED" unit="кВ">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="ed_kf0" layoutX="363.0" layoutY="1021.0" maxValue="100.0" param="P" prefHeight="25.0" prefWidth="86.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="ed_kf0" layoutX="363.0" layoutY="995.0" maxValue="100.0" param="Q" prefHeight="25.0" prefWidth="100.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="ed_kf0" layoutX="363.0" layoutY="1047.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="70.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="tg_1ce051" layoutX="34.0" layoutY="863.0" maxValue="100.0" param="Ubc" prefHeight="25.0" prefWidth="92.0" system="ED" unit="кВ">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea09ce022" layoutX="1658.0" layoutY="175.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="70.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea09ce004" layoutX="1658.0" layoutY="149.0" maxValue="100.0" param="Q" prefHeight="25.0" prefWidth="100.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea09ce003" layoutX="1555.0" layoutY="149.0" maxValue="100.0" param="P" prefHeight="25.0" prefWidth="86.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea09ce051" layoutX="1555.0" layoutY="175.0" maxValue="100.0" param="Ubc" prefHeight="25.0" prefWidth="100.0" system="ED" unit="кВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea08ce003" layoutX="1349.0" layoutY="149.0" maxValue="100.0" param="P" prefHeight="25.0" prefWidth="86.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea08ce004" layoutX="1349.0" layoutY="175.0" maxValue="100.0" param="Q" prefHeight="25.0" prefWidth="100.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea08ce022" layoutX="1438.0" layoutY="149.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="70.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea07ce022" layoutX="1242.0" layoutY="175.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="70.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea07ce004" layoutX="1242.0" layoutY="149.0" maxValue="100.0" param="Q" prefHeight="25.0" prefWidth="100.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea07ce003" layoutX="1129.0" layoutY="150.0" maxValue="100.0" param="P" prefHeight="25.0" prefWidth="86.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea07ce051" layoutX="1129.0" layoutY="176.0" maxValue="100.0" param="Ubc" prefHeight="25.0" prefWidth="101.0" system="ED" unit="кВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea10ce051" layoutX="925.0" layoutY="289.0" maxValue="100.0" param="Ubc" prefHeight="25.0" prefWidth="95.0" system="ED" unit="кВ">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea10ce005" layoutX="925.0" layoutY="315.0" maxValue="100.0" param="F" prefHeight="25.0" prefWidth="70.0" system="ED" unit="Гц">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea20ce051" layoutX="822.0" layoutY="289.0" maxValue="100.0" param="Ubc" prefHeight="25.0" prefWidth="95.0" system="ED" unit="кВ">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea20ce005" layoutX="822.0" layoutY="315.0" maxValue="100.0" param="F" prefHeight="25.0" prefWidth="70.0" system="ED" unit="Гц">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea04ce022" layoutX="651.0" layoutY="176.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="70.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea04ce004" layoutX="651.0" layoutY="150.0" maxValue="100.0" param="Q" prefHeight="25.0" prefWidth="100.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea04ce003" layoutX="532.0" layoutY="176.0" maxValue="100.0" param="P" prefHeight="25.0" prefWidth="87.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea04ce051" layoutX="532.0" layoutY="150.0" maxValue="100.0" param="Ubc" prefHeight="25.0" prefWidth="101.0" system="ED" unit="кВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea05ce003" layoutX="748.0" layoutY="209.0" maxValue="100.0" param="P" prefHeight="25.0" prefWidth="86.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea05ce004" layoutX="748.0" layoutY="183.0" maxValue="100.0" param="Q" prefHeight="25.0" prefWidth="100.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea05ce022" layoutX="748.0" layoutY="235.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="70.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea03ce003" layoutX="418.0" layoutY="150.0" maxValue="100.0" param="P" prefHeight="25.0" prefWidth="86.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea03ce004" layoutX="418.0" layoutY="176.0" maxValue="100.0" param="Q" prefHeight="25.0" prefWidth="100.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea03ce022" layoutX="418.0" layoutY="124.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="70.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea02ce003" layoutX="221.0" layoutY="150.0" maxValue="100.0" param="P" prefHeight="25.0" prefWidth="86.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea02ce004" layoutX="221.0" layoutY="124.0" maxValue="100.0" param="Q" prefHeight="25.0" prefWidth="100.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea02ce022" layoutX="221.0" layoutY="176.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="70.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea02ce051" layoutX="221.0" layoutY="202.0" maxValue="100.0" param="Ubc" prefHeight="25.0" prefWidth="93.0" system="ED" unit="кВ">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea06ce003" layoutX="1022.0" layoutY="158.0" maxValue="100.0" param="P" prefHeight="25.0" prefWidth="86.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea06ce004" layoutX="1022.0" layoutY="132.0" maxValue="100.0" param="Q" prefHeight="25.0" prefWidth="100.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="00aea06ce022" layoutX="1022.0" layoutY="184.0" maxValue="100.0" param="lb" prefHeight="25.0" prefWidth="70.0" system="ED" unit="А">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <Polygon fill="#1f93ff00" layoutX="326.0" layoutY="1042.0" points="-18.5, -64.0, -2.25, -64.0, -10.0, -53.25" stroke="#5e0363" />
+      <Polygon fill="#1f93ff00" layoutX="1690.0" layoutY="877.0" points="-18.5, -64.0, -2.25, -64.0, -10.0, -53.25" stroke="#5e0363" />
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="РУСН 0,4 кВ ПВК" buttonOnText="РУСН 0,4 кВ ПВК" diagramTitle="РУСН 0.4 кВ ПВК.fxml" equipmentType="TRANSITION_BUTTON" kks="9" layoutX="1644.0" layoutY="21.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+   </children>
+   <stylesheets>
+      <URL value="@../ВГ/StyleSheet.css" />
+      <URL value="@StyleSheet.css" />
+   </stylesheets>
+</AnchorPane>

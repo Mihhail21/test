@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.ButtonControl?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.IndicationControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="978.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="931.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="884.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="837.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="790.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="743.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="696.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="649.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="511.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="464.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="417.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="370.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="323.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="276.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="229.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="182.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="135.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="137.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="184.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="231.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="278.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="325.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="372.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="419.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="466.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="513.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="651.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="698.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="744.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="790.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="837.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="88.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="41.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Line endX="-100.0" endY="59.5" layoutX="1206.0" layoutY="26.0" startX="-100.0" startY="14.75" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="60.5" layoutX="1294.0" layoutY="25.0" startX="-100.0" startY="16.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="224.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="271.0" startX="-100.0" startY="7.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="318.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="365.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="412.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="459.0" startX="-100.0" startY="7.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="82.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="129.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="176.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="690.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="736.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="506.0" startX="-100.0" startY="7.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="644.0" startX="-100.0" startY="7.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="783.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="830.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="90.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="884.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="931.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="877.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="924.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="971.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="979.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <ButtonControl buttonOffText="Мех. величины" buttonOnText="Мех. величины" diagramTitle="ТА-4 Мех. величины.fxml" equipmentType="TRANSITION_BUTTON" kks="38" layoutX="1181.0" layoutY="1038.0" prefHeight="38.0" prefWidth="96.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="ПСГ" buttonOnText="ПСГ" diagramTitle="ТА-4 ПСГ.fxml" equipmentType="TRANSITION_BUTTON" kks="39" layoutX="1281.0" layoutY="1038.0" prefHeight="38.0" prefWidth="36.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Конденсатор" buttonOnText="Конденсатор" diagramTitle="ТА-4 Конденсатор.fxml" equipmentType="TRANSITION_BUTTON" kks="40" layoutX="1321.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Уплотнения ТА" buttonOnText="Уплотнения ТА" diagramTitle="ТА-4 Уплотнения ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="41" layoutX="1403.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Рабочее масло" buttonOnText="Рабочее масло" diagramTitle="ТА-4 Рабочее масло.fxml" equipmentType="TRANSITION_BUTTON" kks="42" layoutX="1485.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Грязное масло ТА" buttonOnText="Грязное масло ТА" diagramTitle="ТА-4 Грязное масло ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="43" layoutX="1567.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Защиты ТА(ПВД, ПСГ)" buttonOnText="Защиты ТА(ПВД, ПСГ)" diagramTitle="ТА-4 Защиты ТА(ПВД, ПСГ).fxml" equipmentType="TRANSITION_BUTTON" kks="45" layoutX="1731.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Защиты ТА" buttonOnText="Защиты ТА" diagramTitle="ТА-4 Защиты ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="44" layoutX="1649.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Генератор (УВГ)" buttonOnText="Генератор (УВГ)" diagramTitle="ТА-4 Генератор (УВГ).fxml" equipmentType="TRANSITION_BUTTON" kks="37" layoutX="1104.0" layoutY="1038.0" prefHeight="38.0" prefWidth="73.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Сигнализации ТА" buttonOnText="Сигнализации ТА" diagramTitle="ТА-4 Сигнализации ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="46" layoutX="1813.0" layoutY="1038.0" prefHeight="38.0" prefWidth="103.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Общий" buttonOnText="Общий" diagramTitle="ТА-4 Общий.fxml" equipmentType="TRANSITION_BUTTON" kks="31" layoutX="633.0" layoutY="1038.0" prefHeight="38.0" prefWidth="46.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Маслоснабжение" buttonOnText="Маслоснабжение" diagramTitle="ТА-4 Маслоснабжение.fxml" equipmentType="TRANSITION_BUTTON" kks="32" layoutX="683.0" layoutY="1038.0" prefHeight="38.0" prefWidth="100.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="ОК" buttonOnText="ОК" diagramTitle="ТА-4 ОК.fxml" equipmentType="TRANSITION_BUTTON" kks="33" layoutX="787.0" layoutY="1038.0" prefHeight="38.0" prefWidth="41.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Регенерация ТА" buttonOnText="Регенерация ТА" diagramTitle="ТА-4 Система регенерации ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="34" layoutX="832.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Техничническая вода" buttonOnText="Техничническая вода" diagramTitle="ТА-4 Техническая вода.fxml" equipmentType="TRANSITION_BUTTON" kks="35" layoutX="914.0" layoutY="1038.0" prefHeight="38.0" prefWidth="96.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Генератор (охлаждение)" buttonOnText="Генератор (охлаждение)" diagramTitle="ТА-4 Генератор (охлаждение).fxml" equipmentType="TRANSITION_BUTTON" kks="36" layoutX="1014.0" layoutY="1038.0" prefHeight="38.0" prefWidth="86.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk001" layoutX="1109.0" layoutY="89.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup001" layoutX="1391.0" layoutY="89.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk002" layoutX="1109.0" layoutY="136.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup002" layoutX="1391.0" layoutY="136.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk003" layoutX="1109.0" layoutY="183.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup003" layoutX="1391.0" layoutY="183.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk004" layoutX="1109.0" layoutY="230.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup004" layoutX="1391.0" layoutY="230.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk005" layoutX="1109.0" layoutY="277.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup005" layoutX="1391.0" layoutY="277.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk006" layoutX="1109.0" layoutY="324.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup006" layoutX="1391.0" layoutY="324.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk007" layoutX="1109.0" layoutY="371.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup007" layoutX="1391.0" layoutY="371.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk008" layoutX="1109.0" layoutY="419.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup008" layoutX="1391.0" layoutY="419.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk009" layoutX="1109.0" layoutY="466.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup009" layoutX="1391.0" layoutY="466.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk017" layoutX="1109.0" layoutY="513.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup017" layoutX="1391.0" layoutY="513.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk011" layoutX="1109.0" layoutY="650.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup011" layoutX="1391.0" layoutY="650.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk012" layoutX="1109.0" layoutY="698.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup012" layoutX="1391.0" layoutY="698.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk013" layoutX="1109.0" layoutY="745.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup013" layoutX="1391.0" layoutY="745.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk014" layoutX="1109.0" layoutY="839.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup014" layoutX="1391.0" layoutY="839.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk015" layoutX="1109.0" layoutY="886.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup015" layoutX="1391.0" layoutY="886.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk016" layoutX="1109.0" layoutY="932.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup016" layoutX="1391.0" layoutY="932.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk018" layoutX="1109.0" layoutY="980.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup018" layoutX="1391.0" layoutY="980.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk019" layoutX="1109.0" layoutY="791.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup019" layoutX="1391.0" layoutY="791.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <Text layoutX="651.0" layoutY="725.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ΔР масло - водород не в норме " textAlignment="CENTER" wrappingWidth="297.59106445312494">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="641.0" layoutY="772.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Понижение уровня в маслобаке " textAlignment="CENTER" wrappingWidth="308.2083282470703">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="671.0" layoutY="817.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Маслофильтры загрязнены" textAlignment="CENTER" wrappingWidth="265.2680053710937">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="500.0" layoutY="864.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Понижение давления пит. воды в напорной магистрали ПЭН" textAlignment="CENTER" wrappingWidth="576.2026519775392">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="601.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Понижение давления пара на уплотнения" textAlignment="CENTER" wrappingWidth="400.7880859375">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="531.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Повышение давления пара перед стопорным клапаном" textAlignment="CENTER" wrappingWidth="529.1002197265625">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="571.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Понижение, повышение уровня в конденсаторе " textAlignment="CENTER" wrappingWidth="460.4166259765625">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="541.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Понижение давления пара на отсосе из уплотнения " textAlignment="CENTER" wrappingWidth="498.3255157470703">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="534.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Понижение давления масла в системе регулирования " textAlignment="CENTER" wrappingWidth="517.2561492919922">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="597.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Повышение температуры подшипников " textAlignment="CENTER" wrappingWidth="384.1351013183594">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="501.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Повышение давления обратной сетевой воды перед пучком" textAlignment="CENTER" wrappingWidth="576.2026519775392">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="581.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Понижение давления обратной сетевой воды" textAlignment="CENTER" wrappingWidth="432.5895233154297">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="583.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Повышение давления масла за импеллером " textAlignment="CENTER" wrappingWidth="424.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="659.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Повышение уровня в ПНД 1" textAlignment="CENTER" wrappingWidth="265.33331298828125">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="660.0" layoutY="679.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Повышение уровня в ПНД 4" textAlignment="CENTER" wrappingWidth="264.00006103515625">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="565.0" layoutY="911.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Повышение, понижение уровня в гидрозатворе" textAlignment="CENTER" wrappingWidth="452.94212722778315">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="642.0" layoutY="957.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Жидкость в корпусе генератора " textAlignment="CENTER" wrappingWidth="307.9243774414062">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="621.0" layoutY="1006.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Повышение давления пара в ПСГ-1" textAlignment="CENTER" wrappingWidth="334.3732824325561">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="594.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Технологические защиты турбогенератора" textAlignment="CENTER" wrappingWidth="409.21519470214844">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1106.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Текущее" textAlignment="CENTER" wrappingWidth="86.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1389.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Предупр" textAlignment="CENTER" wrappingWidth="84.66674804687477">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="557.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="559.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="552.0" startX="-100.0" startY="7.0" strokeWidth="2.0" />
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk010" layoutX="1109.0" layoutY="559.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup010" layoutX="1391.0" layoutY="559.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <Text layoutX="660.0" layoutY="586.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Повышение уровня в ПНД 2" textAlignment="CENTER" wrappingWidth="264.00006103515625">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="476.0" layoutY="603.0" stroke="GREY" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="42.0" layoutX="479.0" layoutY="605.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1206.0" layoutY="598.0" startX="-100.0" startY="7.0" strokeWidth="2.0" />
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_tk020" layoutX="1109.0" layoutY="604.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:sigta_4_predup020" layoutX="1391.0" layoutY="604.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <Text layoutX="660.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Повышение уровня в ПНД 3" textAlignment="CENTER" wrappingWidth="264.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="883.0" layoutX="1395.0" layoutY="145.0" startX="-100.0" startY="-103.0" strokeWidth="2.0" />
+      <Text layoutX="1202.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Уставка" textAlignment="CENTER" wrappingWidth="77.99999999999977">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1302.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Прибор" textAlignment="CENTER" wrappingWidth="78.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="4m_202a" layoutX="1304.0" layoutY="91.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Давление пара в коллекторе уплотнений" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="4m_209" layoutX="1304.0" layoutY="137.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Давление перед СК ВД" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="4m_511" layoutX="1304.0" layoutY="185.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Уровень в конденсатосборнике 4А" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="4m_274" layoutX="1304.0" layoutY="232.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Давление пара на эжектор уплотнений ТГ4" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="4m_293" layoutX="1304.0" layoutY="279.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Давление масла на регулирование" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="4m_325" layoutX="1304.0" layoutY="373.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Давление сетевой воды перед ПСГ-1 ТГ-4" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="4m_325" layoutX="1304.0" layoutY="419.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Давление сетевой воды перед ПСГ-1 ТГ-4" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="4m_214" layoutX="1304.0" layoutY="466.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Давление масла за импеллером" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="4m_510a" layoutX="1304.0" layoutY="513.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Уровень в 4ПНД-1" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="4m_508a" layoutX="1304.0" layoutY="606.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Уровень в 4ПНД-3" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="4gp_17" layoutX="1304.0" layoutY="698.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="∆Р масло-водород" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="4m_512" layoutX="1304.0" layoutY="745.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Уровень масла в маcлобаке" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="4m_513" layoutX="1304.0" layoutY="792.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Перепад масла на сетке" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="pu_204a" layoutX="1304.0" layoutY="839.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Давление в &quot;холодном&quot; трансфере (помимо ПВД) " />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="4gp_21" layoutX="1304.0" layoutY="886.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Н в ЗГ-500" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="4m_234" layoutX="1304.0" layoutY="981.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Давление пара в отборнике к ПСГ-1" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <Text layoutX="1219.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.08" textAlignment="CENTER" wrappingWidth="42.999938964843295">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1198.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;20" textAlignment="CENTER" wrappingWidth="35.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1223.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="135" textAlignment="CENTER" wrappingWidth="35.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="174.75" layoutX="1342.0" layoutY="52.0" startX="-100.0" startY="131.75" strokeWidth="2.0" />
+      <Text layoutX="1252.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50&gt;" textAlignment="CENTER" wrappingWidth="35.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1216.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-0.15" textAlignment="CENTER" wrappingWidth="52.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1231.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11" textAlignment="CENTER" wrappingWidth="23.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="-111.0" endY="661.3333740234375" layoutX="1342.0" layoutY="-314.0" startX="-91.6666259765625" startY="661.3333740234375" strokeWidth="2.0" />
+      <Text layoutX="1236.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" textAlignment="CENTER" wrappingWidth="12.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1236.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" textAlignment="CENTER" wrappingWidth="12.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1231.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12" textAlignment="CENTER" wrappingWidth="23.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1231.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="57" textAlignment="CENTER" wrappingWidth="23.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1231.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="60" textAlignment="CENTER" wrappingWidth="23.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1197.0" layoutY="725.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;0.5" textAlignment="CENTER" wrappingWidth="35.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1252.0" layoutY="725.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.8&gt;" textAlignment="CENTER" wrappingWidth="36.0">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="174.75" layoutX="1342.0" layoutY="566.0" startX="-100.0" startY="131.75" strokeWidth="2.0" />
+      <Text layoutX="1236.0" layoutY="773.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="CENTER" wrappingWidth="12.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1231.0" layoutY="819.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" textAlignment="CENTER" wrappingWidth="23.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1223.0" layoutY="867.0" strokeType="OUTSIDE" strokeWidth="0.0" text="170" textAlignment="CENTER" wrappingWidth="35.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1203.0" layoutY="914.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;5" textAlignment="CENTER" wrappingWidth="21.3333740234375">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1252.0" layoutY="914.0" strokeType="OUTSIDE" strokeWidth="0.0" text="48&gt;" textAlignment="CENTER" wrappingWidth="35.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="174.75" layoutX="1342.0" layoutY="754.0" startX="-100.0" startY="131.75" strokeWidth="2.0" />
+      <Line endX="-111.0" endY="661.3333740234375" layoutX="1342.0" layoutY="293.0" startX="-91.6666259765625" startY="661.3333740234375" strokeWidth="2.0" />
+      <Text layoutX="1224.0" layoutY="1009.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.2" textAlignment="CENTER" wrappingWidth="35.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="4m_509a" layoutX="1304.0" layoutY="559.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Уровень в 4ПНД-2" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <Text layoutX="1231.0" layoutY="587.0" strokeType="OUTSIDE" strokeWidth="0.0" text="57" textAlignment="CENTER" wrappingWidth="23.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="4m_507a" layoutX="1304.0" layoutY="652.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Уровень в 4ПНД-4" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <Text layoutX="1231.0" layoutY="680.0" strokeType="OUTSIDE" strokeWidth="0.0" text="60" textAlignment="CENTER" wrappingWidth="23.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="996.75" layoutX="1488.0" layoutY="25.0" startX="-100.0" startY="16.0" strokeWidth="2.0" />
+      <Line endX="-111.0" endY="661.3333740234375" layoutX="1443.0" layoutY="-314.0" startX="-91.6666259765625" startY="661.3333740234375" strokeWidth="2.0" />
+      <Line endX="-111.0" endY="661.3333740234375" layoutX="1443.0" layoutY="293.0" startX="-91.6666259765625" startY="661.3333740234375" strokeWidth="2.0" />
+      <Text fill="WHITE" layoutX="655.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Технологические сигнализации турбины N4" textAlignment="CENTER" wrappingWidth="608.6666259765625">
+         <font>
+            <Font name="Tahoma Bold" size="26.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

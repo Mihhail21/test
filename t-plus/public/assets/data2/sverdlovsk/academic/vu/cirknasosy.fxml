@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.ButtonControl?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.FunctionControl?>
+<?import ru.get.common.controls.IndicationControl?>
+<?import ru.get.common.controls.PumpControl?>
+<?import ru.get.common.controls.ValveControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="315.75" endY="-58.5" layoutX="1208.0" layoutY="703.0" startX="-199.0" startY="-58.5" stroke="#00b700" strokeWidth="3.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="824.0" layoutX="169.0" layoutY="117.0" stroke="#b7b7b7" width="104.0" />
+      <Line endX="61.5" endY="-5.25" layoutX="211.0" layoutY="538.0" startX="-41.0" startY="-5.25" stroke="#b7b7b7" />
+      <Line endX="16.5" endY="19.5" layoutX="151.0" layoutY="383.0" startX="-23.0" startY="19.5" stroke="#00b700" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="14.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="От камеры отключений В5-1" textAlignment="CENTER" wrappingWidth="100.0" />
+      <Line endX="4.5" endY="-1.5" layoutX="163.0" layoutY="737.0" startX="-35.0" startY="-1.5" stroke="#0096ff" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="35.0" layoutY="723.0" strokeType="OUTSIDE" strokeWidth="0.0" text="От насосов дозаторов биоцида" textAlignment="CENTER" wrappingWidth="75.0" />
+      <Line endX="16.5" endY="19.5" layoutX="151.0" layoutY="834.0" startX="-23.0" startY="19.5" stroke="#00b700" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="10.0" layoutY="850.0" strokeType="OUTSIDE" strokeWidth="0.0" text="От камеры отключений В5-1" textAlignment="CENTER" wrappingWidth="100.0" />
+      <Line endX="31.5" endY="-25.5" layoutX="292.0" layoutY="261.0" startX="-17.5" startY="-25.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="148.5" endY="-25.5" layoutX="369.0" layoutY="261.0" startX="-30.0" startY="-25.5" stroke="#00b700" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="285.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAB40AA001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Line endX="17.0" endY="-93.25" layoutX="379.0" layoutY="271.0" startX="17.0" startY="-36.0" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="17.0" endY="-62.5" layoutX="379.0" layoutY="188.0" startX="17.0" startY="-25.75" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="309.5" endY="-25.5" layoutX="478.0" layoutY="261.0" startX="52.5" startY="-25.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="129.5" endY="-59.5" layoutX="389.0" layoutY="280.0" startX="56.25" startY="-59.5" stroke="#00b700" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="56.5" endY="-103.75" layoutX="388.0" layoutY="282.0" startX="56.5" startY="-61.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="56.5" endY="-89.25" layoutX="388.0" layoutY="215.0" startX="56.5" startY="-52.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="56.5" endY="-117.75" layoutX="596.0" layoutY="296.0" startX="56.5" startY="-61.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="56.5" endY="-104.75" layoutX="596.0" layoutY="229.0" startX="56.5" startY="-66.25" stroke="#00b700" strokeWidth="3.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7b7b7" height="32.0" layoutX="559.0" layoutY="219.0" stroke="#b7b7b7" width="70.0" />
+      <Text layoutX="564.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Подш ЦН4" wrappingWidth="60.0" />
+      <Line endX="56.5" endY="-119.25" layoutX="674.0" layoutY="296.0" startX="56.5" startY="-61.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="56.5" endY="-106.25" layoutX="674.0" layoutY="232.0" startX="56.5" startY="-69.75" stroke="#00b700" strokeWidth="3.0" />
+      <Circle fill="#dfdf00" layoutX="527.0" layoutY="266.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Circle fill="#dfdf00" layoutX="594.0" layoutY="253.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Circle fill="#dfdf00" layoutX="594.0" layoutY="217.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Text fill="#b7b7b7" layoutX="526.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В дренажный приямок 51PAA30BB001" textAlignment="CENTER" wrappingWidth="225.0" />
+      <Circle fill="#dfdf00" layoutX="710.0" layoutY="236.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="100.5" endY="-61.5" layoutX="759.0" layoutY="297.0" startX="44.5" startY="-61.5" stroke="#00b700" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="753.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAB40AA002" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Circle fill="#dfdf00" layoutX="893.0" layoutY="157.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="90.5" endY="153.75" layoutX="769.0" layoutY="307.0" startX="90.5" startY="-71.0" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="220.0" endY="-61.5" layoutX="774.0" layoutY="476.0" startX="24.0" startY="-61.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="121.0" endY="-61.5" layoutX="665.0" layoutY="476.0" startX="-133.0" startY="-61.5" stroke="#00b700" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="753.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAB30AA002" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Line endX="-53.5" endY="-128.75" layoutX="784.0" layoutY="486.0" startX="-53.5" startY="-72.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="-53.5" endY="-117.5" layoutX="784.0" layoutY="420.0" startX="-53.5" startY="-76.75" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="-53.5" endY="-127.75" layoutX="706.0" layoutY="486.0" startX="-53.5" startY="-72.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="-53.5" endY="-117.5" layoutX="706.0" layoutY="420.0" startX="-53.5" startY="-76.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="-207.0" endY="-72.25" layoutX="547.0" layoutY="487.0" startX="-31.0" startY="-72.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="129.0" endY="-59.5" layoutX="389.0" layoutY="461.0" startX="56.25" startY="-59.5" stroke="#00b700" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="56.5" endY="-105.75" layoutX="388.0" layoutY="463.0" startX="56.5" startY="-61.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="56.5" endY="-91.75" layoutX="388.0" layoutY="395.0" startX="56.5" startY="-51.75" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="39.0" endY="-115.25" layoutX="357.0" layoutY="472.0" startX="39.0" startY="-58.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="39.0" endY="-101.75" layoutX="357.0" layoutY="405.0" startX="39.0" startY="-63.25" stroke="#00b700" strokeWidth="3.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7b7b7" height="32.0" layoutX="557.0" layoutY="399.0" stroke="#b7b7b7" width="70.0" />
+      <Text layoutX="562.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Подш ЦН3" wrappingWidth="60.0" />
+      <Circle fill="#dfdf00" layoutX="694.0" layoutY="415.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Circle fill="#dfdf00" layoutX="591.0" layoutY="398.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Circle fill="#dfdf00" layoutX="591.0" layoutY="433.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Circle fill="#dfdf00" layoutX="525.0" layoutY="445.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="-9.5" endY="-53.25" layoutX="284.0" layoutY="468.0" startX="40.5" startY="-53.25" stroke="#00b700" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="286.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAB30AA001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Line endX="193.5" endY="-61.5" layoutX="816.0" layoutY="476.0" startX="708.75" startY="-61.5" stroke="#00b700" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="956.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAB70AA001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Circle fill="#dfdf00" layoutX="1095.0" layoutY="415.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="165.5" endY="131.75" layoutX="1077.0" layoutY="512.0" startX="165.5" startY="-143.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="165.5" endY="-43.75" layoutX="1077.0" layoutY="400.0" startX="165.5" startY="-150.0" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="165.5" endY="-56.0" layoutX="1136.0" layoutY="470.0" startX="165.5" startY="-99.75" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="165.5" endY="-41.25" layoutX="1136.0" layoutY="400.0" startX="165.5" startY="-150.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="165.5" endY="-64.0" layoutX="1191.0" layoutY="478.0" startX="165.5" startY="-110.75" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="165.5" endY="-63.25" layoutX="1191.0" layoutY="418.0" startX="165.5" startY="-94.75" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="165.5" endY="-66.0" layoutX="1247.0" layoutY="479.0" startX="165.5" startY="-113.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="165.5" endY="-54.75" layoutX="1247.0" layoutY="409.0" startX="165.5" startY="-108.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="165.5" endY="154.0" layoutX="1302.0" layoutY="489.0" startX="165.5" startY="-121.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="165.5" endY="-55.25" layoutX="1302.0" layoutY="410.0" startX="165.5" startY="-109.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="235.5" endY="-118.25" layoutX="1257.0" layoutY="419.0" startX="155.75" startY="-118.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="216.0" endY="-150.0" layoutX="1201.0" layoutY="400.0" startX="159.5" startY="-150.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="215.5" endY="-150.25" layoutX="1131.0" layoutY="400.0" startX="49.5" startY="-150.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="121.5" endY="-150.25" layoutX="1045.0" layoutY="400.0" startX="53.75" startY="-150.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="43.75" endY="-250.5" layoutX="1055.0" layoutY="410.0" startX="43.75" startY="-160.75" stroke="#00b700" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="1051.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="На всас насосов опорожнения" textAlignment="CENTER" wrappingWidth="95.0" />
+      <Text fill="#b7b7b7" layoutX="1433.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Слив сетевой воды" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Line endX="161.0" endY="-49.5" layoutX="1198.0" layoutY="693.0" startX="161.0" startY="-92.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="161.0" endY="-37.25" layoutX="1198.0" layoutY="626.0" startX="161.0" startY="-71.0" stroke="#00b700" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="1465.0" layoutY="534.0" rotate="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В конденсатор ПТ 10MAG10AC001" textAlignment="CENTER" wrappingWidth="200.0" />
+      <Text fill="#b7b7b7" layoutX="1192.0" layoutY="533.0" rotate="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В конденсатор ПТ 10MAG10AC001" textAlignment="CENTER" wrappingWidth="200.0" />
+      <Circle fill="#dfdf00" layoutX="1095.0" layoutY="645.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="221.0" endY="-61.5" layoutX="775.0" layoutY="706.0" startX="24.0" startY="-61.5" stroke="#00b700" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="965.0" layoutY="667.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAB60AA001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Line endX="177.75" endY="-2.25" layoutX="785.0" layoutY="716.0" startX="177.75" startY="-300.0" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="221.5" endY="-62.0" layoutX="563.0" layoutY="706.0" startX="-31.0" startY="-62.0" stroke="#00b700" strokeWidth="3.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7b7b7" height="32.0" layoutX="559.0" layoutY="629.0" stroke="#b7b7b7" width="70.0" />
+      <Text layoutX="564.0" layoutY="650.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Подш ЦН2" wrappingWidth="60.0" />
+      <Circle fill="#dfdf00" layoutX="593.0" layoutY="628.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Circle fill="#dfdf00" layoutX="593.0" layoutY="663.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Text fill="#b7b7b7" layoutX="754.0" layoutY="668.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAB20AA002" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Circle fill="#dfdf00" layoutX="698.0" layoutY="644.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="-53.5" endY="-129.25" layoutX="784.0" layoutY="716.0" startX="-53.5" startY="-72.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="-53.5" endY="-117.5" layoutX="784.0" layoutY="650.0" startX="-53.5" startY="-76.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="-53.5" endY="-128.75" layoutX="707.0" layoutY="716.0" startX="-53.5" startY="-72.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="-53.5" endY="-117.5" layoutX="707.0" layoutY="650.0" startX="-53.5" startY="-77.25" stroke="#00b700" strokeWidth="3.0" />
+      <Circle fill="#dfdf00" layoutX="527.0" layoutY="674.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="131.0" endY="-59.5" layoutX="389.0" layoutY="691.0" startX="56.25" startY="-59.5" stroke="#00b700" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="56.5" endY="-106.75" layoutX="388.0" layoutY="693.0" startX="56.5" startY="-61.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="56.5" endY="-91.75" layoutX="388.0" layoutY="625.0" startX="56.5" startY="-52.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="39.0" endY="-116.75" layoutX="357.0" layoutY="702.0" startX="39.0" startY="-58.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="39.0" endY="-101.75" layoutX="357.0" layoutY="635.0" startX="39.0" startY="-62.75" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="57.0" endY="-61.5" layoutX="466.0" layoutY="706.0" startX="-121.0" startY="-61.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="-88.75" endY="-61.5" layoutX="405.0" layoutY="706.0" startX="-130.5" startY="-61.5" stroke="#00b700" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="510.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В дренажный приямок 51PAA30BB001" textAlignment="CENTER" wrappingWidth="220.0" />
+      <Text fill="#b7b7b7" layoutX="285.0" layoutY="667.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAB20AA001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Line endX="38.25" endY="-66.5" layoutX="286.0" layoutY="656.0" startX="-11.5" startY="-66.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="38.0" endY="-66.5" layoutX="286.0" layoutY="536.0" startX="-11.5" startY="-66.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="28.0" endY="-75.5" layoutX="296.0" layoutY="546.0" startX="28.0" startY="-30.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="28.0" endY="-88.25" layoutX="296.0" layoutY="617.0" startX="28.0" startY="-28.0" stroke="#00b700" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="333.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAA10AA001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Line endX="90.5" endY="158.25" layoutX="769.0" layoutY="317.0" startX="90.5" startY="248.75" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="90.5" endY="157.25" layoutX="769.0" layoutY="421.0" startX="90.5" startY="401.75" stroke="#00b700" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="866.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAB50AA002" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="#b7b7b7" layoutX="867.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAB50AA001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Line endX="222.0" endY="-61.5" layoutX="563.0" layoutY="885.0" startX="-16.0" startY="-61.5" stroke="#00b700" strokeWidth="3.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7b7b7" height="32.0" layoutX="559.0" layoutY="808.0" stroke="#b7b7b7" width="70.0" />
+      <Text layoutX="564.0" layoutY="829.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Подш ЦН1" wrappingWidth="60.0" />
+      <Circle fill="#dfdf00" layoutX="593.0" layoutY="807.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Circle fill="#dfdf00" layoutX="593.0" layoutY="842.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Text fill="#b7b7b7" layoutX="754.0" layoutY="847.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAB10AA002" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Circle fill="#dfdf00" layoutX="704.0" layoutY="823.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="-53.5" endY="-126.75" layoutX="784.0" layoutY="895.0" startX="-53.5" startY="-72.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="-53.5" endY="-117.5" layoutX="784.0" layoutY="829.0" startX="-53.5" startY="-74.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="-53.5" endY="-127.75" layoutX="707.0" layoutY="895.0" startX="-53.5" startY="-72.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="-53.5" endY="-117.5" layoutX="707.0" layoutY="829.0" startX="-53.5" startY="-73.75" stroke="#00b700" strokeWidth="3.0" />
+      <Circle fill="#dfdf00" layoutX="527.0" layoutY="853.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="118.25" endY="-59.5" layoutX="389.0" layoutY="870.0" startX="56.25" startY="-59.5" stroke="#00b700" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="56.5" endY="-105.25" layoutX="388.0" layoutY="872.0" startX="56.5" startY="-61.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="56.5" endY="-91.75" layoutX="388.0" layoutY="804.0" startX="56.5" startY="-50.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="39.0" endY="-113.75" layoutX="357.0" layoutY="881.0" startX="39.0" startY="-58.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="39.0" endY="-101.75" layoutX="357.0" layoutY="814.0" startX="39.0" startY="-60.75" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="48.5" endY="-61.5" layoutX="466.0" layoutY="885.0" startX="-127.5" startY="-61.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="-80.0" endY="-61.5" layoutX="405.0" layoutY="885.0" startX="-130.5" startY="-61.5" stroke="#00b700" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="286.0" layoutY="851.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAB10AA001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Line endX="-6.75" endY="-72.25" layoutX="866.0" layoutY="896.0" startX="-66.5" startY="-72.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="121.0" endY="-0.25" layoutX="785.0" layoutY="716.0" startX="121.0" startY="-70.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="121.0" endY="11.75" layoutX="785.0" layoutY="812.0" startX="121.0" startY="-83.25" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="121.0" endY="9.75" layoutX="842.0" layoutY="814.0" startX="121.0" startY="-85.75" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="192.0" layoutX="852.0" layoutY="824.0" startX="55.5" stroke="#00b700" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="837.0" layoutY="727.0" rotate="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PBR10AA001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="#b7b7b7" layoutX="974.0" layoutY="706.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PBR20AA001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Circle fill="#dfdf00" layoutX="987.0" layoutY="824.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Text fill="#b7b7b7" layoutX="1096.0" layoutY="741.0" strokeType="OUTSIDE" strokeWidth="0.0" text="От ВПУ" textAlignment="CENTER" wrappingWidth="50.0" />
+      <Text fill="#b7b7b7" layoutX="972.0" layoutY="740.0" strokeType="OUTSIDE" strokeWidth="0.0" text="От насосов-дозаторов комплексоната" textAlignment="CENTER" wrappingWidth="120.0" />
+      <Line endX="121.0" endY="8.5" layoutX="889.0" layoutY="898.0" startX="121.0" startY="-73.75" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="112.0" endY="-1.5" layoutX="899.0" layoutY="908.0" startX="146.0" startY="-1.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="202.25" endY="-73.75" layoutX="949.0" layoutY="898.0" startX="109.0" startY="-73.75" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="100.0" endY="-1.5" layoutX="959.0" layoutY="908.0" startX="191.75" startY="-1.5" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="134.5" endY="-12.5" layoutX="969.0" layoutY="918.0" startX="134.5" startY="-156.0" stroke="#00b700" strokeWidth="3.0" />
+      <Line endX="134.5" endY="-92.75" layoutX="1005.0" layoutY="917.0" startX="134.5" startY="-155.0" stroke="#00b700" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="1118.0" layoutY="850.0" strokeType="OUTSIDE" strokeWidth="0.0" text="На установку очистки стоков ВПУ и продувочных вод обратной системы" textAlignment="CENTER" wrappingWidth="180.0" />
+      <Text fill="#b7b7b7" layoutX="102.0" layoutY="794.0" rotate="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Водоприемная камера №1" textAlignment="CENTER" wrappingWidth="220.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#b7b7b7" layoutX="131.0" layoutY="608.0" rotate="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAA10BB001" textAlignment="CENTER" wrappingWidth="120.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Circle fill="#dfdf00" layoutX="273.0" layoutY="734.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Text fill="#b7b7b7" layoutX="102.0" layoutY="387.0" rotate="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Водоприемная камера №2" textAlignment="CENTER" wrappingWidth="220.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#b7b7b7" layoutX="131.0" layoutY="199.0" rotate="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAA20BB001" textAlignment="CENTER" wrappingWidth="120.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Circle fill="#dfdf00" layoutX="272.0" layoutY="327.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Text fill="#b7b7b7" layoutX="787.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Циркнасосы" textAlignment="CENTER" wrappingWidth="125.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="4.5" endY="-1.5" layoutX="164.0" layoutY="616.0" startX="-36.0" startY="-1.5" stroke="#0096ff" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="34.0" layoutY="610.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ввод Эктоскейла" textAlignment="CENTER" wrappingWidth="75.0" />
+      <ValveControl equipmentType="MOV" kks="51PAB40AA001" layoutX="312.0" layoutY="211.0" prefHeight="33.3" prefWidth="37.0" skinType="ELECTRIC_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="51PAB30AA001" layoutX="313.0" layoutY="390.0" prefHeight="33.3" prefWidth="37.0" skinType="ELECTRIC_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="51PAB40AA002" layoutX="777.0" layoutY="211.0" prefHeight="33.3" prefWidth="37.0" skinType="ELECTRIC_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="51PAB30AA002" layoutX="773.0" layoutY="390.0" prefHeight="33.3" prefWidth="37.0" skinType="ELECTRIC_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="51PAA10AA001" layoutX="312.0" layoutY="505.0" orientation="VERTICAL" prefHeight="33.3" prefWidth="37.0" skinType="ELECTRIC_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="51PAB50AA001" layoutX="848.0" layoutY="555.0" orientation="VERTICAL" prefHeight="33.3" prefWidth="37.0" skinType="ELECTRIC_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="51PAB50AA002" layoutX="848.0" layoutY="451.0" orientation="VERTICAL" prefHeight="33.3" prefWidth="37.0" skinType="ELECTRIC_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="51PAB70AA001" layoutX="983.0" layoutY="391.0" prefHeight="33.3" prefWidth="37.0" skinType="ELECTRIC_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="51PAB20AA002" layoutX="773.0" layoutY="620.0" prefHeight="33.3" prefWidth="37.0" skinType="ELECTRIC_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="51PAB60AA001" layoutX="984.0" layoutY="621.0" prefHeight="33.3" prefWidth="37.0" skinType="ELECTRIC_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="51PAB20AA001" layoutX="312.0" layoutY="620.0" prefHeight="33.3" prefWidth="37.0" skinType="ELECTRIC_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="51PAB10AA001" layoutX="313.0" layoutY="799.0" prefHeight="33.3" prefWidth="37.0" skinType="ELECTRIC_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="51PAB10AA002" layoutX="773.0" layoutY="799.0" prefHeight="33.3" prefWidth="37.0" skinType="ELECTRIC_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="51PBR10AA001" layoutX="895.0" layoutY="704.0" orientation="VERTICAL" prefHeight="33.3" prefWidth="37.0" skinType="ELECTRIC_VLV" valueVisible="false" />
+      <ValveControl equipmentType="MOV" kks="51PBR20AA001" layoutX="951.0" layoutY="704.0" orientation="VERTICAL" prefHeight="33.3" prefWidth="37.0" skinType="ELECTRIC_VLV" valueVisible="false" />
+      <PumpControl kks="51PAC40AP001" layoutX="498.0" layoutY="210.0" prefHeight="50.0" prefWidth="50.0" />
+      <PumpControl kks="51PAC30AP001" layoutX="499.0" layoutY="387.0" prefHeight="50.0" prefWidth="50.0" />
+      <PumpControl kks="51PAC20AP001" layoutX="502.0" layoutY="619.0" prefHeight="50.0" prefWidth="50.0" />
+      <PumpControl kks="51PAC10AP001" layoutX="501.0" layoutY="797.0" prefHeight="50.0" prefWidth="50.0" />
+      <ValveControl kks="51PUG41AA421" layoutX="377.0" layoutY="160.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG43AA501" layoutX="426.0" layoutY="160.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG42AA421" layoutX="634.0" layoutY="160.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG44AA501" layoutX="712.0" layoutY="159.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG31AA421" layoutX="377.0" layoutY="340.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG33AA501" layoutX="426.0" layoutY="340.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG32AA421" layoutX="634.0" layoutY="341.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG34AA501" layoutX="712.0" layoutY="340.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG21AA421" layoutX="377.0" layoutY="569.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG23AA501" layoutX="426.0" layoutY="569.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG22AA421" layoutX="635.0" layoutY="570.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG24AA501" layoutX="712.0" layoutY="570.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG11AA421" layoutX="377.0" layoutY="750.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG13AA501" layoutX="426.0" layoutY="750.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG12AA421" layoutX="635.0" layoutY="751.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG14AA501" layoutX="712.0" layoutY="751.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PBR21AA431" layoutX="1032.0" layoutY="815.0" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PBR31AA431" layoutX="1033.0" layoutY="897.0" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG60AA421" layoutX="1155.0" layoutY="240.0" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG61AA421" layoutX="1224.0" layoutY="353.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG62AA421" layoutX="1283.0" layoutY="353.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PAB60AA101" layoutX="1338.0" layoutY="351.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PAB60AA102" layoutX="1394.0" layoutY="351.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PAB70AA102" layoutX="1449.0" layoutY="351.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PUG70AA422" layoutX="1335.0" layoutY="240.0" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="51PAB70AA101" layoutX="1340.0" layoutY="585.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <DetectorControl kks="51PAA20CL001" layoutX="279.0" layoutY="317.0" maxValue="0.0" minValue="-4200.0" param="L" prefHeight="23.0" prefWidth="90.0" system="CW" unit="мм">
+         <tooltip>
+            <Tooltip text="Уровень воды в водоприемной камере 51PAA20BB001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAA10CL001" layoutX="279.0" layoutY="723.0" maxValue="0.0" minValue="-4200.0" param="L" prefHeight="23.0" prefWidth="90.0" system="CW" unit="мм">
+         <tooltip>
+            <Tooltip text="Уровень воды в водоприемной камере 51PAA10BB001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAC40CE001" layoutX="479.0" layoutY="273.0" maxValue="100.0" param="I" prefHeight="23.0" prefWidth="62.0" system="CW" unit="А">
+         <tooltip>
+            <Tooltip text="Ток двигателя ЦН-4" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAC40CT101" layoutX="556.0" layoutY="188.0" maxValue="100.0" param="T" prefHeight="23.0" prefWidth="72.0" system="CW">
+         <tooltip>
+            <Tooltip text="Т подшипников циркнасоса 51PAC40AP001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAC40CT102" layoutX="556.0" layoutY="260.0" maxValue="100.0" param="T" prefHeight="23.0" prefWidth="72.0" system="CW">
+         <tooltip>
+            <Tooltip text="Т подшипников циркнасоса 51PAC40AP001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAC30CT101" layoutX="556.0" layoutY="368.0" maxValue="100.0" param="T" prefHeight="23.0" prefWidth="72.0" system="CW">
+         <tooltip>
+            <Tooltip text="Т подшипников циркнасоса 51PAC30AP001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAC30CT102" layoutX="556.0" layoutY="440.0" maxValue="100.0" param="T" prefHeight="23.0" prefWidth="72.0" system="CW">
+         <tooltip>
+            <Tooltip text="Т подшипников циркнасоса 51PAC30AP001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAC30CE001" layoutX="479.0" layoutY="451.0" maxValue="100.0" param="I" prefHeight="23.0" prefWidth="62.0" system="CW" unit="А">
+         <tooltip>
+            <Tooltip text="Ток двигателя ЦН-3" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAC20CT101" layoutX="556.0" layoutY="598.0" maxValue="100.0" param="T" prefHeight="23.0" prefWidth="72.0" system="CW">
+         <tooltip>
+            <Tooltip text="Т подшипников циркнасоса 51PAC20AP001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAC20CT102" layoutX="556.0" layoutY="670.0" maxValue="100.0" param="T" prefHeight="23.0" prefWidth="72.0" system="CW">
+         <tooltip>
+            <Tooltip text="Т подшипников циркнасоса 51PAC20AP001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAC20CE001" layoutX="479.0" layoutY="681.0" maxValue="100.0" param="I" prefHeight="23.0" prefWidth="62.0" system="CW" unit="А">
+         <tooltip>
+            <Tooltip text="Ток двигателя ЦН-2" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAC10CT101" layoutX="556.0" layoutY="778.0" maxValue="100.0" param="T" prefHeight="23.0" prefWidth="72.0" system="CW">
+         <tooltip>
+            <Tooltip text="Т подшипников циркнасоса 51PAC10AP001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAC10CT102" layoutX="556.0" layoutY="850.0" maxValue="100.0" param="T" prefHeight="23.0" prefWidth="72.0" system="CW">
+         <tooltip>
+            <Tooltip text="Т подшипников циркнасоса 51PAC10AP001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAC10CE001" layoutX="479.0" layoutY="859.0" maxValue="100.0" param="I" prefHeight="23.0" prefWidth="62.0" system="CW" unit="А">
+         <tooltip>
+            <Tooltip text="Ток двигателя ЦН-1" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51URD00CT001" layoutX="857.0" layoutY="127.0" maxValue="50.0" minValue="-50.0" param="T" prefHeight="23.0" prefWidth="72.0" system="CW">
+         <tooltip>
+            <Tooltip text="Т воздуха в помещении циркнасосной" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAC40CP001" layoutX="674.0" layoutY="244.0" maxValue="0.4" param="P" prefHeight="23.0" prefWidth="76.0" system="CW" unit="МПа">
+         <tooltip>
+            <Tooltip text="Давление на напоре циркнасоса 51PAC40AP001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAC30CP001" layoutX="674.0" layoutY="423.0" maxValue="0.4" param="P" prefHeight="23.0" prefWidth="76.0" system="CW" unit="МПа">
+         <tooltip>
+            <Tooltip text="Давление на напоре циркнасоса 51PAC30AP001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAC20CP001" layoutX="674.0" layoutY="652.0" maxValue="0.4" param="P" prefHeight="23.0" prefWidth="76.0" system="CW" unit="МПа">
+         <tooltip>
+            <Tooltip text="Давление на напоре циркнасоса 51PAC20AP001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAC10CP001" layoutX="674.0" layoutY="831.0" maxValue="0.4" param="P" prefHeight="23.0" prefWidth="76.0" system="CW" unit="МПа">
+         <tooltip>
+            <Tooltip text="Давление на напоре циркнасоса 51PAC10AP001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAB30CP002" layoutX="1057.0" layoutY="423.0" maxValue="0.4" param="P" prefHeight="23.0" prefWidth="76.0" system="CW" unit="МПа">
+         <tooltip>
+            <Tooltip text="Давление в напорном водоводе в главный корпус" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PAB20CP002" layoutX="1057.0" layoutY="614.0" maxValue="0.4" param="P" prefHeight="23.0" prefWidth="76.0" system="CW" unit="МПа">
+         <tooltip>
+            <Tooltip text="Давление в напорном водоводе в главный корпус" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PBR30CT001" layoutX="898.0" layoutY="832.0" maxValue="100.0" param="T" prefHeight="23.0" prefWidth="74.0" system="CW">
+         <tooltip>
+            <Tooltip text="Т в трубопроводе продувочной воды" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PBR30CF001" layoutX="897.0" layoutY="856.0" maxValue="42.0" param="F" prefHeight="23.0" prefWidth="84.0" system="CW" unit="м3/ч">
+         <tooltip>
+            <Tooltip text="Расход воды в трубопроводе продувочной воды" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="51PBR30CP001" layoutX="898.0" layoutY="880.0" maxValue="600.0" param="P" prefHeight="23.0" prefWidth="78.0" system="CW" unit="кПа">
+         <tooltip>
+            <Tooltip text="Давление в трубопроводе продувочной воды" />
+         </tooltip></DetectorControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Нас. др. приям." buttonOnText="Нас. др. приям." diagramTitle="Насосы дренажных приямков машзала.fxml" equipmentType="TRANSITION_BUTTON" kks="TOVUNSDRPRMZ" layoutX="1843.0" layoutY="1028.0" prefHeight="45.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="ЦВ/В" buttonOnText="ЦВ/В" diagramTitle="Циркводоводы.fxml" equipmentType="TRANSITION_BUTTON" kks="TOVUCVV" layoutX="1773.0" layoutY="1028.0" prefHeight="45.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Опорожн., дренаж" buttonOnText="Опорожн., дренаж" diagramTitle="Опорожнение, дренаж.fxml" equipmentType="TRANSITION_BUTTON" kks="TOVUOPDR" layoutX="1703.0" layoutY="1028.0" prefHeight="45.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="ЦНС" buttonOnText="ЦНС" diagramTitle="Циркнасосы.fxml" equipmentType="TRANSITION_BUTTON" kks="TOVUCNS" layoutX="1633.0" layoutY="1028.0" prefHeight="45.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <FunctionControl interactive="false" layoutX="118.0" layoutY="843.5" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="118.0" layoutY="725.5" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.5882353186607361" blue="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="118.0" layoutY="604.5" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.5882353186607361" blue="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="118.0" layoutY="392.5" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="386.0" layoutY="692.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1152.0" layoutY="897.0" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1152.0" layoutY="814.5" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="434.5" layoutY="692.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="386.0" layoutY="513.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="434.5" layoutY="513.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="386.0" layoutY="282.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="434.5" layoutY="282.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="386.0" layoutY="106.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="434.5" layoutY="106.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="643.5" layoutY="692.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="720.5" layoutY="692.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="643.5" layoutY="513.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="720.5" layoutY="513.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="642.5" layoutY="282.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="720.5" layoutY="282.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="642.5" layoutY="106.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="720.5" layoutY="106.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1088.5" layoutY="139.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1346.5" layoutY="303.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1093.5" layoutY="752.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1129.5" layoutY="752.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1407.0" layoutY="240.0" orientation="HORIZONTAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1524.0" layoutY="634.5" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1524.0" layoutY="404.5" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1494.0" layoutY="291.0" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1349.0" layoutY="535.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.7176470756530762" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <Text fill="#b7b7b7" layoutX="413.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAC40AP001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="#b7b7b7" layoutX="415.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAC30AP001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="#b7b7b7" layoutX="413.0" layoutY="677.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAC20AP001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="#b7b7b7" layoutX="413.0" layoutY="855.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51PAC10AP001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <ButtonControl buttonOffText="ЛЕТО" buttonOnText="ЛЕТО" equipmentType="TEXT_BUTTON" kks="zdimez001" layoutX="1323.0" layoutY="1016.0" prefHeight="43.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.6705882549285889" green="0.6666666865348816" blue="0.6666666865348816" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="ЗИМА 1" buttonOnText="ЗИМА 1" equipmentType="TEXT_BUTTON" kks="zdimez002" layoutX="1395.0" layoutY="1016.0" prefHeight="42.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.6705882549285889" green="0.6666666865348816" blue="0.6666666865348816" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="ЗИМА 2" buttonOnText="ЗИМА 2" equipmentType="TEXT_BUTTON" kks="zdimez003" layoutX="1467.0" layoutY="1016.0" prefHeight="42.0" prefWidth="65.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color red="0.6705882549285889" green="0.6666666865348816" blue="0.6666666865348816" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="ОТКЛ" kks="zdi51pac10ap001_avr_tablo" layoutX="507.0" layoutY="764.0" prefHeight="20.0" prefWidth="35.0" secondStatus="РАБ" skinType="TABLO" thirdStatus="РЕЗ">
+         <firstStatusColor>
+            <Color red="0.6705882549285889" green="0.6666666865348816" blue="0.6666666865348816" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="ОТКЛ" kks="zdi51pac20ap001_avr_tablo" layoutX="507.0" layoutY="584.0" prefHeight="20.0" prefWidth="35.0" secondStatus="РАБ" skinType="TABLO" thirdStatus="РЕЗ">
+         <firstStatusColor>
+            <Color red="0.6705882549285889" green="0.6666666865348816" blue="0.6666666865348816" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="ОТКЛ" kks="zdi51pac30ap001_avr_tablo" layoutX="507.0" layoutY="354.0" prefHeight="20.0" prefWidth="35.0" secondStatus="РАБ" skinType="TABLO" thirdStatus="РЕЗ">
+         <firstStatusColor>
+            <Color red="0.6705882549285889" green="0.6666666865348816" blue="0.6666666865348816" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="ОТКЛ" kks="zdi51pac40ap001_avr_tablo" layoutX="507.0" layoutY="174.0" prefHeight="20.0" prefWidth="35.0" secondStatus="РАБ" skinType="TABLO" thirdStatus="РЕЗ">
+         <firstStatusColor>
+            <Color red="0.6705882549285889" green="0.6666666865348816" blue="0.6666666865348816" />
+         </firstStatusColor>
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <thirdStatusColor>
+            <Color green="1.0" />
+         </thirdStatusColor>
+      </IndicationControl>
+   </children>
+   <stylesheets>
+      <URL value="@StyleSheet.css" />
+      <URL value="@../../StyleSheet.css" />
+   </stylesheets>
+</AnchorPane>

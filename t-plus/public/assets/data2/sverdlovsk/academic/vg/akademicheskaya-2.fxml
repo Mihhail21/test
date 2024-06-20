@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.FunctionControl?>
+<?import ru.get.common.controls.PumpControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="134.0" layoutX="2.0" layoutY="801.0" stroke="WHITE" strokeWidth="5.0" width="1314.0" />
+      <Line endX="-51.5" endY="6.25" layoutX="56.0" layoutY="855.0" startX="1255.0" startY="6.25" stroke="WHITE" styleClass="line-dashed" />
+      <Line endX="-51.5" endY="6.25" layoutX="58.0" layoutY="880.0" startX="1255.0" startY="6.25" stroke="WHITE" styleClass="line-dashed" />
+      <Line endX="-51.5" endY="6.25" layoutX="59.0" layoutY="906.0" startX="1255.0" startY="6.25" stroke="WHITE" styleClass="line-dashed" />
+      <Line endX="100.0" layoutX="537.0" layoutY="797.0" startX="100.0" startY="126.33331298828125" stroke="WHITE" strokeWidth="5.0" />
+      <Line endX="-51.5" endY="6.25" layoutX="57.0" layoutY="823.0" startX="1255.0" startY="6.25" stroke="WHITE" />
+      <Text fill="AQUA" layoutX="24.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Охлаждаемая вода на градирню" textAlignment="CENTER" wrappingWidth="220.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Line endX="84.5" layoutX="206.0" layoutY="141.0" startX="-190.0" stroke="AQUA" />
+      <Arc fill="#1f93ff00" layoutX="298.5" layoutY="141.0" length="180.0" radiusX="7.0" radiusY="7.0" stroke="AQUA" />
+      <Line endX="350.5" layoutX="233.0" layoutY="141.0" startX="73.5" stroke="AQUA" />
+      <Arc fill="#1f93ff00" layoutX="591.5" layoutY="141.0" length="180.0" radiusX="7.0" radiusY="7.0" stroke="AQUA" />
+      <Line endX="599.5" layoutX="279.0" layoutY="141.0" startX="320.5" stroke="AQUA" />
+      <Arc fill="#1f93ff00" layoutX="886.5" layoutY="141.0" length="180.0" radiusX="7.0" radiusY="7.0" stroke="AQUA" />
+      <Line endX="831.0" layoutX="344.0" layoutY="141.0" startX="550.5" stroke="AQUA" />
+      <Arc fill="#1f93ff00" layoutX="1181.5" layoutY="141.0" length="180.0" radiusX="7.0" radiusY="7.0" stroke="AQUA" strokeType="INSIDE" />
+      <Line endX="887.75" layoutX="434.0" layoutY="141.0" startX="754.5" stroke="AQUA" />
+      <Line endX="1115.0" layoutX="206.0" layoutY="66.0" startX="-190.0" stroke="AQUA" />
+      <Line endX="82.75" endY="25.25" layoutX="216.0" layoutY="151.0" startX="82.75" startY="-84.25" stroke="AQUA" />
+      <Line endX="-69.33332824707031" endY="6.25" layoutX="272.0" layoutY="526.0" startX="62.75" startY="6.25" stroke="WHITE" />
+      <Line endX="-51.5" endY="6.25" layoutX="294.0" layoutY="484.0" startX="118.20709228515625" startY="6.25" stroke="WHITE" />
+      <Line endX="82.75" endY="311.75" layoutX="216.0" layoutY="293.0" startX="82.75" startY="-85.25" stroke="AQUA" />
+      <Line endX="-55.75" endY="-248.0" layoutX="312.0" layoutY="739.0" startX="-55.75" startY="63.0" stroke="WHITE" />
+      <Line endX="-55.75" endY="-248.0" layoutX="162.0" layoutY="739.0" startX="-55.75" startY="62.33331298828125" stroke="WHITE" />
+      <Line endX="-92.75" endY="-17.0" layoutX="160.0" layoutY="622.0" startX="138.75" startY="-17.0" stroke="AQUA" />
+      <Line endX="68.75" endY="-32.0" layoutX="170.0" layoutY="632.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="180.0" layoutY="642.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="68.75" endY="-32.0" layoutX="113.0" layoutY="632.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="123.0" layoutY="642.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="68.75" endY="-32.0" layoutX="56.0" layoutY="632.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="66.0" layoutY="642.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="68.75" endY="-32.0" layoutX="84.0" layoutY="632.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="94.0" layoutY="642.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="68.75" endY="-32.0" layoutX="142.0" layoutY="633.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="152.0" layoutY="643.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="-51.5" endY="6.25" layoutX="102.0" layoutY="484.0" startX="16.0" startY="6.25" stroke="WHITE" />
+      <Line endX="138.75" endY="-414.25" layoutX="-72.0" layoutY="622.0" startX="138.75" startY="-17.0" stroke="AQUA" />
+      <Line endX="82.75" endY="-49.5" layoutX="-16.0" layoutY="226.0" startX="82.75" startY="-84.25" stroke="AQUA" />
+      <Line endX="11.199999809265137" layoutX="114.3" layoutY="236.0" startX="-46.25" stroke="WHITE" />
+      <Line endX="12.699999809265137" layoutX="114.3" layoutY="262.0" startX="-46.25" stroke="WHITE" />
+      <Line endX="12.199999809265137" layoutX="114.3" layoutY="288.0" startX="-46.25" stroke="WHITE" />
+      <Line endX="-23.5" layoutX="321.0" layoutY="335.0" startX="-120.0" stroke="WHITE" />
+      <Line endX="-23.5" layoutX="321.0" layoutY="361.0" startX="-99.0" stroke="WHITE" />
+      <Line endX="-23.5" layoutX="321.0" layoutY="387.0" startX="-110.5" stroke="WHITE" />
+      <Line endX="-64.75" endY="6.25" layoutX="172.0" layoutY="749.0" startX="83.75" startY="6.25" stroke="WHITE" />
+      <Line endX="-64.75" endY="6.25" layoutX="172.0" layoutY="624.0" startX="83.75" startY="6.25" stroke="WHITE" />
+      <Line endX="-75.25" endY="-3.5" layoutX="182.0" layoutY="759.0" startX="-12.0" startY="-56.25" stroke="WHITE" />
+      <Line endX="-69.0" endY="-8.5" layoutX="268.0" layoutY="687.0" startX="-12.0" startY="-56.25" stroke="WHITE" />
+      <Line endX="-114.0" endY="-18.5" layoutX="278.0" layoutY="697.0" startX="-171.0" startY="-66.0" stroke="WHITE" />
+      <Line endX="-114.0" endY="-18.5" layoutX="370.0" layoutY="773.0" startX="-175.25" startY="-70.75" stroke="WHITE" />
+      <Text fill="WHITE" layoutX="167.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Г-1с" textAlignment="CENTER" wrappingWidth="27.914215087890625">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="115.0" layoutY="556.0" strokeType="OUTSIDE" strokeWidth="0.0" text="М-1" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="-51.5" endY="6.25" layoutX="102.0" layoutY="484.0" startX="-51.5" startY="316.0" stroke="WHITE" />
+      <Line endX="-51.5" endY="6.25" layoutX="144.0" layoutY="410.0" startX="125.5" startY="6.25" stroke="WHITE" />
+      <Line endX="-20.0" endY="-77.25" layoutX="112.0" layoutY="494.0" startX="6.5" startY="-4.25" stroke="WHITE" />
+      <Line endX="148.0" endY="-87.25" layoutX="122.0" layoutY="504.0" startX="120.0" startY="-14.25" stroke="WHITE" />
+      <Line endX="-51.5" endY="6.25" layoutX="232.0" layoutY="450.0" startX="-51.5" startY="58.0" stroke="WHITE" />
+      <Line endX="-12.75" endY="20.0" layoutX="144.0" layoutY="449.0" startX="86.0" startY="-6.75" stroke="WHITE" strokeLineCap="ROUND" />
+      <Arc fill="#1f93ff00" layoutX="131.5" layoutY="455.5" length="180.0" radiusX="13.4" radiusY="13.4" startAngle="90.0" stroke="WHITE" />
+      <Arc fill="#1f93ff00" layoutX="229.75" layoutY="455.75" length="180.0" radiusX="13.4" radiusY="13.4" startAngle="270.0" stroke="WHITE" />
+      <Line endX="-22.5" endY="-17.0" layoutX="154.0" layoutY="459.0" startX="75.5" startY="10.0" stroke="WHITE" strokeLineCap="ROUND" />
+      <Line endX="44.75" endY="-3.5" layoutX="290.0" layoutY="536.0" startX="44.75" startY="73.5" stroke="WHITE" />
+      <Line endX="82.75" endY="25.0" layoutX="509.0" layoutY="151.0" startX="82.75" startY="-84.25" stroke="AQUA" />
+      <Line endX="-69.0" endY="6.25" layoutX="565.0" layoutY="526.0" startX="62.75" startY="6.25" stroke="WHITE" />
+      <Line endX="-51.5" endY="6.25" layoutX="587.0" layoutY="484.0" startX="120.0" startY="6.25" stroke="WHITE" />
+      <Line endX="82.75" endY="311.75" layoutX="509.0" layoutY="293.0" startX="82.75" startY="-85.25" stroke="AQUA" />
+      <Line endX="-55.75" endY="-248.0" layoutX="605.0" layoutY="739.0" startX="-55.75" startY="61.0" stroke="WHITE" />
+      <Line endX="-55.75" endY="-248.0" layoutX="455.0" layoutY="739.0" startX="-55.75" startY="60.33331298828125" stroke="WHITE" />
+      <Line endX="-92.75" endY="-17.0" layoutX="453.0" layoutY="622.0" startX="138.75" startY="-17.0" stroke="AQUA" />
+      <Line endX="68.75" endY="-32.0" layoutX="463.0" layoutY="632.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="473.0" layoutY="642.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="68.75" endY="-32.0" layoutX="406.0" layoutY="632.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="416.0" layoutY="642.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="68.75" endY="-32.0" layoutX="349.0" layoutY="632.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="359.0" layoutY="642.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="68.75" endY="-32.0" layoutX="377.0" layoutY="632.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="387.0" layoutY="642.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="68.75" endY="-32.0" layoutX="435.0" layoutY="633.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="445.0" layoutY="643.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="138.75" endY="-414.25" layoutX="221.0" layoutY="622.0" startX="138.75" startY="-17.0" stroke="AQUA" />
+      <Line endX="82.75" endY="-49.5" layoutX="277.0" layoutY="226.0" startX="82.75" startY="-84.25" stroke="AQUA" />
+      <Line endX="16.700000762939453" layoutX="407.3" layoutY="237.0" startX="-46.25" stroke="WHITE" />
+      <Line endX="15.199999809265137" layoutX="407.3" layoutY="262.0" startX="-46.25" stroke="WHITE" />
+      <Line endX="16.200000762939453" layoutX="407.3" layoutY="288.0" startX="-46.25" stroke="WHITE" />
+      <Line endX="-23.5" layoutX="614.0" layoutY="335.0" startX="-114.5" stroke="WHITE" />
+      <Line endX="-23.5" layoutX="614.0" layoutY="361.0" startX="-92.0" stroke="WHITE" />
+      <Line endX="-23.5" layoutX="614.0" layoutY="387.0" startX="-107.0" stroke="WHITE" />
+      <Line endX="-64.75" endY="6.25" layoutX="465.0" layoutY="749.0" startX="83.75" startY="6.25" stroke="WHITE" />
+      <Line endX="-64.75" endY="6.25" layoutX="465.0" layoutY="624.0" startX="83.75" startY="6.25" stroke="WHITE" />
+      <Line endX="-75.25" endY="-3.5" layoutX="475.0" layoutY="759.0" startX="-12.0" startY="-56.25" stroke="WHITE" />
+      <Line endX="-69.0" endY="-8.5" layoutX="561.0" layoutY="687.0" startX="-12.0" startY="-56.25" stroke="WHITE" />
+      <Line endX="-114.0" endY="-18.5" layoutX="571.0" layoutY="697.0" startX="-171.0" startY="-66.0" stroke="WHITE" />
+      <Line endX="-114.0" endY="-18.5" layoutX="663.0" layoutY="773.0" startX="-175.25" startY="-70.75" stroke="WHITE" />
+      <Text fill="WHITE" layoutX="461.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Г-2с" wrappingWidth="27.914215087890625">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="408.0" layoutY="556.0" strokeType="OUTSIDE" strokeWidth="0.0" text="М-2" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="-51.5" endY="6.25" layoutX="437.0" layoutY="410.0" startX="125.5" startY="6.25" stroke="WHITE" />
+      <Line endX="-20.0" endY="-77.25" layoutX="405.0" layoutY="494.0" startX="6.5" startY="-4.25" stroke="WHITE" />
+      <Line endX="148.0" endY="-87.25" layoutX="415.0" layoutY="504.0" startX="120.0" startY="-14.25" stroke="WHITE" />
+      <Line endX="-51.5" endY="6.25" layoutX="525.0" layoutY="450.0" startX="-51.5" startY="60.666656494140625" stroke="WHITE" />
+      <Line endX="-12.75" endY="20.0" layoutX="437.0" layoutY="449.0" startX="86.0" startY="-6.75" stroke="WHITE" strokeLineCap="ROUND" />
+      <Line endX="-22.5" endY="-17.0" layoutX="447.0" layoutY="459.0" startX="75.5" startY="10.0" stroke="WHITE" strokeLineCap="ROUND" />
+      <Line endX="44.75" endY="-3.5" layoutX="583.0" layoutY="536.0" startX="44.75" startY="74.25" stroke="WHITE" />
+      <Line endX="82.75" endY="25.5" layoutX="804.0" layoutY="151.0" startX="82.75" startY="-84.25" stroke="AQUA" />
+      <Line endX="-69.33331298828125" endY="6.25" layoutX="860.0" layoutY="526.0" startX="62.75" startY="6.25" stroke="WHITE" />
+      <Line endX="-51.5" endY="6.25" layoutX="882.0" layoutY="484.0" startX="119.5" startY="6.25" stroke="WHITE" />
+      <Line endX="82.75" endY="311.75" layoutX="804.0" layoutY="293.0" startX="82.75" startY="-85.25" stroke="AQUA" />
+      <Line endX="-55.75" endY="-248.0" layoutX="900.0" layoutY="739.0" startX="-55.75" startY="61.0" stroke="WHITE" />
+      <Line endX="-55.75" endY="-248.0" layoutX="750.0" layoutY="739.0" startX="-55.75" startY="61.0" stroke="WHITE" />
+      <Line endX="-92.75" endY="-17.0" layoutX="748.0" layoutY="622.0" startX="138.75" startY="-17.0" stroke="AQUA" />
+      <Line endX="68.75" endY="-32.0" layoutX="758.0" layoutY="632.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="768.0" layoutY="642.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="68.75" endY="-32.0" layoutX="701.0" layoutY="632.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="711.0" layoutY="642.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="68.75" endY="-32.0" layoutX="644.0" layoutY="632.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="654.0" layoutY="642.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="68.75" endY="-32.0" layoutX="672.0" layoutY="632.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="682.0" layoutY="642.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="68.75" endY="-32.0" layoutX="730.0" layoutY="633.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="740.0" layoutY="643.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="138.75" endY="-414.25" layoutX="516.0" layoutY="622.0" startX="138.75" startY="-17.0" stroke="AQUA" />
+      <Line endX="82.75" endY="-49.5" layoutX="572.0" layoutY="226.0" startX="82.75" startY="-84.25" stroke="AQUA" />
+      <Line endX="13.199999809265137" layoutX="702.3" layoutY="237.0" startX="-46.25" stroke="WHITE" />
+      <Line endX="20.200000762939453" layoutX="702.3" layoutY="262.0" startX="-46.25" stroke="WHITE" />
+      <Line endX="13.699999809265137" layoutX="702.3" layoutY="288.0" startX="-46.25" stroke="WHITE" />
+      <Line endX="-23.5" layoutX="909.0" layoutY="335.0" startX="-117.5" stroke="WHITE" />
+      <Line endX="-23.5" layoutX="909.0" layoutY="361.0" startX="-88.5" stroke="WHITE" />
+      <Line endX="-23.5" layoutX="909.0" layoutY="387.0" startX="-95.5" stroke="WHITE" />
+      <Line endX="-64.75" endY="6.25" layoutX="760.0" layoutY="749.0" startX="83.75" startY="6.25" stroke="WHITE" />
+      <Line endX="-64.75" endY="6.25" layoutX="760.0" layoutY="624.0" startX="83.75" startY="6.25" stroke="WHITE" />
+      <Line endX="-75.25" endY="-3.5" layoutX="770.0" layoutY="759.0" startX="-12.0" startY="-56.25" stroke="WHITE" />
+      <Line endX="-69.0" endY="-8.5" layoutX="856.0" layoutY="687.0" startX="-12.0" startY="-56.25" stroke="WHITE" />
+      <Line endX="-114.0" endY="-18.5" layoutX="866.0" layoutY="697.0" startX="-171.0" startY="-66.0" stroke="WHITE" />
+      <Line endX="-114.0" endY="-18.5" layoutX="958.0" layoutY="773.0" startX="-175.25" startY="-70.75" stroke="WHITE" />
+      <Text fill="WHITE" layoutX="756.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Г-3с" wrappingWidth="27.914215087890625">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="703.0" layoutY="556.0" strokeType="OUTSIDE" strokeWidth="0.0" text="М-3" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="-51.5" endY="6.25" layoutX="732.0" layoutY="410.0" startX="125.5" startY="6.25" stroke="WHITE" />
+      <Line endX="-20.0" endY="-77.25" layoutX="700.0" layoutY="494.0" startX="6.5" startY="-4.25" stroke="WHITE" />
+      <Line endX="148.0" endY="-87.25" layoutX="710.0" layoutY="504.0" startX="120.0" startY="-14.25" stroke="WHITE" />
+      <Line endX="-51.5" endY="6.25" layoutX="820.0" layoutY="450.0" startX="-51.5" startY="62.0" stroke="WHITE" />
+      <Line endX="-12.75" endY="20.0" layoutX="732.0" layoutY="449.0" startX="86.0" startY="-6.75" stroke="WHITE" strokeLineCap="ROUND" />
+      <Line endX="-22.5" endY="-17.0" layoutX="742.0" layoutY="459.0" startX="75.5" startY="10.0" stroke="WHITE" strokeLineCap="ROUND" />
+      <Line endX="44.75" endY="-3.5" layoutX="878.0" layoutY="536.0" startX="44.75" startY="74.25" stroke="WHITE" />
+      <Line endX="82.75" endY="25.0" layoutX="1099.0" layoutY="151.0" startX="82.75" startY="-84.25" stroke="AQUA" />
+      <Line endX="-69.6666259765625" endY="6.25" layoutX="1155.0" layoutY="526.0" startX="62.75" startY="6.25" stroke="WHITE" />
+      <Line endX="-51.5" endY="6.25" layoutX="1177.0" layoutY="484.0" startX="94.25" startY="6.25" stroke="WHITE" />
+      <Line endX="82.75" endY="311.75" layoutX="1099.0" layoutY="293.0" startX="82.75" startY="-85.25" stroke="AQUA" />
+      <Line endX="-55.75" endY="-248.0" layoutX="1195.0" layoutY="739.0" startX="-55.75" startY="61.0" stroke="WHITE" />
+      <Line endX="-55.75" endY="-248.0" layoutX="1045.0" layoutY="739.0" startX="-55.75" startY="61.0" stroke="WHITE" />
+      <Line endX="-92.75" endY="-17.0" layoutX="1043.0" layoutY="622.0" startX="138.75" startY="-17.0" stroke="AQUA" />
+      <Line endX="68.75" endY="-32.0" layoutX="1053.0" layoutY="632.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="1063.0" layoutY="642.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="68.75" endY="-32.0" layoutX="996.0" layoutY="632.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="1006.0" layoutY="642.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="68.75" endY="-32.0" layoutX="939.0" layoutY="632.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="949.0" layoutY="642.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="68.75" endY="-32.0" layoutX="967.0" layoutY="632.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="977.0" layoutY="642.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="68.75" endY="-32.0" layoutX="1025.0" layoutY="633.0" startX="73.5" startY="-21.0" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="58.25" endY="-42.5" layoutX="1035.0" layoutY="643.0" startX="53.0" startY="-31.5" stroke="AQUA" strokeLineCap="ROUND" />
+      <Line endX="138.75" endY="-414.25" layoutX="811.0" layoutY="622.0" startX="138.75" startY="-17.0" stroke="AQUA" />
+      <Line endX="82.75" endY="-49.5" layoutX="867.0" layoutY="226.0" startX="82.75" startY="-84.25" stroke="AQUA" />
+      <Line endX="10.699999809265137" layoutX="997.3" layoutY="238.0" startX="-46.25" stroke="WHITE" />
+      <Line endX="9.199999809265137" layoutX="997.3" layoutY="263.0" startX="-46.25" stroke="WHITE" />
+      <Line endX="15.199999809265137" layoutX="997.3" layoutY="289.0" startX="-46.25" stroke="WHITE" />
+      <Line endX="-23.5" layoutX="1204.0" layoutY="333.0" startX="-109.0" stroke="WHITE" />
+      <Line endX="-23.5" layoutX="1204.0" layoutY="359.0" startX="-91.5" stroke="WHITE" />
+      <Line endX="-23.5" layoutX="1204.0" layoutY="387.0" startX="-103.5" stroke="WHITE" />
+      <Line endX="-64.75" endY="6.25" layoutX="1055.0" layoutY="749.0" startX="83.75" startY="6.25" stroke="WHITE" />
+      <Line endX="-64.75" endY="6.25" layoutX="1055.0" layoutY="624.0" startX="83.75" startY="6.25" stroke="WHITE" />
+      <Line endX="-75.25" endY="-3.5" layoutX="1065.0" layoutY="759.0" startX="-12.0" startY="-56.25" stroke="WHITE" />
+      <Line endX="-69.0" endY="-8.5" layoutX="1151.0" layoutY="687.0" startX="-12.0" startY="-56.25" stroke="WHITE" />
+      <Line endX="-114.0" endY="-18.5" layoutX="1161.0" layoutY="697.0" startX="-171.0" startY="-66.0" stroke="WHITE" />
+      <Line endX="-114.0" endY="-18.5" layoutX="1253.0" layoutY="773.0" startX="-175.25" startY="-70.75" stroke="WHITE" />
+      <Text fill="WHITE" layoutX="1051.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Г-4с" wrappingWidth="27.914215087890625">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="998.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="М-4" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="-51.5" endY="6.25" layoutX="1027.0" layoutY="410.0" startX="125.5" startY="6.25" stroke="WHITE" />
+      <Line endX="-20.0" endY="-77.25" layoutX="995.0" layoutY="494.0" startX="6.5" startY="-4.25" stroke="WHITE" />
+      <Line endX="148.0" endY="-87.25" layoutX="1005.0" layoutY="504.0" startX="120.0" startY="-14.25" stroke="WHITE" />
+      <Line endX="-51.5" endY="6.25" layoutX="1115.0" layoutY="450.0" startX="-51.5" startY="56.0" stroke="WHITE" />
+      <Line endX="-12.75" endY="20.0" layoutX="1027.0" layoutY="449.0" startX="86.0" startY="-6.75" stroke="WHITE" strokeLineCap="ROUND" />
+      <Line endX="-22.5" endY="-17.0" layoutX="1037.0" layoutY="459.0" startX="75.5" startY="10.0" stroke="WHITE" strokeLineCap="ROUND" />
+      <Line endX="44.75" endY="-3.5" layoutX="1173.0" layoutY="536.0" startX="44.75" startY="74.25" stroke="WHITE" />
+      <Line endX="94.25" endY="316.66668701171875" layoutX="1177.0" layoutY="484.0" startX="94.25" startY="6.25" stroke="WHITE" />
+      <Text fill="RED" layoutX="494.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВЕНТИЛЯТОРНАЯ ГРАДИРНЯ" textAlignment="CENTER" wrappingWidth="280.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <PumpControl equipmentType="PMK" kks="52PAD11AN001" layoutX="150.0" layoutY="502.0" orientation="VERTICAL_REVERSE" prefHeight="60.0" prefWidth="60.0" />
+      <PumpControl equipmentType="PMK" kks="52PAD12AN001" layoutX="443.0" layoutY="502.0" orientation="VERTICAL_REVERSE" prefHeight="60.0" prefWidth="60.0" />
+      <PumpControl equipmentType="PMK" kks="52PAD13AN001" layoutX="738.0" layoutY="503.0" orientation="VERTICAL_REVERSE" prefHeight="60.0" prefWidth="60.0" />
+      <PumpControl equipmentType="PMK" kks="52PAD14AN001" layoutX="1033.0" layoutY="502.0" orientation="VERTICAL_REVERSE" prefHeight="60.0" prefWidth="60.0" />
+      <DetectorControl kks="52PAD01CT001" layoutX="102.0" layoutY="222.0" maxValue="100.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD01CF001" layoutX="102.0" layoutY="249.0" maxValue="2500.0" param="F" prefHeight="28.0" prefWidth="117.0" system="CW" unit="м3/ч">
+         <tooltip>
+            <Tooltip text="Расход воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD01CP001" layoutX="102.0" layoutY="276.0" maxValue="250.0" param="P" prefHeight="28.0" prefWidth="102.0" system="CW" unit="кПа">
+         <tooltip>
+            <Tooltip text="Давление воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD01CT002" layoutX="145.0" layoutY="320.0" maxValue="100.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD01CF002" layoutX="145.0" layoutY="347.0" maxValue="2500.0" param="F" prefHeight="28.0" prefWidth="117.0" system="CW" unit="м3/ч">
+         <tooltip>
+            <Tooltip text="Расход воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD01CP002" layoutX="145.0" layoutY="374.0" maxValue="250.0" param="P" prefHeight="28.0" prefWidth="102.0" system="CW" unit="кПа">
+         <tooltip>
+            <Tooltip text="Давление воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD11CT101" layoutX="279.0" layoutY="608.0" maxValue="200.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура обмотки статора 1 дв. вентлятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD11CT102" layoutX="279.0" layoutY="635.0" maxValue="200.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура обмотки статора 2 дв. вентлятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD11CT103" layoutX="279.0" layoutY="662.0" maxValue="200.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура обмотки статора 3 дв. вентлятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD11CT104" layoutX="279.0" layoutY="689.0" maxValue="150.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Темп. переднего подшипника двиг. вентилятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD11CT105" layoutX="279.0" layoutY="716.0" maxValue="150.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Темп. первого подшипника двиг. вентилятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD11CY001" layoutX="279.0" layoutY="743.0" maxValue="15.0" param="Y" prefHeight="28.0" prefWidth="103.0" system="CW" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация второго подшипника двигателя" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD11CY002" layoutX="279.0" layoutY="770.0" maxValue="15.0" param="Y" prefHeight="28.0" prefWidth="103.0" system="CW" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация первого подшипника двигателя" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD11CT001" layoutX="513.0" layoutY="831.0" maxValue="100.0" param="T" prefHeight="28.0" prefWidth="87.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура воды в водосборном бассейне №1" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD11CL001" layoutX="512.0" layoutY="882.0" maxValue="2500.0" param="L" prefHeight="28.0" prefWidth="102.0" system="CW" unit="мм">
+         <tooltip>
+            <Tooltip text="Уровень воды в водосборном бассейне №1" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD12CT001" layoutX="643.0" layoutY="831.0" maxValue="100.0" param="T" prefHeight="28.0" prefWidth="87.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура воды в водосборном бассейне №2" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD12CL001" layoutX="642.0" layoutY="882.0" maxValue="2500.0" param="L" prefHeight="28.0" prefWidth="102.0" system="CW" unit="мм">
+         <tooltip>
+            <Tooltip text="Уровень воды в водосборном бассейне №2" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD02CT001" layoutX="395.0" layoutY="222.0" maxValue="100.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD02CF001" layoutX="395.0" layoutY="249.0" maxValue="2500.0" param="F" prefHeight="28.0" prefWidth="117.0" system="CW" unit="м3/ч">
+         <tooltip>
+            <Tooltip text="Расход воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD02CP001" layoutX="395.0" layoutY="276.0" maxValue="250.0" param="P" prefHeight="28.0" prefWidth="102.0" system="CW" unit="кПа">
+         <tooltip>
+            <Tooltip text="Давление воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD02CT002" layoutX="439.0" layoutY="320.0" maxValue="100.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD02CF002" layoutX="439.0" layoutY="347.0" maxValue="2500.0" param="F" prefHeight="28.0" prefWidth="117.0" system="CW" unit="м3/ч">
+         <tooltip>
+            <Tooltip text="Расход воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD02CP002" layoutX="439.0" layoutY="374.0" maxValue="250.0" param="P" prefHeight="28.0" prefWidth="102.0" system="CW" unit="кПа">
+         <tooltip>
+            <Tooltip text="Давление воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD12CT101" layoutX="569.0" layoutY="608.0" maxValue="200.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура обмотки статора 1 дв. вентлятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD12CT102" layoutX="569.0" layoutY="635.0" maxValue="200.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура обмотки статора 2 дв. вентлятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD12CT103" layoutX="569.0" layoutY="662.0" maxValue="200.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура обмотки статора 3 дв. вентлятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD12CT104" layoutX="569.0" layoutY="689.0" maxValue="150.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Темп. переднего подшипника двиг. вентилятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD12CT105" layoutX="569.0" layoutY="716.0" maxValue="150.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Темп. первого подшипника двиг. вентилятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD12CY001" layoutX="569.0" layoutY="743.0" maxValue="15.0" param="Y" prefHeight="28.0" prefWidth="103.0" system="CW" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация второго подшипника двигателя" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD12CY002" layoutX="569.0" layoutY="770.0" maxValue="15.0" param="Y" prefHeight="28.0" prefWidth="103.0" system="CW" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация первого подшипника двигателя" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD03CT001" layoutX="690.0" layoutY="222.0" maxValue="100.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD03CF001" layoutX="690.0" layoutY="249.0" maxValue="2500.0" param="F" prefHeight="28.0" prefWidth="117.0" system="CW" unit="м3/ч">
+         <tooltip>
+            <Tooltip text="Расход воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD03CP001" layoutX="690.0" layoutY="276.0" maxValue="250.0" param="P" prefHeight="28.0" prefWidth="102.0" system="CW" unit="кПа">
+         <tooltip>
+            <Tooltip text="Давление воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD03CT002" layoutX="734.0" layoutY="320.0" maxValue="100.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD03CF002" layoutX="734.0" layoutY="347.0" maxValue="2500.0" param="F" prefHeight="28.0" prefWidth="117.0" system="CW" unit="м3/ч">
+         <tooltip>
+            <Tooltip text="Расход воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD03CP002" layoutX="734.0" layoutY="374.0" maxValue="250.0" param="P" prefHeight="28.0" prefWidth="102.0" system="CW" unit="кПа">
+         <tooltip>
+            <Tooltip text="Давление воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD13CT101" layoutX="869.0" layoutY="608.0" maxValue="200.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура обмотки статора 1 дв. вентлятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD13CT102" layoutX="869.0" layoutY="635.0" maxValue="200.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура обмотки статора 2 дв. вентлятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD13CT103" layoutX="869.0" layoutY="662.0" maxValue="200.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура обмотки статора 3 дв. вентлятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD13CT104" layoutX="869.0" layoutY="689.0" maxValue="150.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Темп. переднего подшипника двиг. вентилятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD13CT105" layoutX="869.0" layoutY="716.0" maxValue="150.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Темп. первого подшипника двиг. вентилятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD13CY001" layoutX="869.0" layoutY="743.0" maxValue="15.0" param="Y" prefHeight="28.0" prefWidth="103.0" system="CW" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация второго подшипника двигателя" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD13CY002" layoutX="869.0" layoutY="770.0" maxValue="15.0" param="Y" prefHeight="28.0" prefWidth="103.0" system="CW" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация первого подшипника двигателя" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD04CT001" layoutX="985.0" layoutY="222.0" maxValue="100.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD04CF001" layoutX="985.0" layoutY="249.0" maxValue="2500.0" param="F" prefHeight="28.0" prefWidth="117.0" system="CW" unit="м3/ч">
+         <tooltip>
+            <Tooltip text="Расход воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD04CP001" layoutX="985.0" layoutY="276.0" maxValue="250.0" param="P" prefHeight="28.0" prefWidth="102.0" system="CW" unit="кПа">
+         <tooltip>
+            <Tooltip text="Давление воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD04CT002" layoutX="1030.0" layoutY="320.0" maxValue="100.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD04CF002" layoutX="1030.0" layoutY="347.0" maxValue="2500.0" param="F" prefHeight="28.0" prefWidth="117.0" system="CW" unit="м3/ч">
+         <tooltip>
+            <Tooltip text="Расход воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD04CP002" layoutX="1030.0" layoutY="374.0" maxValue="250.0" param="P" prefHeight="28.0" prefWidth="102.0" system="CW" unit="кПа">
+         <tooltip>
+            <Tooltip text="Давление воды в подающем трубопроводе" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD14CT101" layoutX="1152.0" layoutY="608.0" maxValue="200.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура обмотки статора 1 дв. вентлятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD14CT102" layoutX="1152.0" layoutY="635.0" maxValue="200.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура обмотки статора 2 дв. вентлятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD14CT103" layoutX="1152.0" layoutY="662.0" maxValue="200.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Температура обмотки статора 3 дв. вентлятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD14CT104" layoutX="1152.0" layoutY="689.0" maxValue="150.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Темп. переднего подшипника двиг. вентилятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD14CT105" layoutX="1152.0" layoutY="716.0" maxValue="150.0" param="T" prefHeight="28.0" prefWidth="88.0" system="CW">
+         <tooltip>
+            <Tooltip text="Темп. первого подшипника двиг. вентилятора" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD14CY001" layoutX="1152.0" layoutY="743.0" maxValue="15.0" param="Y" prefHeight="28.0" prefWidth="103.0" system="CW" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация второго подшипника двигателя" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="52PAD14CY002" layoutX="1152.0" layoutY="770.0" maxValue="15.0" param="Y" prefHeight="28.0" prefWidth="103.0" system="CW" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация второго подшипника двигателя" />
+         </tooltip></DetectorControl>
+      <Polygon fill="#6df26d00" layoutX="154.5" layoutY="192.0" points="-95.0, 15.599990844726562, -80.12188720703125, -14.75, -95.0, -14.75, -80.12188720703125, 15.599990844726562" stroke="GREY" />
+      <Arc fill="#1f93ff00" layoutX="17.0" layoutY="71.25" length="180.0" radiusX="5.0" radiusY="5.0" startAngle="90.0" stroke="AQUA" />
+      <Arc fill="#1f93ff00" layoutX="16.0" layoutY="61.25" length="180.0" radiusX="5.0" radiusY="5.0" startAngle="270.0" stroke="AQUA" />
+      <Arc fill="#1f93ff00" layoutX="17.0" layoutY="146.25" length="180.0" radiusX="5.0" radiusY="5.0" startAngle="90.0" stroke="AQUA" />
+      <Arc fill="#1f93ff00" layoutX="16.0" layoutY="136.25" length="180.0" radiusX="5.0" radiusY="5.0" startAngle="270.0" stroke="AQUA" />
+      <FunctionControl interactive="false" layoutX="39.0" layoutY="61.0" prefHeight="10.0" prefWidth="10.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="1.0" blue="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="39.0" layoutY="136.0" prefHeight="10.0" prefWidth="10.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="1.0" blue="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <Arc fill="#1f93ff00" layoutX="1323.0" layoutY="71.25" length="180.0" radiusX="5.0" radiusY="5.0" startAngle="90.0" stroke="AQUA" />
+      <Arc fill="#1f93ff00" layoutX="1322.0" layoutY="61.25" length="180.0" radiusX="5.0" radiusY="5.0" startAngle="270.0" stroke="AQUA" />
+      <Arc fill="#1f93ff00" layoutX="1323.0" layoutY="146.25" length="180.0" radiusX="5.0" radiusY="5.0" startAngle="90.0" stroke="AQUA" />
+      <Arc fill="#1f93ff00" layoutX="1322.0" layoutY="136.25" length="180.0" radiusX="5.0" radiusY="5.0" startAngle="270.0" stroke="AQUA" />
+      <Polygon fill="#6df26d00" layoutX="386.25" layoutY="192.0" points="-95.0, 15.599990844726562, -80.12188720703125, -14.75, -95.0, -14.75, -80.12188720703125, 15.599990844726562" stroke="GREY" />
+      <Polygon fill="#6df26d00" layoutX="447.25" layoutY="192.0" points="-95.0, 15.599990844726562, -80.12188720703125, -14.75, -95.0, -14.75, -80.12188720703125, 15.599990844726562" stroke="GREY" />
+      <Polygon fill="#6df26d00" layoutX="679.25" layoutY="192.0" points="-95.0, 15.599990844726562, -80.12188720703125, -14.75, -95.0, -14.75, -80.12188720703125, 15.599990844726562" stroke="GREY" />
+      <Polygon fill="#6df26d00" layoutX="742.25" layoutY="192.0" points="-95.0, 15.599990844726562, -80.12188720703125, -14.75, -95.0, -14.75, -80.12188720703125, 15.599990844726562" stroke="GREY" />
+      <Polygon fill="#6df26d00" layoutX="974.25" layoutY="192.0" points="-95.0, 15.599990844726562, -80.12188720703125, -14.75, -95.0, -14.75, -80.12188720703125, 15.599990844726562" stroke="GREY" />
+      <Polygon fill="#6df26d00" layoutX="1037.25" layoutY="192.0" points="-95.0, 15.599990844726562, -80.12188720703125, -14.75, -95.0, -14.75, -80.12188720703125, 15.599990844726562" stroke="GREY" />
+      <Polygon fill="#6df26d00" layoutX="1269.25" layoutY="192.0" points="-95.0, 15.599990844726562, -80.12188720703125, -14.75, -95.0, -14.75, -80.12188720703125, 15.599990844726562" stroke="GREY" />
+      <FunctionControl interactive="false" layoutX="61.75" layoutY="427.0" orientation="VERTICAL" prefHeight="10.0" prefWidth="10.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="1.0" blue="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="293.75" layoutY="427.0" orientation="VERTICAL" prefHeight="10.0" prefWidth="10.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="1.0" blue="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="354.75" layoutY="427.0" orientation="VERTICAL" prefHeight="10.0" prefWidth="10.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="1.0" blue="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="586.75" layoutY="427.0" orientation="VERTICAL" prefHeight="10.0" prefWidth="10.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="1.0" blue="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="649.75" layoutY="427.0" orientation="VERTICAL" prefHeight="10.0" prefWidth="10.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="1.0" blue="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="881.75" layoutY="427.0" orientation="VERTICAL" prefHeight="10.0" prefWidth="10.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="1.0" blue="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="944.75" layoutY="427.0" orientation="VERTICAL" prefHeight="10.0" prefWidth="10.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="1.0" blue="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1176.75" layoutY="427.0" orientation="VERTICAL" prefHeight="10.0" prefWidth="10.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="1.0" blue="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <Arc fill="#1f93ff00" layoutX="424.5" layoutY="455.5" length="180.0" radiusX="13.4" radiusY="13.4" startAngle="90.0" stroke="WHITE" />
+      <Arc fill="#1f93ff00" layoutX="522.75" layoutY="455.75" length="180.0" radiusX="13.4" radiusY="13.4" startAngle="270.0" stroke="WHITE" />
+      <Arc fill="#1f93ff00" layoutX="719.5" layoutY="455.5" length="180.0" radiusX="13.4" radiusY="13.4" startAngle="90.0" stroke="WHITE" />
+      <Arc fill="#1f93ff00" layoutX="817.75" layoutY="455.75" length="180.0" radiusX="13.4" radiusY="13.4" startAngle="270.0" stroke="WHITE" />
+      <Arc fill="#1f93ff00" layoutX="1014.5" layoutY="455.5" length="180.0" radiusX="13.4" radiusY="13.4" startAngle="90.0" stroke="WHITE" />
+      <Arc fill="#1f93ff00" layoutX="1112.75" layoutY="455.75" length="180.0" radiusX="13.4" radiusY="13.4" startAngle="270.0" stroke="WHITE" />
+   </children>
+   <stylesheets>
+      <URL value="@StyleSheet.css" />
+      <URL value="@../StyleSheet.css" />
+   </stylesheets>
+</AnchorPane>

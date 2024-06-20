@@ -1,0 +1,2299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.ButtonControl?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.IndicationControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="489.0" layoutX="1250.0" layoutY="316.0" stroke="#f1d45c" width="625.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="20.0" layoutX="985.0" layoutY="741.0" stroke="#f1d45c" width="230.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="46.0" layoutX="985.0" layoutY="679.0" stroke="#f1d45c" width="230.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="20.0" layoutX="985.0" layoutY="642.0" stroke="#f1d45c" width="230.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="31.0" layoutX="985.0" layoutY="595.0" stroke="#f1d45c" width="230.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="170.0" layoutX="496.0" layoutY="595.0" stroke="#f1d45c" width="480.0" />
+      <Text fill="#f1d45c" layoutX="863.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Приборы и защиты" wrappingWidth="206.0">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1495.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Терминал защит ТГ2" textAlignment="JUSTIFY" wrappingWidth="200.0">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1633.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="к.1" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1697.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="к.2" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1265.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="к.1" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1329.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="к.2" wrappingWidth="30.0">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Предупредит. сигнализация" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неисправн. аварийная" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Аварийная сигнализация" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ключ SA1. Вывод" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Наличие питания прием. цепей" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="От АГП" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="От защит СВ" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="От ПАА" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Откл. и останов блока" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В БРФ (от защ. ТБ)" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="524.0" strokeType="OUTSIDE" strokeWidth="0.0" text="От защ. от 33 во второй точке" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ключ SX1. Асинхронный реж. допустим" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Защита Re&lt; введена" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="564.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ключ SX2. Отключение ШСВГ 110кВ" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ключ SX3. Отключение ВГ 110кВ ТГ2" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ключ SX4. Резерв" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="603.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ключ SX5. Отключение ВГ 10 кВ ТГ2" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="618.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ключ SX6. Останов блока ПТУ" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMG Откл. А" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="644.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMG Откл. В" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="658.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMG Откл. С" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="671.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IM &gt; Сраб." textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="684.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I2 Откл." textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="698.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I2 Сигн. (t)" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="711.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I2 Отс. (t1)" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="725.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I2 Отс. (t2)" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="738.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I2 Откл. (t1)" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="751.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I2 Откл. (t2)" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="765.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I2 Откл. (t3)" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="778.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I1 Откл." textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1366.0" layoutY="791.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I1 Сигн. (t)" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I1 Откл. (t1)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I1 Откл. (t2)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I1 Откл. (t3)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Z1&lt; Откл. (t1)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Z1&lt; Откл. (t2)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Z2&lt; Откл. (t1)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Z2&lt; Откл. (t2)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Z2&lt; Откл. (t3)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ф&lt; Сигн. (t)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ф&lt; Откл. (t)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="524.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ф&lt; Откл. (t) АР" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="УРОВ G" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="U &gt; Сраб. (t)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="564.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КИН Сраб. (t)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uo Сигн. (t)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uo Откл. (t)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="604.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UnUo Uo3 Откл. (t)" textAlignment="JUSTIFY" wrappingWidth="130.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="618.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UnUo UoG Сраб. (t)" textAlignment="JUSTIFY" wrappingWidth="130.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="685.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I2 Отс. (t3)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="698.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Z1&lt; Откл. (t3)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="711.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Откл. Q 110кВ" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="724.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Откл. Qген" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="738.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Останов блока ПТУ" textAlignment="JUSTIFY" wrappingWidth="130.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="751.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В ЭГСР турбины" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="765.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Гашение поля генер." textAlignment="JUSTIFY" wrappingWidth="130.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="778.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Отключение АГП" textAlignment="JUSTIFY" wrappingWidth="130.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1735.0" layoutY="792.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Контр. стоп. клап. турб." textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="800.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТГ2" textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="273.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТГ1" textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="284.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ШУВ ГТУ" textAlignment="JUSTIFY" wrappingWidth="60.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="644.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ШУВ ПТУ" textAlignment="JUSTIFY" wrappingWidth="80.0" />
+      <Text fill="#f1d45c" layoutX="983.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шкаф контроля изоляции подшипников ТГ-2" textAlignment="JUSTIFY" wrappingWidth="260.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="235.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Аварийное давление элегаза" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="235.0" layoutY="621.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неисправность цепей ЭМВ, ЭМО1, ЭМО2" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="235.0" layoutY="634.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Долгое время работы насоса" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="235.0" layoutY="647.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неисправность ЦУ двингателем насоса" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="235.0" layoutY="661.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ошибка в последовательности фаз" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="235.0" layoutY="674.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неисправность ЦС ПУ и ПС" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="235.0" layoutY="688.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неисправность терминала GMS600" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="235.0" layoutY="701.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неисправность цепей МУ" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="235.0" layoutY="714.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пружина не заведена" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="235.0" layoutY="727.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Малый завод пружины" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="235.0" layoutY="741.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P 15кВ ТГ1, ЗН 15кВ ТГ1" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="235.0" layoutY="755.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Снижен уровень напряжения ЦУ" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="235.0" layoutY="768.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P 15кВ ТГ1 Неисправность ЦУ" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="235.0" layoutY="783.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P 15кВ ТГ1, ЗН 15кВ ТГ1, ЗН 15кВ Т1" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="235.0" layoutY="796.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Автоматы питания двигателей" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="235.0" layoutY="808.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неисправность цепей ТН 15кВ" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="517.0" layoutY="611.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Аварийное давление элегаза" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="517.0" layoutY="625.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неисправность цепей ЭМВ, ЭМО1, ЭМО2" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="517.0" layoutY="638.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Долгое время работы насоса" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="517.0" layoutY="651.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неисправность ЦУ двингателем насоса" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="517.0" layoutY="665.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ошибка в последовательности фаз" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="517.0" layoutY="678.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неисправность ЦС ПУ и ПС" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="517.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неисправность терминала GMS600" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="517.0" layoutY="704.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неисправность цепей МУ" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="517.0" layoutY="718.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пружина не заведена" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="517.0" layoutY="731.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Малый завод пружины" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="517.0" layoutY="744.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Управление по месту" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="517.0" layoutY="758.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Положение ключа режима управления" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="762.0" layoutY="611.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P 10кВ ТГ2 Неисправность ЦУ" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="762.0" layoutY="625.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P 10кВ ТГ2, ЗН 10кВ ТГ2, ЗН 10кВ Т2" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="762.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Автоматы питания двигателей" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="762.0" layoutY="648.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P 10кВ ТГ2, ЗН 10кВ ТГ2" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="762.0" layoutY="660.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Низкое напряжение ЦУ" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="762.0" layoutY="678.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Автомат цепей ТН4 10кВ Т2 (TV2)" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="762.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Автомат цепей ТН5 10кВ Т2 (TV3)" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="762.0" layoutY="705.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Автомат цепей ТН1 10кВ ТГ2 (TV4)" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="762.0" layoutY="718.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Автомат цепей ТН3 10кВ Т2 (TV6)" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="762.0" layoutY="731.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Автомат цепей ТН2 10кВ Т2 (TV5)" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="762.0" layoutY="744.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неисправность цепей ТН TV7-TV9" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="762.0" layoutY="758.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неисправность цепей ТН TV7-TV8" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1734.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="r' Ip Откл." textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1734.0" layoutY="644.0" strokeType="OUTSIDE" strokeWidth="0.0" text="r' Ip Сигн. (t)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1734.0" layoutY="658.0" strokeType="OUTSIDE" strokeWidth="0.0" text="r' Ip Откл. (t1)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1734.0" layoutY="671.0" strokeType="OUTSIDE" strokeWidth="0.0" text="r' Ip Откл. (t2)" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="12.5" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1006.0" layoutY="610.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Снижение изоляции" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1006.0" layoutY="623.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Контроль отсутствия напряжения" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1006.0" layoutY="658.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неисправность системы охлаждения" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1006.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Автомат цепей ТН4 10кВ Т2 (TV2)" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1006.0" layoutY="708.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Автомат цепей ТН5 10кВ Т2 (TV3)" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1006.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Автомат цепей ТН1 10кВ ТГ2 (TV4)" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f1d45c" layoutX="1006.0" layoutY="756.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неисправность цепей ТН TV7-TV8" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="592.0" layoutX="1282.0" layoutY="344.0" startX="-31.0" stroke="#f1d45c" />
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew501" layoutX="220.0" layoutY="596.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew502" layoutX="220.0" layoutY="609.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew503" layoutX="220.0" layoutY="622.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew504" layoutX="220.0" layoutY="635.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew505" layoutX="220.0" layoutY="649.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew506" layoutX="220.0" layoutY="662.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew507" layoutX="220.0" layoutY="675.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew508" layoutX="220.0" layoutY="688.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew509" layoutX="220.0" layoutY="702.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew510" layoutX="220.0" layoutY="715.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew511" layoutX="220.0" layoutY="729.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew512" layoutX="220.0" layoutY="742.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew513" layoutX="220.0" layoutY="756.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew514" layoutX="220.0" layoutY="770.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew515" layoutX="220.0" layoutY="783.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew516" layoutX="220.0" layoutY="796.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew517" layoutX="502.0" layoutY="599.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew518" layoutX="502.0" layoutY="613.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew519" layoutX="502.0" layoutY="626.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew520" layoutX="502.0" layoutY="640.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew521" layoutX="502.0" layoutY="653.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew522" layoutX="502.0" layoutY="666.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew523" layoutX="502.0" layoutY="680.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew524" layoutX="502.0" layoutY="693.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew525" layoutX="502.0" layoutY="707.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew526" layoutX="502.0" layoutY="720.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew527" layoutX="502.0" layoutY="734.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew528" layoutX="502.0" layoutY="747.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew529" layoutX="748.0" layoutY="600.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew530" layoutX="748.0" layoutY="614.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew531" layoutX="748.0" layoutY="637.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew532" layoutX="748.0" layoutY="667.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew533" layoutX="748.0" layoutY="680.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew534" layoutX="748.0" layoutY="694.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew535" layoutX="748.0" layoutY="707.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew536" layoutX="748.0" layoutY="720.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew537" layoutX="748.0" layoutY="734.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew538" layoutX="748.0" layoutY="747.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew539" layoutX="991.0" layoutY="599.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew540" layoutX="991.0" layoutY="612.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew541" layoutX="991.0" layoutY="646.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew542" layoutX="991.0" layoutY="683.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew543" layoutX="991.0" layoutY="696.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew544" layoutX="991.0" layoutY="709.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew545" layoutX="991.0" layoutY="745.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew546" layoutX="1337.0" layoutY="381.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew547" layoutX="1337.0" layoutY="394.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew548" layoutX="1337.0" layoutY="407.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew549" layoutX="1337.0" layoutY="420.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew550" layoutX="1337.0" layoutY="434.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew551" layoutX="1337.0" layoutY="447.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew552" layoutX="1337.0" layoutY="460.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew553" layoutX="1337.0" layoutY="473.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew554" layoutX="1337.0" layoutY="487.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew555" layoutX="1337.0" layoutY="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew556" layoutX="1337.0" layoutY="514.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew557" layoutX="1337.0" layoutY="527.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew558" layoutX="1337.0" layoutY="541.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew559" layoutX="1337.0" layoutY="555.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew560" layoutX="1337.0" layoutY="568.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew561" layoutX="1337.0" layoutY="581.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew562" layoutX="1337.0" layoutY="594.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew563" layoutX="1337.0" layoutY="607.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew564" layoutX="1337.0" layoutY="620.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew565" layoutX="1337.0" layoutY="633.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew566" layoutX="1337.0" layoutY="647.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew567" layoutX="1337.0" layoutY="660.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew568" layoutX="1337.0" layoutY="673.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew569" layoutX="1337.0" layoutY="686.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew570" layoutX="1337.0" layoutY="700.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew571" layoutX="1337.0" layoutY="713.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew572" layoutX="1337.0" layoutY="727.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew573" layoutX="1337.0" layoutY="740.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew574" layoutX="1337.0" layoutY="754.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew575" layoutX="1337.0" layoutY="768.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew576" layoutX="1337.0" layoutY="781.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew546" layoutX="1273.0" layoutY="381.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew547" layoutX="1273.0" layoutY="394.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew548" layoutX="1273.0" layoutY="407.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew549" layoutX="1273.0" layoutY="420.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew550" layoutX="1273.0" layoutY="434.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew551" layoutX="1273.0" layoutY="447.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew552" layoutX="1273.0" layoutY="460.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew553" layoutX="1273.0" layoutY="473.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew554" layoutX="1273.0" layoutY="487.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew555" layoutX="1273.0" layoutY="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew556" layoutX="1273.0" layoutY="514.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew557" layoutX="1273.0" layoutY="527.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew558" layoutX="1273.0" layoutY="541.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew559" layoutX="1273.0" layoutY="555.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew560" layoutX="1273.0" layoutY="568.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew561" layoutX="1273.0" layoutY="581.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew562" layoutX="1273.0" layoutY="594.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew563" layoutX="1273.0" layoutY="607.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew564" layoutX="1273.0" layoutY="620.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew565" layoutX="1273.0" layoutY="633.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew566" layoutX="1273.0" layoutY="647.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew567" layoutX="1273.0" layoutY="660.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew568" layoutX="1273.0" layoutY="673.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew569" layoutX="1273.0" layoutY="686.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew570" layoutX="1273.0" layoutY="700.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew571" layoutX="1273.0" layoutY="713.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew572" layoutX="1273.0" layoutY="727.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew573" layoutX="1273.0" layoutY="740.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew574" layoutX="1273.0" layoutY="754.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew575" layoutX="1273.0" layoutY="768.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew576" layoutX="1273.0" layoutY="781.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew577" layoutX="1704.0" layoutY="381.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew578" layoutX="1704.0" layoutY="394.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew579" layoutX="1704.0" layoutY="407.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew580" layoutX="1704.0" layoutY="420.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew581" layoutX="1704.0" layoutY="434.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew582" layoutX="1704.0" layoutY="447.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew583" layoutX="1704.0" layoutY="460.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew584" layoutX="1704.0" layoutY="473.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew585" layoutX="1704.0" layoutY="487.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew586" layoutX="1704.0" layoutY="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew587" layoutX="1704.0" layoutY="514.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew588" layoutX="1704.0" layoutY="527.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew589" layoutX="1704.0" layoutY="541.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew590" layoutX="1704.0" layoutY="555.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew591" layoutX="1704.0" layoutY="568.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew592" layoutX="1704.0" layoutY="581.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew593" layoutX="1704.0" layoutY="594.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew594" layoutX="1704.0" layoutY="607.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew595" layoutX="1704.0" layoutY="620.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew596" layoutX="1704.0" layoutY="633.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew597" layoutX="1704.0" layoutY="647.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew598" layoutX="1704.0" layoutY="660.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew599" layoutX="1704.0" layoutY="673.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka11ew501" layoutX="1704.0" layoutY="686.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka11ew502" layoutX="1704.0" layoutY="700.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka11ew503" layoutX="1704.0" layoutY="713.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka11ew504" layoutX="1704.0" layoutY="727.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka11ew505" layoutX="1704.0" layoutY="740.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka11ew506" layoutX="1704.0" layoutY="754.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka11ew507" layoutX="1704.0" layoutY="768.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka11ew508" layoutX="1704.0" layoutY="781.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew577" layoutX="1640.0" layoutY="381.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew578" layoutX="1640.0" layoutY="394.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew579" layoutX="1640.0" layoutY="407.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew580" layoutX="1640.0" layoutY="420.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew581" layoutX="1640.0" layoutY="434.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew582" layoutX="1640.0" layoutY="447.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew583" layoutX="1640.0" layoutY="460.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew584" layoutX="1640.0" layoutY="473.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew585" layoutX="1640.0" layoutY="487.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew586" layoutX="1640.0" layoutY="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew587" layoutX="1640.0" layoutY="514.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew588" layoutX="1640.0" layoutY="527.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew589" layoutX="1640.0" layoutY="541.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew590" layoutX="1640.0" layoutY="555.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew591" layoutX="1640.0" layoutY="568.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew592" layoutX="1640.0" layoutY="581.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew593" layoutX="1640.0" layoutY="594.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew594" layoutX="1640.0" layoutY="607.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew595" layoutX="1640.0" layoutY="620.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew596" layoutX="1640.0" layoutY="633.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew597" layoutX="1640.0" layoutY="647.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew598" layoutX="1640.0" layoutY="660.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka10ew599" layoutX="1640.0" layoutY="673.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka11ew501" layoutX="1640.0" layoutY="686.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka11ew502" layoutX="1640.0" layoutY="700.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka11ew503" layoutX="1640.0" layoutY="713.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka11ew504" layoutX="1640.0" layoutY="727.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka11ew505" layoutX="1640.0" layoutY="740.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka11ew506" layoutX="1640.0" layoutY="754.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka11ew507" layoutX="1640.0" layoutY="768.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" kks="ssx10mka11ew508" layoutX="1640.0" layoutY="781.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" skinType="LAMP">
+         <secondStatusColor>
+            <Color red="0.03892543911933899" green="0.9342105388641357" blue="0.15829677879810333" />
+         </secondStatusColor>
+         <valueColor>
+            <Color red="0.9868420958518982" green="0.1416301131248474" blue="0.1416301131248474" />
+         </valueColor>
+      </IndicationControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Главная схема" buttonOnText="Главная схема" diagramTitle="Главная схема.fxml" equipmentType="TRANSITION_BUTTON" kks="1" layoutX="256.0" layoutY="118.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="КРУЭ 110 кВ" buttonOnText="КРУЭ 110 кВ" diagramTitle="КРУЭ 110 кВ.fxml" equipmentType="TRANSITION_BUTTON" kks="2" layoutX="409.0" layoutY="118.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Противоаварийная автоматика" buttonOnText="Противоаварийная автоматика" diagramTitle="Противоаварийная автоматика.fxml" equipmentType="TRANSITION_BUTTON" kks="3" layoutX="562.0" layoutY="118.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Генератор" buttonOnText="Генератор" diagramTitle="Генератор.fxml" equipmentType="TRANSITION_BUTTON" kks="4" layoutX="715.0" layoutY="118.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="РУСН 6кВ" buttonOnText="РУСН 6кВ" diagramTitle="РУСН 6 кВ.fxml" equipmentType="TRANSITION_BUTTON" kks="5" layoutX="868.0" layoutY="118.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="РУСН 0,4 кВ" buttonOnText="РУСН 0,4 кВ" diagramTitle="РУСН 0.4 кВ.fxml" equipmentType="TRANSITION_BUTTON" kks="6" layoutX="1022.0" layoutY="118.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Водогрейная котельная" buttonOnText="Водогрейная котельная" diagramTitle="РУ 10-6 кВ.fxml" equipmentType="TRANSITION_BUTTON" kks="7" layoutX="1175.0" layoutY="118.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Сетевая насосная станция" buttonOnText="Сетевая насосная станция" diagramTitle="Сетевая насосная станция.fxml" equipmentType="TRANSITION_BUTTON" kks="8" layoutX="1328.0" layoutY="118.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Диагностика" buttonOnText="Диагностика" diagramTitle="Приборы и защиты.fxml" equipmentType="TRANSITION_BUTTON" kks="9" layoutX="1481.0" layoutY="118.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <Text fill="#f1d45c" layoutX="331.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Генератор Uab" textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="00aea20ce051" layoutX="168.0" layoutY="378.0" maxValue="1000.0" param="Uab" prefHeight="25.0" prefWidth="101.0" system="ED" unit="кВ">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <Text fill="#f1d45c" layoutX="198.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сеть Uab" textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="00aea20ce005" layoutX="174.0" layoutY="509.0" maxValue="1000.0" param="F" prefHeight="25.0" prefWidth="79.0" system="ED" unit="Гц">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <Text fill="#f1d45c" layoutX="196.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сеть Гц" textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="tg_1ce005" layoutX="325.0" layoutY="509.0" maxValue="1000.0" param="F" prefHeight="25.0" prefWidth="79.0" system="ED" unit="Гц">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <Text fill="#f1d45c" layoutX="331.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Генератор Гц" textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="tg_1ce005" layoutX="98.0" layoutY="624.0" maxValue="1000.0" param="P" prefHeight="25.0" prefWidth="93.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <Text fill="#f1d45c" layoutX="87.0" layoutY="619.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Активная мощность" textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="tg_2ce041" layoutX="606.0" layoutY="378.0" maxValue="1000.0" param="Uab" prefHeight="25.0" prefWidth="101.0" system="ED" unit="кВ">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <Text fill="#f1d45c" layoutX="622.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Генератор Uab" textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="00aea10ce051" layoutX="462.0" layoutY="378.0" maxValue="1000.0" param="Uab" prefHeight="25.0" prefWidth="101.0" system="ED" unit="кВ">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <Text fill="#f1d45c" layoutX="493.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сеть Uab" wrappingWidth="42.0">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="00aea10ce005" layoutX="470.0" layoutY="509.0" maxValue="1000.0" param="F" prefHeight="25.0" prefWidth="79.0" system="ED" unit="Гц">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <Text fill="#f1d45c" layoutX="493.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сеть Гц" textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="tg_2ce005" layoutX="611.0" layoutY="509.0" maxValue="1000.0" param="F" prefHeight="25.0" prefWidth="79.0" system="ED" unit="Гц">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <Text fill="#f1d45c" layoutX="620.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Генератор Гц" textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="tg_2ce004" layoutX="895.0" layoutY="378.0" maxValue="1000.0" param="U" prefHeight="25.0" prefWidth="82.0" system="ED" unit="кВ">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <Text fill="#f1d45c" layoutX="886.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Реактивная мощность" textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="tg_2ce041" layoutX="764.0" layoutY="378.0" maxValue="1000.0" param="U" prefHeight="25.0" prefWidth="82.0" system="ED" unit="кВ">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <Text fill="#f1d45c" layoutX="758.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Напряжение статора" textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="10mka10_irot" layoutX="760.0" layoutY="509.0" maxValue="1000.0" param="F" prefHeight="25.0" prefWidth="79.0" system="ED" unit="Гц">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <Text fill="#f1d45c" layoutX="759.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ток возбуждения" textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="10mka10_urot" layoutX="890.0" layoutY="509.0" maxValue="1000.0" param="F" prefHeight="25.0" prefWidth="80.0" system="ED" unit="Гц">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <Text fill="#f1d45c" layoutX="881.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Напряжение позбужд." textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="tg_2ce003" layoutX="1019.0" layoutY="378.0" maxValue="1000.0" param="U" prefHeight="25.0" prefWidth="82.0" system="ED" unit="кВ">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <Text fill="#f1d45c" layoutX="1015.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Активная мощность" textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="tg_1ce041" layoutX="312.0" layoutY="378.0" maxValue="1000.0" param="Uab" prefHeight="25.0" prefWidth="101.0" system="ED" unit="кВ">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="psum_bl" layoutX="100.0" layoutY="125.0" maxValue="100.0" param="Pсум " prefHeight="25.0" prefWidth="121.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="qsum_bl" layoutX="100.0" layoutY="151.0" maxValue="100.0" param="Qсум" prefHeight="25.0" prefWidth="130.0" system="ED" unit="МВар">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl decimals="1" kks="11mbl01ct001" layoutX="100.0" layoutY="177.0" maxValue="100.0" param="Tнар" prefHeight="25.0" prefWidth="100.0" system="ED" unit="°C ">
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </DetectorControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="РУСН 0,4 кВ ПВК" buttonOnText="РУСН 0,4 кВ ПВК" diagramTitle="РУСН 0.4 кВ ПВК.fxml" equipmentType="TRANSITION_BUTTON" kks="9" layoutX="1634.0" layoutY="118.0" prefHeight="54.0" prefWidth="147.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="225.0" layoutX="214.0" layoutY="593.0" stroke="#f1d45c" width="267.0" />
+   </children>
+</AnchorPane>

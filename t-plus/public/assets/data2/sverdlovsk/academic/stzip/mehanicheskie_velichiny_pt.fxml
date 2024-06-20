@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.ButtonControl?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.FunctionControl?>
+<?import ru.get.common.controls.IndicationControl?>
+<?import ru.get.common.controls.PumpControl?>
+<?import ru.get.common.controls.ValveControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="-100.0" endY="55.5" layoutX="1103.0" layoutY="300.0" startX="-100.0" startY="28.25" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="18.0" layoutX="995.0" layoutY="311.0" stroke="SILVER" strokeType="INSIDE" width="17.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="69.0" layoutX="311.0" layoutY="700.0" stroke="SILVER" strokeType="INSIDE" width="33.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="69.0" layoutX="344.0" layoutY="700.0" stroke="SILVER" strokeType="INSIDE" width="33.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="69.0" layoutX="377.0" layoutY="700.0" stroke="SILVER" strokeType="INSIDE" width="33.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="26.0" layoutX="315.0" layoutY="704.0" stroke="SILVER" strokeType="INSIDE" width="24.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="26.0" layoutX="348.0" layoutY="704.0" stroke="SILVER" strokeType="INSIDE" width="24.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="26.0" layoutX="380.0" layoutY="704.0" stroke="SILVER" strokeType="INSIDE" width="24.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="69.0" layoutX="448.0" layoutY="767.0" stroke="SILVER" strokeType="INSIDE" width="33.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="69.0" layoutX="496.0" layoutY="767.0" stroke="SILVER" strokeType="INSIDE" width="33.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="26.0" layoutX="452.0" layoutY="771.0" stroke="SILVER" strokeType="INSIDE" width="24.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="26.0" layoutX="500.0" layoutY="771.0" stroke="SILVER" strokeType="INSIDE" width="24.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="154.0" layoutX="1556.0" layoutY="394.0" stroke="SILVER" strokeType="INSIDE" width="129.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="154.0" layoutX="1332.0" layoutY="394.0" stroke="SILVER" strokeType="INSIDE" width="129.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="154.0" layoutX="1044.0" layoutY="394.0" stroke="SILVER" strokeType="INSIDE" width="196.0" />
+      <Polygon fill="GREY" layoutX="769.0" layoutY="489.0" points="-136.0, 57.75, 273.75, 115.75, 273.75, -151.25, -136.0, -92.75" stroke="SILVER" strokeType="OUTSIDE" strokeWidth="2.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="154.0" layoutX="200.0" layoutY="394.0" stroke="SILVER" strokeType="INSIDE" width="431.0" />
+      <Line endX="390.75" layoutX="238.0" layoutY="470.0" startX="-100.0" stroke="SILVER" styleClass="line-dashed-dot" />
+      <Line endX="-100.0" endY="27.25" layoutX="345.0" layoutY="424.0" startX="-100.0" startY="12.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="390.75" layoutX="1336.0" layoutY="470.0" startX="-289.75" stroke="SILVER" styleClass="line-dashed-dot" />
+      <Line endX="160.0" endY="0.25" layoutX="345.0" layoutY="452.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="27.25" layoutX="345.0" layoutY="473.0" startX="-100.0" startY="12.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="160.0" layoutX="345.0" layoutY="485.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="27.25" layoutX="605.0" layoutY="424.0" startX="-100.0" startY="12.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="27.25" layoutX="605.0" layoutY="474.0" startX="-100.0" startY="12.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="624.0" layoutY="467.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="609.0" layoutY="451.0" startX="-85.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="642.0" layoutY="451.0" startX="-85.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="675.0" layoutY="451.0" startX="-85.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="708.0" layoutY="451.0" startX="-85.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="625.0" layoutY="467.0" startX="-83.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="642.0" layoutY="466.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="657.0" layoutY="467.0" startX="-83.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="657.0" layoutY="467.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="674.0" layoutY="466.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="691.0" layoutY="466.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="691.0" layoutY="467.0" startX="-83.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="708.0" layoutY="467.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="625.0" layoutY="413.0" startX="-83.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="657.0" layoutY="413.0" startX="-83.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="691.0" layoutY="413.0" startX="-83.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="609.0" layoutY="430.0" startX="-85.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="642.0" layoutY="430.0" startX="-85.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="675.0" layoutY="430.0" startX="-85.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="708.0" layoutY="430.0" startX="-85.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="624.0" layoutY="429.0" startX="-100.0" startY="12.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="29.5" layoutX="642.0" layoutY="428.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="657.0" layoutY="429.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="30.5" layoutX="674.0" layoutY="428.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="30.5" layoutX="691.0" layoutY="428.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="708.0" layoutY="429.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="63.25" layoutX="756.0" layoutY="400.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="63.25" layoutX="756.0" layoutY="466.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="63.25" layoutX="771.0" layoutY="400.0" startX="-100.0" startY="16.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="63.25" layoutX="771.0" layoutY="463.0" startX="-100.0" startY="16.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="60.75" layoutX="787.0" layoutY="463.0" startX="-100.0" startY="16.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="60.75" layoutX="787.0" layoutY="402.0" startX="-100.0" startY="16.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="58.5" layoutX="803.0" layoutY="463.0" startX="-100.0" startY="16.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="58.5" layoutX="803.0" layoutY="405.0" startX="-100.0" startY="16.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="818.0" layoutY="463.0" startX="-100.0" startY="16.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="818.0" layoutY="408.0" startX="-100.0" startY="16.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="835.0" layoutY="408.0" startX="-100.0" startY="18.25" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="835.0" layoutY="461.0" startX="-100.0" startY="18.25" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="851.0" layoutY="408.0" startX="-100.0" startY="20.25" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="851.0" layoutY="459.0" startX="-100.0" startY="20.25" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="866.0" layoutY="408.0" startX="-100.0" startY="21.75" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="866.0" layoutY="457.0" startX="-100.0" startY="21.75" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="882.0" layoutY="408.0" startX="-100.0" startY="23.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="882.0" layoutY="455.0" startX="-100.0" startY="24.75" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="899.0" layoutY="408.0" startX="-100.0" startY="26.25" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="899.0" layoutY="453.0" startX="-100.0" startY="26.25" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="914.0" layoutY="408.0" startX="-100.0" startY="28.75" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="914.0" layoutY="450.0" startX="-100.0" startY="28.75" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="930.0" layoutY="408.0" startX="-100.0" startY="31.25" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="930.0" layoutY="448.0" startX="-100.0" startY="31.25" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="88.0" layoutX="948.0" layoutY="418.0" startX="-100.0" startY="16.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="88.0" layoutX="741.0" layoutY="452.0" startX="-100.0" startY="45.75" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="88.0" layoutX="741.0" layoutY="356.0" startX="-100.0" startY="45.75" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="88.0" layoutX="741.0" layoutY="313.0" startX="106.5" startY="120.75" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-110.0" endY="218.0" layoutX="751.0" layoutY="323.0" startX="96.75" startY="183.75" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="966.0" layoutY="407.0" startX="-100.0" startY="-29.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="966.0" layoutY="507.0" startX="-100.0" startY="-29.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="982.0" layoutY="407.0" startX="-100.0" startY="-32.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="982.0" layoutY="511.0" startX="-100.0" startY="-33.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="999.0" layoutY="407.0" startX="-100.0" startY="-34.75" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="999.0" layoutY="513.0" startX="-100.0" startY="-34.75" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="1016.0" layoutY="407.0" startX="-100.0" startY="-36.75" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="1016.0" layoutY="515.0" startX="-100.0" startY="-36.75" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="1033.0" layoutY="407.0" startX="-100.0" startY="-40.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="1033.0" layoutY="518.0" startX="-100.0" startY="-40.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="1059.0" layoutY="407.0" startX="-100.0" startY="-43.25" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="1059.0" layoutY="521.0" startX="-100.0" startY="-43.25" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="1076.0" layoutY="406.0" startX="-100.0" startY="-46.25" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="1076.0" layoutY="524.0" startX="-100.0" startY="-46.25" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="1125.0" layoutY="406.0" startX="-100.0" startY="-52.25" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="1125.0" layoutY="529.0" startX="-100.0" startY="-52.25" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="175.25" layoutX="1110.0" layoutY="409.0" startX="-100.0" startY="-52.25" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="175.5" layoutX="1095.0" layoutY="409.0" startX="-100.0" startY="-52.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="1096.0" layoutY="301.0" startX="-86.5" startY="55.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="1096.0" layoutY="529.0" startX="-86.5" startY="55.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-139.5" endY="168.0" layoutX="1135.0" layoutY="416.0" startX="-125.25" startY="-59.25" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-125.5" endY="167.75" layoutX="1135.0" layoutY="416.0" startX="-139.5" startY="-59.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="1164.0" layoutY="467.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="1149.0" layoutY="451.0" startX="-85.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="1182.0" layoutY="451.0" startX="-85.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="1215.0" layoutY="451.0" startX="-85.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="1165.0" layoutY="467.0" startX="-83.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="1182.0" layoutY="466.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="1197.0" layoutY="467.0" startX="-83.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="1197.0" layoutY="467.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="1214.0" layoutY="466.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="1165.0" layoutY="413.0" startX="-83.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="1197.0" layoutY="413.0" startX="-83.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="1149.0" layoutY="430.0" startX="-85.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="1182.0" layoutY="430.0" startX="-85.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="1215.0" layoutY="430.0" startX="-85.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="1164.0" layoutY="429.0" startX="-100.0" startY="12.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="29.5" layoutX="1182.0" layoutY="428.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="1197.0" layoutY="429.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="30.5" layoutX="1214.0" layoutY="428.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="27.25" layoutX="1238.0" layoutY="424.0" startX="-100.0" startY="12.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-11.25" layoutX="1238.0" layoutY="452.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="27.25" layoutX="1238.0" layoutY="473.0" startX="-100.0" startY="12.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-11.0" layoutX="1238.0" layoutY="485.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="27.25" layoutX="1327.0" layoutY="424.0" startX="-100.0" startY="12.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="27.25" layoutX="1327.0" layoutY="474.0" startX="-100.0" startY="12.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="27.25" layoutX="1453.0" layoutY="424.0" startX="-100.0" startY="12.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-11.25" layoutX="1453.0" layoutY="452.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="27.25" layoutX="1453.0" layoutY="473.0" startX="-100.0" startY="12.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-11.0" layoutX="1453.0" layoutY="485.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="27.25" layoutX="1542.0" layoutY="424.0" startX="-100.0" startY="12.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="27.25" layoutX="1542.0" layoutY="474.0" startX="-100.0" startY="12.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="27.25" layoutX="1675.0" layoutY="424.0" startX="-100.0" startY="12.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-11.25" layoutX="1675.0" layoutY="452.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="27.25" layoutX="1675.0" layoutY="473.0" startX="-100.0" startY="12.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-11.0" layoutX="1675.0" layoutY="485.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="27.25" layoutX="1764.0" layoutY="424.0" startX="-100.0" startY="12.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="27.25" layoutX="1764.0" layoutY="474.0" startX="-100.0" startY="12.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Circle fill="GREY" layoutX="1507.0" layoutY="470.0" radius="34.0" stroke="SILVER" strokeType="INSIDE" />
+      <Arc fill="#1f93ff00" layoutX="1496.0" layoutY="470.0" length="180.0" radiusX="11.0" radiusY="11.0" stroke="SILVER" strokeWidth="2.0" />
+      <Arc fill="#1f93ff00" layoutX="1518.0" layoutY="470.0" length="180.0" radiusX="11.0" radiusY="11.0" startAngle="180.0" stroke="SILVER" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="55.5" layoutX="820.0" layoutY="529.0" startX="-100.0" startY="31.25" stroke="#fe9fc3" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="82.0" layoutX="820.0" layoutY="325.0" startX="-100.0" startY="31.25" stroke="#fe9fc3" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="82.0" layoutX="948.0" layoutY="351.0" startX="-100.0" startY="-38.5" stroke="#ff7070" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="82.0" layoutX="961.0" layoutY="328.0" startX="-100.0" startY="-16.25" stroke="#ff7070" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="82.0" layoutX="948.0" layoutY="545.0" startX="-100.0" startY="-38.5" stroke="#ff7070" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="82.0" layoutX="961.0" layoutY="546.0" startX="-100.0" startY="-16.25" stroke="#ff7070" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-133.0" endY="15.75" layoutX="994.0" layoutY="514.0" startX="-146.0" startY="-7.75" stroke="#ff7070" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-132.0" endY="-30.0" layoutX="993.0" layoutY="441.0" startX="-145.0" startY="-8.0" stroke="#ff7070" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="115.75" layoutX="1033.0" layoutY="560.0" startX="-100.0" startY="30.75" stroke="#fe9fc3" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="115.75" layoutX="1057.0" layoutY="560.0" startX="-100.0" startY="34.0" stroke="#fe9fc3" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="101.75" layoutX="1076.0" layoutY="563.0" startX="-100.0" startY="34.0" stroke="#fe9fc3" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="99.0" layoutX="1090.0" layoutY="565.0" startX="-100.0" startY="34.0" stroke="#fe9fc3" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="101.75" layoutX="1044.0" layoutY="607.0" startX="-100.0" startY="69.0" stroke="#fe9fc3" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="101.75" layoutX="1033.0" layoutY="574.0" startX="-77.0" startY="101.75" stroke="#fe9fc3" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="117.0" layoutX="731.0" layoutY="531.0" startX="-100.0" startY="-464.75" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="117.0" layoutX="226.0" layoutY="531.0" startX="-100.0" startY="-464.75" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="404.75" layoutX="226.0" layoutY="648.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="404.75" layoutX="226.0" layoutY="66.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="136.0" layoutX="237.0" layoutY="99.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="136.0" layoutX="237.0" layoutY="308.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="136.0" layoutX="237.0" layoutY="235.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="136.0" layoutX="237.0" layoutY="205.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="136.0" layoutX="237.0" layoutY="129.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="208.75" layoutX="237.0" layoutY="99.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="208.75" layoutX="473.0" layoutY="99.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="208.75" layoutX="484.0" layoutY="99.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="136.0" layoutX="484.0" layoutY="308.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="208.75" layoutX="720.0" layoutY="99.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="136.0" layoutX="484.0" layoutY="99.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="136.0" layoutX="484.0" layoutY="129.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="136.0" layoutX="484.0" layoutY="205.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="136.0" layoutX="484.0" layoutY="235.0" startX="-100.0" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-160.75" endY="28.5" layoutX="571.0" layoutY="707.0" startX="-66.5" startY="28.5" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-73.25" endY="28.5" layoutX="562.0" layoutY="774.0" startX="-66.5" startY="28.5" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-73.25" endY="28.5" layoutX="514.0" layoutY="774.0" startX="-66.5" startY="28.5" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-66.5" endY="-38.0" layoutX="507.0" layoutY="774.0" startX="-66.5" startY="28.5" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-66.5" endY="-38.0" layoutX="555.0" layoutY="774.0" startX="-66.5" startY="28.5" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-73.25" endY="28.5" layoutX="562.0" layoutY="801.0" startX="-66.5" startY="28.5" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-73.25" endY="28.5" layoutX="514.0" layoutY="802.0" startX="-66.5" startY="28.5" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-73.25" endY="28.5" layoutX="514.0" layoutY="803.0" startX="-73.25" startY="46.0" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-73.25" endY="28.5" layoutX="562.0" layoutY="802.0" startX="-73.25" startY="47.75" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-66.5" endY="-38.0" layoutX="458.0" layoutY="807.0" startX="-66.5" startY="104.625" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-175.5" endY="28.75" layoutX="455.0" layoutY="883.0" startX="-64.5" startY="28.75" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-66.5" endY="-38.0" layoutX="427.0" layoutY="807.0" startX="-66.5" startY="59.75" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-66.5" endY="-38.0" layoutX="395.0" layoutY="807.0" startX="-66.5" startY="12.75" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-171.0" endY="28.75" layoutX="425.0" layoutY="839.0" startX="-64.5" startY="28.75" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-166.0" endY="28.75" layoutX="393.0" layoutY="792.0" startX="-64.5" startY="28.75" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-66.5" endY="-38.0" layoutX="246.0" layoutY="859.0" startX="-66.5" startY="59.75" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.25" layoutX="266.0" layoutY="912.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-113.0" endY="28.5" layoutX="279.0" layoutY="912.0" startX="-83.0" startY="28.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="28.5" layoutX="296.0" layoutY="911.0" startX="-100.0" startY="13.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-165.75" endY="28.5" layoutX="377.0" layoutY="707.0" startX="-66.5" startY="28.5" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="43.5" layoutX="1097.0" layoutY="277.0" startX="-85.75" startY="43.5" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="43.5" layoutX="1104.0" layoutY="276.0" startX="-100.0" startY="35.75" stroke="SILVER" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Text fill="SILVER" layoutX="1353.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Виброперемещение вала на 1-ой оп. в ПП" wrappingWidth="280.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1353.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Виброперемещение вала на 1-ой оп. в ВП" wrappingWidth="280.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1353.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Виброперемещение вала на 2-ой оп. в ПП" wrappingWidth="280.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1353.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Виброперемещение вала на 2-ой оп. в ВП" wrappingWidth="280.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1469.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Искривление ротора ТА" wrappingWidth="170.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1317.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тепловое (абсолютное) расширение ЦВД Прав." wrappingWidth="320.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1326.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тепловое (абсолютное) расширение ЦВД Лев." wrappingWidth="310.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1460.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Угол поворота ротора ТА" wrappingWidth="180.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1482.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MKD02CY001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="1482.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MKD02CY002" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="1482.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MKD02CY003" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="1464.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MKA20CE001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="1251.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MKD01CY001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="1251.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MKD01CY002" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="1251.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MKD01CY003" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="1241.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MAK01AE001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="1049.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MAD02CY001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="1049.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MAD02CY002" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="1050.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MAD02CY003" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="952.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сервомотор ЧНД" textAlignment="CENTER" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="802.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="от блока клапанов контура ВД" textAlignment="CENTER" wrappingWidth="110.0" />
+      <Text fill="SILVER" layoutX="666.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="от блока клапанов контура НД" textAlignment="CENTER" wrappingWidth="110.0" />
+      <Text fill="SILVER" layoutX="663.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" text="от блока клапанов контура НД" textAlignment="CENTER" wrappingWidth="115.0" />
+      <Text fill="SILVER" layoutX="918.0" layoutY="738.0" strokeType="OUTSIDE" strokeWidth="0.0" text="в ПСГ-2" textAlignment="CENTER" wrappingWidth="50.0" />
+      <Text fill="SILVER" layoutX="958.0" layoutY="694.0" strokeType="OUTSIDE" strokeWidth="0.0" text="в ПСГ-1" textAlignment="CENTER" wrappingWidth="50.0" />
+      <Text fill="SILVER" layoutX="1017.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21" textAlignment="CENTER" wrappingWidth="15.0" />
+      <Text fill="SILVER" layoutX="969.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="19" textAlignment="CENTER" wrappingWidth="15.0" />
+      <Text fill="SILVER" layoutX="951.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18" textAlignment="CENTER" wrappingWidth="15.0" />
+      <Text fill="SILVER" layoutX="925.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17" textAlignment="CENTER" wrappingWidth="15.0" />
+      <Text fill="SILVER" layoutX="908.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="16" textAlignment="CENTER" wrappingWidth="15.0" />
+      <Text fill="SILVER" layoutX="891.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15" textAlignment="CENTER" wrappingWidth="15.0" />
+      <Text fill="SILVER" layoutX="875.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14" textAlignment="CENTER" wrappingWidth="15.0" />
+      <Text fill="SILVER" layoutX="858.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13" textAlignment="CENTER" wrappingWidth="15.0" />
+      <Text fill="SILVER" layoutX="825.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="CENTER" wrappingWidth="10.0" />
+      <Text fill="SILVER" layoutX="809.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" wrappingWidth="10.0" />
+      <Text fill="SILVER" layoutX="794.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" wrappingWidth="10.0" />
+      <Text fill="SILVER" layoutX="777.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" textAlignment="CENTER" wrappingWidth="10.0" />
+      <Text fill="SILVER" layoutX="761.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="CENTER" wrappingWidth="10.0" />
+      <Text fill="SILVER" layoutX="746.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" textAlignment="CENTER" wrappingWidth="10.0" />
+      <Text fill="SILVER" layoutX="730.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" textAlignment="CENTER" wrappingWidth="10.0" />
+      <Text fill="SILVER" layoutX="713.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" textAlignment="CENTER" wrappingWidth="10.0" />
+      <Text fill="SILVER" layoutX="698.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9" textAlignment="CENTER" wrappingWidth="10.0" />
+      <Text fill="SILVER" layoutX="679.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" textAlignment="CENTER" wrappingWidth="15.0" />
+      <Text fill="SILVER" layoutX="663.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11" textAlignment="CENTER" wrappingWidth="15.0" />
+      <Text fill="SILVER" layoutX="647.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12" textAlignment="CENTER" wrappingWidth="15.0" />
+      <Text fill="SILVER" layoutX="796.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПТ" textAlignment="CENTER" wrappingWidth="30.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="325.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MAD01CY001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="325.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MAD01CY002" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="325.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MAD01CY003" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="151.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MAD01CS930" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="402.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MAD01CS931" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="520.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="CENTER" wrappingWidth="20.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="520.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" wrappingWidth="20.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="520.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" wrappingWidth="20.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="274.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="CENTER" wrappingWidth="20.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="274.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" wrappingWidth="20.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="274.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" wrappingWidth="20.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="169.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ускорение" wrappingWidth="65.0" />
+      <Text fill="SILVER" layoutX="412.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ускорение" wrappingWidth="65.0" />
+      <Text fill="SILVER" layoutX="402.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Назначение" wrappingWidth="70.0" />
+      <Text fill="SILVER" layoutX="402.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Действие" wrappingWidth="60.0" />
+      <Text fill="SILVER" layoutX="402.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Статус" wrappingWidth="40.0" />
+      <Text fill="SILVER" layoutX="150.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Назначение" wrappingWidth="70.0" />
+      <Text fill="SILVER" layoutX="150.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Действие" wrappingWidth="60.0" />
+      <Text fill="SILVER" layoutX="150.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Статус" wrappingWidth="40.0" />
+      <Text fill="SILVER" layoutX="429.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MAD01CY930" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="454.0" layoutY="698.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MAX10CP004" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="256.0" layoutY="835.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MAX10CP002" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="276.0" layoutY="882.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MAX10CP003" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="208.0" layoutY="788.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MAX10CP001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="395.0" layoutY="794.0" strokeType="OUTSIDE" strokeWidth="0.0" text="БЗЗ" textAlignment="CENTER" wrappingWidth="40.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="444.0" layoutY="759.0" strokeType="OUTSIDE" strokeWidth="0.0" text="БДЗ" textAlignment="CENTER" wrappingWidth="40.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="492.0" layoutY="759.0" strokeType="OUTSIDE" strokeWidth="0.0" text="БДЗ" textAlignment="CENTER" wrappingWidth="40.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="526.0" layoutY="739.0" strokeType="OUTSIDE" strokeWidth="0.0" text="СК ВД, НД" textAlignment="CENTER" wrappingWidth="65.0" />
+      <Text fill="SILVER" layoutX="176.0" layoutY="698.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MAX02CP001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="148.0" layoutY="732.0" strokeType="OUTSIDE" strokeWidth="0.0" text="от ГМН (ПМН)" textAlignment="CENTER" wrappingWidth="50.0" />
+      <Text fill="SILVER" layoutX="202.0" layoutY="928.0" strokeType="OUTSIDE" strokeWidth="0.0" text="слив" textAlignment="CENTER" wrappingWidth="30.0" />
+      <Text fill="SILVER" layoutX="420.0" layoutY="877.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РК ВД" textAlignment="CENTER" wrappingWidth="40.0" />
+      <Text fill="SILVER" layoutX="470.0" layoutY="877.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РК НД, ЧНД" textAlignment="CENTER" wrappingWidth="70.0" />
+      <Text fill="SILVER" layoutX="1264.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВПУ" textAlignment="CENTER" wrappingWidth="40.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1463.0" layoutY="531.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Генератор" textAlignment="CENTER" wrappingWidth="90.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1476.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MKD02CT101" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="1476.0" layoutY="602.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MKD02CT102" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="1476.0" layoutY="629.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10MKD02CT103" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="SILVER" layoutX="993.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Обороты ротора ТА (датчик 1)" wrappingWidth="200.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="993.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Обороты ротора ТА (датчик 2)" wrappingWidth="200.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="923.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Относительное расширение ротора ЦВД" wrappingWidth="270.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="371.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Блок переднего подшипника" textAlignment="CENTER" wrappingWidth="250.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="382.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Частота вращение ПТ (ЭАБ)" textAlignment="CENTER" wrappingWidth="240.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="135.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Частота вращение ПТ (ЭЧСР)" textAlignment="CENTER" wrappingWidth="240.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="324.0" layoutY="723.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="356.0" layoutY="723.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="388.0" layoutY="723.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="460.0" layoutY="790.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="508.0" layoutY="790.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Line endX="-73.25" endY="25.75" layoutX="538.0" layoutY="779.0" startX="-73.25" startY="49.75" stroke="#ec9447" strokeWidth="6.0" />
+      <Line endX="-53.75" endY="49.75" layoutX="528.0" layoutY="780.0" startX="-73.25" startY="49.75" stroke="#ec9447" strokeWidth="6.0" />
+      <Line endX="-53.75" endY="49.75" layoutX="528.0" layoutY="754.0" startX="-73.25" startY="49.75" stroke="#ec9447" strokeWidth="6.0" />
+      <Line endX="-73.25" endY="25.75" layoutX="586.0" layoutY="779.0" startX="-73.25" startY="49.75" stroke="#ec9447" strokeWidth="6.0" />
+      <Line endX="-53.75" endY="49.75" layoutX="576.0" layoutY="780.0" startX="-73.25" startY="49.75" stroke="#ec9447" strokeWidth="6.0" />
+      <Line endX="-53.75" endY="49.75" layoutX="576.0" layoutY="754.0" startX="-73.25" startY="49.75" stroke="#ec9447" strokeWidth="6.0" />
+      <Line endX="-73.25" endY="25.75" layoutX="467.0" layoutY="711.0" startX="-73.25" startY="49.75" stroke="#ec9447" strokeWidth="6.0" />
+      <Line endX="-53.75" endY="49.75" layoutX="457.0" layoutY="712.0" startX="-73.25" startY="49.75" stroke="#ec9447" strokeWidth="6.0" />
+      <Line endX="-53.75" endY="49.75" layoutX="457.0" layoutY="686.0" startX="-73.25" startY="49.75" stroke="#ec9447" strokeWidth="6.0" />
+      <Line endX="-73.25" endY="25.75" layoutX="434.0" layoutY="711.0" startX="-73.25" startY="49.75" stroke="#ec9447" strokeWidth="6.0" />
+      <Line endX="-53.75" endY="49.75" layoutX="424.0" layoutY="712.0" startX="-73.25" startY="49.75" stroke="#ec9447" strokeWidth="6.0" />
+      <Line endX="-53.75" endY="49.75" layoutX="424.0" layoutY="686.0" startX="-73.25" startY="49.75" stroke="#ec9447" strokeWidth="6.0" />
+      <Line endX="-73.25" endY="25.75" layoutX="401.0" layoutY="711.0" startX="-73.25" startY="49.75" stroke="#ec9447" strokeWidth="6.0" />
+      <Line endX="-53.75" endY="49.75" layoutX="391.0" layoutY="712.0" startX="-73.25" startY="49.75" stroke="#ec9447" strokeWidth="6.0" />
+      <Line endX="-53.75" endY="49.75" layoutX="391.0" layoutY="686.0" startX="-73.25" startY="49.75" stroke="#ec9447" strokeWidth="6.0" />
+      <Line endX="-158.5" endY="28.75" layoutX="338.0" layoutY="792.0" startX="-142.5" startY="28.75" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-162.5" endY="28.75" layoutX="342.0" layoutY="839.0" startX="-118.0" startY="28.75" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-167.5" endY="28.75" layoutX="347.0" layoutY="883.0" startX="-98.25" startY="28.75" stroke="#ec9447" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Circle fill="#f3f300" layoutX="246.0" layoutY="821.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <Circle fill="#f3f300" layoutX="275.0" layoutY="868.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <Circle fill="#f3f300" layoutX="303.0" layoutY="912.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <Circle fill="#f3f300" layoutX="228.0" layoutY="736.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <Circle fill="#f3f300" layoutX="424.0" layoutY="736.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <PumpControl kks="10MAK01AE001" layoutX="1264.0" layoutY="449.0" prefHeight="40.0" prefWidth="40.0" />
+      <ValveControl kks="10MAX10AS053" layoutX="247.0" layoutY="894.0" prefHeight="37.0" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="10MAX10AS052" layoutX="222.0" layoutY="849.0" prefHeight="37.0" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="10MAX10AS051" layoutX="195.0" layoutY="803.0" prefHeight="37.0" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <DetectorControl kks="10MAD01CS930" layoutX="141.0" layoutY="163.0" maxValue="4000.0" param="n" prefHeight="30.0" prefWidth="75.0" system="TU" unit="об/мин">
+         <tooltip>
+            <Tooltip text="Частота вращения" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MAD01CS931" layoutX="390.0" layoutY="163.0" maxValue="4000.0" param="n" prefHeight="30.0" prefWidth="75.0" system="TU" unit="об/мин">
+         <tooltip>
+            <Tooltip text="Частота вращения (ЭАБ)" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MAD01CY001" layoutX="428.0" layoutY="311.0" maxValue="15.0" param="V" prefHeight="27.0" prefWidth="52.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация опоры 1,п" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MAD01CY002" layoutX="428.0" layoutY="338.0" maxValue="15.0" param="V" prefHeight="27.0" prefWidth="52.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация опоры 1,в" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MAD01CY003" layoutX="428.0" layoutY="365.0" maxValue="15.0" param="V" prefHeight="27.0" prefWidth="52.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация опоры 1,о" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MAD01CY930" layoutX="448.0" layoutY="576.0" maxValue="2.0" minValue="-2.0" param="OC" prefHeight="27.0" prefWidth="52.0" system="TU" unit="мм">
+         <tooltip>
+            <Tooltip text="Осевой сдвиг" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MAX02CP001" layoutX="234.0" layoutY="703.0" maxValue="2.5" param="P" prefHeight="27.0" prefWidth="38.0" system="TU" unit="МПа">
+         <tooltip>
+            <Tooltip text="P масла на регулирование" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MAX10CP004" layoutX="433.0" layoutY="703.0" maxValue="2.5" param="P" prefHeight="27.0" prefWidth="38.0" system="TU" unit="МПа">
+         <tooltip>
+            <Tooltip text="P масла в линии золотников защиты ЗЗ" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MAX10CP001" layoutX="253.0" layoutY="790.0" maxValue="2.5" param="P" prefHeight="27.0" prefWidth="38.0" system="TU" unit="МПа">
+         <tooltip>
+            <Tooltip text="P масла в линии золотников защиты ЗЗ-1" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MAX10CP002" layoutX="282.0" layoutY="837.0" maxValue="2.5" param="P" prefHeight="27.0" prefWidth="38.0" system="TU" unit="МПа">
+         <tooltip>
+            <Tooltip text="P масла в линии золотников защиты ЗЗ-2" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MAX10CP003" layoutX="310.0" layoutY="882.0" maxValue="2.5" param="P" prefHeight="27.0" prefWidth="38.0" system="TU" unit="МПа">
+         <tooltip>
+            <Tooltip text="P масла в линии золотников защиты ЗЗ-3" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MAD02CY001" layoutX="1162.0" layoutY="300.0" maxValue="15.0" param="V" prefHeight="27.0" prefWidth="48.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация опоры 2,п" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MAD02CY002" layoutX="1162.0" layoutY="327.0" maxValue="15.0" param="V" prefHeight="27.0" prefWidth="48.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация опоры 2, в" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MAD02CY003" layoutX="1162.0" layoutY="354.0" maxValue="15.0" param="V" prefHeight="27.0" prefWidth="48.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация опоры 2,о" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MKD01CY001" layoutX="1382.0" layoutY="300.0" maxValue="15.0" param="V" prefHeight="27.0" prefWidth="48.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация опоры 3,п" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MKD01CY002" layoutX="1382.0" layoutY="327.0" maxValue="15.0" param="V" prefHeight="27.0" prefWidth="48.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация опоры 3, в" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MKD01CY003" layoutX="1382.0" layoutY="354.0" maxValue="15.0" param="V" prefHeight="27.0" prefWidth="48.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация опоры 3,о" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MKD02CY001" layoutX="1607.0" layoutY="300.0" maxValue="15.0" param="V" prefHeight="27.0" prefWidth="48.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация опоры 4,п" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MKD02CY002" layoutX="1607.0" layoutY="327.0" maxValue="15.0" param="V" prefHeight="27.0" prefWidth="48.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация опоры 4, в" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MKD02CY003" layoutX="1607.0" layoutY="354.0" maxValue="15.0" param="V" prefHeight="27.0" prefWidth="48.0" system="TU" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Вибрация опоры 4,о" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MKA20CE001" layoutX="1465.0" layoutY="400.0" maxValue="90.1" param="Nп" prefHeight="27.0" prefWidth="74.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Вибрация опоры 4,о" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MKD02CT101" layoutX="1608.0" layoutY="558.0" maxValue="200.0" param="T" prefHeight="27.0" prefWidth="52.0" system="TU">
+         <tooltip>
+            <Tooltip text="Т вкладыша подшипника генератора т.1" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MKD02CT102" layoutX="1608.0" layoutY="585.0" maxValue="200.0" param="T" prefHeight="27.0" prefWidth="52.0" system="TU">
+         <tooltip>
+            <Tooltip text="Т вкладыша подшипника генератора т.2" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10MKD02CT103" layoutX="1608.0" layoutY="612.0" maxValue="200.0" param="T" prefHeight="27.0" prefWidth="52.0" system="TU">
+         <tooltip>
+            <Tooltip text="Т вкладыша подшипника генератора т.3" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="T1_N_01" layoutX="1196.0" layoutY="6.0" maxValue="1000.0" param="об/мин" prefHeight="27.0" prefWidth="120.0" unit="">
+         <tooltip>
+            <Tooltip text="Обороты ротора ТА (датчик 1)" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="T1_N_02" layoutX="1196.0" layoutY="32.0" maxValue="1000.0" param="об/мин" prefHeight="27.0" prefWidth="120.0" unit="">
+         <tooltip>
+            <Tooltip text="Обороты ротора ТА (датчик 2)" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="T1_SHP_01" layoutX="1195.0" layoutY="59.0" maxValue="1000.0" param="мм" prefHeight="27.0" prefWidth="93.0" unit="">
+         <tooltip>
+            <Tooltip text="Относительное расширение ротора ЦВ" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="T1_SHP_01_P" layoutX="1643.0" layoutY="7.0" maxValue="1000.0" param="мкм" prefHeight="27.0" prefWidth="102.0" unit="">
+         <tooltip>
+            <Tooltip text="Виброперемещение вала 1-ой оп. в" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="T1_SHP_01_V" layoutX="1643.0" layoutY="33.0" maxValue="1000.0" param="мкм" prefHeight="27.0" prefWidth="102.0" unit="">
+         <tooltip>
+            <Tooltip text="Виброперемещение вала 1-ой оп. в" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="T1_SR_02_P" layoutX="1643.0" layoutY="60.0" maxValue="1000.0" param="мкм" prefHeight="27.0" prefWidth="102.0" unit="">
+         <tooltip>
+            <Tooltip text="Виброперемещение вала 2-ой оп. в" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="T1_SR_02_V" layoutX="1643.0" layoutY="87.0" maxValue="1000.0" param="мкм" prefHeight="27.0" prefWidth="102.0" unit="">
+         <tooltip>
+            <Tooltip text="Виброперемещение вала 2-ой оп. в" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="T1_SRCR_01" layoutX="1643.0" layoutY="114.0" maxValue="1000.0" param="мкм" prefHeight="27.0" prefWidth="102.0" unit="">
+         <tooltip>
+            <Tooltip text="Искривление ротора ТА" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="T1_STEC_01" layoutX="1642.0" layoutY="141.0" maxValue="1000.0" param="мм" prefHeight="27.0" prefWidth="93.0" unit="">
+         <tooltip>
+            <Tooltip text="Тепловое (абсолютное) расширение ЦВД Прав." />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="T1_WA" layoutX="1642.0" layoutY="168.0" maxValue="1000.0" param="мм" prefHeight="27.0" prefWidth="93.0" unit="">
+         <tooltip>
+            <Tooltip text="Тепловое (абсолютное) расширение ЦВД Лев." />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="T1_URP_01" layoutX="1641.0" layoutY="195.0" maxValue="1000.0" param="гр" prefHeight="27.0" prefWidth="86.0" unit="">
+         <tooltip>
+            <Tooltip text="Тепловое (абсолютное) расширение ЦВД Лев." />
+         </tooltip></DetectorControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Введена" interactive="false" kks="me:tg2_tz_ind" layoutX="264.0" layoutY="654.0" prefHeight="30.0" prefWidth="188.0" secondStatus="ПТ взведена" skinType="TABLO" thirdStatus="Сработали ТЗ ПТ">
+         <secondStatusColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </secondStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Взвод ПТ" buttonOnText="Взвод ПТ" equipmentType="RETURN_BUTTON" kks="tcsk_pt_opn" layoutX="233.0" layoutY="745.0" prefHeight="25.0" prefWidth="67.0" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.800000011920929" green="0.7803921699523926" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <FunctionControl interactive="false" layoutX="172.0" layoutY="919.0" orientation="VERTICAL" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.9254902005195618" green="0.5803921818733215" blue="0.27843138575553894" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="201.0" layoutY="728.0" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.9254902005195618" green="0.5803921818733215" blue="0.27843138575553894" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="501.0" layoutY="728.0" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.9254902005195618" green="0.5803921818733215" blue="0.27843138575553894" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="433.0" layoutY="849.0" orientation="VERTICAL" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.9254902005195618" green="0.5803921818733215" blue="0.27843138575553894" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="481.0" layoutY="849.0" orientation="VERTICAL" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.9254902005195618" green="0.5803921818733215" blue="0.27843138575553894" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="712.0" layoutY="582.0" orientation="VERTICAL_REVERSE" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.9960784316062927" green="0.6235294342041016" blue="0.7647058963775635" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="712.0" layoutY="344.0" orientation="VERTICAL" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.9960784316062927" green="0.6235294342041016" blue="0.7647058963775635" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="840.0" layoutY="301.0" orientation="VERTICAL" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="0.43921568989753723" blue="0.43921568989753723" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="854.0" layoutY="301.0" orientation="VERTICAL" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="0.43921568989753723" blue="0.43921568989753723" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="840.0" layoutY="623.0" orientation="VERTICAL_REVERSE" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="0.43921568989753723" blue="0.43921568989753723" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="853.0" layoutY="623.0" orientation="VERTICAL_REVERSE" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="0.43921568989753723" blue="0.43921568989753723" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="936.0" layoutY="709.0" orientation="VERTICAL" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.9960784316062927" green="0.6235294342041016" blue="0.7647058963775635" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="968.0" layoutY="663.0" orientation="VERTICAL" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.9960784316062927" green="0.6235294342041016" blue="0.7647058963775635" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="983.0" layoutY="663.0" orientation="VERTICAL" prefHeight="15.0" prefWidth="15.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.9960784316062927" green="0.6235294342041016" blue="0.7647058963775635" />
+         </controlBackgroundColor>
+      </FunctionControl>
+   </children>
+</AnchorPane>

@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.FunctionControl?>
+<?import ru.get.common.controls.PumpControl?>
+<?import ru.get.common.controls.ValveControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="-103.75" endY="-44.25" layoutX="888.75" layoutY="363.0" startX="-85.2884521484375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Arc fill="#1f93ff00" layoutX="1338.5" layoutY="850.0" length="180.0" radiusX="37.0" radiusY="37.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Arc fill="#1f93ff00" layoutX="1338.5" layoutY="961.0" length="180.0" radiusX="37.0" radiusY="37.0" startAngle="180.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Arc fill="#1f93ff00" layoutX="1557.5" layoutY="617.0" length="180.0" radiusX="37.0" radiusY="37.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Arc fill="#1f93ff00" layoutX="1420.5" layoutY="205.0" length="180.0" radiusX="37.0" radiusY="37.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Arc fill="#1f93ff00" layoutX="634.5" layoutY="497.0" length="180.0" radiusX="41.0" radiusY="41.0" startAngle="180.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Polygon fill="#1f93ff00" layoutX="1433.0" layoutY="681.8499755859375" points="-59.888427734375, 50.75, -10.0, 50.75, -10.0, 24.25, -59.888427734375, 24.25" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.5" />
+      <Polygon fill="#1f93ff00" layoutX="1433.0" layoutY="585.8499755859375" points="-59.888427734375, 50.75, -10.0, 50.75, -10.0, 24.25, -59.888427734375, 24.25" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.5" />
+      <Polygon fill="#1f93ff00" layoutX="1582.0" layoutY="908.8499755859375" points="-59.888427734375, 50.75, -10.0, 50.75, -10.0, 24.25, -59.888427734375, 24.25" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.5" />
+      <Polygon fill="#1f93ff00" layoutX="438.111572265625" layoutY="505.1000061035156" points="-59.888427734375, 50.75, -10.0, 50.75, -10.0, 24.25, -59.888427734375, 24.25" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.5" />
+      <Polygon fill="#1f93ff00" layoutX="438.111572265625" layoutY="267.1000061035156" points="-59.888427734375, 50.75, -10.0, 50.75, -10.0, 24.25, -59.888427734375, 24.25" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.5" />
+      <Polygon fill="#1f93ff00" layoutX="296.111572265625" layoutY="267.1000061035156" points="-59.888427734375, 50.75, -10.0, 50.75, -10.0, 24.25, -59.888427734375, 24.25" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.5" />
+      <Polygon fill="#1f93ff00" layoutX="314.111572265625" layoutY="505.1000061035156" points="-59.888427734375, 50.75, -10.0, 50.75, -10.0, 24.25, -59.888427734375, 24.25" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.5" />
+      <Polygon fill="#1f93ff00" layoutX="1598.0" layoutY="220.85000610351562" points="-59.888427734375, 50.75, -10.0, 50.75, -10.0, 24.25, -59.888427734375, 24.25" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.5" />
+      <Polygon fill="#1f93ff00" layoutX="1787.0" layoutY="231.0" points="83.111572265625, -1.5, 123.861572265625, -1.5, 123.861572265625, -26.25, 83.111572265625, -26.25" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Circle fill="#1f93ff00" layoutX="1330.0" layoutY="623.0" radius="22.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="#1f93ff00" layoutX="1329.0" layoutY="719.0" radius="22.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="#1f93ff00" layoutX="1477.0" layoutY="947.0" radius="22.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#1f93ff00" layoutX="1044.0" layoutY="350.0" points="31.111572265625, 115.0, 163.111572265625, 115.0, 163.111572265625, -49.25, 144.111572265625, -68.5, 47.111572265625, -68.5, 31.111572265625, -52.75" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Polygon fill="#1f93ff00" layoutX="1044.5" layoutY="113.0" points="31.111572265625, 115.0, 163.111572265625, 115.0, 163.111572265625, -49.25, 144.111572265625, -68.5, 47.111572265625, -68.5, 31.111572265625, -52.75" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="-115.638427734375" endY="-33.75" layoutX="140.15" layoutY="339.0" startX="-115.63843536376953" startY="-74.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-125.0384292602539" endY="-44.25" layoutX="149.5" layoutY="349.5" startX="-102.5" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-124.138427734375" endY="-44.25" layoutX="207.0" layoutY="349.5" startX="-107.888427734375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-44.0" layoutX="217.0" layoutY="359.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-44.0" layoutX="225.25" layoutY="359.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-125.0384292602539" endY="-44.25" layoutX="238.0" layoutY="349.5" startX="-36.138427734375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-44.0" layoutX="319.5" layoutY="359.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-44.0" layoutX="327.75" layoutY="359.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-44.0" layoutX="276.5" layoutY="357.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-44.0" layoutX="288.0" layoutY="357.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-44.0" layoutX="253.5" layoutY="357.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-44.0" layoutX="264.0" layoutY="357.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-125.0384292602539" endY="-44.25" layoutX="339.0" layoutY="349.5" startX="-101.638427734375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-125.0384292602539" endY="-44.25" layoutX="412.0" layoutY="349.5" startX="-86.138427734375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-101.888427734375" endY="-44.25" layoutX="466.0" layoutY="349.5" startX="-88.138427734375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-101.888427734375" endY="-44.25" layoutX="531.0" layoutY="349.5" startX="-70.0" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-101.888427734375" endY="-44.25" layoutX="597.0" layoutY="349.5" startX="-79.888427734375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="11.25" layoutX="294.5" layoutY="382.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-0.5" layoutX="294.5" layoutY="450.0" startX="-114.888427734375" startY="-21.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-80.9884262084961" endY="-10.75" layoutX="304.35" layoutY="460.25" startX="-124.638427734375" startY="-10.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-36.5" layoutX="392.75" layoutY="376.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-46.5" layoutX="391.75" layoutY="435.5" startX="-114.888427734375" startY="-66.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-35.75" layoutX="391.75" layoutY="484.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-75.6" endY="-10.75" layoutX="352.35" layoutY="460.25" startX="-117.9884262084961" startY="-10.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="24.25" layoutX="347.75" layoutY="509.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="24.25" layoutX="339.75" layoutY="509.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="124.25" layoutX="347.75" layoutY="614.5" startX="-114.888427734375" startY="-63.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="124.25" layoutX="339.75" layoutY="614.5" startX="-114.888427734375" startY="-63.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.88842010498047" endY="30.25" layoutX="294.35" layoutY="620.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.88842010498047" endY="69.0" layoutX="294.35" layoutY="745.5" startX="-114.88842010498047" startY="-61.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-11.5" layoutX="237.0" layoutY="603.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-19.25" layoutX="139.5" layoutY="561.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-125.89999389648438" endY="-44.25" layoutX="207.0" layoutY="587.0" startX="-107.888427734375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-44.0" layoutX="217.0" layoutY="596.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-44.0" layoutX="225.25" layoutY="596.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-125.0384292602539" endY="-44.25" layoutX="238.0" layoutY="587.0" startX="-33.888427734375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-44.0" layoutX="320.5" layoutY="596.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-44.0" layoutX="327.75" layoutY="596.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-44.0" layoutX="276.5" layoutY="594.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-44.0" layoutX="288.0" layoutY="594.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-44.0" layoutX="253.5" layoutY="594.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-44.0" layoutX="264.0" layoutY="594.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-125.0384292602539" endY="-44.25" layoutX="340.0" layoutY="587.0" startX="-84.638427734375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-126.138427734375" endY="-44.25" layoutX="150.77" layoutY="587.0" startX="-104.7699966430664" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-110.888427734375" endY="-44.25" layoutX="415.0" layoutY="587.0" startX="-87.89999389648438" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-24.0" layoutX="411.75" layoutY="615.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-38.75" layoutX="411.75" layoutY="693.5" startX="-114.888427734375" startY="-66.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-10.5" layoutX="411.75" layoutY="749.5" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-44.0" layoutX="200.5" layoutY="867.0" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-126.138427734375" endY="-44.25" layoutX="212.0" layoutY="858.75" startX="-32.638427734375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-126.138427734375" endY="-44.25" layoutX="306.0" layoutY="783.35" startX="329.75" startY="-44.250022888183594" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-29.100000381469727" layoutX="632.75" layoutY="365.35" startX="-114.888427734375" startY="-60.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-101.888427734375" endY="-44.25" layoutX="619.75" layoutY="381.0" startX="-78.75" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.75" endY="-44.25" layoutX="679.75" layoutY="381.0" startX="-86.388427734375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.10000610351562" endY="-44.25" layoutX="477.0" layoutY="587.0" startX="-99.138427734375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-110.888427734375" endY="-44.25" layoutX="540.0" layoutY="587.0" startX="-81.0" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-110.888427734375" endY="-44.25" layoutX="606.0" layoutY="587.0" startX="-88.888427734375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-29.100000381469727" layoutX="632.35" layoutY="571.75" startX="-114.8884506225586" startY="-92.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-101.888427734375" endY="-44.25" layoutX="619.35" layoutY="523.0" startX="-77.3499984741211" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-109.3499984741211" endY="-44.25" layoutX="680.35" layoutY="523.0" startX="-85.9884262084961" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-29.100000381469727" layoutX="750.75" layoutY="767.75" startX="-114.888427734375" startY="-121.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-125.5" layoutX="750.75" layoutY="736.75" startX="-114.888427734375" startY="-150.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-125.25" layoutX="750.75" layoutY="679.75" startX="-114.888427734375" startY="-140.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-141.75" layoutX="750.75" layoutY="409.75" startX="-114.888427734375" startY="-160.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-101.888427734375" endY="-44.25" layoutX="778.75" layoutY="363.0" startX="-84.75" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-101.888427734375" endY="-44.25" layoutX="778.75" layoutY="397.5" startX="-85.138427734375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-101.888427734375" endY="-44.25" layoutX="778.75" layoutY="428.0" startX="205.75" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-101.888427734375" endY="-44.25" layoutX="778.75" layoutY="457.0" startX="11.611572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-101.888427734375" endY="-44.25" layoutX="778.75" layoutY="488.5" startX="-84.888427734375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-101.888427734375" endY="-44.25" layoutX="778.75" layoutY="522.0" startX="210.361572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-110.75" endY="-44.25" layoutX="838.75" layoutY="363.0" startX="-79.888427734375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-110.25" endY="-44.25" layoutX="838.75" layoutY="397.5" startX="-17.75" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-124.5" layoutX="918.35" layoutY="454.75" startX="-114.8884506225586" startY="-147.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-128.75" endY="-44.25" layoutX="973.75" layoutY="397.5" startX="-64.75" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-100.888427734375" endY="-44.25" layoutX="1040.75" layoutY="397.5" startX="-70.638427734375" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-124.5" layoutX="1086.0" layoutY="477.75" startX="-114.888427734375" startY="-274.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-108.25" endY="-44.25" layoutX="838.75" layoutY="488.5" startX="9.861572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-111.25" endY="-44.25" layoutX="993.75" layoutY="488.5" startX="-48.75" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-67.25" endY="-44.25" layoutX="1037.75" layoutY="488.5" startX="103.75" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-78.888427734375" endY="-45.25" layoutX="1050.0" layoutY="247.0" startX="92.361572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="185.5" endY="-44.25" layoutX="829.0" layoutY="429.0" startX="221.361572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-124.5" layoutX="1165.15" layoutY="508.15" startX="-114.8884048461914" startY="-252.89999389648438" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="856.1500000000001" layoutY="299.0" startX="289.9615783691406" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-124.5" layoutX="1261.5" layoutY="379.15" startX="-114.888427734375" startY="-151.39999389648438" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-124.5" layoutX="1256.5" layoutY="568.15" startX="-114.888427734375" startY="-134.39999389648438" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-64.1500015258789" layoutX="1260.5" layoutY="599.15" startX="-114.888427734375" startY="-134.39999389648438" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-10.138427734375" endY="-44.25" layoutX="1051.75" layoutY="579.5" startX="93.861572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="75.111572265625" endY="-44.0" layoutX="915.75" layoutY="579.5" startX="87.75" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-124.5" layoutX="1104.75" layoutY="659.75" startX="-114.888427734375" startY="-182.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-120.25" layoutX="906.0" layoutY="553.5" startX="-114.888427734375" startY="-140.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-122.25" layoutX="906.0" layoutY="591.5" startX="-114.888427734375" startY="-140.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-82.75" layoutX="906.0" layoutY="626.5" startX="-114.888427734375" startY="-140.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-116.5" layoutX="906.0" layoutY="727.5" startX="-114.888427734375" startY="-154.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-111.5" layoutX="906.0" layoutY="788.5" startX="-114.888427734375" startY="-150.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-98.75" layoutX="906.0" layoutY="853.5" startX="-114.888427734375" startY="-149.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-98.5" layoutX="906.0" layoutY="902.5" startX="-114.888427734375" startY="-129.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-112.5" layoutX="906.0" layoutY="969.5" startX="-114.888427734375" startY="-142.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-38.5" layoutX="753.5" layoutY="893.5" startX="-114.888427734375" startY="-129.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-38.5" layoutX="615.5" layoutY="893.5" startX="-114.888427734375" startY="-129.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-126.138427734375" endY="-44.25" layoutX="626.85" layoutY="808.0" startX="277.7615661621094" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-71.75" layoutX="1021.0" layoutY="835.5" startX="-114.888427734375" startY="-267.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-57.5" endY="-44.25" layoutX="964.0" layoutY="612.0" startX="245.111572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-124.5" layoutX="1257.5" layoutY="327.15" startX="-114.888427734375" startY="-132.89999389648438" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-124.5" layoutX="1257.5" layoutY="201.14999999999998" startX="-114.888427734375" startY="-134.14999389648438" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="919.75" layoutY="477.0" startX="249.611572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-124.5" layoutX="1284.5" layoutY="557.15" startX="-114.888427734375" startY="-128.39999389648438" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-124.5" layoutX="1228.5" layoutY="557.15" startX="-114.888427734375" startY="-128.39999389648438" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-130.1500015258789" layoutX="1228.5" layoutY="454.15" startX="-114.888427734375" startY="-134.89999389648438" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-129.9000015258789" layoutX="1284.5" layoutY="454.15" startX="-114.888427734375" startY="-134.64999389648438" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="919.75" layoutY="361.5" startX="249.75" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-124.5" layoutX="1256.5" layoutY="441.15" startX="-114.888427734375" startY="-134.39999389648438" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="920.75" layoutY="237.5" startX="249.75" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-124.1500015258789" layoutX="1229.5" layoutY="317.15" startX="-114.888427734375" startY="-128.14999389648438" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-125.9000015258789" layoutX="1285.5" layoutY="319.15" startX="-114.888427734375" startY="-130.64999389648438" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="193.95" endY="-44.25" layoutX="920.75" layoutY="123.5" startX="249.75" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-127.1500015258789" layoutX="1229.5" layoutY="212.14999999999998" startX="-114.888427734375" startY="-132.14999389648438" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-129.9000015258789" layoutX="1285.5" layoutY="214.14999999999998" startX="-114.888427734375" startY="-134.64999389648438" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="193.95" endY="-44.25" layoutX="948.75" layoutY="110.5" startX="288.75" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="186.5" endY="-44.25" layoutX="1080.0" layoutY="110.5" startX="205.361572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="947.55" layoutY="350.5" startX="284.95001220703125" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-64.1500015258789" layoutX="1324.5" layoutY="631.85" startX="-114.888427734375" startY="-136.60000610351562" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="53.349998474121094" layoutX="1401.0" layoutY="199.14999999999998" startX="-114.888427734375" startY="-132.89999389648438" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="1092.0" layoutY="297.5" startX="219.361572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="187.0" endY="-44.25" layoutX="1159.0" layoutY="297.5" startX="224.111572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="185.9499969482422" endY="-44.25" layoutX="1077.55" layoutY="350.5" startX="246.9499969482422" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="176.9499969482422" endY="-44.25" layoutX="1175.55" layoutY="350.5" startX="207.0615692138672" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="152.361572265625" endY="-44.25" layoutX="1158.0" layoutY="256.5" startX="224.111572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="53.349998474121094" layoutX="1425.0" layoutY="158.75" startX="-114.888427734375" startY="23.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="62.25" layoutX="1425.0" layoutY="90.75" startX="-114.888427734375" startY="-11.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="193.95" endY="-44.25" layoutX="1116.25" layoutY="123.5" startX="256.75" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="193.95" endY="-44.25" layoutX="1211.25" layoutY="123.5" startX="219.25" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="185.75" endY="-44.25" layoutX="1281.25" layoutY="123.5" startX="249.861572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="135.611572265625" endY="-44.25" layoutX="1158.0" layoutY="318.0" startX="224.111572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="53.349998474121094" layoutX="1535.0" layoutY="115.75" startX="-114.888427734375" startY="37.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="152.361572265625" endY="-44.25" layoutX="1304.0" layoutY="303.0" startX="173.5" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="144.0" endY="-44.25" layoutX="1366.0" layoutY="303.0" startX="172.111572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="152.361572265625" endY="-44.25" layoutX="1434.0" layoutY="303.0" startX="172.5" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="148.0" endY="-44.25" layoutX="1490.0" layoutY="303.0" startX="180.0" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="152.861572265625" endY="-44.25" layoutX="1553.0" layoutY="303.0" startX="188.5" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="149.0" endY="-44.25" layoutX="1620.0" layoutY="303.0" startX="186.5" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="144.5" endY="-44.25" layoutX="1691.0" layoutY="303.0" startX="210.361572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="53.349998474121094" layoutX="1407.0" layoutY="245.75" startX="-114.888427734375" startY="28.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="53.349998474121094" layoutX="1407.0" layoutY="285.75" startX="-114.888427734375" startY="31.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="104.75" layoutX="1407.0" layoutY="350.75" startX="-114.888427734375" startY="23.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="1098.0" layoutY="500.0" startX="295.5" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="188.0" endY="-44.25" layoutX="1235.0" layoutY="500.0" startX="223.5" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="1298.0" layoutY="500.0" startX="251.111572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="1015.55" layoutY="539.0" startX="901.5615844726562" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="215.75" layoutX="1335.5" layoutY="647.0" startX="-114.888427734375" startY="-136.60000610351562" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="187.361572265625" endY="-44.25" layoutX="1034.75" layoutY="554.5" startX="685.111572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="53.349998474121094" layoutX="1835.0" layoutY="456.75" startX="-114.888427734375" startY="46.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="53.349998474121094" layoutX="1835.0" layoutY="431.75" startX="-114.888427734375" startY="-141.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="-71.0" layoutX="1835.0" layoutY="359.75" startX="-114.888427734375" startY="-100.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.8884506225586" endY="-67.75" layoutX="1972.35" layoutY="359.75" startX="-114.888427734375" startY="-100.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.8884506225586" endY="-71.75" layoutX="1972.35" layoutY="427.75" startX="-114.8884506225586" startY="-110.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.8884506225586" endY="-72.75" layoutX="1972.35" layoutY="491.75" startX="-114.8884506225586" startY="-108.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.8884506225586" endY="-68.0" layoutX="1972.35" layoutY="553.75" startX="-114.8884506225586" startY="-110.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.8884506225586" endY="-95.0" layoutX="1972.35" layoutY="602.75" startX="-114.888427734375" startY="-100.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.8884506225586" endY="128.25" layoutX="2016.35" layoutY="359.75" startX="-114.888427734375" startY="-100.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.8884506225586" endY="39.75" layoutX="2016.35" layoutY="605.75" startX="-114.888427734375" startY="-100.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.8884506225586" endY="75.5" layoutX="2016.35" layoutY="871.75" startX="-114.8884506225586" startY="-106.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="185.111572265625" endY="-44.25" layoutX="1037.0" layoutY="668.0" startX="216.5" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="1095.0" layoutY="668.0" startX="213.0" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="200.0" endY="-45.0" layoutX="1152.0" layoutY="668.0" startX="221.111572265625" startY="-44.6500244140625" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="1226.0" layoutY="668.0" startX="227.5" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="1287.0" layoutY="668.0" startX="233.611572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="212.611572265625" endY="-44.25" layoutX="1382.0" layoutY="717.0" startX="285.5" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="53.349998474121094" layoutX="1673.35" layoutY="527.75" startX="-114.888427734375" startY="29.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="189.0" endY="-44.25" layoutX="1508.0" layoutY="717.0" startX="253.611572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="53.349998474121094" layoutX="1878.0" layoutY="619.35" startX="-114.888427734375" startY="-110.3499984741211" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="185.611572265625" endY="-44.25" layoutX="1579.0" layoutY="552.5" startX="278.361572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.8884506225586" endY="-75.75" layoutX="1978.65" layoutY="333.75" startX="-114.8885269165039" startY="-116.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="152.361572265625" endY="-44.25" layoutX="1713.0" layoutY="262.0" startX="156.861572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="152.361572265625" endY="-44.25" layoutX="1759.0" layoutY="262.0" startX="158.111572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.8885269165039" endY="161.0" layoutX="2032.65" layoutY="333.75" startX="-114.8885269165039" startY="-116.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="179.611572265625" endY="-44.25" layoutX="1686.0" layoutY="659.0" startX="214.111572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.8884506225586" endY="-95.0" layoutX="1979.75" layoutY="709.75" startX="-114.888427734375" startY="-122.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="185.111572265625" endY="-44.25" layoutX="1037.0" layoutY="764.0" startX="219.0" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="195.361572265625" endY="-44.25" layoutX="1094.0" layoutY="764.0" startX="213.0" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="199.0" endY="-44.6500244140625" layoutX="1152.0" layoutY="764.0" startX="221.111572265625" startY="-44.6500244140625" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="1226.0" layoutY="764.0" startX="228.5" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.5999755859375" endY="-44.25" layoutX="1286.0" layoutY="764.0" startX="234.611572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="195.611572265625" endY="-44.25" layoutX="1463.0" layoutY="907.0" startX="287.611572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="53.349998474121094" layoutX="1772.0" layoutY="753.0" startX="-114.888427734375" startY="31.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.888427734375" endY="127.75" layoutX="1772.0" layoutY="819.0" startX="-114.888427734375" startY="24.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="187.611572265625" endY="-44.25" layoutX="1034.5" layoutY="908.0" startX="218.5" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="189.0" endY="-44.25" layoutX="1093.5" layoutY="908.0" startX="208.361572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.8884506225586" endY="48.75" layoutX="1452.35" layoutY="764.0" startX="-114.8884506225586" startY="37.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="1182.0" layoutY="991.5" startX="219.0" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="1244.0" layoutY="991.5" startX="210.861572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="195.111572265625" endY="-44.25" layoutX="1305.0" layoutY="991.5" startX="217.111572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="1376.0" layoutY="991.5" startX="223.0" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="1443.0" layoutY="991.5" startX="237.0" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="194.111572265625" endY="-44.25" layoutX="1522.0" layoutY="991.5" startX="220.0" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="188.5" endY="-44.25" layoutX="1598.0" layoutY="907.0" startX="288.361572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="199.0" endY="-44.25" layoutX="1617.0" layoutY="991.5" startX="221.5" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="187.5" endY="-44.25" layoutX="1684.0" layoutY="991.5" startX="216.861572265625" startY="-44.25" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-114.8884048461914" endY="115.0999984741211" layoutX="2001.65" layoutY="831.65" startX="-114.888427734375" startY="31.25" stroke="GREEN" strokeWidth="3.0" />
+      <Circle fill="#1f93ff00" layoutX="178.5" layoutY="410.5" radius="16.5" stroke="GREEN" strokeType="INSIDE" strokeWidth="2.0" />
+      <Arc fill="GREEN" layoutX="178.5" layoutY="410.5" length="180.0" radiusX="15.5" radiusY="15.5" startAngle="220.0" stroke="GREEN" strokeType="INSIDE" type="ROUND" />
+      <Circle fill="#1f93ff00" layoutX="276.5" layoutY="406.5" radius="16.5" stroke="GREEN" strokeType="INSIDE" strokeWidth="2.0" />
+      <Arc fill="GREEN" layoutX="276.5" layoutY="406.5" length="180.0" radiusX="15.5" radiusY="15.5" startAngle="220.0" stroke="GREEN" strokeType="INSIDE" type="ROUND">
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis></Arc>
+      <Circle fill="#1f93ff00" layoutX="178.0" layoutY="667.0" radius="16.5" stroke="GREEN" strokeType="INSIDE" strokeWidth="2.0" />
+      <Arc fill="GREEN" layoutX="178.0" layoutY="667.0" length="180.0" radiusX="15.5" radiusY="15.5" startAngle="220.0" stroke="GREEN" strokeType="INSIDE" type="ROUND" />
+      <Circle fill="#1f93ff00" layoutX="296.0" layoutY="672.0" radius="16.5" stroke="GREEN" strokeType="INSIDE" strokeWidth="2.0" />
+      <Arc fill="GREEN" layoutX="296.0" layoutY="672.0" length="180.0" radiusX="15.5" radiusY="15.5" startAngle="220.0" stroke="GREEN" strokeType="INSIDE" type="ROUND" />
+      <Circle fill="#1f93ff00" layoutX="635.0" layoutY="629.0" radius="16.5" stroke="GREEN" strokeType="INSIDE" strokeWidth="2.0" />
+      <Arc fill="GREEN" layoutX="635.0" layoutY="629.0" length="180.0" radiusX="15.5" radiusY="15.5" startAngle="220.0" stroke="GREEN" strokeType="INSIDE" type="ROUND" />
+      <Circle fill="#1f93ff00" layoutX="23.0" layoutY="242.0" radius="22.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="#1f93ff00" layoutX="23.0" layoutY="479.0" radius="22.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="#1f93ff00" layoutX="181.0" layoutY="269.0" points="-59.888427734375, 53.25, 9.361572265625, 53.25, 9.361572265625, 20.25, -59.888427734375, 20.25" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" translateX="-1.0" />
+      <Polygon fill="#1f93ff00" layoutX="182.0" layoutY="506.0" points="-59.888427734375, 53.25, 9.361572265625, 53.25, 9.361572265625, 20.25, -59.888427734375, 20.25" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" translateX="-1.0" />
+      <Arc fill="#1f93ff00" layoutX="1891.0" layoutY="209.5" length="210.0" radiusX="11.0" radiusY="4.0" startAngle="165.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="2.0" />
+      <Arc fill="#1f93ff00" layoutX="1891.0" layoutY="222.5" length="210.0" radiusX="11.0" radiusY="4.0" startAngle="-15.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="2.0" />
+      <Arc fill="#1f93ff00" layoutX="233.5" layoutY="542.0" length="190.0" radiusX="9.0" radiusY="10.0" startAngle="-95.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" translateX="-1.0" />
+      <Arc fill="#1f93ff00" layoutX="225.5" layoutY="542.0" length="190.0" radiusX="9.0" radiusY="10.0" startAngle="-95.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" translateX="-1.0" />
+      <Arc fill="#1f93ff00" layoutX="791.5" layoutY="442.5" length="190.0" radiusX="9.0" radiusY="10.0" startAngle="-95.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" translateX="-1.0" />
+      <Arc fill="#1f93ff00" layoutX="791.5" layoutY="477.5" length="190.0" radiusX="9.0" radiusY="10.0" startAngle="-95.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" translateX="-1.0" />
+      <Arc fill="#1f93ff00" layoutX="791.5" layoutY="763.5" length="190.0" radiusX="9.0" radiusY="10.0" startAngle="-95.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" translateX="-1.0" />
+      <Arc fill="#1f93ff00" layoutX="1291.5" layoutY="308.0" length="190.0" radiusX="9.0" radiusY="10.0" startAngle="-95.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Arc fill="#1f93ff00" layoutX="1858.0" layoutY="494.0" length="190.0" radiusX="9.0" radiusY="10.0" startAngle="-95.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Arc fill="#1f93ff00" layoutX="1902.0" layoutY="496.0" length="190.0" radiusX="9.0" radiusY="10.0" startAngle="-95.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Arc fill="#1f93ff00" layoutX="1113.5" layoutY="412.0" length="180.0" radiusX="18.0" radiusY="18.0" startAngle="180.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="18.0" endY="-16.5" layoutX="1079.0" layoutY="357.5" startX="18.0" startY="54.5" stroke="GREEN" strokeWidth="2.8" />
+      <Arc fill="#1f93ff00" layoutX="1113.5" layoutY="341.0" length="180.0" radiusX="18.0" radiusY="18.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="18.0" endY="-16.5" layoutX="1112.0" layoutY="357.5" startX="18.0" startY="54.5" stroke="GREEN" strokeWidth="2.8" />
+      <Arc fill="#1f93ff00" layoutX="1169.0" layoutY="412.0" length="180.0" radiusX="18.0" radiusY="18.0" startAngle="180.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="18.0" endY="-16.5" layoutX="1134.5" layoutY="357.5" startX="18.0" startY="54.5" stroke="GREEN" strokeWidth="2.8" />
+      <Arc fill="#1f93ff00" layoutX="1169.0" layoutY="341.0" length="180.0" radiusX="18.0" radiusY="18.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="18.0" endY="-16.5" layoutX="1167.5" layoutY="357.5" startX="18.0" startY="54.5" stroke="GREEN" strokeWidth="2.8" />
+      <Arc fill="#1f93ff00" layoutX="1113.5" layoutY="172.0" length="180.0" radiusX="18.0" radiusY="18.0" startAngle="180.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="18.0" endY="-16.5" layoutX="1079.0" layoutY="117.5" startX="18.0" startY="54.5" stroke="GREEN" strokeWidth="2.8" />
+      <Arc fill="#1f93ff00" layoutX="1113.5" layoutY="101.0" length="180.0" radiusX="18.0" radiusY="18.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="18.0" endY="-16.5" layoutX="1112.0" layoutY="117.5" startX="18.0" startY="54.5" stroke="GREEN" strokeWidth="2.8" />
+      <Arc fill="#1f93ff00" layoutX="1170.0" layoutY="172.0" length="180.0" radiusX="18.0" radiusY="18.0" startAngle="180.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="18.0" endY="-16.5" layoutX="1135.5" layoutY="117.5" startX="18.0" startY="54.5" stroke="GREEN" strokeWidth="2.8" />
+      <Arc fill="#1f93ff00" layoutX="1170.0" layoutY="101.0" length="180.0" radiusX="18.0" radiusY="18.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="18.0" endY="-16.5" layoutX="1168.5" layoutY="117.5" startX="18.0" startY="54.5" stroke="GREEN" strokeWidth="2.8" />
+      <Arc fill="#1f93ff00" layoutX="345.0" layoutY="337.125" length="180.0" radiusX="18.0" radiusY="12.0" startAngle="180.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="18.0" endY="-16.5" layoutX="310.5" layoutY="281.6499938964844" startX="18.0" startY="54.5" stroke="GREEN" strokeWidth="2.8" />
+      <Arc fill="#1f93ff00" layoutX="345.0" layoutY="264.67498779296875" length="180.0" radiusX="18.0" radiusY="12.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="18.0" endY="-16.5" layoutX="343.5" layoutY="281.6499938964844" startX="18.0" startY="54.5" stroke="GREEN" strokeWidth="2.8" />
+      <Arc fill="#1f93ff00" layoutX="345.0" layoutY="575.125" length="180.0" radiusX="18.0" radiusY="12.0" startAngle="180.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="18.0" endY="-16.5" layoutX="310.5" layoutY="519.6500244140625" startX="18.0" startY="54.5" stroke="GREEN" strokeWidth="2.8" />
+      <Arc fill="#1f93ff00" layoutX="345.0" layoutY="502.67498779296875" length="180.0" radiusX="18.0" radiusY="12.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="18.0" endY="-16.5" layoutX="343.5" layoutY="519.6500244140625" startX="18.0" startY="54.5" stroke="GREEN" strokeWidth="2.8" />
+      <Arc fill="#1f93ff00" layoutX="634.0" layoutY="310.0" length="180.0" radiusX="41.0" radiusY="41.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="24.361572265625" endY="-46.25" layoutX="570.5" layoutY="357.0" startX="24.361572265625" startY="140.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="24.361572265625" endY="-46.25" layoutX="649.75" layoutY="357.0" startX="24.361572265625" startY="140.0" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="27.611572265625" endY="-11.5" layoutX="1357.5" layoutY="216.5" startX="27.611572265625" startY="99.5" stroke="GREEN" strokeWidth="3.0" />
+      <Arc fill="#1f93ff00" layoutX="1420.5" layoutY="316.0" length="180.0" radiusX="37.0" radiusY="37.0" startAngle="180.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="27.611572265625" endY="-11.5" layoutX="1428.5" layoutY="216.0" startX="27.611572265625" startY="99.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="27.611572265625" endY="-11.5" layoutX="1494.5" layoutY="628.5" startX="27.611572265625" startY="99.5" stroke="GREEN" strokeWidth="3.0" />
+      <Arc fill="#1f93ff00" layoutX="1557.5" layoutY="728.0" length="180.0" radiusX="37.0" radiusY="37.0" startAngle="180.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="27.611572265625" endY="-11.5" layoutX="1565.5" layoutY="628.0" startX="27.611572265625" startY="99.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="27.611572265625" endY="-11.5" layoutX="1275.5" layoutY="861.5" startX="27.611572265625" startY="99.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="27.611572265625" endY="-11.5" layoutX="1346.5" layoutY="861.0" startX="27.611572265625" startY="99.5" stroke="GREEN" strokeWidth="3.0" />
+      <Arc fill="#1f93ff00" layoutX="1720.5" layoutY="494.0" length="190.0" radiusX="9.0" radiusY="10.0" startAngle="-95.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="-114.8884506225586" endY="50.0" layoutX="2017.35" layoutY="687.0" startX="-114.8884506225586" startY="-9.0" stroke="GREEN" strokeWidth="3.0" />
+      <Text fill="WHITE" layoutX="6.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AN001" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="28.0" layoutY="285.5" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA101" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="115.5" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AC101" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="224.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AT003" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="302.0" layoutY="238.5" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50BB001" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="370.0" layoutY="286.5" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AT004" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="427.5" layoutY="330.5" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA051" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="188.5" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA203" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="77.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AT291" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="6.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AN002" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="29.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA104" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="23.0" layoutY="611.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA402" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="127.0" layoutY="519.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AC002" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="73.0" layoutY="676.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AT296" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="299.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AT292" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="303.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50BB002" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="238.0" layoutY="524.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AT007" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="371.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AT008" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="308.0" layoutY="618.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA215" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="435.0" layoutY="568.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA052" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="500.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA105" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="529.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AT293" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="319.0" layoutY="680.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AT297" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="501.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA102" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="662.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA031" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="676.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA106" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="682.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA107" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="742.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA403" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="780.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA801" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="888.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA802" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="680.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA108" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="646.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA204" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="823.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA803" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="930.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA804" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="960.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA805" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="806.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA136" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="807.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA813" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="806.0" layoutY="697.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA135" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="798.0" layoutY="823.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA137" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="980.0" layoutY="560.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA806" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1205.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA807" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1325.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA809" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1423.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA111" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1325.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA033" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1316.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA109" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1289.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA110" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1460.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA115" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1199.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA808" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1296.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA124" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1297.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA112" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1428.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA412" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1349.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA810" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1441.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA113" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1463.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA032" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1424.0" layoutY="651.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA122" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1229.0" layoutY="603.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA121" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1351.0" layoutY="603.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AT014" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1357.0" layoutY="699.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AT015" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1229.0" layoutY="701.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA123" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1288.0" layoutY="657.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AN003" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1287.0" layoutY="754.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AN004" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1424.0" layoutY="744.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA125" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1361.0" layoutY="787.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA034" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1519.0" layoutY="823.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA409" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1378.0" layoutY="927.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA129" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1214.0" layoutY="886.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA128" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1245.0" layoutY="1019.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA410" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="449.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50CP003 XQ01" textAlignment="JUSTIFY" wrappingWidth="125.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="591.0" layoutY="395.0" rotate="-90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50BB002" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1374.0" layoutY="245.0" rotate="-90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50BB006" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1513.0" layoutY="657.0" rotate="-90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50BB004" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1293.0" layoutY="893.0" rotate="-90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50BB005" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1554.0" layoutY="973.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA130" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1651.0" layoutY="973.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA132" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1827.0" layoutY="971.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA133" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1439.0" layoutY="985.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AN005" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1507.0" layoutY="927.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AT118" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1478.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50CP001 XQ01" textAlignment="JUSTIFY" wrappingWidth="130.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1582.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA811" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1639.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA116" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1731.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA117" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1517.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AT020" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1764.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA053" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1760.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA055" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1761.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA119" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1755.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA812" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1771.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA035" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1806.0" layoutY="672.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA054" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1642.0" layoutY="696.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA127" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1665.0" layoutY="833.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA131" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1809.0" layoutY="781.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA812" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1737.0" layoutY="887.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH50AA134" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="436.0" layoutY="905.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CP408 XQ01" textAlignment="JUSTIFY" wrappingWidth="120.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="612.0" layoutY="905.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH28CP408 XQ01" textAlignment="JUSTIFY" wrappingWidth="120.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="11.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КВ-1" textAlignment="JUSTIFY" wrappingWidth="50.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="121.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОВ-1" textAlignment="JUSTIFY" wrappingWidth="50.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="11.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КВ-2" textAlignment="JUSTIFY" wrappingWidth="50.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="132.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОВ-2" textAlignment="JUSTIFY" wrappingWidth="50.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="629.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВР" textAlignment="JUSTIFY" wrappingWidth="30.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1118.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ГА-1" textAlignment="JUSTIFY" wrappingWidth="50.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1120.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ГА-2" textAlignment="JUSTIFY" wrappingWidth="50.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1331.0" layoutY="959.0" strokeType="OUTSIDE" strokeWidth="0.0" text="АР" textAlignment="JUSTIFY" wrappingWidth="30.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1548.0" layoutY="725.0" strokeType="OUTSIDE" strokeWidth="0.0" text="АР" textAlignment="JUSTIFY" wrappingWidth="30.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1409.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="АР" textAlignment="JUSTIFY" wrappingWidth="30.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="130.0" layoutY="612.0" rotate="-90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G1/8" textAlignment="JUSTIFY" wrappingWidth="50.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="578.0" layoutY="579.0" rotate="-90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G1/2" textAlignment="JUSTIFY" wrappingWidth="50.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="98.0" layoutY="643.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ревизия" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="95.0" layoutY="805.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DN50 PN16" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="612.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.6 MPa" textAlignment="JUSTIFY" wrappingWidth="60.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1428.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.6 MPa" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1751.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.6 MPa" textAlignment="JUSTIFY" wrappingWidth="60.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1821.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.5 MPa" textAlignment="JUSTIFY" wrappingWidth="60.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1581.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.5 MPa" textAlignment="JUSTIFY" wrappingWidth="60.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1576.0" layoutY="776.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ревизия" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1355.0" layoutY="1012.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ревизия" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1569.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="вентилятор" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1445.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ревизия" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1556.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="вентилятор" textAlignment="JUSTIFY" wrappingWidth="100.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1662.0" layoutY="741.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Соединение для заправки" textAlignment="JUSTIFY" wrappingWidth="170.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1662.0" layoutY="758.0" strokeType="OUTSIDE" strokeWidth="0.0" text="азотных баллонов" textAlignment="JUSTIFY" wrappingWidth="157.22314453125">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="757.0" layoutY="899.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сжатый воздух на уплотнение" textAlignment="JUSTIFY" wrappingWidth="200.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="758.0" layoutY="914.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ГДК-1,2 и управление пневмоарматурой" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font size="12.5" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="596.0" layoutY="956.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Давление азота на ГДК-2" textAlignment="JUSTIFY" wrappingWidth="160.0">
+         <font>
+            <Font size="12.5" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="418.0" layoutY="956.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Давление азота на ГДК-1" textAlignment="JUSTIFY" wrappingWidth="160.0">
+         <font>
+            <Font size="12.5" />
+         </font>
+      </Text>
+      <DetectorControl kks="41EKH50CP003" layoutX="454.0" layoutY="400.0" maxValue="1600.0" param="P" prefHeight="25.0" prefWidth="100.0" system="GT" unit="кПа(g)">
+         <tooltip>
+            <Tooltip text="kPa(g), Air pressure (8,5 bar)" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl kks="41EKH27CP408" layoutX="440.0" layoutY="911.0" maxValue="2500.0" param="P" prefHeight="25.0" prefWidth="100.0" system="GT" unit="кПа(g)">
+         <tooltip>
+            <Tooltip text="kPa(g), Nitrogen supply pressure" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl kks="41EKH28CP408" layoutX="617.0" layoutY="911.0" maxValue="2500.0" param="P" prefHeight="25.0" prefWidth="100.0" system="GT" unit="кПа(g)">
+         <tooltip>
+            <Tooltip text="kPa(g), Nitrogen supply pressure" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl kks="41EKH50CP001" layoutX="1476.0" layoutY="315.0" maxValue="1000.0" param="P" prefHeight="25.0" prefWidth="100.0" system="GT" unit="кПа(g)">
+         <tooltip>
+            <Tooltip text="kPa(g), N2 pressure (6 bar)" />
+         </tooltip>
+      </DetectorControl>
+      <PumpControl kks="41EKH50AN001" layoutX="5.0" layoutY="225.0" prefHeight="35.0" prefWidth="35.0" />
+      <PumpControl kks="41EKH50AN002" layoutX="5.0" layoutY="461.0" prefHeight="35.0" prefWidth="35.0" />
+      <PumpControl kks="41EKH50AN003" layoutX="1313.0" layoutY="606.0" prefHeight="35.0" prefWidth="35.0" />
+      <PumpControl kks="41EKH50AN004" layoutX="1312.0" layoutY="702.0" prefHeight="35.0" prefWidth="35.0" />
+      <PumpControl kks="41EKH50AN005" layoutX="1460.0" layoutY="930.0" prefHeight="35.0" prefWidth="35.0" />
+      <ValveControl kks="41EKH50AA101" layoutX="42.0" layoutY="296.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA104" layoutX="42.0" layoutY="534.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA102" layoutX="534.0" layoutY="327.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA105" layoutX="536.0" layoutY="470.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="CHV" kks="41EKH50AA051" layoutX="454.0" layoutY="295.0" orientation="HORIZONTAL_REVERSE" prefHeight="20.0" prefWidth="40.0" skinType="CHECK_VLV" valueVisible="false" />
+      <ValveControl equipmentType="CHV" kks="41EKH50AA052" layoutX="454.0" layoutY="533.0" orientation="HORIZONTAL_REVERSE" prefHeight="20.0" prefWidth="40.0" skinType="CHECK_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA107" layoutX="692.0" layoutY="343.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA108" layoutX="694.0" layoutY="435.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA801" layoutX="813.0" layoutY="344.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA803" layoutX="847.0" layoutY="435.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="AOC" kks="41EKH50AA802" layoutX="902.0" layoutY="344.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="AOC" kks="41EKH50AA804" layoutX="936.0" layoutY="435.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="AOC" kks="41EKH50AA805" layoutX="979.0" layoutY="375.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="AOC" kks="41EKH50AA806" layoutX="1001.0" layoutY="526.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA808" layoutX="1228.0" layoutY="297.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA124" layoutX="1317.0" layoutY="297.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA115" layoutX="1474.0" layoutY="249.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="AOC" kks="41EKH50AA811" layoutX="1602.0" layoutY="249.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA116" layoutX="1666.0" layoutY="249.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA121" layoutX="1250.0" layoutY="614.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA123" layoutX="1249.0" layoutY="710.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA122" layoutX="1448.0" layoutY="614.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA125" layoutX="1447.0" layoutY="710.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA127" layoutX="1660.0" layoutY="663.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA128" layoutX="1246.0" layoutY="855.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA129" layoutX="1397.0" layoutY="938.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA130" layoutX="1595.0" layoutY="939.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA132" layoutX="1675.0" layoutY="938.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA133" layoutX="1835.0" layoutY="938.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="AOC" kks="41EKH50AA812_1" layoutX="1837.0" layoutY="425.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="AOC" kks="41EKH50AA812" layoutX="1881.0" layoutY="741.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="CHV" kks="41EKH50AA812" layoutX="1882.0" layoutY="655.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="CHECK_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA117" layoutX="1735.0" layoutY="249.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="CHV" kks="41EKH50AA053" layoutX="1800.0" layoutY="249.0" orientation="HORIZONTAL_REVERSE" prefHeight="20.0" prefWidth="40.0" skinType="CHECK_VLV" valueVisible="false" />
+      <ValveControl equipmentType="CHV" kks="41EKH50AA055" layoutX="1838.0" layoutY="294.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="CHECK_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA119" layoutX="1838.0" layoutY="358.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA807" layoutX="1231.0" layoutY="57.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA110" layoutX="1309.0" layoutY="243.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="AOC" kks="41EKH50AA809" layoutX="1366.0" layoutY="70.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA111" layoutX="1427.0" layoutY="70.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA109" layoutX="1290.0" layoutY="158.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA112" layoutX="1272.0" layoutY="349.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="AOC" kks="41EKH50AA810" layoutX="1387.0" layoutY="446.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA113" layoutX="1452.0" layoutY="446.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA134" layoutX="1751.0" layoutY="853.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA131" layoutX="1637.0" layoutY="818.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA410" layoutX="1318.0" layoutY="1008.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA409" layoutX="1538.0" layoutY="775.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA412" layoutX="1401.0" layoutY="363.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA136" layoutX="771.0" layoutY="551.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA135" layoutX="771.0" layoutY="681.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA137" layoutX="771.0" layoutY="807.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA204" layoutX="616.0" layoutY="564.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="AOC" kks="41EKH50AA813" layoutX="771.0" layoutY="616.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA215" layoutX="277.0" layoutY="600.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA203" layoutX="258.0" layoutY="345.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA402" layoutX="102.0" layoutY="598.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA106" layoutX="692.0" layoutY="310.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH50AA403" layoutX="756.0" layoutY="310.0" prefHeight="20.0" prefWidth="40.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="RLF" kks="41EKH50AA031" layoutX="618.0" layoutY="211.0" orientation="HORIZONTAL_REVERSE" prefHeight="37.0" prefWidth="37.0" skinType="SAFETY_VLV_V2" valueVisible="false" />
+      <ValveControl equipmentType="RLF" kks="41EKH50AA033" layoutX="1402.0" layoutY="119.0" orientation="HORIZONTAL_REVERSE" prefHeight="37.0" prefWidth="37.0" skinType="SAFETY_VLV_V2" valueVisible="false" />
+      <ValveControl equipmentType="RLF" kks="41EKH50AA032" layoutX="1540.0" layoutY="525.0" orientation="HORIZONTAL_REVERSE" prefHeight="37.0" prefWidth="37.0" skinType="SAFETY_VLV_V2" valueVisible="false" />
+      <ValveControl equipmentType="RLF" kks="41EKH50AA034" layoutX="1319.0" layoutY="763.0" orientation="HORIZONTAL_REVERSE" prefHeight="37.0" prefWidth="37.0" skinType="SAFETY_VLV_V2" valueVisible="false" />
+      <ValveControl equipmentType="RLF" kks="41EKH50AA035" layoutX="1846.0" layoutY="550.0" prefHeight="37.0" prefWidth="37.0" skinType="SAFETY_VLV_V2" valueVisible="false" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="51.0" layoutX="1742.0" layoutY="916.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" width="26.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="51.0" layoutX="1766.0" layoutY="916.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" width="26.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="51.0" layoutX="1790.0" layoutY="916.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" width="26.0" />
+      <Arc fill="#1f93ff00" layoutX="1755.0" layoutY="917.0" length="180.0" radiusX="12.0" radiusY="12.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Arc fill="#1f93ff00" layoutX="1779.0" layoutY="917.0" length="180.0" radiusX="12.0" radiusY="12.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Arc fill="#1f93ff00" layoutX="1803.0" layoutY="917.0" length="180.0" radiusX="12.0" radiusY="12.0" stroke="GREEN" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="-99.75" endY="-54.5" layoutX="376.0" layoutY="348.0" startX="-92.53842163085938" startY="-42.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-102.5" endY="-56.5" layoutX="385.0" layoutY="362.0" startX="-109.0" startY="-46.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-99.75" endY="-54.5" layoutX="518.0" layoutY="348.0" startX="-92.53842163085938" startY="-42.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-102.5" endY="-56.5" layoutX="527.0" layoutY="362.0" startX="-109.0" startY="-46.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-99.75" endY="-54.5" layoutX="394.0" layoutY="586.0" startX="-92.53842163085938" startY="-42.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-102.5" endY="-56.5" layoutX="403.0" layoutY="600.0" startX="-109.0" startY="-46.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-99.75" endY="-54.5" layoutX="518.0" layoutY="586.0" startX="-92.53842163085938" startY="-42.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-102.5" endY="-56.5" layoutX="527.0" layoutY="600.0" startX="-109.0" startY="-46.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-99.75" endY="-54.5" layoutX="1513.0" layoutY="763.0" startX="-92.53842163085938" startY="-42.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-102.5" endY="-56.5" layoutX="1522.0" layoutY="777.0" startX="-109.0" startY="-46.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-99.75" endY="-54.5" layoutX="1513.0" layoutY="667.0" startX="-92.53842163085938" startY="-42.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-102.5" endY="-56.5" layoutX="1522.0" layoutY="681.0" startX="-109.0" startY="-46.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-99.75" endY="-54.5" layoutX="1662.0" layoutY="990.0" startX="-92.53842163085938" startY="-42.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-102.5" endY="-56.5" layoutX="1671.0" layoutY="1004.0" startX="-109.0" startY="-46.5" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-99.75" endY="-54.5" layoutX="1678.0" layoutY="302.0" startX="-92.53842163085938" startY="-42.75" stroke="GREEN" strokeWidth="3.0" />
+      <Line endX="-102.5" endY="-56.5" layoutX="1687.0" layoutY="316.0" startX="-109.0" startY="-46.5" stroke="GREEN" strokeWidth="3.0" />
+      <FunctionControl equipmentType="ARROW_BUTTON" layoutX="1531.0" layoutY="70.0" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.501960813999176" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl equipmentType="ARROW_BUTTON" layoutX="1549.0" layoutY="446.0" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.501960813999176" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl equipmentType="ARROW_BUTTON" layoutX="1647.0" layoutY="764.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.501960813999176" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl equipmentType="ARROW_BUTTON" layoutX="781.0" layoutY="856.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.501960813999176" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl equipmentType="ARROW_BUTTON" layoutX="628.0" layoutY="856.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.501960813999176" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl equipmentType="ARROW_BUTTON" layoutX="490.0" layoutY="856.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color green="0.501960813999176" />
+         </controlBackgroundColor>
+      </FunctionControl>
+   </children>
+</AnchorPane>

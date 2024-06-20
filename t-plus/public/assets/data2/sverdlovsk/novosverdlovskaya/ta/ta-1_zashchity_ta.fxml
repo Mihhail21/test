@@ -1,0 +1,1873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.ButtonControl?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.IndicationControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="55.0" layoutX="319.0" layoutY="54.0" stroke="GREY" strokeType="INSIDE" width="1301.0" />
+      <Text layoutX="414.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Технологические защиты турбогенератора" textAlignment="CENTER" wrappingWidth="409.21519470214844">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="926.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Текущее" textAlignment="CENTER" wrappingWidth="86.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1025.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РВЗ" textAlignment="CENTER" wrappingWidth="36.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1089.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Уставка" textAlignment="CENTER" wrappingWidth="77.99999999999977">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1287.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ремонт" textAlignment="CENTER" wrappingWidth="72.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1368.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;На сигнал&quot;" textAlignment="CENTER" wrappingWidth="77.99999999999977">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1450.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сигнал" textAlignment="CENTER" wrappingWidth="69.00000000000023">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1526.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сработал" textAlignment="CENTER" wrappingWidth="89.99999999999977">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1191.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Прибор" textAlignment="CENTER" wrappingWidth="78.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" fill="#1f93ff00" height="57.0" layoutX="232.0" layoutY="1014.0" stroke="#b7b7b7" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="319.0" layoutY="487.0" stroke="GREY" strokeType="INSIDE" width="1302.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="319.0" layoutY="534.0" stroke="GREY" strokeType="INSIDE" width="1302.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="319.0" layoutY="158.0" stroke="GREY" strokeType="INSIDE" width="1302.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="319.0" layoutY="205.0" stroke="GREY" strokeType="INSIDE" width="1302.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="319.0" layoutY="252.0" stroke="GREY" strokeType="INSIDE" width="1302.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="93.0" layoutX="319.0" layoutY="298.0" stroke="GREY" strokeType="INSIDE" width="1302.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="319.0" layoutY="393.0" stroke="GREY" strokeType="INSIDE" width="1302.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="319.0" layoutY="440.0" stroke="GREY" strokeType="INSIDE" width="1302.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="319.0" layoutY="581.0" stroke="GREY" strokeType="INSIDE" width="1302.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="319.0" layoutY="628.0" stroke="GREY" strokeType="INSIDE" width="1302.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="319.0" layoutY="763.0" stroke="GREY" strokeType="INSIDE" width="1302.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="319.0" layoutY="854.0" stroke="GREY" strokeType="INSIDE" width="1302.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="319.0" layoutY="675.0" stroke="GREY" strokeType="INSIDE" width="1302.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="319.0" layoutY="901.0" stroke="GREY" strokeType="INSIDE" width="1302.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="319.0" layoutY="948.0" stroke="GREY" strokeType="INSIDE" width="1302.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="45.0" layoutX="319.0" layoutY="111.0" stroke="GREY" strokeType="INSIDE" width="1302.0" />
+      <Text fill="WHITE" layoutX="563.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Технологические защиты, воздействующие на останов турбины" textAlignment="CENTER" wrappingWidth="879.6666259765625">
+         <font>
+            <Font name="Tahoma Bold" size="26.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="59.5" layoutX="1026.0" layoutY="49.0" startX="-100.0" startY="6.666667938232422" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="60.5" layoutX="1112.0" layoutY="48.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="670.6666870117188" layoutX="1175.0" layoutY="48.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="670.0" layoutX="1464.0" layoutY="48.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="61.0" layoutX="1546.0" layoutY="48.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="60.333335876464844" layoutX="1622.0" layoutY="48.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+      <Text fill="WHITE" layoutX="804.0" layoutY="750.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Локальные защиты турбины" textAlignment="CENTER" wrappingWidth="394.3333740234375">
+         <font>
+            <Font name="Tahoma Bold" size="26.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="450.0" layoutY="839.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Защиты, действующие на останов турбины при выполнении пусковых операций" textAlignment="CENTER" wrappingWidth="1107.6666259765625">
+         <font>
+            <Font name="Tahoma Bold" size="26.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="644.0" layoutX="1279.0" layoutY="74.0" startX="-100.0" startY="-20.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1026.0" layoutY="247.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1026.0" layoutY="294.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1026.0" layoutY="341.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1026.0" layoutY="388.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1026.0" layoutY="435.0" startX="-100.0" startY="7.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1026.0" layoutY="482.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1026.0" layoutY="529.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1026.0" layoutY="576.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1026.0" layoutY="623.0" startX="-100.0" startY="7.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1026.0" layoutY="105.0" startX="-100.0" startY="7.5" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1026.0" layoutY="152.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1026.0" layoutY="199.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1026.0" layoutY="757.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1026.0" layoutY="848.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1026.0" layoutY="670.0" startX="-100.0" startY="7.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1026.0" layoutY="895.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="50.0" layoutX="1026.0" layoutY="942.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rp001" layoutX="1282.0" layoutY="113.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rp002" layoutX="1282.0" layoutY="160.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rp003" layoutX="1282.0" layoutY="208.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rp004" layoutX="1282.0" layoutY="254.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rp005" layoutX="1282.0" layoutY="299.0" prefHeight="90.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rp006" layoutX="1282.0" layoutY="395.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rp007" layoutX="1282.0" layoutY="442.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rp008" layoutX="1282.0" layoutY="490.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rp009" layoutX="1282.0" layoutY="537.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rp010" layoutX="1282.0" layoutY="583.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rp011" layoutX="1282.0" layoutY="630.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rp013" layoutX="1282.0" layoutY="677.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1ts_013" layoutX="1425.0" layoutY="677.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sg001" layoutX="1448.0" layoutY="112.0" prefHeight="40.0" prefWidth="72.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sg002" layoutX="1448.0" layoutY="160.0" prefHeight="40.0" prefWidth="72.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sg003" layoutX="1448.0" layoutY="206.0" prefHeight="40.0" prefWidth="72.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sg004" layoutX="1448.0" layoutY="253.0" prefHeight="40.0" prefWidth="72.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sg005" layoutX="1448.0" layoutY="300.0" prefHeight="86.0" prefWidth="72.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sg007" layoutX="1448.0" layoutY="394.0" prefHeight="40.0" prefWidth="72.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sg008" layoutX="1448.0" layoutY="441.0" prefHeight="40.0" prefWidth="72.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sg009" layoutX="1448.0" layoutY="488.0" prefHeight="40.0" prefWidth="72.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sg010" layoutX="1448.0" layoutY="536.0" prefHeight="40.0" prefWidth="72.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sg011" layoutX="1448.0" layoutY="583.0" prefHeight="40.0" prefWidth="72.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sg012" layoutX="1448.0" layoutY="630.0" prefHeight="40.0" prefWidth="72.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sg014" layoutX="1448.0" layoutY="676.0" prefHeight="40.0" prefWidth="72.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rvz_006" layoutX="1013.0" layoutY="395.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rp014" layoutX="1281.0" layoutY="765.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rp015" layoutX="1281.0" layoutY="857.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rp016" layoutX="1281.0" layoutY="904.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rp017" layoutX="1282.0" layoutY="950.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sg015" layoutX="1448.0" layoutY="765.0" prefHeight="40.0" prefWidth="72.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sg016" layoutX="1448.0" layoutY="855.0" prefHeight="40.0" prefWidth="72.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sg017" layoutX="1448.0" layoutY="902.0" prefHeight="40.0" prefWidth="72.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sg018" layoutX="1448.0" layoutY="949.0" prefHeight="40.0" prefWidth="72.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sr001" layoutX="1523.0" layoutY="112.0" prefHeight="40.0" prefWidth="95.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sr002" layoutX="1523.0" layoutY="160.0" prefHeight="40.0" prefWidth="95.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sr003" layoutX="1523.0" layoutY="206.0" prefHeight="40.0" prefWidth="95.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sr004" layoutX="1523.0" layoutY="253.0" prefHeight="40.0" prefWidth="95.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sr005" layoutX="1524.0" layoutY="300.0" prefHeight="86.0" prefWidth="92.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sr007" layoutX="1523.0" layoutY="394.0" prefHeight="40.0" prefWidth="95.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sr008" layoutX="1523.0" layoutY="441.0" prefHeight="40.0" prefWidth="95.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sr009" layoutX="1523.0" layoutY="488.0" prefHeight="40.0" prefWidth="95.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sr010" layoutX="1523.0" layoutY="536.0" prefHeight="40.0" prefWidth="95.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sr011" layoutX="1523.0" layoutY="583.0" prefHeight="40.0" prefWidth="95.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sr012" layoutX="1523.0" layoutY="630.0" prefHeight="40.0" prefWidth="95.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sr014" layoutX="1523.0" layoutY="676.0" prefHeight="40.0" prefWidth="95.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sr015" layoutX="1523.0" layoutY="765.0" prefHeight="40.0" prefWidth="95.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sr016" layoutX="1523.0" layoutY="855.0" prefHeight="40.0" prefWidth="95.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sr017" layoutX="1523.0" layoutY="902.0" prefHeight="40.0" prefWidth="95.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_sr018" layoutX="1523.0" layoutY="949.0" prefHeight="40.0" prefWidth="95.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Понижение вакуума в конденсаторе" interactive="false" kks="ss:ta_1_tz001" layoutX="321.0" layoutY="112.0" prefHeight="40.0" prefWidth="604.0" secondStatus="Понижение вакуума в конденсаторе" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Осевой сдвиг ротора турбины" interactive="false" kks="ss:ta_1_tz002" layoutX="321.0" layoutY="159.0" prefHeight="40.0" prefWidth="604.0" secondStatus="Осевой сдвиг ротора турбины" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Понижение давления масла в системе смазки" interactive="false" kks="ss:ta_1_tz003" layoutX="321.0" layoutY="206.0" prefHeight="40.0" prefWidth="604.0" secondStatus="Понижение давления масла в системе смазки" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Понижение температуры острого пара перед турбиной" interactive="false" kks="ss:ta_1_tz004" layoutX="321.0" layoutY="253.0" prefHeight="40.0" prefWidth="604.0" secondStatus="Понижение температуры острого пара перед турбиной" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Одновременное&#10;Понижение давления цирк. воды &#10;Повышение температуры масла за маслоохладителями" interactive="false" kks="ss:ta_1_tz005" layoutX="321.0" layoutY="299.0" prefHeight="90.0" prefWidth="600.0" secondStatus="Одновременное&#10;Понижение давления цирк. воды &#10;Повышение температуры масла за маслоохладителями" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Понижение уровня в демпферном баке до 1 предела" interactive="false" kks="ss:ta_1_tz006" layoutX="321.0" layoutY="394.0" prefHeight="40.0" prefWidth="604.0" secondStatus="Понижение уровня в демпферном баке до 1 предела" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Понижение уровня в демпферном баке до 2 предела" interactive="false" kks="ss:ta_1_tz007" layoutX="321.0" layoutY="441.0" prefHeight="40.0" prefWidth="604.0" secondStatus="Понижение уровня в демпферном баке до 2 предела" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Отключение генератора под действием внутренних повреждений" interactive="false" kks="ss:ta_1_tz008" layoutX="321.0" layoutY="488.0" prefHeight="40.0" prefWidth="604.0" secondStatus="Отключение генератора под действием внутренних повреждений" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Снижение протока воды через воздухоохладитель возбудителя" interactive="false" kks="ss:ta_1_tz009" layoutX="321.0" layoutY="535.0" prefHeight="40.0" prefWidth="604.0" secondStatus="Снижение протока воды через воздухоохладитель возбудителя" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Повышение давления пара в сетевом подогревателе №1" interactive="false" kks="ss:ta_1_tz010" layoutX="321.0" layoutY="582.0" prefHeight="40.0" prefWidth="604.0" secondStatus="Повышение давления пара в сетевом подогревателе №1" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Ручной останов турбины" interactive="false" kks="ss:ta_1_tz011" layoutX="321.0" layoutY="629.0" prefHeight="40.0" prefWidth="604.0" secondStatus="Ручной останов турбины" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Повышение виброскорости подшипников" interactive="false" kks="ss:ta_1_tz013" layoutX="321.0" layoutY="676.0" prefHeight="40.0" prefWidth="604.0" secondStatus="Повышение виброскорости подшипников" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Отключение генератора под действием внешних повреждений" interactive="false" kks="ss:ta_1_tz014" layoutX="321.0" layoutY="764.0" prefHeight="40.0" prefWidth="604.0" secondStatus="Отключение генератора под действием внешних повреждений" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Защита ОРР ЦВД" interactive="false" kks="ss:ta_1_tz015" layoutX="321.0" layoutY="855.0" prefHeight="40.0" prefWidth="604.0" secondStatus="Защита ОРР ЦВД" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Защита ОРР ЦСД" interactive="false" kks="ss:ta_1_tz016" layoutX="321.0" layoutY="902.0" prefHeight="40.0" prefWidth="604.0" secondStatus="Защита ОРР ЦСД" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Защита ОРР ЦНД" interactive="false" kks="ss:ta_1_tz017" layoutX="321.0" layoutY="949.0" prefHeight="40.0" prefWidth="604.0" secondStatus="Защита ОРР ЦНД" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="0.6235294342041016" green="0.8392156958580017" blue="0.3450980484485626" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_tk001" layoutX="929.0" layoutY="112.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_tk002" layoutX="929.0" layoutY="159.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_tk003" layoutX="929.0" layoutY="206.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_tk004" layoutX="929.0" layoutY="253.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_tk005" layoutX="929.0" layoutY="299.0" prefHeight="90.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_tk006" layoutX="929.0" layoutY="394.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_tk007" layoutX="929.0" layoutY="441.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_tk008" layoutX="929.0" layoutY="488.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_tk009" layoutX="929.0" layoutY="535.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_tk010" layoutX="929.0" layoutY="582.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_tk011" layoutX="929.0" layoutY="629.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_tk013" layoutX="929.0" layoutY="676.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_tk014" layoutX="929.0" layoutY="764.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_tk015" layoutX="929.0" layoutY="855.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_tk016" layoutX="929.0" layoutY="902.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="" interactive="false" kks="ss:ta_1_tk017" layoutX="929.0" layoutY="949.0" prefHeight="40.0" prefWidth="80.0" secondStatus="" singleClickEnabled="true" skinType="TABLO">
+         <secondStatusColor>
+            <Color red="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color green="1.0" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Общий" buttonOnText="Общий" diagramTitle="ТА-1 Общий.fxml" equipmentType="TRANSITION_BUTTON" kks="31" layoutX="627.0" layoutY="1033.0" prefHeight="38.0" prefWidth="46.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Маслоснабжение" buttonOnText="Маслоснабжение" diagramTitle="ТА-1 Маслоснабжение.fxml" equipmentType="TRANSITION_BUTTON" kks="32" layoutX="677.0" layoutY="1033.0" prefHeight="38.0" prefWidth="100.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="ОК" buttonOnText="ОК" diagramTitle="ТА-1 ОК.fxml" equipmentType="TRANSITION_BUTTON" kks="33" layoutX="781.0" layoutY="1033.0" prefHeight="38.0" prefWidth="41.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Регенерация ТА" buttonOnText="Регенерация ТА" diagramTitle="ТА-1 Система регенерации ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="34" layoutX="826.0" layoutY="1033.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Техничническая вода" buttonOnText="Техничническая вода" diagramTitle="ТА-1 Техническая вода.fxml" equipmentType="TRANSITION_BUTTON" kks="35" layoutX="908.0" layoutY="1033.0" prefHeight="38.0" prefWidth="96.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Генератор (охлаждение)" buttonOnText="Генератор (охлаждение)" diagramTitle="ТА-1 Генератор (охлаждение).fxml" equipmentType="TRANSITION_BUTTON" kks="36" layoutX="1008.0" layoutY="1033.0" prefHeight="38.0" prefWidth="86.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Мех. величины" buttonOnText="Мех. величины" diagramTitle="ТА-1 Мех. величины.fxml" equipmentType="TRANSITION_BUTTON" kks="38" layoutX="1175.0" layoutY="1033.0" prefHeight="38.0" prefWidth="96.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="ПСГ" buttonOnText="ПСГ" diagramTitle="ТА-1 ПСГ.fxml" equipmentType="TRANSITION_BUTTON" kks="39" layoutX="1275.0" layoutY="1033.0" prefHeight="38.0" prefWidth="36.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Конденсатор" buttonOnText="Конденсатор" diagramTitle="ТА-1 Конденсатор.fxml" equipmentType="TRANSITION_BUTTON" kks="40" layoutX="1315.0" layoutY="1033.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Уплотнения ТА" buttonOnText="Уплотнения ТА" diagramTitle="ТА-1 Уплотнения ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="41" layoutX="1397.0" layoutY="1033.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Рабочее масло" buttonOnText="Рабочее масло" diagramTitle="ТА-1 Рабочее масло.fxml" equipmentType="TRANSITION_BUTTON" kks="42" layoutX="1479.0" layoutY="1033.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Грязное масло ТА" buttonOnText="Грязное масло ТА" diagramTitle="ТА-1 Грязное масло ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="43" layoutX="1561.0" layoutY="1033.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Защиты ТА(ПВД, ПСГ)" buttonOnText="Защиты ТА(ПВД, ПСГ)" diagramTitle="ТА-1 Защиты ТА(ПВД, ПСГ).fxml" equipmentType="TRANSITION_BUTTON" kks="45" layoutX="1725.0" layoutY="1033.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Защиты ТА" buttonOnText="Защиты ТА" diagramTitle="ТА-1 Защиты ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="44" layoutX="1643.0" layoutY="1033.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Генератор (УВГ)" buttonOnText="Генератор (УВГ)" diagramTitle="ТА-1 Генератор (УВГ).fxml" equipmentType="TRANSITION_BUTTON" kks="37" layoutX="1098.0" layoutY="1033.0" prefHeight="38.0" prefWidth="73.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Сигнализации ТА" buttonOnText="Сигнализации ТА" diagramTitle="ТА-1 Сигнализации ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="46" layoutX="1807.0" layoutY="1033.0" prefHeight="38.0" prefWidth="103.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1rvzlmp_001" layoutX="1012.0" layoutY="114.0" prefHeight="37.0" prefWidth="60.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rvz_001" layoutX="1015.0" layoutY="112.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1rvzlmp_002" layoutX="1012.0" layoutY="161.0" prefHeight="37.0" prefWidth="60.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rvz_002" layoutX="1015.0" layoutY="159.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1rvzlmp_003" layoutX="1012.0" layoutY="208.0" prefHeight="37.0" prefWidth="60.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rvz_003" layoutX="1015.0" layoutY="206.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1rvzlmp_004" layoutX="1012.0" layoutY="255.0" prefHeight="37.0" prefWidth="60.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rvz_004" layoutX="1015.0" layoutY="253.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1rvzlmp_005" layoutX="1012.0" layoutY="300.0" prefHeight="90.0" prefWidth="60.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rvz_005" layoutX="1015.0" layoutY="300.0" opacity="0.0" prefHeight="90.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1rvzlmp_006" layoutX="1012.0" layoutY="395.0" prefHeight="37.0" prefWidth="60.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rvz_006" layoutX="1015.0" layoutY="393.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1rvzlmp_007" layoutX="1012.0" layoutY="443.0" prefHeight="37.0" prefWidth="60.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rvz_007" layoutX="1015.0" layoutY="441.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1rvzlmp_008" layoutX="1012.0" layoutY="490.0" prefHeight="37.0" prefWidth="60.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rvz_008" layoutX="1015.0" layoutY="488.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1rvzlmp_009" layoutX="1012.0" layoutY="537.0" prefHeight="37.0" prefWidth="60.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rvz_009" layoutX="1015.0" layoutY="535.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1rvzlmp_010" layoutX="1012.0" layoutY="584.0" prefHeight="37.0" prefWidth="60.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rvz_010" layoutX="1015.0" layoutY="582.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1rvzlmp_011" layoutX="1012.0" layoutY="631.0" prefHeight="37.0" prefWidth="60.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rvz_011" layoutX="1015.0" layoutY="629.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1rvzlmp_013" layoutX="1012.0" layoutY="678.0" prefHeight="37.0" prefWidth="60.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rvz_013" layoutX="1015.0" layoutY="676.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1rvzlmp_014" layoutX="1012.0" layoutY="766.0" prefHeight="37.0" prefWidth="60.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rvz_014" layoutX="1015.0" layoutY="764.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1rvzlmp_015" layoutX="1012.0" layoutY="856.0" prefHeight="37.0" prefWidth="60.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rvz_015" layoutX="1015.0" layoutY="854.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1rvzlmp_016" layoutX="1012.0" layoutY="903.0" prefHeight="37.0" prefWidth="60.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rvz_016" layoutX="1015.0" layoutY="901.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1rvzlmp_017" layoutX="1012.0" layoutY="950.0" prefHeight="37.0" prefWidth="60.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1rvz_017" layoutX="1015.0" layoutY="948.0" opacity="0.0" prefHeight="40.0" prefWidth="60.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1tslmp_001" layoutX="1365.0" layoutY="114.0" prefHeight="37.0" prefWidth="80.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1ts_001" layoutX="1367.0" layoutY="112.0" opacity="0.0" prefHeight="40.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1tslmp_002" layoutX="1365.0" layoutY="161.0" prefHeight="37.0" prefWidth="80.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1ts_002" layoutX="1367.0" layoutY="159.0" opacity="0.0" prefHeight="40.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1tslmp_003" layoutX="1365.0" layoutY="208.0" prefHeight="37.0" prefWidth="80.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1ts_003" layoutX="1365.0" layoutY="206.0" opacity="0.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1tslmp_004" layoutX="1365.0" layoutY="255.0" prefHeight="37.0" prefWidth="80.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1ts_004" layoutX="1367.0" layoutY="253.0" opacity="0.0" prefHeight="40.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1tslmp_005" layoutX="1365.0" layoutY="300.0" prefHeight="90.0" prefWidth="80.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1ts_005" layoutX="1367.0" layoutY="300.0" opacity="0.0" prefHeight="90.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1tslmp_006" layoutX="1365.0" layoutY="396.0" prefHeight="37.0" prefWidth="80.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1ts_006" layoutX="1367.0" layoutY="394.0" opacity="0.0" prefHeight="40.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1tslmp_007" layoutX="1365.0" layoutY="443.0" prefHeight="37.0" prefWidth="80.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1ts_007" layoutX="1367.0" layoutY="441.0" opacity="0.0" prefHeight="40.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1tslmp_008" layoutX="1365.0" layoutY="490.0" prefHeight="37.0" prefWidth="80.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1ts_008" layoutX="1365.0" layoutY="488.0" opacity="0.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1tslmp_009" layoutX="1365.0" layoutY="537.0" prefHeight="37.0" prefWidth="80.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1ts_009" layoutX="1367.0" layoutY="535.0" opacity="0.0" prefHeight="40.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1tslmp_010" layoutX="1365.0" layoutY="584.0" prefHeight="37.0" prefWidth="80.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1ts_010" layoutX="1367.0" layoutY="582.0" opacity="0.0" prefHeight="40.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1tslmp_011" layoutX="1365.0" layoutY="631.0" prefHeight="37.0" prefWidth="80.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1ts_011" layoutX="1367.0" layoutY="629.0" opacity="0.0" prefHeight="40.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1tslmp_013" layoutX="1365.0" layoutY="678.0" prefHeight="37.0" prefWidth="80.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1ts_013" layoutX="1367.0" layoutY="675.0" opacity="0.0" prefHeight="40.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="СТОП" buttonOnText="СТОП" equipmentType="TEXT_BUTTON" kks="yp:tg_1_stop" layoutX="244.0" layoutY="1022.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1tslmp_014" layoutX="1365.0" layoutY="766.0" prefHeight="37.0" prefWidth="80.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1ts_014" layoutX="1367.0" layoutY="764.0" opacity="0.0" prefHeight="40.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1tslmp_015" layoutX="1365.0" layoutY="856.0" prefHeight="37.0" prefWidth="80.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1ts_015" layoutX="1367.0" layoutY="854.0" opacity="0.0" prefHeight="40.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1tslmp_016" layoutX="1365.0" layoutY="904.0" prefHeight="37.0" prefWidth="80.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1ts_016" layoutX="1367.0" layoutY="902.0" opacity="0.0" prefHeight="40.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <IndicationControl borderWidth="0.0" equipmentType="TABLO" firstStatus="Откл" kks="yp:rmetg1tslmp_017" layoutX="1365.0" layoutY="951.0" prefHeight="37.0" prefWidth="80.0" secondStatus="Вкл" skinType="TABLO">
+         <secondStatusColor>
+            <Color green="1.0" />
+         </secondStatusColor>
+         <firstStatusColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </firstStatusColor>
+      </IndicationControl>
+      <ButtonControl buttonOffText="Вкл" buttonOnText="Откл" equipmentType="TEXT_BUTTON" kks="yp:rmetg1ts_017" layoutX="1367.0" layoutY="949.0" opacity="0.0" prefHeight="40.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <Rectangle arcHeight="5.0" fill="#1f93ff00" height="57.0" layoutX="342.0" layoutY="1014.0" stroke="#b7b7b7" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
+      <ButtonControl buttonOffText="СБРОС АВАРИИ" buttonOnText="СБРОС АВАРИИ" equipmentType="RETURN_BUTTON" kks="yp:metg1reset" layoutX="354.0" layoutY="1022.0" prefHeight="40.0" prefWidth="80.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="12.0" />
+         </customFont>
+      </ButtonControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="1m_2" layoutX="1192.0" layoutY="254.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="температура острого пара перед ГПЗ-2" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="1m_298" layoutX="1192.0" layoutY="209.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Давление масла к подшипникам" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="1m_752" layoutX="1192.0" layoutY="161.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Осевой сдвиг ТА" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="1gp_20" layoutX="1192.0" layoutY="442.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Н масла в ДМБ" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="1gp_20" layoutX="1192.0" layoutY="396.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Н масла в ДМБ" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="1m_354z" layoutX="1192.0" layoutY="300.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Давление охладжающей воды к маслоохладителям ТГ-1 (1М-354 З)" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="1m_15" layoutX="1192.0" layoutY="348.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Температура масла на смазку к подшипникам" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="1m_330_z" layoutX="1192.0" layoutY="583.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Давление пара в сет.подогр.1" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="1gp_70" layoutX="1192.0" layoutY="536.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Расход олаждающей воды на воздухоохладители возбудителя ТГ-1" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="1m_703" layoutX="1192.0" layoutY="857.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Относительное расширение ротора ЦВД" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="1m_704" layoutX="1192.0" layoutY="904.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Относительное расширение ротора ЦСД" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#2e2d2e00" borderPaint="#b0373700" foregroundPaint="#a14d4d" kks="1m_705" layoutX="1192.0" layoutY="950.0" maxValue="600.0" minValue="-100.0" param="" prefHeight="40.0" prefWidth="75.0" system="SW" unit="">
+         <tooltip>
+            <Tooltip text="Относительное расширение ротора ЦНД" />
+         </tooltip>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </DetectorControl>
+      <Line endX="-100.0" endY="459.66668701171875" layoutX="1279.0" layoutY="347.0" startX="-100.0" startY="418.33331298828125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="555.0" layoutX="1279.0" layoutY="437.0" startX="-100.0" startY="418.33331298828125" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="670.0" layoutX="1380.0" layoutY="136.0" startX="-100.0" startY="628.6666870117188" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="766.0" layoutX="1380.0" layoutY="227.0" startX="-100.0" startY="628.6666870117188" strokeWidth="2.0" />
+      <Text layoutX="1109.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="500" textAlignment="CENTER" wrappingWidth="34.66662597656227">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="670.6666870117188" layoutX="1175.0" layoutY="135.0" startX="-100.0" startY="630.3333129882812" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="766.0" layoutX="1175.0" layoutY="226.0" startX="-100.0" startY="630.3333129882812" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="766.0" layoutX="1227.0" layoutY="226.0" startX="-100.0" startY="630.3333129882812" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="671.3333129882812" layoutX="1227.0" layoutY="-470.0" startX="-100.0" startY="630.3333129882812" strokeWidth="2.0" />
+      <Text layoutX="1114.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="65" textAlignment="CENTER" wrappingWidth="23.333374023437273">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1112.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.5" textAlignment="CENTER" wrappingWidth="28.666625976562273">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="-151.0" endY="661.3333740234375" layoutX="1227.0" layoutY="-318.0" startX="51.0" startY="661.3333740234375" strokeWidth="2.0" />
+      <Text layoutX="1120.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" textAlignment="CENTER" wrappingWidth="11.333374023437273">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1114.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="53" textAlignment="CENTER" wrappingWidth="23.333374023437273">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="-111.0" endY="661.3333740234375" layoutX="1228.0" layoutY="-152.0" startX="-91.6666259765625" startY="661.3333740234375" strokeWidth="2.0" />
+      <Text layoutX="1120.0" layoutY="564.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" textAlignment="CENTER" wrappingWidth="11.333374023437273">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1112.0" layoutY="611.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.8" textAlignment="CENTER" wrappingWidth="28.666625976562273">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1105.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.25" textAlignment="CENTER" wrappingWidth="42.999938964843295">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1083.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1.2" textAlignment="CENTER" wrappingWidth="35.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1134.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-1.2" textAlignment="CENTER" wrappingWidth="35.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1088.0" layoutY="881.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+3" textAlignment="CENTER" wrappingWidth="25.500091552733693">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1134.0" layoutY="881.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-1.2" textAlignment="CENTER" wrappingWidth="35.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1134.0" layoutY="929.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-2.5" textAlignment="CENTER" wrappingWidth="35.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1144.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-4" textAlignment="CENTER" wrappingWidth="17.000061035155795">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Line endX="-111.0" endY="661.3333740234375" layoutX="1332.0" layoutY="-152.0" startX="-91.6666259765625" startY="661.3333740234375" strokeWidth="2.0" />
+      <Line endX="-111.0" endY="661.3333740234375" layoutX="1228.0" layoutY="-9.0" startX="-91.6666259765625" startY="661.3333740234375" strokeWidth="2.0" />
+      <Line endX="-111.0" endY="661.3333740234375" layoutX="1333.0" layoutY="-9.0" startX="-91.6666259765625" startY="661.3333740234375" strokeWidth="2.0" />
+      <Line endX="-111.0" endY="661.3333740234375" layoutX="1228.0" layoutY="125.0" startX="-91.6666259765625" startY="661.3333740234375" strokeWidth="2.0" />
+      <Line endX="-111.0" endY="661.3333740234375" layoutX="1333.0" layoutY="125.0" startX="-91.6666259765625" startY="661.3333740234375" strokeWidth="2.0" />
+      <Text layoutX="1088.0" layoutY="929.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+3" textAlignment="CENTER" wrappingWidth="25.500091552733693">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1088.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+4" textAlignment="CENTER" wrappingWidth="25.500091552733693">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Line endX="-111.0" endY="661.3333740234375" layoutX="1228.0" layoutY="-527.0" startX="-91.6666259765625" startY="661.3333740234375" strokeWidth="2.0" />
+      <Line endX="-111.0" endY="661.3333740234375" layoutX="1332.0" layoutY="-527.0" startX="-91.6666259765625" startY="661.3333740234375" strokeWidth="2.0" />
+      <Line endX="-111.0" endY="661.3333740234375" layoutX="1228.0" layoutY="37.0" startX="-91.6666259765625" startY="661.3333740234375" strokeWidth="2.0" />
+      <Line endX="-111.0" endY="661.3333740234375" layoutX="1333.0" layoutY="37.0" startX="-91.6666259765625" startY="661.3333740234375" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="670.0" layoutX="1464.0" layoutY="138.0" startX="-100.0" startY="626.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="761.0" layoutX="1464.0" layoutY="230.0" startX="-100.0" startY="626.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="670.0" layoutX="1380.0" layoutY="48.0" startX="-100.0" startY="7.3333282470703125" strokeWidth="2.0" />
+   </children>
+</AnchorPane>

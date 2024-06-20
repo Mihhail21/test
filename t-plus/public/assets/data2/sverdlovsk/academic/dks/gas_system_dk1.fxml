@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.ButtonControl?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.FunctionControl?>
+<?import ru.get.common.controls.PumpControl?>
+<?import ru.get.common.controls.ValveControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#b7b7b7" layoutX="616.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CG802 XQ01" wrappingWidth="120.0" />
+      <Text fill="#b7b7b7" layoutX="651.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CP042 XQ01" wrappingWidth="120.0" />
+      <Text fill="#b7b7b7" layoutX="747.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CP044 XQ01" wrappingWidth="120.0" />
+      <Text fill="#b7b7b7" layoutX="740.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CT003 XQ01" wrappingWidth="120.0" />
+      <Text fill="#b7b7b7" layoutX="980.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CP043 XQ01" wrappingWidth="120.0" />
+      <Text fill="#b7b7b7" layoutX="913.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CG801 XQ01" wrappingWidth="120.0" />
+      <Text fill="#b7b7b7" layoutX="1402.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CP007 XQ01" wrappingWidth="120.0" />
+      <Text fill="#b7b7b7" layoutX="1402.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CT006 XQ01" wrappingWidth="120.0" />
+      <Text fill="#b7b7b7" layoutX="1650.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11MBP05CP011_XQ60_dks" wrappingWidth="150.0" />
+      <Text fill="#b7b7b7" layoutX="704.0" layoutY="750.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CY047 XQ01" wrappingWidth="120.0" />
+      <Text fill="#b7b7b7" layoutX="704.0" layoutY="909.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CY008 XQ01" wrappingWidth="120.0" />
+      <Text fill="#b7b7b7" layoutX="1107.0" layoutY="909.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CY009 XQ01" wrappingWidth="120.0" />
+      <Text fill="#b7b7b7" layoutX="1108.0" layoutY="750.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CY048 XQ01" wrappingWidth="120.0" />
+      <Line endX="-7.5" endY="-537.25" layoutX="365.0" layoutY="638.0" startX="-7.5" startY="-472.25" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="-7.5" endY="-543.0" layoutX="365.0" layoutY="736.0" startX="-7.5" startY="-484.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="238.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27AA001 Впускной отсечной клапан" textAlignment="CENTER" wrappingWidth="100.78449554443341" />
+      <Line endX="-7.5" endY="-548.0" layoutX="365.0" layoutY="823.0" startX="-7.5" startY="-23.25" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="165.0" endY="-33.0" layoutX="375.0" layoutY="833.0" startX="-17.25" startY="-33.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="165.0" endY="-33.0" layoutX="375.0" layoutY="833.0" startX="165.0" startY="-365.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="353.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выпуск газа от системы фильтрации (From Filter System Gas Outlet)" textAlignment="CENTER" wrappingWidth="223.99999999999977" />
+      <Text fill="#b7b7b7" layoutX="373.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27AA005 Дроссельный клапан" textAlignment="CENTER" wrappingWidth="100.78449554443341" />
+      <Line endX="133.25" endY="-475.5" layoutX="366.0" layoutY="618.0" startX="-7.5" startY="-475.5" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="133.25" endY="-475.5" layoutX="366.0" layoutY="619.0" startX="133.25" startY="-451.5" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="133.25" endY="-475.5" layoutX="366.0" layoutY="699.0" startX="-7.5" startY="-475.5" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="133.25" endY="-482.75" layoutX="366.0" layoutY="678.0" startX="133.25" startY="-455.5" stroke="YELLOW" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="509.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27AA101 Впускной клапан" textAlignment="CENTER" wrappingWidth="100.78449554443341" />
+      <Circle fill="#dfdf00" layoutX="540.0" layoutY="495.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Circle fill="#dfdf00" layoutX="540.0" layoutY="541.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Circle fill="#dfdf00" layoutX="540.0" layoutY="586.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Circle fill="#dfdf00" layoutX="540.0" layoutY="630.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Circle fill="#dfdf00" layoutX="540.0" layoutY="671.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="22.75" endY="-470.0" layoutX="522.0" layoutY="938.0" startX="18.25" startY="-470.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="24.25" endY="-470.0" layoutX="607.0" layoutY="938.0" startX="18.25" startY="-470.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="165.0" endY="-34.75" layoutX="466.0" layoutY="834.0" startX="165.0" startY="-365.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Circle fill="#dfdf00" layoutX="631.0" layoutY="602.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="817.5" endY="-42.25" layoutX="476.0" layoutY="843.0" startX="155.5" startY="-42.25" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="807.5" endY="-53.75" layoutX="486.0" layoutY="853.0" startX="807.5" startY="-174.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="373.75" endY="-184.0" layoutX="496.0" layoutY="863.0" startX="796.0" startY="-184.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="373.75" endY="-184.0" layoutX="496.0" layoutY="862.0" startX="373.75" startY="-393.75" stroke="YELLOW" strokeWidth="3.0" />
+      <Circle fill="#dfdf00" layoutX="870.0" layoutY="548.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Circle fill="#dfdf00" layoutX="870.0" layoutY="494.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="22.0" endY="-470.0" layoutX="852.0" layoutY="938.0" startX="18.25" startY="-470.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="26.0" endY="-470.0" layoutX="937.0" layoutY="938.0" startX="18.25" startY="-470.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Circle fill="#1f93ff00" layoutX="915.0" layoutY="467.0" radius="38.0" stroke="#b7b7b7" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="622.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1-й этап (1st stage)" textAlignment="CENTER" wrappingWidth="65.33984375" />
+      <Line endX="16.25" endY="-336.25" layoutX="947.0" layoutY="948.0" startX="16.25" startY="-479.25" stroke="YELLOW" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="954.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2-й этап (2nd stage)" textAlignment="CENTER" wrappingWidth="63.99999999999977" />
+      <Circle fill="#dfdf00" layoutX="963.0" layoutY="501.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="6.5" endY="-344.75" layoutX="957.0" layoutY="958.0" startX="284.25" startY="-344.5" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="274.25" endY="-498.5" layoutX="967.0" layoutY="968.0" startX="274.25" startY="-356.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="26.0" endY="-470.0" layoutX="1223.0" layoutY="938.0" startX="18.25" startY="-470.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="25.0" endY="-470.0" layoutX="1309.0" layoutY="938.0" startX="18.25" startY="-470.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="15.0" endY="-302.25" layoutX="1319.0" layoutY="948.0" startX="15.0" startY="-479.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Circle fill="#1f93ff00" layoutX="1288.0" layoutY="465.0" radius="38.0" stroke="#b7b7b7" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="1327.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3-й этап (3rd stage)" textAlignment="CENTER" wrappingWidth="63.99999999999977" />
+      <Circle fill="#dfdf00" layoutX="1334.0" layoutY="488.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Circle fill="#dfdf00" layoutX="1334.0" layoutY="531.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Circle fill="#dfdf00" layoutX="1334.0" layoutY="575.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="-182.5" endY="-356.0" layoutX="1060.0" layoutY="1002.0" startX="274.25" startY="-356.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="-175.5" endY="-356.0" layoutX="1038.0" layoutY="1002.0" startX="-377.0" startY="-356.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="-386.0" endY="-217.75" layoutX="1047.0" layoutY="1012.0" startX="-386.0" startY="-364.5" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="-386.0" endY="-221.25" layoutX="1047.0" layoutY="1044.0" startX="-386.0" startY="-234.5" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="483.75" endY="-228.75" layoutX="1057.0" layoutY="1053.0" startX="-395.5" startY="-228.75" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="15.0" endY="-302.25" layoutX="1526.0" layoutY="1126.0" startX="15.0" startY="-909.5" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="15.0" endY="-433.75" layoutX="1526.0" layoutY="624.0" startX="15.0" startY="-479.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="1555.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH29AA001 Выпускной блокировочный клапан" textAlignment="CENTER" wrappingWidth="148.0" />
+      <Circle fill="#dfdf00" layoutX="1541.0" layoutY="342.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Circle fill="#dfdf00" layoutX="1541.0" layoutY="284.0" radius="3.5" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="15.0" endY="-437.67498779296875" layoutX="1526.0" layoutY="690.0" startX="-238.75" startY="-437.67498779296875" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="15.0" endY="-446.75" layoutX="1272.0" layoutY="699.0" startX="15.0" startY="-485.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="15.0" endY="-445.0" layoutX="1272.0" layoutY="631.0" startX="15.0" startY="-484.25" stroke="YELLOW" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="1375.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выпуск технологического газа (Process Gas Outlet)" textAlignment="CENTER" wrappingWidth="176.0" />
+      <Text fill="#b7b7b7" layoutX="1198.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Атмосфера" textAlignment="CENTER" wrappingWidth="176.0" />
+      <Text fill="#b7b7b7" layoutX="1177.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27AA002 Продувка" textAlignment="CENTER" wrappingWidth="120.0" />
+      <Line endX="15.0" endY="-437.67498779296875" layoutX="1525.0" layoutY="837.0" startX="-178.75" startY="-437.67498779296875" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="-187.75" endY="-531.5" layoutX="1534.0" layoutY="847.0" startX="-187.75" startY="-447.75" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="-553.0" endY="-447.75" layoutX="1533.0" layoutY="763.0" startX="-187.75" startY="-447.75" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="-590.0" endY="-447.75" layoutX="1543.0" layoutY="763.0" startX="-1184.5" startY="-447.75" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="-29.25" endY="-19.0" layoutX="998.0" layoutY="279.0" startX="-36.25" startY="-11.75" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-29.25" endY="-19.0" layoutX="998.0" layoutY="289.0" startX="-36.25" startY="-11.75" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-29.25" endY="-19.0" layoutX="998.0" layoutY="300.0" startX="-36.25" startY="-11.75" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-12.75" endY="32.0" layoutX="978.0" layoutY="282.0" startX="-12.875" startY="-42.5" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-45.5" endY="-72.5" layoutX="988.0" layoutY="311.0" startX="-0.25" startY="-72.5" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Arc fill="#1f93ff00" layoutX="965.0" layoutY="238.0" length="180.0" radiusX="24.0" radiusY="24.0" stroke="#b7b7b7" strokeType="INSIDE" strokeWidth="2.0" />
+      <Arc fx:id="gcv41ekh27aa801_t" fill="#ff2121" layoutX="965.0" layoutY="238.0" length="180.0" radiusX="22.0" radiusY="22.0" stroke="#ff1f1f" strokeType="INSIDE" strokeWidth="3.0" />
+      <Circle fill="WHITE" layoutX="981.0" layoutY="288.0" radius="7.0" stroke="BLACK" strokeWidth="0.5" />
+      <Circle fill="WHITE" layoutX="948.0" layoutY="288.0" radius="7.0" stroke="BLACK" strokeWidth="0.5" />
+      <Text fill="#b7b7b7" layoutX="988.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="10.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Line endX="-29.25" endY="-19.0" layoutX="998.0" layoutY="268.0" startX="-36.25" startY="-11.75" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="114.25" endY="-228.75" layoutX="1028.0" layoutY="1076.0" startX="-395.5" startY="-228.75" stroke="YELLOW" strokeWidth="3.0" />
+      <Line endX="114.25" endY="-228.75" layoutX="1028.0" layoutY="1100.0" startX="-395.5" startY="-228.75" stroke="YELLOW" strokeWidth="3.0" />
+      <Text fill="#b7b7b7" layoutX="421.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OUT IGV VALVE" wrappingWidth="110.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#b7b7b7" layoutX="997.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OUT ASV" textAlignment="JUSTIFY" wrappingWidth="73.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Group layoutX="1761.0" layoutY="140.0" />
+      <Rectangle fill="#b7b7b7" height="31.0" layoutX="343.0" layoutY="41.0" stroke="BLACK" width="441.0" />
+      <Text layoutX="355.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Компрессор А. Система газа (Gas system)" textAlignment="JUSTIFY" wrappingWidth="418.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <ValveControl equipmentType="AOC" kks="41EKH27AA001" layoutX="339.0" layoutY="171.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl kks="41EKH27AA101" layoutX="481.0" layoutY="173.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="CNT" kks="41EKH27AA005" layoutX="343.0" layoutY="249.0" orientation="VERTICAL" prefHeight="33.3" prefWidth="37.0" skinType="CTRL_VLV" valueVisible="false" />
+      <ValveControl equipmentType="AOC" kks="41EKH27AA002" layoutX="1268.0" layoutY="192.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="AOC" kks="41EKH29AA001" layoutX="1522.0" layoutY="195.0" orientation="VERTICAL" prefHeight="18.5" prefWidth="37.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <ValveControl equipmentType="CNT" kks="41EKH27AA801" layoutX="947.0" layoutY="295.0" prefHeight="33.3" prefWidth="37.0" skinType="CTRL_VLV" valueVisible="false" />
+      <PumpControl kks="41EKH27MBC001" layoutX="898.0" layoutY="448.0" prefHeight="35.0" prefWidth="35.0" />
+      <DetectorControl kks="41EKH27CG802" layoutX="616.0" layoutY="379.0" maxValue="100.0" param="G" prefHeight="24.0" prefWidth="75.0" system="GT" unit="\%">
+         <tooltip>
+            <Tooltip text="IGV feedback" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="41EKH27CG801" layoutX="915.0" layoutY="365.0" maxValue="100.0" param="G" prefHeight="24.0" prefWidth="75.0" system="GT" unit="\%">
+         <tooltip>
+            <Tooltip text="BPV (Anti Surge Valve) feedback" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="41EKH27CP007" layoutX="1402.0" layoutY="330.0" maxValue="4000.0" param="P" prefHeight="24.0" prefWidth="113.0" system="GT" unit="кПа(g)">
+         <tooltip>
+            <Tooltip text="Gas pressure compressor outlet" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="41EKH27CP043" layoutX="979.0" layoutY="489.0" maxValue="3000.0" param="P" prefHeight="24.0" prefWidth="113.0" system="GT" unit="кПа(g)">
+         <tooltip>
+            <Tooltip text="Gas pressure 2nd stage discharge" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="41EKH27CT003" layoutX="744.0" layoutY="482.0" maxValue="150.0" minValue="-50.0" param="T" prefHeight="24.0" prefWidth="75.0" system="GT" unit="°С">
+         <tooltip>
+            <Tooltip text="Gas temperature 2nd stage suction" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="41EKH27CP044" layoutX="744.0" layoutY="537.0" maxValue="2000.0" param="P" prefHeight="24.0" prefWidth="113.0" system="GT" unit="кПа(g)">
+         <tooltip>
+            <Tooltip text="Gas pressure 2nd stage suction" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="41EKH27CP042" layoutX="649.0" layoutY="591.0" maxValue="2000.0" param="P" prefHeight="24.0" prefWidth="113.0" system="GT" unit="кПа(g)">
+         <tooltip>
+            <Tooltip text="Gas pressure 1st stage discharge" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="41EKH27CY047" layoutX="716.0" layoutY="754.0" maxValue="12.5" param="Y" prefHeight="24.0" prefWidth="89.0" system="GT" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Gas cooler fan 1 vibration" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="41EKH27CY048" layoutX="1116.0" layoutY="754.0" maxValue="12.5" param="Y" prefHeight="24.0" prefWidth="89.0" system="GT" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Gas cooler fan 2 vibration" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="41EKH27CY008" layoutX="714.0" layoutY="913.0" maxValue="12.5" param="Y" prefHeight="24.0" prefWidth="89.0" system="GT" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Gas cooler fan 3 vibration" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="41EKH27CY009" layoutX="1116.0" layoutY="913.0" maxValue="12.5" param="Y" prefHeight="24.0" prefWidth="89.0" system="GT" unit="мм/с">
+         <tooltip>
+            <Tooltip text="Gas cooler fan 4 vibration" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="11MBP05CP011" layoutX="1674.0" layoutY="102.0" maxValue="40.0" param="P" prefHeight="24.0" prefWidth="80.0" system="GT" unit="бар">
+         <tooltip>
+            <Tooltip text="Давление газа перед ГТУ для ДКС" />
+         </tooltip></DetectorControl>
+      <Text fill="#b7b7b7" layoutX="399.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CT903 XQ01" wrappingWidth="120.0" />
+      <Text fill="#b7b7b7" layoutX="399.0" layoutY="524.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CT002 XQ01" wrappingWidth="120.0" />
+      <Text fill="#b7b7b7" layoutX="399.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CP001 XQ01" wrappingWidth="120.0" />
+      <Text fill="#b7b7b7" layoutX="399.0" layoutY="613.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CP902 XQ01" wrappingWidth="120.0" />
+      <Text fill="#b7b7b7" layoutX="399.0" layoutY="656.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CF901 XQ01" wrappingWidth="120.0" />
+      <DetectorControl kks="41EKH27CT903" layoutX="407.0" layoutY="484.0" maxValue="150.0" minValue="-50.0" param="T" prefHeight="24.0" prefWidth="75.0" system="GT" unit="°С">
+         <tooltip>
+            <Tooltip text="Gas temperature before compressor (ASC)" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="41EKH27CT002" layoutX="407.0" layoutY="529.0" maxValue="150.0" minValue="-50.0" param="T" prefHeight="24.0" prefWidth="75.0" system="GT" unit="°С">
+         <tooltip>
+            <Tooltip text="Gas temperature before compressor" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="41EKH27CP001" layoutX="407.0" layoutY="574.0" maxValue="2000.0" param="P" prefHeight="24.0" prefWidth="113.0" system="GT" unit="кПа(g)">
+         <tooltip>
+            <Tooltip text="Gas pressure before compressor" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="41EKH27CP902" layoutX="407.0" layoutY="618.0" maxValue="2000.0" param="P" prefHeight="24.0" prefWidth="113.0" system="GT" unit="кПа(g)">
+         <tooltip>
+            <Tooltip text="Gas flow before compressor (ASC)" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="41EKH27CF901" layoutX="407.0" layoutY="659.0" maxValue="40000.0" param="F" prefHeight="24.0" prefWidth="102.0" system="GT" unit="кг/ч">
+         <tooltip>
+            <Tooltip text="Gas pressure before compressor (ASC)" />
+         </tooltip></DetectorControl>
+      <Text fill="#b7b7b7" layoutX="1355.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CP004 XQ01" wrappingWidth="120.0" />
+      <Text fill="#b7b7b7" layoutX="1355.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CT005 XQ01" wrappingWidth="120.0" />
+      <Text fill="#b7b7b7" layoutX="1355.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41EKH27CP904 XQ01" wrappingWidth="120.0" />
+      <DetectorControl kks="41EKH27CP004" layoutX="1355.0" layoutY="476.0" maxValue="4000.0" param="P" prefHeight="24.0" prefWidth="113.0" system="GT" unit="кПа(g)">
+         <tooltip>
+            <Tooltip text="Gas pressure 3rd stage discharge" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="41EKH27CT005" layoutX="1354.0" layoutY="519.0" maxValue="150.0" minValue="-50.0" param="T" prefHeight="24.0" prefWidth="75.0" system="GT" unit="°С">
+         <tooltip>
+            <Tooltip text="Gas temperature 3rd stage discharge" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="41EKH27CP904" layoutX="1354.0" layoutY="563.0" maxValue="4000.0" param="P" prefHeight="24.0" prefWidth="113.0" system="GT" unit="кПа(g)">
+         <tooltip>
+            <Tooltip text="Gas pressure 3rd stage discharge (ASC)" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="41EKH27CT006" layoutX="1402.0" layoutY="273.0" maxValue="150.0" minValue="-50.0" param="T" prefHeight="24.0" prefWidth="75.0" system="GT" unit="°С">
+         <tooltip>
+            <Tooltip text="Gas temperature compressor outlet" />
+         </tooltip></DetectorControl>
+      <Text fill="#b7b7b7" layoutX="449.0" layoutY="849.0" strokeType="OUTSIDE" strokeWidth="0.0" text="От газовой системы 1 ступени В" wrappingWidth="180.0" />
+      <Text fill="#b7b7b7" layoutX="1167.0" layoutY="851.0" strokeType="OUTSIDE" strokeWidth="0.0" text="К газовой системе 2 ступени В" wrappingWidth="180.0" />
+      <Text fill="#b7b7b7" layoutX="449.0" layoutY="874.0" strokeType="OUTSIDE" strokeWidth="0.0" text="От газовой системы 3 ступени В" wrappingWidth="180.0" />
+      <Text fill="#b7b7b7" layoutX="1167.0" layoutY="877.0" strokeType="OUTSIDE" strokeWidth="0.0" text="К газоотводу В" wrappingWidth="100.0" />
+      <Line endX="-23.0" endY="-14.5" layoutX="914.0" layoutY="453.0" startX="35.0" startY="-1.0" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="24.0" layoutX="925.0" layoutY="481.0" startX="-32.75" startY="13.0" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-20.0" endY="-19.0" layoutX="1287.0" layoutY="453.0" startX="35.0" startY="-1.0" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="25.75" endY="-0.25" layoutX="1297.0" layoutY="478.0" startX="-34.75" startY="13.5" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <FunctionControl interactive="false" layoutX="639.0" layoutY="837.5" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="639.0" layoutY="861.5" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1141.0" layoutY="837.5" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1141.0" layoutY="861.5" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1531.0" layoutY="721.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1231.0" layoutY="543.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1324.0" layoutY="610.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="859.8" layoutY="597.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="953.2" layoutY="576.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="530.0" layoutY="765.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="621.0" layoutY="695.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="347.5" layoutY="761.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="347.5" layoutY="339.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="347.5" layoutY="113.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1277.0" layoutY="126.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1531.0" layoutY="126.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl interactive="false" layoutX="1531.0" layoutY="360.0" orientation="VERTICAL_REVERSE" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="1.0" green="1.0" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <Arc fill="#1f93ff00" layoutX="662.0" layoutY="802.0" length="180.0" radiusX="9.0" radiusY="9.0" startAngle="90.0" stroke="YELLOW" strokeType="INSIDE" strokeWidth="3.0" />
+      <Arc fill="#1f93ff00" layoutX="870.0" layoutY="647.0" length="180.0" radiusX="9.0" radiusY="9.0" stroke="YELLOW" strokeType="INSIDE" strokeWidth="3.0" />
+      <Line endX="-12.75" endY="63.0" layoutX="573.0" layoutY="432.0" startX="-12.75" startY="-70.0" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Circle fill="#1f93ff00" layoutX="585.0" layoutY="466.0" radius="38.0" stroke="#b7b7b7" strokeWidth="4.0" />
+      <Line endX="-21.75" endY="-13.0" layoutX="584.0" layoutY="453.0" startX="35.0" startY="-1.0" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="24.0" layoutX="595.0" layoutY="478.0" startX="-32.75" startY="13.0" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-29.25" endY="-19.0" layoutX="593.0" layoutY="469.0" startX="-36.25" startY="-11.75" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-29.25" endY="-19.0" layoutX="593.0" layoutY="477.0" startX="-36.25" startY="-11.75" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-29.25" endY="-19.0" layoutX="593.0" layoutY="485.0" startX="-36.25" startY="-11.75" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Arc fill="#1f93ff00" layoutX="560.0" layoutY="376.0" length="180.0" radiusX="24.0" radiusY="24.0" stroke="#b7b7b7" strokeType="INSIDE" strokeWidth="2.0" />
+      <Arc fx:id="gcv41ekh28aa802_t" fill="#ff2121" layoutX="560.0" layoutY="375.70001220703125" length="180.0" radiusX="22.0" radiusY="22.0" stroke="#ff1f1f" strokeType="INSIDE" strokeWidth="3.0" />
+      <Circle fill="WHITE" layoutX="573.0" layoutY="343.0" radius="7.0" stroke="BLACK" strokeWidth="0.5" />
+      <Circle fill="WHITE" layoutX="546.0" layoutY="343.0" radius="7.0" stroke="BLACK" strokeWidth="0.5" />
+      <Text fill="#b7b7b7" layoutX="583.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="10.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIME" height="16.0" layoutX="461.0" layoutY="333.0" stroke="BLACK" width="38.0" />
+      <Text layoutX="463.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AUTO" wrappingWidth="40.0" />
+      <ValveControl equipmentType="CNT" kks="41EKH27AA802" layoutX="542.0" layoutY="386.0" prefHeight="33.3" prefWidth="37.0" skinType="CTRL_VLV" valueVisible="false" />
+      <Line endX="-29.25" endY="-19.0" layoutX="593.0" layoutY="493.0" startX="-36.25" startY="-11.75" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="-46.0" endY="-72.5" layoutX="583.0" layoutY="449.0" startY="-72.5" stroke="#b7b7b7" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Circle fill="#1f93ff00" layoutX="872.5562744140625" layoutY="754.6737060546875" radius="22.0" stroke="#c4c4c4" strokeWidth="4.0" />
+      <Line endX="-562.6875" endY="-6.4000244140625" layoutX="1435.050048828125" layoutY="738.9437255859375" startX="-562.6875" startY="-17.61041259765625" stroke="#c4c4c4" strokeWidth="4.0" />
+      <Ellipse fill="#008b9b" layoutX="864.1178588867188" layoutY="749.5198974609375" radiusX="4.0" radiusY="10.0" rotate="120.0" stroke="#008b9b" />
+      <Ellipse fill="#008b9b" layoutX="872.2062377929688" layoutY="764.4237060546875" radiusX="4.0" radiusY="10.0" stroke="#008b9b" />
+      <Ellipse fill="#008b9b" layoutX="880.7024536132812" layoutY="749.112060546875" radiusX="4.0" radiusY="10.0" rotate="240.0" stroke="#008b9b" />
+      <PumpControl equipmentType="PMK" kks="41EKH27AN001" layoutX="856.0" layoutY="687.0" prefHeight="35.0" prefWidth="35.0" />
+      <Polygon fill="#0096ff" layoutX="788.0" layoutY="770.0" points="31.0, -54.0, 66.25, -54.0, 59.25, -61.0, 66.25, -67.75, 31.0, -67.75" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="202.5" endY="9.0" layoutX="636.0" layoutY="697.0" startX="186.0" startY="9.0" />
+      <Line endX="193.75" endY="0.8999999761581421" layoutX="644.0" layoutY="706.0" startX="181.0" startY="5.0" />
+      <Line endX="202.5" endY="9.0" layoutX="639.0" layoutY="702.0" startX="186.0" startY="9.0" />
+      <Polygon layoutX="821.0" layoutY="718.0" points="20.75, -5.25, 25.0, -6.75, 20.75, -8.75" stroke="BLACK" />
+      <Line endX="-562.6875" endY="-6.4000244140625" layoutX="1618.050048828125" layoutY="738.9437255859375" startX="-562.6875" startY="-17.61041259765625" stroke="#c4c4c4" strokeWidth="4.0" />
+      <PumpControl equipmentType="PMK" kks="41EKH27AN002" layoutX="1038.0" layoutY="687.0" prefHeight="35.0" prefWidth="35.0" />
+      <Polygon fill="#0096ff" layoutX="1044.0" layoutY="770.0" points="31.0, -54.0, 66.25, -54.0, 66.25, -67.75, 31.0, -67.75, 38.0, -60.5" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="202.5" endY="9.0" layoutX="905.0" layoutY="698.0" startX="186.0" startY="9.0" />
+      <Line endX="177.14999389648438" endY="1.149999976158142" layoutX="914.0" layoutY="706.0" startX="191.35711669921875" startY="5.074987888336182" />
+      <Line endX="168.85000610351562" endY="8.999975204467773" layoutX="919.0" layoutY="702.0" startX="186.0" startY="9.0" />
+      <Circle fill="#1f93ff00" layoutX="1055.5562744140625" layoutY="754.6737060546875" radius="22.0" stroke="#c4c4c4" strokeWidth="4.0" />
+      <Ellipse fill="#008b9b" layoutX="1047.1178588867188" layoutY="749.5198974609375" radiusX="4.0" radiusY="10.0" rotate="120.0" stroke="#008b9b" />
+      <Ellipse fill="#008b9b" layoutX="1055.2062377929688" layoutY="764.4237060546875" radiusX="4.0" radiusY="10.0" stroke="#008b9b" />
+      <Ellipse fill="#008b9b" layoutX="1063.7024536132812" layoutY="749.112060546875" radiusX="4.0" radiusY="10.0" rotate="240.0" stroke="#008b9b" />
+      <Polygon layoutX="1068.0" layoutY="718.0" points="20.75, -5.25, 16.25, -7.25, 20.75, -8.75" stroke="BLACK" />
+      <Circle fill="#1f93ff00" layoutX="1054.8562622070312" layoutY="913.9562377929688" radius="22.0" stroke="#c4c4c4" strokeWidth="4.0" />
+      <Line endX="-562.5" endY="-1.42626953125" layoutX="1618.3499755859375" layoutY="951.42626953125" startX="-562.5" startY="-12.5" stroke="#c4c4c4" strokeWidth="4.0" />
+      <PumpControl equipmentType="PMK" kks="41EKH27AN004" layoutX="1038.0" layoutY="945.0" prefHeight="35.0" prefWidth="35.0" />
+      <Polygon fill="#0096ff" layoutX="1044.0" layoutY="1024.0" points="31.0, -54.0, 66.25, -54.0, 66.25, -67.75, 31.0, -67.75, 38.0, -60.5" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="202.5" endY="9.0" layoutX="905.0" layoutY="952.0" startX="186.0" startY="9.0" />
+      <Line endX="177.14999389648438" endY="1.149999976158142" layoutX="914.0" layoutY="960.0" startX="191.35711669921875" startY="5.074987888336182" />
+      <Line endX="168.85000610351562" endY="8.999975204467773" layoutX="919.0" layoutY="956.0" startX="186.0" startY="9.0" />
+      <Ellipse fill="#008b9b" layoutX="1064.0" layoutY="919.0" radiusX="4.0" radiusY="10.0" rotate="120.0" stroke="#008b9b" />
+      <Ellipse fill="#008b9b" layoutX="1055.0" layoutY="904.0" radiusX="4.0" radiusY="10.0" stroke="#008b9b" />
+      <Ellipse fill="#008b9b" layoutX="1046.0" layoutY="919.0" radiusX="4.0" radiusY="10.0" rotate="240.0" stroke="#008b9b" />
+      <Polygon layoutX="1068.0" layoutY="972.0" points="20.75, -5.25, 16.25, -7.25, 20.75, -8.75" stroke="BLACK" />
+      <Circle fill="#1f93ff00" layoutX="862.8562622070312" layoutY="912.9562377929688" radius="22.0" stroke="#c4c4c4" strokeWidth="4.0" />
+      <Line endX="-562.5" endY="-1.42626953125" layoutX="1426.3499755859375" layoutY="950.42626953125" startX="-562.5" startY="-12.5" stroke="#c4c4c4" strokeWidth="4.0" />
+      <PumpControl equipmentType="PMK" kks="41EKH27AN003" layoutX="846.0" layoutY="946.0" prefHeight="35.0" prefWidth="35.0" />
+      <Ellipse fill="#008b9b" layoutX="872.0" layoutY="918.0" radiusX="4.0" radiusY="10.0" rotate="120.0" stroke="#008b9b" />
+      <Ellipse fill="#008b9b" layoutX="863.0" layoutY="903.0" radiusX="4.0" radiusY="10.0" stroke="#008b9b" />
+      <Ellipse fill="#008b9b" layoutX="854.0" layoutY="918.0" radiusX="4.0" radiusY="10.0" rotate="240.0" stroke="#008b9b" />
+      <Polygon fill="#0096ff" layoutX="778.0" layoutY="1024.0" points="31.0, -54.0, 66.25, -54.0, 59.25, -61.0, 66.25, -67.75, 31.0, -67.75" stroke="BLACK" strokeWidth="0.5" />
+      <Line endX="202.5" endY="9.0" layoutX="626.0" layoutY="951.0" startX="186.0" startY="9.0" />
+      <Line endX="193.75" endY="0.8999999761581421" layoutX="634.0" layoutY="960.0" startX="181.0" startY="5.0" />
+      <Line endX="202.5" endY="9.0" layoutX="629.0" layoutY="956.0" startX="186.0" startY="9.0" />
+      <Polygon layoutX="811.0" layoutY="972.0" points="20.75, -5.25, 25.0, -6.75, 20.75, -8.75" stroke="BLACK" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="79.0" layoutX="854.0" layoutY="797.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" width="207.0" />
+      <Line endX="-607.0416870117188" endY="-40.99998092651367" layoutX="1666.0" layoutY="877.0" startX="-809.0" startY="-41.0" stroke="#c4c4c4" strokeWidth="3.0" />
+      <Line endX="-607.0416870117188" endY="-40.99998092651367" layoutX="1666.0" layoutY="897.0" startX="-809.0" startY="-41.0" stroke="#c4c4c4" strokeWidth="3.0" />
+      <Line endX="-607.0416870117188" endY="-40.999977111816406" layoutX="1666.0" layoutY="857.0" startX="-809.0" startY="-41.0" stroke="#c4c4c4" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1676.0" layoutY="868.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1689.0" layoutY="868.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1703.0" layoutY="868.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1716.0" layoutY="868.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1730.0" layoutY="868.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1743.0" layoutY="868.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1755.0" layoutY="868.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1769.0" layoutY="868.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1781.0" layoutY="868.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1795.0" layoutY="868.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1807.0" layoutY="868.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1821.0" layoutY="868.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1834.0" layoutY="868.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1847.0" layoutY="868.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1860.0" layoutY="868.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1676.0" layoutY="888.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1689.0" layoutY="888.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1703.0" layoutY="888.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1716.0" layoutY="888.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1730.0" layoutY="888.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1743.0" layoutY="888.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1755.0" layoutY="888.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1769.0" layoutY="888.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1781.0" layoutY="888.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1795.0" layoutY="888.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1807.0" layoutY="888.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1821.0" layoutY="888.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1834.0" layoutY="888.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1847.0" layoutY="888.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1860.0" layoutY="888.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1676.0" layoutY="907.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1689.0" layoutY="907.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1703.0" layoutY="907.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1716.0" layoutY="907.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1730.0" layoutY="907.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1743.0" layoutY="907.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1755.0" layoutY="907.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1769.0" layoutY="907.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1781.0" layoutY="907.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1795.0" layoutY="907.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1807.0" layoutY="907.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1821.0" layoutY="907.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1834.0" layoutY="907.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1847.0" layoutY="907.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1860.0" layoutY="907.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1676.0" layoutY="927.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1689.0" layoutY="927.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1703.0" layoutY="927.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1716.0" layoutY="927.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1730.0" layoutY="927.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1743.0" layoutY="927.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1755.0" layoutY="927.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1769.0" layoutY="927.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1781.0" layoutY="927.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1795.0" layoutY="927.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1807.0" layoutY="927.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1821.0" layoutY="927.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1834.0" layoutY="927.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1847.0" layoutY="927.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="-810.5" endY="-56.0" layoutX="1860.0" layoutY="927.0" startX="-810.5" startY="-66.0" stroke="#c4c4c4" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <ButtonControl buttonOffText="ЛЕТО" buttonOnText="ЗИМА" equipmentType="TEXT_BUTTON" kks="rej_go1" layoutX="724.0" layoutY="699.0" prefHeight="21.0" prefWidth="40.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonPressedColor>
+            <Color red="0.4117647111415863" green="0.8823529481887817" blue="0.4117647111415863" />
+         </buttonPressedColor>
+         <buttonNonPressedColor>
+            <Color green="0.5882353186607361" blue="1.0" />
+         </buttonNonPressedColor>
+      </ButtonControl>
+   </children>
+</AnchorPane>

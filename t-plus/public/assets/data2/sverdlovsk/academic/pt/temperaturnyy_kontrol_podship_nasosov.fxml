@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.ButtonControl?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.PumpControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="181.0" layoutX="1326.0" layoutY="656.0" stroke="#bebebe" strokeType="INSIDE" width="412.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="181.0" layoutX="788.0" layoutY="157.0" stroke="#bebebe" strokeType="INSIDE" width="412.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="181.0" layoutX="789.0" layoutY="402.0" stroke="#bebebe" strokeType="INSIDE" width="412.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="181.0" layoutX="785.0" layoutY="656.0" stroke="#bebebe" strokeType="INSIDE" width="412.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="181.0" layoutX="206.0" layoutY="656.0" stroke="#bebebe" strokeType="INSIDE" width="412.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="181.0" layoutX="207.0" layoutY="401.0" stroke="#bebebe" strokeType="INSIDE" width="412.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="181.0" layoutX="209.0" layoutY="157.0" stroke="#bebebe" strokeType="INSIDE" width="412.0" />
+      <PumpControl kks="10LCB11AP001" layoutX="385.0" layoutY="231.0" orientation="HORIZONTAL_REVERSE" prefHeight="60.0" prefWidth="60.0" />
+      <Text fill="#fefefe" layoutX="473.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КН 1 ступени 10LCB11AP001" textAlignment="CENTER" wrappingWidth="90.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#fefefe" layoutX="473.0" layoutY="431.5" strokeType="OUTSIDE" strokeWidth="0.0" text="КН 2 ступени 10LCA31AP001" textAlignment="CENTER" wrappingWidth="90.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#fefefe" layoutX="1047.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КН 1 ступени 10LCB12AP001" textAlignment="CENTER" wrappingWidth="90.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#fefefe" layoutX="1050.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КН 2 ступени 10LCA32AP001" textAlignment="CENTER" wrappingWidth="90.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#fefefe" layoutX="471.0" layoutY="682.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Конденсатный насос ПСГ-2 10LCJ70AP001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="#fefefe" layoutX="1049.0" layoutY="684.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Конденсатный насос ПСГ-1 10LCJ62AP001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Text fill="#fefefe" layoutX="1593.0" layoutY="681.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Конденсатный насос ПСГ-1 10LCJ63AP001" textAlignment="CENTER" wrappingWidth="90.0" />
+      <Line endX="-5.75" endY="-12.5" layoutX="715.0" layoutY="85.0" startX="-5.75" startY="-34.5" />
+      <Line endX="402.25" endY="-21.750001907348633" layoutX="748.0" layoutY="94.35" startX="-38.75" startY="-21.75" />
+      <Text fill="#fefefe" layoutX="759.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Температурный контроль подшипников насосов" textAlignment="CENTER" wrappingWidth="450.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <DetectorControl kks="10LCB11CT101" layoutX="325.0" layoutY="191.0" maxValue="100.0" param="T" prefHeight="25.0" prefWidth="70.0" system="CP">
+         <tooltip>
+            <Tooltip text="Т вкладыша верх. опоно-упорного подш. КЭН I ст." />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10LCA31CT101" layoutX="321.0" layoutY="425.0" maxValue="100.0" param="T" prefHeight="25.0" prefWidth="70.0" system="CP">
+         <tooltip>
+            <Tooltip text="Т подш. насоса II подъема 10LCA31AP001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10LCA31CT102" layoutX="330.0" layoutY="539.0" maxValue="100.0" param="T" prefHeight="25.0" prefWidth="62.0" system="CP">
+         <tooltip>
+            <Tooltip text="Т сальника насоса II подъема 10LCA31AP001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10LCJ70CT101" layoutX="322.0" layoutY="695.0" maxValue="100.0" param="T" prefHeight="25.0" prefWidth="70.0" system="CP">
+         <tooltip>
+            <Tooltip text="Т вкладыша верх. опорно-упорного подш. КН ПСГ-2" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10LCB12CT101" layoutX="899.0" layoutY="190.0" maxValue="100.0" param="T" prefHeight="25.0" prefWidth="70.0" system="CP">
+         <tooltip>
+            <Tooltip text="Т вкладыша верх. опоно-упорного подш. КЭН I ст." />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10LCA32CT101" layoutX="900.0" layoutY="426.0" maxValue="100.0" param="T" prefHeight="25.0" prefWidth="70.0" system="CP">
+         <tooltip>
+            <Tooltip text="Т подш. насоса II подъема 10LCA32AP001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10LCA32CT102" layoutX="900.0" layoutY="540.0" maxValue="100.0" param="T" prefHeight="25.0" prefWidth="70.0" system="CP">
+         <tooltip>
+            <Tooltip text="Т сальника насоса II подъема 10LCA32AP001" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10LCJ62CT101" layoutX="895.0" layoutY="690.0" maxValue="100.0" param="T" prefHeight="25.0" prefWidth="70.0" system="CP">
+         <tooltip>
+            <Tooltip text="Т вкладыша верх. опорно-упорного подш. КН ПСГ-1" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10LCA31CE022" layoutX="465.0" layoutY="479.0" maxValue="300.0" param="I" prefHeight="25.0" prefWidth="62.0" system="CP" unit="A">
+         <tooltip>
+            <Tooltip text="Насос 1 коноденсатный II подъема - ток двигателя" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10LCA32CE022" layoutX="1053.0" layoutY="483.0" maxValue="300.0" param="I" prefHeight="25.0" prefWidth="60.0" system="CP" unit="A">
+         <tooltip>
+            <Tooltip text="Насос 2 коноденсатный II подъема - ток двигателя" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10LCJ70CE022" layoutX="465.0" layoutY="753.0" maxValue="200.0" param="I" prefHeight="25.0" prefWidth="60.0" system="CP" unit="A">
+         <tooltip>
+            <Tooltip text="Конденсатный насос ПСГ-2 - ток двигателя" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10LCJ62CE022" layoutX="1052.0" layoutY="746.0" maxValue="200.0" param="I" prefHeight="25.0" prefWidth="62.0" system="CP" unit="A">
+         <tooltip>
+            <Tooltip text="Конденсатный насос 1 ПСГ-1 - ток двигателя" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10LCJ63CT101" layoutX="1439.0" layoutY="693.0" maxValue="100.0" param="T" prefHeight="25.0" prefWidth="70.0" system="CP">
+         <tooltip>
+            <Tooltip text="Т вкладыша верх. опорно-упорного подш. КН ПСГ-1" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="10LCJ63CE022" layoutX="1602.0" layoutY="748.0" maxValue="200.0" param="I" prefHeight="25.0" prefWidth="62.0" system="CP" unit="A">
+         <tooltip>
+            <Tooltip text="Конденсатный насос 2 ПСГ-1 - ток двигателя" />
+         </tooltip></DetectorControl>
+      <PumpControl kks="10LCJ63AP001" layoutX="1497.0" layoutY="731.0" orientation="HORIZONTAL_REVERSE" prefHeight="60.0" prefWidth="60.0" />
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Подш нас" buttonOnText="Подш нас" diagramTitle="Температурный контроль подшип. насосов.fxml" equipmentType="TRANSITION_BUTTON" kks="1" layoutX="1856.0" layoutY="1038.0" prefHeight="40.0" prefWidth="62.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="ТКГ" buttonOnText="ТКГ" diagramTitle="Температурный контроль генератора.fxml" equipmentType="TRANSITION_BUTTON" kks="2" layoutX="1791.0" layoutY="1038.0" prefHeight="40.0" prefWidth="62.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="ЦС" buttonOnText="ЦС" diagramTitle="Циркуляционная система конденсатора.fxml" equipmentType="TRANSITION_BUTTON" kks="3" layoutX="1726.0" layoutY="1038.0" prefHeight="40.0" prefWidth="62.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Масло" buttonOnText="Масло" diagramTitle="Система маслоснабжения турбины.fxml" equipmentType="TRANSITION_BUTTON" kks="4" layoutX="1661.0" layoutY="1038.0" prefHeight="40.0" prefWidth="62.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="СУ Дрен" buttonOnText="СУ Дрен" diagramTitle="Циркуляционная система конденсатора.fxml" equipmentType="TRANSITION_BUTTON" kks="5" layoutX="1596.0" layoutY="1038.0" prefHeight="40.0" prefWidth="62.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="ЭУ" buttonOnText="ЭУ" diagramTitle="Эжекторная установка.fxml" equipmentType="TRANSITION_BUTTON" kks="6" layoutX="1531.0" layoutY="1038.0" prefHeight="40.0" prefWidth="62.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="ПСГ" buttonOnText="ПСГ" diagramTitle="Подогреватели сетевой воды.fxml" equipmentType="TRANSITION_BUTTON" kks="7" layoutX="1466.0" layoutY="1038.0" prefHeight="40.0" prefWidth="62.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="КУ и КЭН II" buttonOnText="КУ и КЭН II" diagramTitle="Конденсатор.fxml" equipmentType="TRANSITION_BUTTON" kks="8" layoutX="1401.0" layoutY="1038.0" prefHeight="40.0" prefWidth="62.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="Мех вел" buttonOnText="Мех вел" diagramTitle="Контроль механических величин турбины.fxml" equipmentType="TRANSITION_BUTTON" kks="9" layoutX="1336.0" layoutY="1038.0" prefHeight="40.0" prefWidth="62.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="ТКМ ПТ" buttonOnText="ТКМ ПТ" diagramTitle="Температурный контроль металла ПТУ.fxml" equipmentType="TRANSITION_BUTTON" kks="10" layoutX="1271.0" layoutY="1038.0" prefHeight="40.0" prefWidth="62.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="УПТ" buttonOnText="УПТ" diagramTitle="Система управления турбины.fxml" equipmentType="TRANSITION_BUTTON" kks="11" layoutX="1206.0" layoutY="1038.0" prefHeight="40.0" prefWidth="62.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="ГП и БРОУ" buttonOnText="ГП и БРОУ" diagramTitle="ГП и БРОУ.fxml" equipmentType="TRANSITION_BUTTON" kks="12" layoutX="1141.0" layoutY="1038.0" prefHeight="40.0" prefWidth="62.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="ПТ" buttonOnText="ПТ" diagramTitle="Паровая турбина.fxml" equipmentType="TRANSITION_BUTTON" kks="13" layoutX="1076.0" layoutY="1038.0" prefHeight="40.0" prefWidth="62.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <PumpControl kks="10LCA31AP001" layoutX="382.0" layoutY="464.0" orientation="HORIZONTAL_REVERSE" prefHeight="60.0" prefWidth="60.0" />
+      <PumpControl kks="10LCJ70AP001" layoutX="382.0" layoutY="737.0" orientation="HORIZONTAL_REVERSE" prefHeight="60.0" prefWidth="60.0" />
+      <PumpControl kks="10LCB12AP001" layoutX="959.0" layoutY="231.0" orientation="HORIZONTAL_REVERSE" prefHeight="60.0" prefWidth="60.0" />
+      <PumpControl kks="10LCA32AP001" layoutX="961.0" layoutY="466.0" orientation="HORIZONTAL_REVERSE" prefHeight="60.0" prefWidth="60.0" />
+      <PumpControl kks="10LCJ62AP001" layoutX="956.0" layoutY="731.0" orientation="HORIZONTAL_REVERSE" prefHeight="60.0" prefWidth="60.0" />
+      <Line endX="-29.75" endY="-13.5" layoutX="436.0" layoutY="546.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="401.0" layoutY="525.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="420.0" layoutY="565.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-29.75" endY="-13.5" layoutX="448.0" layoutY="546.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="420.0" layoutY="525.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="401.0" layoutY="565.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-5.25" endY="55.25" layoutX="417.0" layoutY="519.0" startX="-5.25" startY="9.25" stroke="#d2d2d2" />
+      <Circle fill="#dfdf00" layoutX="401.0" layoutY="552.0" radius="4.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <Line endX="-29.75" endY="-13.5" layoutX="435.0" layoutY="431.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="400.0" layoutY="410.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="419.0" layoutY="450.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-29.75" endY="-13.5" layoutX="447.0" layoutY="431.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="419.0" layoutY="410.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="400.0" layoutY="450.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-5.25" endY="55.25" layoutX="416.0" layoutY="404.0" startX="-5.25" startY="9.25" stroke="#d2d2d2" />
+      <Circle fill="#dfdf00" layoutX="400.0" layoutY="437.0" radius="4.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <Line endX="-29.75" endY="-13.5" layoutX="439.0" layoutY="198.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="404.0" layoutY="177.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="423.0" layoutY="217.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-29.75" endY="-13.5" layoutX="451.0" layoutY="198.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="423.0" layoutY="177.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="404.0" layoutY="217.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-5.25" endY="55.25" layoutX="420.0" layoutY="171.0" startX="-5.25" startY="9.25" stroke="#d2d2d2" />
+      <Circle fill="#dfdf00" layoutX="404.0" layoutY="204.0" radius="4.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <Line endX="-29.75" endY="-13.5" layoutX="436.0" layoutY="702.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="401.0" layoutY="681.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="420.0" layoutY="721.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-29.75" endY="-13.5" layoutX="448.0" layoutY="702.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="420.0" layoutY="681.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="401.0" layoutY="721.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-5.25" endY="55.25" layoutX="417.0" layoutY="675.0" startX="-5.25" startY="9.25" stroke="#d2d2d2" />
+      <Circle fill="#dfdf00" layoutX="401.0" layoutY="708.0" radius="4.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <Line endX="-29.75" endY="-13.5" layoutX="1010.0" layoutY="697.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="975.0" layoutY="676.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="994.0" layoutY="716.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-29.75" endY="-13.5" layoutX="1022.0" layoutY="697.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="994.0" layoutY="676.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="975.0" layoutY="716.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-5.25" endY="55.25" layoutX="991.0" layoutY="670.0" startX="-5.25" startY="9.25" stroke="#d2d2d2" />
+      <Circle fill="#dfdf00" layoutX="975.0" layoutY="703.0" radius="4.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <Line endX="-29.75" endY="-13.5" layoutX="1015.0" layoutY="547.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="980.0" layoutY="526.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="999.0" layoutY="566.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-29.75" endY="-13.5" layoutX="1027.0" layoutY="547.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="999.0" layoutY="526.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="980.0" layoutY="566.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-5.25" endY="55.25" layoutX="996.0" layoutY="520.0" startX="-5.25" startY="9.25" stroke="#d2d2d2" />
+      <Circle fill="#dfdf00" layoutX="980.0" layoutY="553.0" radius="4.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <Line endX="-29.75" endY="-13.5" layoutX="1015.0" layoutY="433.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="980.0" layoutY="412.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="999.0" layoutY="452.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-29.75" endY="-13.5" layoutX="1027.0" layoutY="433.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="999.0" layoutY="412.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="980.0" layoutY="452.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-5.25" endY="55.25" layoutX="996.0" layoutY="406.0" startX="-5.25" startY="9.25" stroke="#d2d2d2" />
+      <Circle fill="#dfdf00" layoutX="980.0" layoutY="439.0" radius="4.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <Line endX="-29.75" endY="-13.5" layoutX="1013.0" layoutY="197.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="978.0" layoutY="176.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="997.0" layoutY="216.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-29.75" endY="-13.5" layoutX="1025.0" layoutY="197.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="997.0" layoutY="176.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="978.0" layoutY="216.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-5.25" endY="55.25" layoutX="994.0" layoutY="170.0" startX="-5.25" startY="9.25" stroke="#d2d2d2" />
+      <Circle fill="#dfdf00" layoutX="978.0" layoutY="203.0" radius="4.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <Line endX="-29.75" endY="-13.5" layoutX="1551.0" layoutY="698.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="1516.0" layoutY="677.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="1535.0" layoutY="717.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-29.75" endY="-13.5" layoutX="1563.0" layoutY="698.0" startX="-29.75" startY="26.75" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="1535.0" layoutY="677.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="5.0" endY="7.5" layoutX="1516.0" layoutY="717.0" startX="-1.5" startY="7.5" stroke="#d2d2d2" />
+      <Line endX="-5.25" endY="55.25" layoutX="1532.0" layoutY="671.0" startX="-5.25" startY="9.25" stroke="#d2d2d2" />
+      <Circle fill="#dfdf00" layoutX="1516.0" layoutY="704.0" radius="4.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+   </children>
+</AnchorPane>

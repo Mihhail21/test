@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.DetectorControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="700.0" styleClass="subMain" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="WHITE" layoutX="126.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Показания мощности" textAlignment="CENTER" wrappingWidth="488.39374999999995">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="295.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ГТУ" textAlignment="CENTER" wrappingWidth="113.39374999999995">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="479.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПТ" textAlignment="CENTER" wrappingWidth="113.39374999999995">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="134.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Квинт" textAlignment="CENTER" wrappingWidth="113.39374999999995">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="49.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="СОТИАССО" textAlignment="CENTER" wrappingWidth="221.39374999999995">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="265.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nгт=" textAlignment="CENTER" wrappingWidth="56.393749999999955">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="264.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nгт=" textAlignment="CENTER" wrappingWidth="56.393749999999955">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="464.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nпт=" textAlignment="CENTER" wrappingWidth="65.39374999999995">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="465.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nпт=" textAlignment="CENTER" wrappingWidth="65.39374999999995">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <DetectorControl kks="tg_1ce003" layoutX="321.0" layoutY="244.0" maxValue="600.0" param="Nгт" prefHeight="20.0" prefWidth="88.0" system="GT" unit="МВт">
+         <tooltip>
+            <Tooltip text="Активная мощность газовой турибны, МВт" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl kks="tg_2ce003" layoutX="528.0" layoutY="244.0" maxValue="600.0" param="Nпт" prefHeight="20.0" prefWidth="92.0" system="MS" unit="МВт">
+         <tooltip>
+            <Tooltip text="Активная мощность паровой турибны, МВт" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl kks="10MKA10CE001aGT" layoutX="321.0" layoutY="184.0" maxValue="800.0" param="Nгт" prefHeight="20.0" prefWidth="88.0" system="GT" unit="МВт">
+         <tooltip>
+            <Tooltip text="Активная мощность газовой турибны, МВт" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl kks="10MKA20CE002" layoutX="528.0" layoutY="184.0" maxValue="100.0" param="Nпт" prefHeight="20.0" prefWidth="92.0" system="MS" unit="МВт">
+         <tooltip>
+            <Tooltip text="Активная мощность паровой турибны, МВт" />
+         </tooltip>
+      </DetectorControl>
+   </children>
+   <stylesheets>
+      <URL value="@../ВГ/StyleSheet.css" />
+      <URL value="@../Desktop/ISTATIONPro%20new/tempDiags/StyleSheet.css" />
+   </stylesheets>
+</AnchorPane>

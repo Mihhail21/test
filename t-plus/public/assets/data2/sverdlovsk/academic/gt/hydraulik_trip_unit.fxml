@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.ButtonControl?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.FunctionControl?>
+<?import ru.get.common.controls.ValveControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="202.0" layoutX="1650.0" layoutY="825.0" stroke="GREY" strokeType="INSIDE" strokeWidth="3.0" width="263.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="153.0" layoutX="-1.0" layoutY="874.0" stroke="GREY" strokeType="INSIDE" strokeWidth="3.0" width="235.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="165.0" layoutX="-1.0" stroke="GREY" strokeType="INSIDE" strokeWidth="3.0" width="235.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="381.0" layoutX="-1.0" layoutY="166.0" stroke="GREY" strokeType="INSIDE" strokeWidth="3.0" width="235.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="239.0" layoutX="-1.0" layoutY="548.0" stroke="GREY" strokeType="INSIDE" strokeWidth="3.0" width="235.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="88.0" layoutX="-1.0" layoutY="788.0" stroke="GREY" strokeType="INSIDE" strokeWidth="3.0" width="235.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="202.0" layoutX="236.0" layoutY="825.0" stroke="GREY" strokeType="INSIDE" strokeWidth="3.0" width="1015.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="202.0" layoutX="1248.0" layoutY="825.0" stroke="GREY" strokeType="INSIDE" strokeWidth="3.0" width="405.0" />
+      <Text fill="GREY" layoutX="39.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="АТМОСФЕРН." textAlignment="JUSTIFY" wrappingWidth="150.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="11.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОСНОВНЫЕ ДАННЫЕ" textAlignment="JUSTIFY" wrappingWidth="220.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="25.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВЫХОД. МОЩН." textAlignment="JUSTIFY" wrappingWidth="190.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="11.0" layoutY="812.0" strokeType="OUTSIDE" strokeWidth="0.0" text="УСТАВКА ЧАСТ. ВРАЩ" textAlignment="JUSTIFY" wrappingWidth="220.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="5.0" layoutY="907.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗАПРОС ФАКТИЧ. " textAlignment="JUSTIFY" wrappingWidth="190.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="5.0" layoutY="966.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗАПРОС КОНТРОЛЯ" textAlignment="JUSTIFY" wrappingWidth="190.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="424.0" layoutY="851.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ГИДРАВЛ. БЛОК АВАР. ОТКЛ. - ТЕСТ. И КОНТРОЛЬ" textAlignment="CENTER" wrappingWidth="593.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="300.0" layoutY="876.0" strokeType="OUTSIDE" strokeWidth="0.0" text="24 - ЧАСОВОЙ КОНТРОЛЬ" textAlignment="CENTER" wrappingWidth="249.99999999999994">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="749.0" layoutY="879.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОСТАНОВ С ЗАДЕРЖКОЙ" textAlignment="CENTER" wrappingWidth="249.99999999999994">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="727.0" layoutY="908.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗАПРОС" textAlignment="JUSTIFY" wrappingWidth="249.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="727.0" layoutY="933.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КРАТКОВРЕМ. ЗАПРОС" textAlignment="JUSTIFY" wrappingWidth="199.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="261.0" layoutY="936.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗАВЕРШЕН" textAlignment="JUSTIFY" wrappingWidth="249.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="261.0" layoutY="905.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗАПРОС" textAlignment="JUSTIFY" wrappingWidth="249.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="261.0" layoutY="959.0" strokeType="OUTSIDE" strokeWidth="0.0" text="УСПЕШНО ПРОЙДЕН" textAlignment="JUSTIFY" wrappingWidth="249.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="261.0" layoutY="984.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НЕ ПРОЙДЕН" textAlignment="JUSTIFY" wrappingWidth="249.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1670.0" layoutY="852.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПОДТВЕРДИТЬ" textAlignment="JUSTIFY" wrappingWidth="252.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1674.0" layoutY="973.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПОДТВ. ПРИВ." textAlignment="JUSTIFY" wrappingWidth="133.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1674.0" layoutY="928.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLS/T" textAlignment="JUSTIFY" wrappingWidth="133.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1674.0" layoutY="886.0" strokeType="OUTSIDE" strokeWidth="0.0" text="АВАР. ОТКЛ." textAlignment="JUSTIFY" wrappingWidth="133.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="yx11mbx10ew000_xa01" layoutX="180.0" layoutY="884.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="29.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="REAL OVSP TST FB" />
+         </tooltip>
+      </Button>
+      <Button fx:id="yx11mbx10ec130_xa01" layoutX="183.0" layoutY="965.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="29.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="HYDR TRIP UNIT TEST FB" />
+         </tooltip>
+      </Button>
+      <Text fill="GREY" layoutX="318.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МАСЛО ЗАЩИТ." textAlignment="CENTER" wrappingWidth="133.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="316.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ГИДРОСИСТЕМЫ" textAlignment="CENTER" wrappingWidth="145.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="243.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КОНТРОЛЬ КАНАЛА АКТИВЕН" textAlignment="JUSTIFY" wrappingWidth="250.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="243.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ГИДРАВЛ. БЛОК АВАР. ОТКЛ." textAlignment="JUSTIFY" wrappingWidth="246.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="321.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОТСЕЧ. КЛ. ОТКРЫТ НОРМА" textAlignment="JUSTIFY" wrappingWidth="240.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="321.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОТСЕЧ. КЛ. ОТКАЗ ОПАСНО" textAlignment="JUSTIFY" wrappingWidth="240.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="321.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОТСЕЧ. КЛ. ЗАКРЫТ НОРМА" textAlignment="JUSTIFY" wrappingWidth="240.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="321.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОТСЕЧ. КЛ. ОТКАЗ БЗОПАСНО" textAlignment="JUSTIFY" wrappingWidth="248.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="282.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РЕЛЕ БЛОК АВАР. ОТКЛ." textAlignment="JUSTIFY" wrappingWidth="210.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="322.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РЕЛЕ РАЗОМКН. НОРМА" textAlignment="JUSTIFY" wrappingWidth="281.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="322.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РЕЛЕ ОТКАЗ ОПАСНО" textAlignment="JUSTIFY" wrappingWidth="281.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="322.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РЕЛЕ ЗАМКН. НОРМА" textAlignment="JUSTIFY" wrappingWidth="281.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="322.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МОД. JAQ ОТКАЗ ОПАСНО" textAlignment="JUSTIFY" wrappingWidth="281.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="282.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="СТОЙКА JAQ" textAlignment="JUSTIFY" wrappingWidth="120.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="323.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РЕЛЕ ОТКАЗ БЕЗОПАСНО" textAlignment="JUSTIFY" wrappingWidth="281.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="323.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МОД. JAQ ОТКАЗ БЕЗОПАСНО" textAlignment="JUSTIFY" wrappingWidth="281.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="323.0" layoutY="714.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КОНТРОЛЬ КАНАЛА ЗАВЕРШН" textAlignment="JUSTIFY" wrappingWidth="273.99999999999994">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1562.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="БАК СМАЗ. МАСЛА" textAlignment="JUSTIFY" wrappingWidth="180.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1739.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МАСЛО ЗАЩИТНОЙ ГИДРОСИСТЕМЫ" wrappingWidth="171.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="608.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CH1" textAlignment="CENTER" wrappingWidth="78.00000000000006">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="923.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CH2" textAlignment="CENTER" wrappingWidth="78.00000000000006">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="1229.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CH3" textAlignment="CENTER" wrappingWidth="78.00000000000006">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Line endX="470.6666564941406" endY="73.33333587646484" layoutX="10.0" layoutY="9.0" startX="1612.6666259765625" startY="73.33333587646484" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1604.0" endY="423.3333435058594" layoutX="19.0" layoutY="20.0" startX="1604.0" startY="62.666664123535156" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="673.0" endY="347.3333435058594" layoutX="29.0" layoutY="30.0" startX="1685.6666259765625" startY="347.3333435058594" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1061.333251953125" endY="403.6666564941406" layoutX="-504.0" layoutY="-99.0" startX="1133.333251953125" startY="403.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1196.0" endY="395.6666564941406" layoutX="-495.0" layoutY="-90.0" startX="1196.0" startY="428.3333435058594" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1196.0" endY="408.0" layoutX="-495.0" layoutY="-56.0" startX="1196.0" startY="432.3333435058594" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1042.333251953125" endY="351.6666564941406" layoutX="-486.0" layoutY="-46.0" startX="1042.333251953125" startY="392.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1032.0" endY="382.0" layoutX="-475.0" layoutY="-36.0" startX="1837.0" startY="382.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1332.3333740234375" endY="314.6666564941406" layoutX="31.0" layoutY="31.0" startX="1332.3333740234375" startY="101.33332824707031" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1210.0" endY="91.0" layoutX="42.0" layoutY="41.0" startX="1110.6666259765625" startY="91.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1100.6666259765625" endY="79.66667175292969" layoutX="52.0" layoutY="51.0" startX="1100.6666259765625" startY="31.666664123535156" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1332.3333740234375" endY="273.0" layoutX="-265.0" layoutY="31.0" startX="1332.3333740234375" startY="101.33332824707031" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1202.333251953125" endY="91.0" layoutX="-257.0" layoutY="41.0" startX="1110.6666259765625" startY="91.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1100.6666259765625" endY="79.66667175292969" layoutX="-247.0" layoutY="51.0" startX="1100.6666259765625" startY="32.333335876464844" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1332.3333740234375" endY="275.0" layoutX="-573.0" layoutY="31.0" startX="1332.3333740234375" startY="101.33332824707031" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1193.0" endY="91.0" layoutX="-565.0" layoutY="41.0" startX="1110.6666259765625" startY="91.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1100.6666259765625" endY="79.66667175292969" layoutX="-555.0" layoutY="51.0" startX="1100.6666259765625" startY="32.333335876464844" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1252.0" endY="395.0" layoutX="-492.0" layoutY="-89.0" startX="1436.0" startY="395.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1196.0" endY="395.6666564941406" layoutX="-177.0" layoutY="-90.0" startX="1196.0" startY="428.3333435058594" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1196.0" endY="408.0" layoutX="-177.0" layoutY="-56.0" startX="1196.0" startY="432.3333435058594" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1252.6666259765625" endY="395.0" layoutX="-184.0" layoutY="-90.0" startX="1434.6666259765625" startY="395.0" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1196.0" endY="393.3333435058594" layoutX="130.0" layoutY="-88.0" startX="1196.0" startY="428.3333435058594" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1196.0" endY="408.0" layoutX="130.0" layoutY="-55.0" startX="1196.0" startY="432.3333435058594" stroke="GREY" strokeWidth="2.0" />
+      <Line endX="1100.6666259765625" endY="43.333335876464844" layoutX="-591.0" layoutY="30.0" startX="1100.6666259765625" startY="32.333335876464844" stroke="GREY" strokeWidth="5.0" />
+      <Line endX="1100.6666259765625" endY="45.666664123535156" layoutX="-591.0" layoutY="57.0" startX="1100.6666259765625" startY="35.0" stroke="GREY" strokeWidth="5.0" />
+      <Line endX="1860.3333740234375" endY="124.33332824707031" layoutX="-555.0" layoutY="52.0" startX="1162.333251953125" startY="124.33332824707031" stroke="GREY" strokeWidth="2.0" styleClass="line-dashed-plus" />
+      <Line endX="1861.6666259765625" endY="124.33332824707031" layoutX="-557.0" layoutY="85.0" startX="1165.0" startY="124.33332824707031" stroke="GREY" strokeWidth="2.0" styleClass="line-dashed-plus" />
+      <Line endX="1860.3333740234375" endY="124.33332824707031" layoutX="-554.0" layoutY="115.0" startX="1162.0" startY="124.33332824707031" stroke="GREY" strokeWidth="2.0" styleClass="line-dashed-plus" />
+      <Line endX="1861.6666259765625" endY="124.33332824707031" layoutX="-556.0" layoutY="147.0" startX="1165.0" startY="124.33332824707031" stroke="GREY" strokeWidth="2.0" styleClass="line-dashed-plus" />
+      <Line endX="1860.3333740234375" endY="124.33332824707031" layoutX="-553.0" layoutY="289.0" startX="1162.333251953125" startY="124.33332824707031" stroke="GREY" strokeWidth="2.0" styleClass="line-dashed-plus" />
+      <Line endX="1861.6666259765625" endY="124.33332824707031" layoutX="-556.0" layoutY="320.0" startX="1165.0" startY="124.33332824707031" stroke="GREY" strokeWidth="2.0" styleClass="line-dashed-plus" />
+      <Line endX="1860.3333740234375" endY="124.33332824707031" layoutX="-553.0" layoutY="352.0" startX="1162.0" startY="124.33332824707031" stroke="GREY" strokeWidth="2.0" styleClass="line-dashed-plus" />
+      <Line endX="1861.6666259765625" endY="124.33332824707031" layoutX="-556.0" layoutY="386.0" startX="1165.0" startY="124.33332824707031" stroke="GREY" strokeWidth="2.0" styleClass="line-dashed-plus" />
+      <Line endX="1860.3333740234375" endY="124.33332824707031" layoutX="-552.0" layoutY="448.0" startX="1162.333251953125" startY="124.33332824707031" stroke="GREY" strokeWidth="2.0" styleClass="line-dashed-plus" />
+      <Line endX="1861.6666259765625" endY="124.33332824707031" layoutX="-555.0" layoutY="479.0" startX="1165.0" startY="124.33332824707031" stroke="GREY" strokeWidth="2.0" styleClass="line-dashed-plus" />
+      <Line endX="1860.3333740234375" endY="124.33332824707031" layoutX="-552.0" layoutY="514.0" startX="1162.0" startY="124.33332824707031" stroke="GREY" strokeWidth="2.0" styleClass="line-dashed-plus" />
+      <Line endX="1861.6666259765625" endY="124.33332824707031" layoutX="-555.0" layoutY="543.0" startX="1165.0" startY="124.33332824707031" stroke="GREY" strokeWidth="2.0" styleClass="line-dashed-plus" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="683.0" layoutX="607.0" layoutY="41.0" stroke="GREY" strokeType="INSIDE" styleClass="line-dashed-plus" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="683.0" layoutX="924.0" layoutY="41.0" stroke="GREY" strokeType="INSIDE" styleClass="line-dashed-plus" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="683.0" layoutX="1231.0" layoutY="41.0" stroke="GREY" strokeType="INSIDE" styleClass="line-dashed-plus" width="75.0" />
+      <Line endX="1337.3333740234375" endY="59.333343505859375" layoutX="325.0" layoutY="366.0" startX="1337.3333740234375" startY="12.333343505859375" stroke="GREY" strokeWidth="2.0" styleClass="line-dashed-plus" />
+      <Line endX="1358.3333740234375" endY="51.333343505859375" layoutX="335.0" layoutY="375.0" startX="1328.3333740234375" startY="51.333343505859375" stroke="GREY" strokeWidth="2.0" styleClass="line-dashed-plus" />
+      <Button layoutX="1717.0" layoutY="416.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="81.0" text="MIN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text fill="GREY" layoutX="1693.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P" wrappingWidth="19.5">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Circle fx:id="yx11mby10ec101_xs11" fill="#c0dcc0" layoutX="644.0" layoutY="102.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa011_xs81" fill="#c0dcc0" layoutX="644.0" layoutY="176.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa011_xs32" fill="#c0dcc0" layoutX="644.0" layoutY="209.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa011_xs82" fill="#c0dcc0" layoutX="644.0" layoutY="239.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa011_xs41" fill="#c0dcc0" layoutX="644.0" layoutY="272.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa111_xs81" fill="#c0dcc0" layoutX="644.0" layoutY="414.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa111_xs32" fill="#c0dcc0" layoutX="644.0" layoutY="445.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa111_xs82" fill="#c0dcc0" layoutX="644.0" layoutY="477.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa111_xs41" fill="#c0dcc0" layoutX="644.0" layoutY="510.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mba30cs001_xs32" fill="#c0dcc0" layoutX="644.0" layoutY="572.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mba30cs001_xs41" fill="#c0dcc0" layoutX="644.0" layoutY="603.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mba30cs001_xb58" fill="#c0dcc0" layoutX="644.0" layoutY="638.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mba30eg001_xg34" fill="#c0dcc0" layoutX="644.0" layoutY="669.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mby10ec101_xs21" fill="#c0dcc0" layoutX="644.0" layoutY="705.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Button fx:id="yx11mba30eg900_xs01" layoutX="627.0" layoutY="731.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="32.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="GT SPEED CARD" />
+         </tooltip>
+      </Button>
+      <Circle fx:id="yx11mby10ec101_xs10" fill="#c0dcc0" layoutX="595.0" layoutY="901.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mby10ec101_xs20" fill="#c0dcc0" layoutX="595.0" layoutY="927.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mby10ec101_xs30" fill="#c0dcc0" layoutX="595.0" layoutY="952.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mby10ec101_xs31" fill="#c0dcc0" layoutX="595.0" layoutY="980.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mby10ec601_xs01" fill="#c0dcc0" layoutX="1052.0" layoutY="902.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mby10ec601_xs02" fill="#c0dcc0" layoutX="1052.0" layoutY="928.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mby10ec101_xs12" fill="#c0dcc0" layoutX="963.0" layoutY="103.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa012_xs81" fill="#c0dcc0" layoutX="963.0" layoutY="177.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa012_xs32" fill="#c0dcc0" layoutX="963.0" layoutY="210.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa012_xs82" fill="#c0dcc0" layoutX="963.0" layoutY="240.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa012_xs41" fill="#c0dcc0" layoutX="963.0" layoutY="273.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa112_xs81" fill="#c0dcc0" layoutX="963.0" layoutY="415.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa112_xs32" fill="#c0dcc0" layoutX="963.0" layoutY="446.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa112_xs82" fill="#c0dcc0" layoutX="963.0" layoutY="478.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa112_xs41" fill="#c0dcc0" layoutX="963.0" layoutY="511.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mba30cs002_xs32" fill="#c0dcc0" layoutX="963.0" layoutY="573.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mba30cs002_xs41" fill="#c0dcc0" layoutX="963.0" layoutY="604.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mba30cs002_xb58" fill="#c0dcc0" layoutX="963.0" layoutY="639.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mba30eg002_xg34" fill="#c0dcc0" layoutX="963.0" layoutY="670.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mby10ec101_xs22" fill="#c0dcc0" layoutX="963.0" layoutY="706.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mby10ec101_xs13" fill="#c0dcc0" layoutX="1268.0" layoutY="102.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa013_xs81" fill="#c0dcc0" layoutX="1268.0" layoutY="176.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa013_xs32" fill="#c0dcc0" layoutX="1268.0" layoutY="209.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa013_xs82" fill="#c0dcc0" layoutX="1268.0" layoutY="239.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa013_xs41" fill="#c0dcc0" layoutX="1268.0" layoutY="272.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa113_xs81" fill="#c0dcc0" layoutX="1268.0" layoutY="414.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa113_xs32" fill="#c0dcc0" layoutX="1268.0" layoutY="445.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa113_xs82" fill="#c0dcc0" layoutX="1268.0" layoutY="477.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mbx41aa113_xs41" fill="#c0dcc0" layoutX="1268.0" layoutY="510.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mba30cs003_xs32" fill="#c0dcc0" layoutX="1268.0" layoutY="572.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mba30cs003_xs41" fill="#c0dcc0" layoutX="1268.0" layoutY="603.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mba30cs003_xb58" fill="#c0dcc0" layoutX="1268.0" layoutY="638.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mba30eg003_xg34" fill="#c0dcc0" layoutX="1268.0" layoutY="669.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="yx11mby10ec101_xs23" fill="#c0dcc0" layoutX="1268.0" layoutY="705.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Button fx:id="yxmya41ea0001" layoutX="1866.0" layoutY="864.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="32.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="REM ACKNOWLEDGE TRIP" />
+         </tooltip>
+      </Button>
+      <Button fx:id="yxmya31ea0001" layoutX="1866.0" layoutY="909.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="32.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="REW ACKN PLS/PLST" />
+         </tooltip>
+      </Button>
+      <Button fx:id="yxmya51ea0001" layoutX="1866.0" layoutY="953.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="32.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="REM ACKNOWLEDGE DRIVE" />
+         </tooltip>
+      </Button>
+      <Line endX="1206.333251953125" endY="91.0" layoutX="-449.0" layoutY="41.0" startX="1110.6666259765625" startY="91.0" stroke="GREY" strokeWidth="2.0" />
+      <ValveControl kks="11MBX41AA011_1" layoutX="623.0" layoutY="119.0" prefHeight="25.0" prefWidth="50.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <Line endX="1093.0" endY="403.6666564941406" layoutX="-433.0" layoutY="-99.0" startX="1133.333251953125" startY="403.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <ValveControl kks="11MBX41AA011_2" layoutX="623.0" layoutY="292.0" prefHeight="25.0" prefWidth="50.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <Line endX="1198.6666259765625" endY="91.0" layoutX="-132.0" layoutY="41.0" startX="1110.6666259765625" startY="91.0" stroke="GREY" strokeWidth="2.0" />
+      <ValveControl kks="11MBX41AA012_1" layoutX="941.0" layoutY="119.0" prefHeight="25.0" prefWidth="50.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <Line endX="1093.0" endY="403.6666564941406" layoutX="-116.0" layoutY="-99.0" startX="1133.333251953125" startY="403.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <ValveControl kks="11MBX41AA012_2" layoutX="941.0" layoutY="293.0" prefHeight="25.0" prefWidth="50.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <Line endX="1188.6666259765625" endY="91.0" layoutX="174.0" layoutY="41.0" startX="1110.6666259765625" startY="91.0" stroke="GREY" strokeWidth="2.0" />
+      <ValveControl kks="11MBX41AA013_1" layoutX="1247.0" layoutY="118.0" prefHeight="25.0" prefWidth="50.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <Line endX="1093.0" endY="403.6666564941406" layoutX="189.0" layoutY="-99.0" startX="1136.6666259765625" startY="403.6666564941406" stroke="GREY" strokeWidth="2.0" />
+      <ValveControl kks="11MBX41AA013_2" layoutX="1247.0" layoutY="292.0" prefHeight="25.0" prefWidth="50.0" skinType="HANDLE_VLV" valueVisible="false" />
+      <DetectorControl kks="11MBL01CT001" layoutX="3.0" layoutY="36.0" maxValue="200.0" param="ТЕМП.                   " prefHeight="30.0" prefWidth="215.0" system="WP" unit="°C ">
+         <tooltip>
+            <Tooltip text="Температура окружающего воздуха" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBL01CM001" layoutX="2.0" layoutY="86.0" maxValue="100.0" param="ВЛАЖНОСТЬ       " prefHeight="30.0" prefWidth="214.0" system="GT" unit="\%">
+         <tooltip>
+            <Tooltip text="Влажность окружающего воздуха" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBL01CP001" layoutX="2.0" layoutY="136.0" maxValue="1100.0" minValue="600.0" param="ДАВЛЕНИЕ        " prefHeight="30.0" prefWidth="213.0" system="GT" unit="мбар">
+         <tooltip>
+            <Tooltip text="Давление окружающего воздуха" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MKA10CE606" layoutX="2.0" layoutY="675.0" maxValue="210.0" minValue="-95.5" param="РЕАКТ. МОЩН.   " prefHeight="30.0" prefWidth="217.0" system="ED" unit="МВАр">
+         <tooltip>
+            <Tooltip text="Реактивная мощность генератора" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBA30CS901" layoutX="2.0" layoutY="202.0" maxValue="3333.0" param="ЧАСТ. ВРАЩ.    " prefHeight="30.0" prefWidth="215.0" system="TU" unit="об/мин">
+         <tooltip>
+            <Tooltip text="Скорость ГТ" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBA82CG901" layoutX="1.0" layoutY="247.0" maxValue="10.0" minValue="-80.0" param="ПЛВНА                " prefHeight="30.0" prefWidth="216.0" system="GT" unit="град">
+         <tooltip>
+            <Tooltip text="Полож. ПЛВНА, сред." />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBA80CT901" layoutX="1.0" layoutY="292.0" maxValue="600.0" minValue="-20.0" param="ТК2                       " prefHeight="30.0" prefWidth="215.0" system="GT" unit="°C ">
+         <tooltip>
+            <Tooltip text="Температура на выходе компрессора" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBA80CP911" layoutX="3.0" layoutY="337.0" maxValue="20.0" param="РК2                         " prefHeight="30.0" prefWidth="216.0" system="GT" unit="бар">
+         <tooltip>
+            <Tooltip text="Давление на выходе компрессора" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBM30AX010" layoutX="2.0" layoutY="382.0" maxValue="200.0" param="ПУЛЬС. НИЗК.    " prefHeight="30.0" prefWidth="216.0" system="GT" unit="мбар">
+         <tooltip>
+            <Tooltip text="Pulsation mon low" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBM30AX010B_XJ60" layoutX="2.0" layoutY="427.0" maxValue="1100.0" minValue="600.0" param="ПУЛЬС. ВЫС.    " prefHeight="30.0" prefWidth="214.0" system="GT" unit="мбар">
+         <tooltip>
+            <Tooltip text="Pulsation mon high" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBY99CT911" layoutX="2.0" layoutY="472.0" maxValue="1200.0" param="TIT                      " prefHeight="30.0" prefWidth="211.0" system="GT" unit="°C ">
+         <tooltip>
+            <Tooltip text="TIT ACT VAL" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBA30CT911" layoutX="2.0" layoutY="517.0" maxValue="700.0" param="ТАТ                       " prefHeight="30.0" prefWidth="215.0" system="GT" unit="°C ">
+         <tooltip>
+            <Tooltip text="Т выхлопных газов" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MKA10CE901" layoutX="2.0" layoutY="635.0" maxValue="200.0" param="АКТ. МОЩН.       " prefHeight="30.0" prefWidth="215.0" system="ED" unit="МВт">
+         <tooltip>
+            <Tooltip text="Активная мощность генератора" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MBY99EA006" layoutX="2.0" layoutY="594.0" maxValue="100.0" param="ОТН. МОЩН.      " prefHeight="30.0" prefWidth="215.0" system="GT" unit="\% ">
+         <tooltip>
+            <Tooltip text="Относительная мощность" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MKA10CE907" layoutX="3.0" layoutY="715.0" minValue="-1.0" param="COS PHI                    " prefHeight="30.0" prefWidth="217.0" system="ED" unit="- ">
+         <tooltip>
+            <Tooltip text="GEN COS PHI" />
+         </tooltip></DetectorControl>
+      <DetectorControl backgroundPaint="#bdbdbd00" kks="11MKA10CE103" layoutX="3.0" layoutY="755.0" maxValue="55.0" minValue="45.0" param="ЧАСТОТА               " prefHeight="30.0" prefWidth="217.0" system="ED" unit="Гц">
+         <tooltip>
+            <Tooltip text="Частота генератора" />
+         </tooltip></DetectorControl>
+      <Rectangle fill="SILVER" height="27.0" layoutX="1550.0" layoutY="12.0" stroke="BLACK" strokeType="INSIDE" width="360.0" />
+      <Text layoutX="1569.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ГИДРАВЛИЧЕСКИЙ БЛОК ЗАЩИТЫ" textAlignment="JUSTIFY" wrappingWidth="350.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <DetectorControl kks="11MBY10DS000_XE04" layoutX="92.0" layoutY="821.0" maxValue="1000.0" param="n" prefHeight="19.0" prefWidth="95.0" unit="об/мин">
+         <tooltip>
+            <Tooltip text="SPEED SETPOINT EFF SP EFF SP" />
+         </tooltip></DetectorControl>
+      <DetectorControl kks="11MBY10DS000_XE60" layoutX="92.0" layoutY="848.0" maxValue="1000.0" param="n" prefHeight="19.0" prefWidth="95.0" unit="об/мин">
+         <tooltip>
+            <Tooltip text="SPEED SETPOINT MEAS MEAS " />
+         </tooltip></DetectorControl>
+      <ButtonControl backgroundPaint="#38fc2d" borderPaint="#6ac4e800" buttonOffText="ЗАЩИТА" buttonOnText="ЗАЩИТА" diagramTitle="TRIP RUS.fxml" equipmentType="TRANSITION_BUTTON" kks="1" layoutX="1720.0" layoutY="987.0" prefHeight="32.0" prefWidth="130.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Roboto Bold" size="12.0" />
+         </customFont>
+         <effect>
+            <Blend />
+         </effect>
+         <valueColor>
+            <Color />
+         </valueColor>
+      </ButtonControl>
+      <FunctionControl layoutX="1710.0" layoutY="367.0" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.501960813999176" green="0.501960813999176" blue="0.501960813999176" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl layoutX="1613.0" layoutY="444.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.501960813999176" green="0.501960813999176" blue="0.501960813999176" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <FunctionControl layoutX="465.0" layoutY="72.0" prefHeight="20.0" prefWidth="20.0" skinType="ARROW">
+         <controlBackgroundColor>
+            <Color red="0.501960813999176" green="0.501960813999176" blue="0.501960813999176" />
+         </controlBackgroundColor>
+      </FunctionControl>
+      <ValveControl equipmentType="TWVLV" kks="11MBX41AA014_1" layoutX="1646.0" layoutY="392.0" orientation="VERTICAL" prefHeight="37.5" prefWidth="50.0" skinType="TWVLV_VLV" />
+      <FunctionControl equipmentType="LEVEL" kks="ssx11mby10ds000_xe04_l" layoutX="7.0" layoutY="826.0" maxValue="4000.0" prefWidth="75.0" skinType="LEVEL" />
+      <FunctionControl equipmentType="LEVEL" kks="ssx11mby10ds000_xe60_l" layoutX="8.0" layoutY="852.0" maxValue="4000.0" prefWidth="75.0" skinType="LEVEL" />
+      <Text fill="GREY" layoutX="5.0" layoutY="929.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПОВЫШ. ОБОРОТОВ" textAlignment="JUSTIFY" wrappingWidth="200.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="5.0" layoutY="990.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗАЩИТЫ" textAlignment="JUSTIFY" wrappingWidth="190.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+   <stylesheets>
+      <URL value="@StyleSheet.css" />
+      <URL value="@../ВГ/StyleSheet.css" />
+   </stylesheets>
+</AnchorPane>

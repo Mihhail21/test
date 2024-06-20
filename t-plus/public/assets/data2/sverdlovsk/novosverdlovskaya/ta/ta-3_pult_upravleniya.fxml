@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.ButtonControl?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.FunctionControl?>
+<?import ru.get.common.controls.InputControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="214.0" layoutX="1001.0" layoutY="710.0" stroke="GREY" strokeType="INSIDE" width="791.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="114.0" layoutX="1580.0" layoutY="796.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="114.0" layoutX="1011.0" layoutY="796.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="556.0" />
+      <Text layoutX="1254.0" layoutY="766.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Синхронизатор" textAlignment="CENTER" wrappingWidth="287.0">
+         <font>
+            <Font name="Tahoma Bold" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="1396.0" layoutY="863.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Управление" textAlignment="CENTER" wrappingWidth="156.1667175292971">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Text>
+      <ButtonControl borderPaint="BLACK" borderWidth="1.0" buttonOffText="Посадить СК" buttonOnText="Посадить СК" equipmentType="RETURN_BUTTON" kks="tcsk_tg3_cls" layoutX="1264.0" layoutY="830.0" prefHeight="50.0" prefWidth="111.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </ButtonControl>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="325.0" layoutX="156.0" layoutY="168.0" stroke="GREY" strokeType="INSIDE" width="782.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="89.0" layoutX="169.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="452.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="114.0" layoutX="169.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="452.0" />
+      <Text layoutX="186.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Задание" textAlignment="CENTER" wrappingWidth="141.0">
+         <font>
+            <Font name="Tahoma Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="731.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РМТ" textAlignment="CENTER" wrappingWidth="85.0">
+         <font>
+            <Font name="Tahoma Bold" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="440.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Факт" textAlignment="CENTER" wrappingWidth="77.99999999999977">
+         <font>
+            <Font name="Tahoma Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="308.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВт" textAlignment="CENTER" wrappingWidth="54.0">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="309.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="об/мин" textAlignment="CENTER" wrappingWidth="94.82455444335938">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="640.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Блокировка " textAlignment="CENTER" wrappingWidth="178.99999999999977">
+         <font>
+            <Font name="Tahoma Bold" size="27.0" />
+         </font>
+      </Text>
+      <Line endX="163.75" layoutX="759.0" layoutY="301.0" startX="-129.25" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="468.0" layoutX="1002.0" layoutY="168.0" stroke="#808080" width="790.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="176.0" layoutX="1538.0" layoutY="181.0" stroke="BLACK" strokeWidth="2.0" width="242.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="176.0" layoutX="1288.0" layoutY="181.0" stroke="BLACK" strokeWidth="2.0" width="242.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="251.0" layoutX="1289.0" layoutY="375.0" stroke="BLACK" strokeWidth="2.0" width="491.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="251.0" layoutX="1008.0" layoutY="375.0" stroke="BLACK" strokeWidth="2.0" width="249.0" />
+      <Line endX="-23.75" endY="-19.75" layoutX="1507.0" layoutY="341.0" startX="-12.75" startY="-19.75" strokeWidth="2.0" />
+      <Line endX="-23.75" endY="-19.75" layoutX="1507.0" layoutY="286.0" startX="-12.75" startY="-19.75" strokeWidth="2.0" />
+      <Line endX="-23.75" endY="-19.75" layoutX="1507.0" layoutY="231.0" startX="-12.75" startY="-19.75" strokeWidth="2.0" />
+      <Line endX="-17.5" endY="-19.75" layoutX="1507.0" layoutY="258.0" startX="-12.75" startY="-19.75" strokeWidth="2.0" />
+      <Line endX="-17.5" endY="-19.75" layoutX="1507.0" layoutY="312.0" startX="-12.75" startY="-19.75" strokeWidth="2.0" />
+      <Group layoutX="1623.0" layoutY="182.0" />
+      <ButtonControl borderPaint="BLACK" borderWidth="1.0" buttonOffText="Синхронизирован" buttonOnText="Не синхронизирован" equipmentType="TEXT_BUTTON" interactive="false" kks="ed:v015_brk" layoutX="1016.0" layoutY="278.0" prefHeight="70.0" prefWidth="233.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="24.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl borderPaint="BLACK" borderWidth="1.0" buttonOffText="ВПУ вкл" buttonOnText="ВПУ выкл" equipmentType="TEXT_BUTTON" kks="tu:mtrvpu3" layoutX="1017.0" layoutY="188.0" prefHeight="70.0" prefWidth="233.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="24.0" />
+         </customFont>
+      </ButtonControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="3M_1" layoutX="1048.0" layoutY="470.0" maxValue="600.0" param="T" prefHeight="47.0" prefWidth="130.0" system="MS">
+         <tooltip>
+            <Tooltip text="температура острого пара перед ГПЗ-2" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" kks="3M_203" layoutX="1048.0" layoutY="515.0" maxValue="160.0" param="P" prefHeight="45.0" prefWidth="200.0" system="MS" unit="кгс/см2">
+         <tooltip>
+            <Tooltip text="Давление острого пара" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="3M_401" layoutX="1049.0" layoutY="559.0" maxValue="700.0" param="F" prefHeight="45.0" prefWidth="137.0" system="MS" unit="т/ч">
+         <tooltip>
+            <Tooltip text="Расход острого пара" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="3M_17_4" layoutX="1343.0" layoutY="470.0" maxValue="750.0" minValue="-90.0" param="T" prefHeight="47.0" prefWidth="130.0" system="MS">
+         <tooltip>
+            <Tooltip text="Температура выхлопа турбины сторона А" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" kks="3M_307" layoutX="1343.0" layoutY="515.0" maxValue="0.0" minValue="-1.0" param="P" prefHeight="45.0" prefWidth="200.0" system="MS" unit="кгс/см2">
+         <tooltip>
+            <Tooltip text="Давление отраб.пара в конд-р" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="3M_237a" layoutX="1344.0" layoutY="559.0" maxValue="700.0" param="F" prefHeight="45.0" prefWidth="137.0" system="MS" unit="т/ч">
+         <tooltip>
+            <Tooltip text="расход пара в конденсатор ТА3 сторона А" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="3M_17_5" layoutX="1566.0" layoutY="470.0" maxValue="750.0" minValue="-90.0" param="T" prefHeight="47.0" prefWidth="130.0" system="MS">
+         <tooltip>
+            <Tooltip text="Температура выхлопа турбины сторона Б" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" kks="3M_308" layoutX="1567.0" layoutY="516.0" maxValue="0.0" minValue="-1.0" param="P" prefHeight="45.0" prefWidth="200.0" system="MS" unit="кгс/см2">
+         <tooltip>
+            <Tooltip text="Давление отраб.пара в конд-р" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="3M_237b" layoutX="1568.0" layoutY="560.0" maxValue="700.0" param="F" prefHeight="45.0" prefWidth="137.0" system="MS" unit="т/ч">
+         <tooltip>
+            <Tooltip text="расход пара в конденсатор ТА3 сторона Б" />
+         </tooltip>
+      </DetectorControl>
+      <ButtonControl buttonOffText="Мех. величины" buttonOnText="Мех. величины" diagramTitle="ТА-3 Мех. величины.fxml" equipmentType="TRANSITION_BUTTON" kks="38" layoutX="1181.0" layoutY="1038.0" prefHeight="38.0" prefWidth="96.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="ПСГ" buttonOnText="ПСГ" diagramTitle="ТА-3 ПСГ.fxml" equipmentType="TRANSITION_BUTTON" kks="39" layoutX="1281.0" layoutY="1038.0" prefHeight="38.0" prefWidth="36.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Конденсатор" buttonOnText="Конденсатор" diagramTitle="ТА-3 Конденсатор.fxml" equipmentType="TRANSITION_BUTTON" kks="40" layoutX="1321.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Уплотнения ТА" buttonOnText="Уплотнения ТА" diagramTitle="ТА-3 Уплотнения ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="41" layoutX="1403.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Рабочее масло" buttonOnText="Рабочее масло" diagramTitle="ТА-3 Рабочее масло.fxml" equipmentType="TRANSITION_BUTTON" kks="42" layoutX="1485.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Грязное масло ТА" buttonOnText="Грязное масло ТА" diagramTitle="ТА-3 Грязное масло ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="43" layoutX="1567.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Защиты ТА(ПВД, ПСГ)" buttonOnText="Защиты ТА(ПВД, ПСГ)" diagramTitle="ТА-3 Защиты ТА(ПВД, ПСГ).fxml" equipmentType="TRANSITION_BUTTON" kks="45" layoutX="1731.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Защиты ТА" buttonOnText="Защиты ТА" diagramTitle="ТА-3 Защиты ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="44" layoutX="1649.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Генератор (УВГ)" buttonOnText="Генератор (УВГ)" diagramTitle="ТА-3 Генератор (УВГ).fxml" equipmentType="TRANSITION_BUTTON" kks="37" layoutX="1104.0" layoutY="1038.0" prefHeight="38.0" prefWidth="73.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Сигнализации ТА" buttonOnText="Сигнализации ТА" diagramTitle="ТА-3 Сигнализации ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="46" layoutX="1813.0" layoutY="1038.0" prefHeight="38.0" prefWidth="103.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Общий" buttonOnText="Общий" diagramTitle="ТА-3 Общий.fxml" equipmentType="TRANSITION_BUTTON" kks="31" layoutX="633.0" layoutY="1038.0" prefHeight="38.0" prefWidth="46.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Маслоснабжение" buttonOnText="Маслоснабжение" diagramTitle="ТА-3 Маслоснабжение.fxml" equipmentType="TRANSITION_BUTTON" kks="32" layoutX="683.0" layoutY="1038.0" prefHeight="38.0" prefWidth="100.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="ОК" buttonOnText="ОК" diagramTitle="ТА-3 ОК.fxml" equipmentType="TRANSITION_BUTTON" kks="33" layoutX="787.0" layoutY="1038.0" prefHeight="38.0" prefWidth="41.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Регенерация ТА" buttonOnText="Регенерация ТА" diagramTitle="ТА-3 Система регенерации ТА.fxml" equipmentType="TRANSITION_BUTTON" kks="34" layoutX="832.0" layoutY="1038.0" prefHeight="38.0" prefWidth="78.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Техничническая вода" buttonOnText="Техничническая вода" diagramTitle="ТА-3 Техническая вода.fxml" equipmentType="TRANSITION_BUTTON" kks="35" layoutX="914.0" layoutY="1038.0" prefHeight="38.0" prefWidth="96.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl buttonOffText="Генератор (охлаждение)" buttonOnText="Генератор (охлаждение)" diagramTitle="ТА-3 Генератор (охлаждение).fxml" equipmentType="TRANSITION_BUTTON" kks="36" layoutX="1014.0" layoutY="1038.0" prefHeight="38.0" prefWidth="86.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.75" green="0.75" blue="0.75" opacity="0.0" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color red="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma Bold" size="11.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl borderPaint="BLACK" borderWidth="1.0" buttonOffText="Квитировние" buttonOnText="Квитировние" equipmentType="RETURN_BUTTON" kks="tctg3_v1067d0_y" layoutX="1612.0" layoutY="828.0" prefHeight="50.0" prefWidth="141.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="22.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl borderPaint="BLACK" borderWidth="1.0" buttonOffText="БОЛЬШЕ" buttonOnText="БОЛЬШЕ" equipmentType="RETURN_BUTTON" kks="tcrm_tg3_on" layoutX="1152.0" layoutY="830.0" prefHeight="50.0" prefWidth="85.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl borderPaint="BLACK" borderWidth="1.0" buttonOffText="МЕНЬШЕ" buttonOnText="МЕНЬШЕ" equipmentType="RETURN_BUTTON" kks="tcrm_tg3_off" layoutX="1041.0" layoutY="830.0" prefHeight="50.0" prefWidth="85.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="19.0" />
+         </customFont>
+      </ButtonControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="3M_741" layoutX="1300.0" layoutY="285.0" maxValue="260.0" param="X" prefHeight="42.0" prefWidth="130.0" system="MS" unit="мм">
+         <tooltip>
+            <Tooltip text="Ход сервомотора ЦВД" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="tg_3ce003" layoutX="416.0" layoutY="319.0" maxValue="160.0" param="N" prefHeight="50.0" prefWidth="170.0" system="MS" unit="МВт">
+         <tooltip>
+            <Tooltip text="Мощность ТА3" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="3M_701" layoutX="415.0" layoutY="231.0" maxValue="3000.0" param="n" prefHeight="47.0" prefWidth="200.0" system="MS" unit="об/мин">
+         <tooltip>
+            <Tooltip text="Обороты турбины" />
+         </tooltip>
+      </DetectorControl>
+      <InputControl equipmentType="TXT" kks="set_n_zad_tg3" layoutX="192.0" layoutY="322.0" prefHeight="44.0" prefWidth="111.0" skinType="TXT">
+         <customFont>
+            <Font name="Roboto Regular" size="28.0" />
+         </customFont>
+      </InputControl>
+      <InputControl equipmentType="TXT" kks="set_f_zad_tg3" layoutX="193.0" layoutY="232.0" prefHeight="44.0" prefWidth="111.0" skinType="TXT">
+         <customFont>
+            <Font name="Roboto Regular" size="28.0" />
+         </customFont>
+      </InputControl>
+      <ButtonControl borderPaint="BLACK" borderWidth="1.0" buttonOffText="ВКЛ" buttonOnText="ВЫКЛ" equipmentType="TEXT_BUTTON" kks="me:tg3_blok_rmt" layoutX="833.0" layoutY="323.0" prefHeight="40.0" prefWidth="70.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="22.0" />
+         </customFont>
+      </ButtonControl>
+      <FunctionControl equipmentType="LEVEL" interactive="false" kks="xcmcvd3" layoutX="1448.0" layoutY="259.0" maxValue="220.0" orientation="VERTICAL_REVERSE" prefHeight="16.0" prefWidth="117.0" skinType="LEVEL" />
+      <Text fill="SILVER" layoutX="805.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пульт управления ТА3" textAlignment="CENTER" wrappingWidth="424.4686279296875">
+         <font>
+            <Font name="Tahoma Bold" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="1298.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ХСМ ЦВД" textAlignment="CENTER" wrappingWidth="117.12503814697266">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="1469.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="13.371093749999545">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1451.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="110" textAlignment="CENTER" wrappingWidth="30.0755615234375">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1451.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="220" textAlignment="CENTER" wrappingWidth="30.7421875">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1055.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Параметры перед ГПЗ-2" textAlignment="CENTER" wrappingWidth="156.16671752929688">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="1378.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Параметры в выхлопном патрубке ЦНД" textAlignment="CENTER" wrappingWidth="317.04736328125">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="1538.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Параметры ПСГ-1" textAlignment="CENTER" wrappingWidth="241.99999999999977">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Text>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="3M_16_5" layoutX="1566.0" layoutY="216.0" maxValue="750.0" minValue="-90.0" param="T" prefHeight="47.0" prefWidth="130.0" system="MS">
+         <tooltip>
+            <Tooltip text="Температура пара на входе в ПСГ" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" kks="3M_702j" layoutX="1567.0" layoutY="262.0" maxValue="1.5" minValue="-1.0" param="P" prefHeight="45.0" prefWidth="200.0" system="MS" unit="кгс/см2">
+         <tooltip>
+            <Tooltip text="Давление пара в отборе к ПСГ-1" />
+         </tooltip>
+      </DetectorControl>
+      <DetectorControl backgroundPaint="#bfbfbf00" decimals="1" kks="3M_413A" layoutX="1568.0" layoutY="306.0" maxValue="320.0" param="F" prefHeight="45.0" prefWidth="137.0" system="MS" unit="т/ч">
+         <tooltip>
+            <Tooltip text="Расход конденсата ПСГ-1 ТГ-3" />
+         </tooltip>
+      </DetectorControl>
+      <Text layoutX="1363.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="слева" textAlignment="CENTER" wrappingWidth="73.0">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="1582.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="справа" textAlignment="CENTER" wrappingWidth="93.66662597656216">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="89.0" layoutX="169.0" layoutY="396.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="757.0" />
+      <ButtonControl borderPaint="BLACK" borderWidth="1.0" buttonOffText="ПСГ2" buttonOnText="ПСГ1" equipmentType="TEXT_BUTTON" kks="me:tg3_key_s8" layoutX="353.0" layoutY="419.0" prefHeight="40.0" prefWidth="70.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="22.0" />
+         </customFont>
+      </ButtonControl>
+      <ButtonControl borderPaint="BLACK" borderWidth="1.0" buttonOffText="Ключ S8" buttonOnText="Ключ S8" equipmentType="TEXT_BUTTON" kks="me:tg3_key_s8_on" layoutX="200.0" layoutY="419.0" prefHeight="40.0" prefWidth="129.0" singleClickEnabled="true" skinType="TEXT_BUTTON">
+         <buttonNonPressedColor>
+            <Color red="0.7529411911964417" green="0.7529411911964417" blue="0.7529411911964417" />
+         </buttonNonPressedColor>
+         <buttonPressedColor>
+            <Color green="1.0" />
+         </buttonPressedColor>
+         <customFont>
+            <Font name="Tahoma" size="22.0" />
+         </customFont>
+      </ButtonControl>
+      <Text layoutX="435.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Блокировка по давлению в ПСГ" textAlignment="CENTER" wrappingWidth="475.9999999999998">
+         <font>
+            <Font name="Tahoma Bold" size="27.0" />
+         </font>
+      </Text>
+   </children>
+   <stylesheets>
+      <URL value="@StyleRMR.css" />
+      <URL value="@StyleSheet.css" />
+   </stylesheets>
+</AnchorPane>

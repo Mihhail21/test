@@ -1,0 +1,2165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import ru.get.common.controls.DetectorControl?>
+<?import ru.get.common.controls.ElectricControl?>
+<?import ru.get.common.controls.FunctionControl?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="subMain" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="-165.25" endY="-114.5" layoutX="1499.5" layoutY="427.0" startX="-165.25" startY="3.25" stroke="#ffc055" />
+      <Line endX="-100.0" endY="-287.0" layoutX="651.0" layoutY="726.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <Line endX="-100.0" endY="-279.75" layoutX="415.0" layoutY="1000.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <Line endX="1106.0" layoutX="320.0" layoutY="633.0" startX="-100.0" stroke="#ffc055" strokeWidth="3.0" />
+      <Line endX="1106.0" layoutX="320.0" layoutY="665.0" startX="-100.0" stroke="#ffc055" strokeWidth="3.0" />
+      <Line endX="292.0" layoutX="320.0" layoutY="397.0" startX="-100.0" stroke="#ffc055" strokeWidth="3.0" />
+      <Line endX="400.5" layoutX="1026.0" layoutY="397.0" startX="-100.0" stroke="#ffc055" strokeWidth="3.0" />
+      <Circle layoutX="315.0" layoutY="665.0" radius="4.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Circle fill="TRANSPARENT" layoutX="315.0" layoutY="853.0" radius="18.0" stroke="#ffc055" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="TRANSPARENT" layoutX="315.0" layoutY="883.0" radius="18.0" stroke="#5555ff" strokeType="INSIDE" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="-4.75" layoutX="415.0" layoutY="913.0" startX="-100.0" startY="-11.75" stroke="#5555ff" strokeWidth="2.0" />
+      <Line endX="-156.75" endY="99.75" layoutX="425.0" layoutY="753.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Line endX="-167.5" endY="91.0" layoutX="435.0" layoutY="762.0" startX="-167.125" startY="114.75" stroke="#ffc055" />
+      <Line endX="-183.5" endY="104.75" layoutX="445.0" layoutY="772.0" startX="-170.75" startY="104.75" stroke="#ffc055" />
+      <Line endX="-181.5" endY="104.75" layoutX="445.0" layoutY="775.0" startX="-173.5" startY="104.75" stroke="#ffc055" />
+      <Line endX="-179.5" endY="104.75" layoutX="445.0" layoutY="778.0" startX="-174.75" startY="104.75" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="315.0" layoutY="696.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Circle fill="#ffc055" layoutX="315.0" layoutY="776.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Circle fill="#ffc055" layoutX="315.0" layoutY="814.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-155.75" endY="99.875" layoutX="441.0" layoutY="676.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Line endX="-154.25" endY="99.875" layoutX="440.0" layoutY="596.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Line endX="-100.0" endY="-370.0" layoutX="415.0" layoutY="680.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <Circle layoutX="315.0" layoutY="397.0" radius="4.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Circle fill="#ffc055" layoutX="315.0" layoutY="568.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="440.0" layoutY="468.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="315.0" layoutY="466.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="440.0" layoutY="366.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="315.0" layoutY="368.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="440.0" layoutY="268.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="315.0" layoutY="313.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="440.0" layoutY="213.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Line endX="-159.25" endY="108.0" layoutX="418.0" layoutY="119.0" startX="-173.0" startY="108.0" stroke="#ffc055" />
+      <Line endX="-159.0" endY="102.75" layoutX="415.0" layoutY="121.0" startX="-167.25" startY="102.75" stroke="#ffc055" />
+      <Line endX="-157.25" endY="98.25" layoutX="412.0" layoutY="122.0" startX="-162.5" startY="98.25" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="325.0" layoutY="-150.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="450.0" layoutY="-250.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Line endX="-165.25" endY="86.75" layoutX="460.0" layoutY="-240.0" startX="-165.25" startY="93.0" stroke="#ffc055" />
+      <Line endX="-165.25" endY="85.5" layoutX="451.0" layoutY="-242.0" startX="-165.25" startY="96.5" stroke="#ffc055" />
+      <Line endX="-165.25" endY="86.75" layoutX="444.0" layoutY="-240.0" startX="-165.25" startY="93.0" stroke="#ffc055" />
+      <Line endX="-165.25" endY="85.5" layoutX="438.0" layoutY="-243.0" startX="-165.25" startY="99.0" stroke="#ffc055" />
+      <Line endX="-167.25" endY="86.875" layoutX="445.0" layoutY="-237.0" startX="-172.25" startY="86.75" stroke="#ffc055" />
+      <Line endX="-165.25" endY="85.25" layoutX="435.0" layoutY="-240.0" startX="-165.25" startY="93.75" stroke="#ffc055" />
+      <Line endX="-165.25" endY="87.5" layoutX="432.0" layoutY="-240.0" startX="-165.25" startY="92.0" stroke="#ffc055" />
+      <Circle fill="TRANSPARENT" layoutX="315.0" layoutY="266.0" radius="8.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Circle fill="TRANSPARENT" layoutX="320.0" layoutY="256.0" radius="8.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Circle fill="TRANSPARENT" layoutX="310.0" layoutY="256.0" radius="8.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Circle fill="#ffc055" layoutX="315.0" layoutY="297.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-188.0" endY="99.75" layoutX="440.0" layoutY="197.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Group layoutX="317.25" layoutY="809.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="10.0" layoutX="9.75" stroke="#ffc055" strokeType="INSIDE" width="24.0" />
+            <Line endX="-134.75" endY="99.75" layoutX="146.0" layoutY="-94.75" startX="-127.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-154.25" endY="99.75" layoutX="179.0" layoutY="-94.75" startX="-146.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-131.29290771484375" endY="103.45709228515625" layoutX="146.29290771484375" layoutY="-94.95709228515625" startX="-128.3358154296875" startY="100.70709228515625" stroke="#ffc055" />
+            <Line endX="-131.29290771484375" endY="96.0" layoutX="147.04290771484375" layoutY="-94.70709228515625" startX="-128.79290771484375" startY="99.75" stroke="#ffc055" />
+            <Line endX="-124.5" endY="104.25" layoutX="152.29290771484375" layoutY="-94.95709228515625" startX="-127.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-125.0" endY="96.0" layoutX="152.29290771484375" layoutY="-94.70709228515625" startX="-127.75" startY="99.75" stroke="#ffc055" />
+         </children>
+      </Group>
+      <Line endX="-165.25" endY="85.5" layoutX="526.0" layoutY="721.0" startX="-165.25" startY="99.0" stroke="#ffc055" />
+      <Line endX="-165.25" endY="85.25" layoutX="529.0" layoutY="724.0" startX="-165.25" startY="93.75" stroke="#ffc055" />
+      <Line endX="-165.25" endY="87.5" layoutX="532.0" layoutY="724.0" startX="-165.25" startY="92.0" stroke="#ffc055" />
+      <Line endX="-138.5" endY="99.75" layoutX="455.0" layoutY="714.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Line endX="-138.5" endY="99.75" layoutX="490.0" layoutY="714.0" startX="-129.75" startY="99.75" stroke="#ffc055" />
+      <Group layoutX="230.0" layoutY="260.0" rotate="90.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="10.0" layoutX="9.75" stroke="#ffc055" strokeType="INSIDE" width="24.0" />
+            <Line endX="-134.75" endY="99.75" layoutX="146.0" layoutY="-94.75" startX="-127.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-154.25" endY="99.75" layoutX="179.0" layoutY="-94.75" startX="-146.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-131.29290771484375" endY="103.45709228515625" layoutX="146.29290771484375" layoutY="-94.95709228515625" startX="-128.3358154296875" startY="100.70709228515625" stroke="#ffc055" />
+            <Line endX="-131.29290771484375" endY="96.0" layoutX="147.04290771484375" layoutY="-94.70709228515625" startX="-128.79290771484375" startY="99.75" stroke="#ffc055" />
+            <Line endX="-124.5" endY="104.25" layoutX="152.29290771484375" layoutY="-94.95709228515625" startX="-127.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-125.0" endY="96.0" layoutX="152.29290771484375" layoutY="-94.70709228515625" startX="-127.75" startY="99.75" stroke="#ffc055" />
+         </children>
+      </Group>
+      <Line endX="-188.0" endY="99.75" layoutX="440.0" layoutY="197.0" startX="-188.0" startY="80.25" stroke="#ffc055" />
+      <Line endX="-188.0" endY="105.5" layoutX="440.0" layoutY="147.0" startX="-188.0" startY="81.0" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="551.0" layoutY="281.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="675.0" layoutY="181.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="551.0" layoutY="469.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="675.0" layoutY="369.0" startX="-127.0" startY="100.0" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="551.0" layoutY="580.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="675.0" layoutY="480.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="582.0" layoutY="689.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="707.0" layoutY="589.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="582.0" layoutY="760.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="707.0" layoutY="660.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="972.0" layoutY="798.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="1097.0" layoutY="698.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="1019.0" layoutY="571.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="1144.0" layoutY="471.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="1019.0" layoutY="459.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="1144.0" layoutY="359.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="1019.0" layoutY="369.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="1144.0" layoutY="269.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="1019.0" layoutY="297.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="1144.0" layoutY="197.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="1334.0" layoutY="274.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="1459.0" layoutY="174.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="1334.0" layoutY="460.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="1459.0" layoutY="360.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="1334.0" layoutY="572.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="1459.0" layoutY="472.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="1271.0" layoutY="689.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="1396.0" layoutY="589.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="1271.0" layoutY="752.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-154.25" endY="99.875" layoutX="1396.0" layoutY="652.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Group layoutX="513.0" layoutY="801.0" rotate="90.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="10.0" layoutX="9.75" stroke="#ffc055" strokeType="INSIDE" width="24.0" />
+            <Line endX="-134.75" endY="99.75" layoutX="146.0" layoutY="-94.75" startX="-127.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-154.25" endY="99.75" layoutX="179.0" layoutY="-94.75" startX="-146.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-131.29290771484375" endY="103.45709228515625" layoutX="146.29290771484375" layoutY="-94.95709228515625" startX="-128.3358154296875" startY="100.70709228515625" stroke="#ffc055" />
+            <Line endX="-131.29290771484375" endY="96.0" layoutX="147.04290771484375" layoutY="-94.70709228515625" startX="-128.79290771484375" startY="99.75" stroke="#ffc055" />
+            <Line endX="-124.5" endY="104.25" layoutX="152.29290771484375" layoutY="-94.95709228515625" startX="-127.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-125.0" endY="96.0" layoutX="152.29290771484375" layoutY="-94.70709228515625" startX="-127.75" startY="99.75" stroke="#ffc055" />
+         </children>
+      </Group>
+      <Group layoutX="973.0" layoutY="856.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="10.0" layoutX="9.75" stroke="#ffc055" strokeType="INSIDE" width="24.0" />
+            <Line endX="-134.75" endY="99.75" layoutX="146.0" layoutY="-94.75" startX="-127.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-154.25" endY="99.75" layoutX="179.0" layoutY="-94.75" startX="-146.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-131.29290771484375" endY="103.45709228515625" layoutX="146.29290771484375" layoutY="-94.95709228515625" startX="-128.3358154296875" startY="100.70709228515625" stroke="#ffc055" />
+            <Line endX="-131.29290771484375" endY="96.0" layoutX="147.04290771484375" layoutY="-94.70709228515625" startX="-128.79290771484375" startY="99.75" stroke="#ffc055" />
+            <Line endX="-124.5" endY="104.25" layoutX="152.29290771484375" layoutY="-94.95709228515625" startX="-127.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-125.0" endY="96.0" layoutX="152.29290771484375" layoutY="-94.70709228515625" startX="-127.75" startY="99.75" stroke="#ffc055" />
+         </children>
+      </Group>
+      <Group layoutX="965.0" layoutY="253.0" rotate="90.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="10.0" layoutX="9.75" stroke="#ffc055" strokeType="INSIDE" width="24.0" />
+            <Line endX="-134.75" endY="99.75" layoutX="146.0" layoutY="-94.75" startX="-127.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-154.25" endY="99.75" layoutX="179.0" layoutY="-94.75" startX="-146.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-131.29290771484375" endY="103.45709228515625" layoutX="146.29290771484375" layoutY="-94.95709228515625" startX="-128.3358154296875" startY="100.70709228515625" stroke="#ffc055" />
+            <Line endX="-131.29290771484375" endY="96.0" layoutX="147.04290771484375" layoutY="-94.70709228515625" startX="-128.79290771484375" startY="99.75" stroke="#ffc055" />
+            <Line endX="-124.5" endY="104.25" layoutX="152.29290771484375" layoutY="-94.95709228515625" startX="-127.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-125.0" endY="96.0" layoutX="152.29290771484375" layoutY="-94.70709228515625" startX="-127.75" startY="99.75" stroke="#ffc055" />
+         </children>
+      </Group>
+      <Group layoutX="1218.5" layoutY="778.0" rotate="90.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="10.0" layoutX="9.75" stroke="#ffc055" strokeType="INSIDE" width="24.0" />
+            <Line endX="-134.75" endY="99.75" layoutX="146.0" layoutY="-94.75" startX="-127.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-154.25" endY="99.75" layoutX="179.0" layoutY="-94.75" startX="-146.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-131.29290771484375" endY="103.45709228515625" layoutX="146.29290771484375" layoutY="-94.95709228515625" startX="-128.3358154296875" startY="100.70709228515625" stroke="#ffc055" />
+            <Line endX="-131.29290771484375" endY="96.0" layoutX="147.04290771484375" layoutY="-94.70709228515625" startX="-128.79290771484375" startY="99.75" stroke="#ffc055" />
+            <Line endX="-124.5" endY="104.25" layoutX="152.29290771484375" layoutY="-94.95709228515625" startX="-127.75" startY="99.75" stroke="#ffc055" />
+            <Line endX="-125.0" endY="96.0" layoutX="152.29290771484375" layoutY="-94.70709228515625" startX="-127.75" startY="99.75" stroke="#ffc055" />
+         </children>
+      </Group>
+      <Group layoutX="698.0" layoutY="758.0">
+         <children>
+            <Line endX="-175.25" endY="72.0" layoutX="6.0" startX="-162.5" startY="72.0" stroke="#ffc055" />
+            <Line endX="-169.75" endY="71.5" layoutX="3.0" layoutY="2.75" startX="-162.25" startY="71.5" stroke="#ffc055" />
+            <Line endX="-165.25" endY="72.75" layoutY="5.0" startX="-160.25" startY="72.75" stroke="#ffc055" />
+         </children>
+      </Group>
+      <Circle fill="#ffc055" layoutX="582.0" layoutY="783.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Circle fill="#ffc055" layoutX="1019.0" layoutY="275.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Circle fill="#ffc055" layoutX="1019.0" layoutY="620.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Group layoutX="1692.0" layoutY="805.0">
+         <children>
+            <Line endX="-175.25" endY="72.0" layoutX="6.0" startX="-162.5" startY="72.0" stroke="#ffc055" />
+            <Line endX="-169.75" endY="71.5" layoutX="3.0" layoutY="2.75" startX="-162.25" startY="71.5" stroke="#ffc055" />
+            <Line endX="-165.25" endY="72.75" layoutY="5.0" startX="-160.25" startY="72.75" stroke="#ffc055" />
+         </children>
+      </Group>
+      <Group layoutX="1183.0" layoutY="786.0" rotate="-90.0">
+         <children>
+            <Line endX="-175.25" endY="72.0" layoutX="6.0" startX="-162.5" startY="72.0" stroke="#ffc055" />
+            <Line endX="-169.75" endY="71.5" layoutX="3.0" layoutY="2.75" startX="-162.25" startY="71.5" stroke="#ffc055" />
+            <Line endX="-165.25" endY="72.75" layoutY="5.0" startX="-160.25" startY="72.75" stroke="#ffc055" />
+         </children>
+      </Group>
+      <Group layoutX="1403.5" layoutY="726.0">
+         <children>
+            <Line endX="-175.25" endY="72.0" layoutX="6.0" startX="-162.5" startY="72.0" stroke="#ffc055" />
+            <Line endX="-169.75" endY="71.5" layoutX="3.0" layoutY="2.75" startX="-162.25" startY="71.5" stroke="#ffc055" />
+            <Line endX="-165.25" endY="72.75" layoutY="5.0" startX="-160.25" startY="72.75" stroke="#ffc055" />
+         </children>
+      </Group>
+      <Group layoutX="1149.0" layoutY="156.0" rotate="180.0">
+         <children>
+            <Line endX="-175.25" endY="72.0" layoutX="6.0" startX="-162.5" startY="72.0" stroke="#ffc055" />
+            <Line endX="-169.75" endY="71.5" layoutX="3.0" layoutY="3.75" startX="-162.25" startY="71.5" stroke="#ffc055" />
+            <Line endX="-165.25" endY="72.75" layoutY="5.0" startX="-160.25" startY="72.75" stroke="#ffc055" />
+         </children>
+      </Group>
+      <Group layoutX="576.0" layoutY="815.0">
+         <children>
+            <Circle fill="TRANSPARENT" layoutX="6.0" layoutY="-9.0" radius="8.0" stroke="#ffc055" strokeType="INSIDE" />
+            <Circle fill="TRANSPARENT" layoutX="11.0" radius="8.0" stroke="#ffc055" strokeType="INSIDE" />
+            <Circle fill="TRANSPARENT" radius="8.0" stroke="#ffc055" strokeType="INSIDE" />
+         </children>
+      </Group>
+      <Group layoutX="1265.0" layoutY="790.0">
+         <children>
+            <Circle fill="TRANSPARENT" layoutX="6.0" layoutY="-9.0" radius="8.0" stroke="#ffc055" strokeType="INSIDE" />
+            <Circle fill="TRANSPARENT" layoutX="11.0" radius="8.0" stroke="#ffc055" strokeType="INSIDE" />
+            <Circle fill="TRANSPARENT" radius="8.0" stroke="#ffc055" strokeType="INSIDE" />
+         </children>
+      </Group>
+      <Group layoutX="1014.0" layoutY="256.0" rotate="180.0">
+         <children>
+            <Circle fill="TRANSPARENT" layoutX="6.0" layoutY="-9.0" radius="8.0" stroke="#ffc055" strokeType="INSIDE" />
+            <Circle fill="TRANSPARENT" layoutX="11.0" radius="8.0" stroke="#ffc055" strokeType="INSIDE" />
+            <Circle fill="TRANSPARENT" radius="8.0" stroke="#ffc055" strokeType="INSIDE" />
+         </children>
+      </Group>
+      <Line endX="-147.75" endY="95.0" layoutX="1164.0" layoutY="525.0" startX="-191.0" startY="95.0" stroke="#ffc055" />
+      <Circle fill="#ffc055" layoutX="972.0" layoutY="861.0" radius="3.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-139.0" endY="99.75" layoutX="1111.0" layoutY="761.5" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Line endX="-137.75" endY="99.75" layoutX="1145.0" layoutY="761.5" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Line endX="-157.25" endY="99.875" layoutX="1129.0" layoutY="784.0" startX="338.0" startY="99.875" stroke="#ffc055" />
+      <Line endX="-165.25" endY="-27.25" layoutX="1632.0" layoutY="787.0" startX="-165.25" startY="96.5" stroke="#ffc055" />
+      <Line endX="-165.25" endY="-27.25" layoutX="1632.0" layoutY="787.0" startX="-56.5" startY="-27.25" stroke="#ffc055" />
+      <Line endX="-56.5" endY="38.75" layoutX="1632.0" layoutY="787.0" startX="-56.5" startY="-27.25" stroke="#ffc055" />
+      <Line endX="-100.125" endY="-376.0" layoutX="651.0" layoutY="680.0" startX="-100.125" startY="-600.25" stroke="#ffc055" />
+      <Line endX="-100.0" endY="-336.0" layoutX="651.0" layoutY="931.0" startX="-100.0" startY="-388.0" stroke="#ffc055" />
+      <Line endX="-112.25" endY="-288.0" layoutX="692.0" layoutY="1071.0" startX="-156.75" startY="-288.0" stroke="#ffc055" />
+      <Line endX="-156.75" endY="-277.25" layoutX="691.5" layoutY="1071.0" startX="-156.75" startY="-288.0" stroke="#ffc055" />
+      <Line endX="-156.75" endY="-276.5" layoutX="691.5" layoutY="1106.0" startX="-156.75" startY="-288.0" stroke="#ffc055" />
+      <Line endX="-156.5" endY="99.75" layoutX="1144.0" layoutY="175.0" startX="-127.75" startY="99.75" stroke="#ffc055" />
+      <Line endX="-156.5" endY="99.75" layoutX="1143.5" layoutY="175.0" startX="-156.5" startY="94.75" stroke="#ffc055" />
+      <Line endX="-156.5" endY="100.5" layoutX="1143.0" layoutY="145.0" startX="-156.5" startY="89.0" stroke="#ffc055" />
+      <Line endX="-206.0" endY="101.25" layoutX="1446.5" layoutY="666.0" startX="-175.5" startY="101.25" stroke="#ffc055" />
+      <Line endX="-206.0" endY="101.25" layoutX="1446.0" layoutY="666.0" startX="-206.0" startY="105.0" stroke="#ffc055" />
+      <Line endX="-206.0" endY="101.25" layoutX="1446.3" layoutY="693.0" startX="-206.0" startY="105.0" stroke="#ffc055" />
+      <Line endX="-165.25" endY="-307.25" layoutX="1499.5" layoutY="386.0" startX="-165.25" startY="-88.5" stroke="#ffc055" />
+      <Circle layoutX="551.0" layoutY="397.0" radius="4.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Circle layoutX="551.0" layoutY="633.0" radius="4.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Circle layoutX="582.0" layoutY="665.0" radius="4.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Circle layoutX="1019.0" layoutY="633.0" radius="4.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Circle layoutX="1271.0" layoutY="633.0" radius="4.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Circle layoutX="1334.0" layoutY="665.0" radius="4.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Circle layoutX="1334.0" layoutY="397.0" radius="4.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Circle layoutX="1019.0" layoutY="397.0" radius="4.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Polygon fill="#1f93ff00" layoutX="441.5" layoutY="99.0" points="103.75, -19.25, 115.0, -19.25, 109.5, -31.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Polygon fill="#1f93ff00" layoutX="1224.5" layoutY="99.0" points="103.75, -19.25, 115.0, -19.25, 109.5, -31.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Circle fill="TRANSPARENT" layoutX="551.0" layoutY="352.0" radius="6.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-167.25" endY="86.875" layoutX="712.0" layoutY="265.0" startX="-170.75" startY="86.875" stroke="#ffc055" />
+      <Circle fill="TRANSPARENT" layoutX="1334.0" layoutY="352.0" radius="6.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Line endX="-167.25" endY="86.875" layoutX="1495.0" layoutY="265.0" startX="-170.75" startY="86.875" stroke="#ffc055" />
+      <Circle fill="TRANSPARENT" layoutX="1575.0" layoutY="853.0" radius="18.0" stroke="#ff5555" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="TRANSPARENT" layoutX="1575.0" layoutY="883.0" radius="18.0" stroke="#5555ff" strokeType="INSIDE" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="-4.75" layoutX="1675.0" layoutY="913.0" startX="-100.0" startY="-11.75" stroke="#5555ff" strokeWidth="2.0" />
+      <Line endX="-165.25" endY="73.25" layoutX="1695.0" layoutY="780.0" startX="-165.25" startY="96.5" stroke="#ffc055" />
+      <Line endX="-165.25" endY="73.25" layoutX="1695.0" layoutY="780.0" startX="-138.25" startY="73.25" stroke="#ffc055" />
+      <Line endX="-145.75" endY="82.75" layoutX="1705.0" layoutY="790.0" startX="-115.5" startY="47.0" stroke="#ff5555" />
+      <Polygon fill="#ff5555" layoutX="1501.0" layoutY="866.0" points="87.25, -30.70709228515625, 94.25, -34.75, 90.2071533203125, -27.75" stroke="#ff5555" strokeType="INSIDE" />
+      <Line endX="-99.0" endY="-4.75" layoutX="1692.0" layoutY="858.0" startX="-94.25" startY="-4.75" stroke="#ff5555" />
+      <Arc fill="#1f93ff00" layoutX="1576.0" layoutY="904.0" length="50.0" radiusX="27.0" radiusY="78.0" startAngle="90.0" stroke="#ffc055" strokeType="INSIDE" />
+      <Text fill="SILVER" layoutX="94.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4 сек. 220 кВ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="94.0" layoutY="641.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 сек. 220 кВ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="94.0" layoutY="672.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 сек. 220 кВ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1433.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 сек. 220 кВ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1433.0" layoutY="641.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 сек. 220 кВ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1433.0" layoutY="672.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 сек. 220 кВ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1612.0" layoutY="859.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4АТ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="343.0" layoutY="859.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5ГТ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="562.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="БАЭС">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1345.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Южная">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1347.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЛР ЮЖНАЯ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1348.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТТ ВЛ ЮЖНАЯ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1347.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3ШР1ВЮ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1347.0" layoutY="601.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1ШР1ВЮ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1035.0" layoutY="601.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2ШР2ВЮ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1034.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3ШР2ВЮ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1034.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Р2ВЮ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1034.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2ВЮ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1348.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1ВЮ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="564.0" layoutY="608.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2ШР1ВБ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="564.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4ШР1ВБ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="564.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1ВБ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="564.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТТ ВЛ БАЭС">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="564.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЛР БАЭС">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="330.0" layoutY="594.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1ШР2ВБ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="330.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2ВБ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="330.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Р2ВБ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="330.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4ШР2ВБ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="284.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТН-4 сек.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="541.0" layoutY="844.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТН-1 сек.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="988.0" layoutY="734.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2ШР4АТ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1230.0" layoutY="820.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТН-2 сек.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="987.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТН-3 сек.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1025.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1339.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="298.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="533.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="323.0" layoutY="779.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН 1ШР5ГТ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="323.0" layoutY="732.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1ШР5ГТ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="189.0" layoutY="699.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН 1ШР5ГТ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="198.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН 1ШР2ВБ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="198.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН 4ШР2ВБ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="433.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН 4ШР1ВБ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="431.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН 2ШР1ВБ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="206.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН 4 сек.">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="189.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН ТН-4 сек.">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="479.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН ЛР БАЭС">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="907.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОРУ 220кВ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="459.0" layoutY="763.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН ТН-1 сек.">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="476.0" layoutY="693.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН 1 сек.">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="853.0" layoutY="802.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН 2ШР4АТ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="895.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН 2ШР2ВЮ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="895.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН 3ШР2ВЮ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="909.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН 3 сек.">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="895.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН ТН-3 сек.">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1199.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН ЛР ЮЖНАЯ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1211.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН 3ШР1ВЮ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1212.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН 1ШР1ВЮ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1163.0" layoutY="692.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН 2 сек.">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fill="SILVER" layoutX="1150.0" layoutY="755.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЗН ТН-2 сек.">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff000000" height="242.0" layoutX="618.0" layoutY="56.0" stroke="#ffc055" strokeType="INSIDE" width="240.0" />
+      <DetectorControl decimals="1" kks="baesce041" layoutX="672.0" layoutY="59.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce051" layoutX="672.0" layoutY="77.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce061" layoutX="672.0" layoutY="95.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce071" layoutX="672.0" layoutY="113.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce011" layoutX="672.0" layoutY="131.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce021" layoutX="672.0" layoutY="149.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce031" layoutX="672.0" layoutY="167.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce171" layoutX="672.0" layoutY="185.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" layoutX="672.0" layoutY="203.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce012" layoutX="672.0" layoutY="221.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce022" layoutX="672.0" layoutY="239.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce032" layoutX="672.0" layoutY="257.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce072" layoutX="672.0" layoutY="275.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <Text fill="LIME" layoutX="625.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uab=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="625.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uл.ср.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="625.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ubc=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="625.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uca=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="624.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ua-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="624.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ub-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="624.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uc-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="624.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="U0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="626.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ia=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="626.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ib=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="626.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ic=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="624.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uф.ср.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="626.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Iср.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="733.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pa=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="733.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pb=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="733.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pc=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="732.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qa=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="734.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qb=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="734.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qc=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="734.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sa=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="735.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sb=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="735.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sc=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="735.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="733.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pсум.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="733.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qсум.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="735.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sсум.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="711.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="711.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="711.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="711.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="711.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="711.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="711.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="711.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="711.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="712.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="А">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="712.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="А">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="712.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="А">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="712.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="А">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="817.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВт">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="818.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВт">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="818.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВт">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="817.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВт">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="818.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВАр">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="818.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВАр">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="818.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВАр">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="818.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВАр">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="818.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВА">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="818.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВА">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="818.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВА">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="818.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВА">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="818.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Гц">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="baesce013" layoutX="779.0" layoutY="59.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce023" layoutX="779.0" layoutY="77.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce033" layoutX="779.0" layoutY="95.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce003" layoutX="779.0" layoutY="113.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce014" layoutX="779.0" layoutY="131.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce024" layoutX="779.0" layoutY="149.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce034" layoutX="779.0" layoutY="167.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce004" layoutX="779.0" layoutY="185.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce016" layoutX="779.0" layoutY="203.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce026" layoutX="779.0" layoutY="221.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce036" layoutX="779.0" layoutY="239.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce006" layoutX="779.0" layoutY="257.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="baesce005" layoutX="779.0" layoutY="275.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff000000" height="242.0" layoutX="1419.0" layoutY="46.0" stroke="#ffc055" strokeType="INSIDE" width="240.0" />
+      <DetectorControl decimals="1" kks="yujnayce041" layoutX="1473.0" layoutY="49.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce051" layoutX="1473.0" layoutY="67.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce061" layoutX="1473.0" layoutY="85.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce071" layoutX="1473.0" layoutY="103.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce011" layoutX="1473.0" layoutY="121.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce021" layoutX="1473.0" layoutY="139.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce031" layoutX="1473.0" layoutY="157.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce171" layoutX="1473.0" layoutY="175.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" layoutX="1473.0" layoutY="193.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce012" layoutX="1473.0" layoutY="211.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce022" layoutX="1473.0" layoutY="229.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce032" layoutX="1473.0" layoutY="247.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce072" layoutX="1473.0" layoutY="265.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <Text fill="LIME" layoutX="1426.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uab=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1426.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uл.ср.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1426.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ubc=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1426.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uca=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1425.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ua-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1425.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ub-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1425.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uc-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1425.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="U0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1427.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ia=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1427.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ib=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1427.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ic=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1425.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uф.ср.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1427.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Iср.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1534.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pa=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1534.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pb=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1534.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pc=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1533.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qa=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1535.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qb=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1535.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qc=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1535.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sa=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1536.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sb=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1536.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sc=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1536.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1534.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pсум.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1534.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qсум.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1536.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sсум.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1512.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1512.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1512.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1512.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1512.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1512.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1512.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1512.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1512.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1513.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="А">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1513.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="А">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1513.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="А">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1513.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="А">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1618.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВт">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1619.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВт">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1619.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВт">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1618.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВт">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1619.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВАр">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1619.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВАр">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1619.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВАр">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1619.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВАр">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1619.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВА">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1619.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВА">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1619.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВА">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1619.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВА">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1619.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Гц">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="yujnayce013" layoutX="1580.0" layoutY="49.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce023" layoutX="1580.0" layoutY="67.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce033" layoutX="1580.0" layoutY="85.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce003" layoutX="1580.0" layoutY="103.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce014" layoutX="1580.0" layoutY="121.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce024" layoutX="1580.0" layoutY="139.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce034" layoutX="1580.0" layoutY="157.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce004" layoutX="1580.0" layoutY="175.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce016" layoutX="1580.0" layoutY="193.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce026" layoutX="1580.0" layoutY="211.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce036" layoutX="1580.0" layoutY="229.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce006" layoutX="1580.0" layoutY="247.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="yujnayce005" layoutX="1580.0" layoutY="265.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff000000" height="242.0" layoutX="1604.0" layoutY="580.0" stroke="#ffc055" strokeType="INSIDE" width="240.0" />
+      <DetectorControl decimals="1" kks="4at_220ce041" layoutX="1658.0" layoutY="583.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce051" layoutX="1658.0" layoutY="601.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce061" layoutX="1658.0" layoutY="619.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce071" layoutX="1658.0" layoutY="637.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce011" layoutX="1658.0" layoutY="655.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce021" layoutX="1658.0" layoutY="673.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce031" layoutX="1658.0" layoutY="691.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce171" layoutX="1658.0" layoutY="709.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" layoutX="1658.0" layoutY="727.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce012" layoutX="1658.0" layoutY="745.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce022" layoutX="1658.0" layoutY="763.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce032" layoutX="1658.0" layoutY="781.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce072" layoutX="1658.0" layoutY="799.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <Text fill="LIME" layoutX="1611.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uab=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1611.0" layoutY="650.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uл.ср.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1611.0" layoutY="615.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ubc=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1611.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uca=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1610.0" layoutY="669.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ua-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1610.0" layoutY="687.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ub-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1610.0" layoutY="705.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uc-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1610.0" layoutY="741.0" strokeType="OUTSIDE" strokeWidth="0.0" text="U0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1612.0" layoutY="760.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ia=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1612.0" layoutY="778.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ib=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1612.0" layoutY="794.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ic=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1610.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uф.ср.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1612.0" layoutY="813.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Iср.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1719.0" layoutY="597.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pa=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1719.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pb=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1719.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pc=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1718.0" layoutY="669.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qa=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1720.0" layoutY="688.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qb=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1720.0" layoutY="706.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qc=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1720.0" layoutY="741.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sa=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1721.0" layoutY="759.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sb=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1721.0" layoutY="778.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sc=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1721.0" layoutY="812.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1719.0" layoutY="650.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pсум.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1719.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qсум.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1721.0" layoutY="795.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sсум.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1697.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1697.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1697.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1697.0" layoutY="651.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1697.0" layoutY="669.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1697.0" layoutY="686.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1697.0" layoutY="705.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1697.0" layoutY="723.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1697.0" layoutY="741.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1698.0" layoutY="758.0" strokeType="OUTSIDE" strokeWidth="0.0" text="А">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1698.0" layoutY="777.0" strokeType="OUTSIDE" strokeWidth="0.0" text="А">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1698.0" layoutY="795.0" strokeType="OUTSIDE" strokeWidth="0.0" text="А">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1698.0" layoutY="812.0" strokeType="OUTSIDE" strokeWidth="0.0" text="А">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1803.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВт">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1804.0" layoutY="615.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВт">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1804.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВт">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1803.0" layoutY="650.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВт">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1804.0" layoutY="669.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВАр">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1804.0" layoutY="687.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВАр">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1804.0" layoutY="705.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВАр">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1804.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВАр">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1804.0" layoutY="740.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВА">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1804.0" layoutY="759.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВА">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1804.0" layoutY="776.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВА">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1804.0" layoutY="795.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МВА">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1804.0" layoutY="813.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Гц">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="4at_220ce013" layoutX="1765.0" layoutY="583.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce023" layoutX="1765.0" layoutY="601.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce033" layoutX="1765.0" layoutY="619.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce003" layoutX="1765.0" layoutY="637.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce014" layoutX="1765.0" layoutY="655.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce024" layoutX="1765.0" layoutY="673.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce034" layoutX="1765.0" layoutY="691.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce004" layoutX="1765.0" layoutY="709.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce016" layoutX="1765.0" layoutY="727.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce026" layoutX="1765.0" layoutY="745.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce036" layoutX="1765.0" layoutY="763.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce006" layoutX="1765.0" layoutY="781.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="4at_220ce005" layoutX="1765.0" layoutY="799.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_2cce041" layoutX="1350.0" layoutY="691.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_2cce051" layoutX="1350.0" layoutY="709.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_2cce061" layoutX="1350.0" layoutY="727.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_2cce071" layoutX="1350.0" layoutY="745.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_2cce011" layoutX="1350.0" layoutY="763.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_2cce021" layoutX="1350.0" layoutY="781.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_2cce031" layoutX="1350.0" layoutY="799.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_2cce171" layoutX="1350.0" layoutY="817.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <Text fill="LIME" layoutX="1303.0" layoutY="704.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uab=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1303.0" layoutY="758.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uл.ср.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1303.0" layoutY="723.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ubc=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1303.0" layoutY="741.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uca=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1302.0" layoutY="777.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ua-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1302.0" layoutY="795.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ub-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1302.0" layoutY="813.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uc-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1302.0" layoutY="830.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uф.ср.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1389.0" layoutY="704.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1389.0" layoutY="724.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1389.0" layoutY="740.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1389.0" layoutY="759.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1389.0" layoutY="777.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1389.0" layoutY="794.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1389.0" layoutY="813.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1389.0" layoutY="831.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1306.0" layoutY="848.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1389.0" layoutY="849.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Гц">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="tn_2cce005" layoutX="1350.0" layoutY="835.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_1cce041" layoutX="661.0" layoutY="679.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_1cce051" layoutX="661.0" layoutY="697.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_1cce061" layoutX="661.0" layoutY="715.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_1cce071" layoutX="661.0" layoutY="733.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_1cce011" layoutX="661.0" layoutY="751.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_1cce021" layoutX="661.0" layoutY="769.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_1cce031" layoutX="661.0" layoutY="787.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_1cce171" layoutX="661.0" layoutY="805.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <Text fill="LIME" layoutX="614.0" layoutY="692.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uab=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="614.0" layoutY="746.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uл.ср.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="614.0" layoutY="711.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ubc=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="614.0" layoutY="729.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uca=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="613.0" layoutY="765.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ua-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="613.0" layoutY="783.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ub-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="613.0" layoutY="801.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uc-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="613.0" layoutY="818.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uф.ср.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="700.0" layoutY="692.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="700.0" layoutY="712.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="700.0" layoutY="728.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="700.0" layoutY="747.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="700.0" layoutY="765.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="700.0" layoutY="782.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="700.0" layoutY="801.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="700.0" layoutY="819.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="617.0" layoutY="836.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="700.0" layoutY="837.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Гц">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="tn_1cce005" layoutX="661.0" layoutY="823.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_4cce041" layoutX="401.0" layoutY="213.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_4cce051" layoutX="401.0" layoutY="231.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_4cce061" layoutX="401.0" layoutY="249.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_4cce071" layoutX="401.0" layoutY="267.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_4cce011" layoutX="401.0" layoutY="285.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_4cce021" layoutX="401.0" layoutY="303.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_4cce031" layoutX="401.0" layoutY="321.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_4cce171" layoutX="401.0" layoutY="339.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <Text fill="LIME" layoutX="354.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uab=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="354.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uл.ср.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="354.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ubc=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="354.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uca=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="353.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ua-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="353.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ub-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="353.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uc-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="353.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uф.ср.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="440.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="440.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="440.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="440.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="440.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="440.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="440.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="440.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="357.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="440.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Гц">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="tn_4cce005" layoutX="401.0" layoutY="357.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_3cce041" layoutX="1107.0" layoutY="212.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_3cce051" layoutX="1107.0" layoutY="230.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_3cce061" layoutX="1107.0" layoutY="248.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_3cce071" layoutX="1107.0" layoutY="266.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_3cce011" layoutX="1107.0" layoutY="284.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_3cce021" layoutX="1107.0" layoutY="302.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_3cce031" layoutX="1107.0" layoutY="320.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <DetectorControl decimals="1" kks="tn_3cce171" layoutX="1107.0" layoutY="338.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <Text fill="LIME" layoutX="1060.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uab=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1060.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uл.ср.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1060.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ubc=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1060.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uca=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1059.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ua-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1059.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ub-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1059.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uc-0=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1059.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uф.ср.=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1146.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1146.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1146.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1146.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1146.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1146.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1146.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="AQUA" layoutX="1146.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="кВ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1063.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F=">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="LIME" layoutX="1146.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Гц">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <DetectorControl decimals="1" kks="tn_3cce005" layoutX="1107.0" layoutY="356.0" maxValue="1000.0" param="" prefHeight="18.0" prefWidth="50.0" system="ED" unit="" />
+      <ElectricControl animated="true" controlStrokeWidth="3.0" kks="v010" layoutX="305.0" layoutY="523.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="20.0" skinType="BREAKER" status="BTN_PRESSED">
+         <alternativeColor>
+            <Color green="1.0" />
+         </alternativeColor>
+         <fillColor>
+            <Color red="1.0" />
+         </fillColor>
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r008" layoutX="307.0" layoutY="329.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <Line endX="-100.0" endY="-391.0" layoutX="415.0" layoutY="720.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <Line endX="-100.0" endY="-357.0" layoutX="415.0" layoutY="750.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <Line endX="-100.0" endY="-368.0" layoutX="415.0" layoutY="806.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r048" layoutX="307.0" layoutY="438.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <Line endX="-100.0" endY="-374.75" layoutX="415.0" layoutY="859.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r081" layoutX="307.0" layoutY="484.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <Line endX="-100.0" endY="-381.75" layoutX="415.0" layoutY="905.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <Line endX="-100.0" endY="-368.75" layoutX="415.0" layoutY="948.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r129" layoutX="307.0" layoutY="579.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r176" layoutX="307.0" layoutY="720.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_NON_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <Line endX="-100.0" endY="-305.25" layoutX="415.0" layoutY="1141.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r012" layoutX="543.0" layoutY="304.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r079" layoutX="543.0" layoutY="439.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <Line endX="-100.0" endY="-337.0" layoutX="651.0" layoutY="860.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <ElectricControl animated="true" controlStrokeWidth="3.0" kks="v008" layoutX="541.0" layoutY="523.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="20.0" skinType="BREAKER" status="BTN_PRESSED">
+         <alternativeColor>
+            <Color green="1.0" />
+         </alternativeColor>
+         <fillColor>
+            <Color red="1.0" />
+         </fillColor>
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r127" layoutX="543.0" layoutY="595.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <Line endX="-100.0" endY="-386.75" layoutX="651.0" layoutY="1016.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <Line endX="-100.0" endY="-353.0" layoutX="682.0" layoutY="1074.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r179" layoutX="574.0" layoutY="721.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <Line endX="-100.0" endY="-344.0" layoutX="682.0" layoutY="1142.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <Line endX="-100.0" endY="-349.0" layoutX="1119.0" layoutY="670.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r011" layoutX="1011.0" layoutY="321.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl animated="true" controlStrokeWidth="3.0" kks="v009" layoutX="1009.0" layoutY="523.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="20.0" skinType="BREAKER" status="BTN_PRESSED">
+         <alternativeColor>
+            <Color green="1.0" />
+         </alternativeColor>
+         <fillColor>
+            <Color red="1.0" />
+         </fillColor>
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <Line endX="-100.0" endY="-350.0" layoutX="1119.0" layoutY="743.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <Line endX="-100.0" endY="-376.0" layoutX="1119.0" layoutY="807.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r037" layoutX="1011.0" layoutY="431.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <Line endX="-100.0" endY="-369.0" layoutX="1119.0" layoutY="853.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r080" layoutX="1011.0" layoutY="484.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <Line endX="-100.0" endY="-383.0" layoutX="1119.0" layoutY="906.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <Line endX="-100.0" endY="-363.0" layoutX="1119.0" layoutY="949.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r128" layoutX="1011.0" layoutY="586.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <Line endX="-100.0" endY="-379.0" layoutX="1119.0" layoutY="1008.0" startX="-100.0" startY="-405.5" stroke="#ffc055" />
+      <Line endX="-100.0" endY="-141.0" layoutX="1072.0" layoutY="1025.0" startX="-100.0" startY="-288.75" stroke="#ffc055" />
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r173" layoutX="964.0" layoutY="720.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <Line endX="-100.0" endY="-379.0" layoutX="1072.0" layoutY="1099.0" startX="-100.0" startY="-479.0" stroke="#ffc055" />
+      <ElectricControl animated="true" controlStrokeWidth="3.0" kks="v007" layoutX="1324.0" layoutY="521.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="20.0" skinType="BREAKER" status="BTN_PRESSED">
+         <alternativeColor>
+            <Color green="1.0" />
+         </alternativeColor>
+         <fillColor>
+            <Color red="1.0" />
+         </fillColor>
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r010" layoutX="1326.0" layoutY="297.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <Line endX="-165.25" layoutX="1499.5" layoutY="446.0" startX="-165.25" startY="75.0" stroke="#ffc055" />
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r049" layoutX="1326.0" layoutY="430.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <Line endX="-165.25" layoutX="1499.5" layoutY="541.0" startX="-165.25" startY="45.5" stroke="#ffc055" />
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r126" layoutX="1326.0" layoutY="586.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <Line endX="-165.25" layoutX="1499.5" layoutY="602.0" startX="-165.25" startY="59.5" stroke="#ffc055" />
+      <Line endX="-165.25" layoutX="1436.5" layoutY="637.0" startX="-165.25" startY="74.5" stroke="#ffc055" />
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKD" kks="r180" layoutX="1263.0" layoutY="711.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="13.0" prefWidth="16.0" skinType="DISCONNECTOR" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+      </ElectricControl>
+      <Line endX="-165.25" endY="20.0" layoutX="1436.5" layoutY="706.0" startX="-165.25" startY="66.5" stroke="#ffc055" />
+      <FunctionControl kks="ed42" layoutX="632.0" layoutY="383.0" prefHeight="30.0" prefWidth="30.0" skinType="MF" />
+      <FunctionControl kks="ed43" layoutX="882.0" layoutY="382.0" prefHeight="30.0" prefWidth="30.0" skinType="MF" />
+      <FunctionControl kks="ed44" layoutX="46.0" layoutY="617.0" prefHeight="30.0" prefWidth="30.0" skinType="MF" />
+      <FunctionControl kks="ed45" layoutX="46.0" layoutY="649.0" prefHeight="30.0" prefWidth="30.0" skinType="MF" />
+      <FunctionControl kks="ed20" layoutX="384.0" layoutY="846.0" prefHeight="30.0" prefWidth="30.0" skinType="MF" />
+      <FunctionControl kks="ed19" layoutX="1611.0" layoutY="870.0" prefHeight="30.0" prefWidth="30.0" skinType="MF" />
+      <FunctionControl kks="ed24" layoutX="1611.0" layoutY="905.0" prefHeight="30.0" prefWidth="30.0" skinType="MF" />
+      <FunctionControl kks="ed25" layoutX="383.0" layoutY="879.0" prefHeight="30.0" prefWidth="30.0" skinType="MF" />
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r004" layoutX="255.0" layoutY="305.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r013" layoutX="256.0" layoutY="360.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r059" layoutX="256.0" layoutY="458.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r125" layoutX="256.0" layoutY="560.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" layoutX="255.0" layoutY="688.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r178" layoutX="254.0" layoutY="768.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r007" layoutX="490.0" layoutY="273.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r101" layoutX="491.0" layoutY="461.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r124" layoutX="490.0" layoutY="572.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r174" layoutX="523.0" layoutY="681.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r202" layoutX="522.0" layoutY="752.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r005" layoutX="960.0" layoutY="289.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r014" layoutX="960.0" layoutY="361.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r057" layoutX="959.0" layoutY="451.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r122" layoutX="959.0" layoutY="563.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r177" layoutX="912.0" layoutY="790.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r006" layoutX="1274.0" layoutY="266.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r102" layoutX="1274.0" layoutY="452.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r123" layoutX="1275.0" layoutY="564.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r175" layoutX="1212.0" layoutY="681.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+      <ElectricControl controlStrokeWidth="3.0" equipmentType="BRKG" kks="r212" layoutX="1211.0" layoutY="744.0" minHeight="-Infinity" minWidth="-Infinity" orientation="HORIZONTAL_REVERSE" prefHeight="16.0" prefWidth="32.0" skinType="DISCONNECTOR_GND" status="BTN_PRESSED">
+         <strokeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </strokeColor>
+         <alternativeColor>
+            <Color red="1.0" green="0.7529411911964417" blue="0.3333333432674408" />
+         </alternativeColor>
+      </ElectricControl>
+   </children>
+</AnchorPane>
