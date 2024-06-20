@@ -332,7 +332,7 @@ const DetectorControl = ({ block }: IDetectorControlProps) => {
             />
             <Text
               x={110}
-              y={270}
+              y={272}
               text={DET_min_Value.toString()}
               fontSize={10.5}
               fill="#FFFFFF"
